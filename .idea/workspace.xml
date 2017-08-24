@@ -2,7 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebSite/readme.md" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite" afterPath="$PROJECT_DIR$/WebSite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/amazon.png" afterPath="$PROJECT_DIR$/WebSite/img/amazon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-ipad-retina.png" afterPath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-ipad-retina.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-ipad.png" afterPath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-iphone-retina.png" afterPath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-iphone-retina.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-iphone.png" afterPath="$PROJECT_DIR$/WebSite/img/apple-touch-icon-iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/bill.jpg" afterPath="$PROJECT_DIR$/WebSite/img/bill.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/curb.png" afterPath="$PROJECT_DIR$/WebSite/img/curb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/dan.jpg" afterPath="$PROJECT_DIR$/WebSite/img/dan.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/elance-odesk.png" afterPath="$PROJECT_DIR$/WebSite/img/elance-odesk.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/eric.png" afterPath="$PROJECT_DIR$/WebSite/img/eric.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/favicon.png" afterPath="$PROJECT_DIR$/WebSite/img/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/hero-img.png" afterPath="$PROJECT_DIR$/WebSite/img/hero-img.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/payoneer.png" afterPath="$PROJECT_DIR$/WebSite/img/payoneer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/ramil.jpg" afterPath="$PROJECT_DIR$/WebSite/img/ramil.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s1.png" afterPath="$PROJECT_DIR$/WebSite/img/s1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s2.png" afterPath="$PROJECT_DIR$/WebSite/img/s2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s3.png" afterPath="$PROJECT_DIR$/WebSite/img/s3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s4.png" afterPath="$PROJECT_DIR$/WebSite/img/s4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s5.png" afterPath="$PROJECT_DIR$/WebSite/img/s5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/s6.png" afterPath="$PROJECT_DIR$/WebSite/img/s6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/user.png" afterPath="$PROJECT_DIR$/WebSite/img/user.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/css/animate.css" afterPath="$PROJECT_DIR$/WebSite/css/animate.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/css/preloader.css" afterPath="$PROJECT_DIR$/WebSite/css/preloader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/css/responsive.css" afterPath="$PROJECT_DIR$/WebSite/css/responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/css/simple-line-icons.css" afterPath="$PROJECT_DIR$/WebSite/css/simple-line-icons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/css/style.css" afterPath="$PROJECT_DIR$/WebSite/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/after_effects.svg" afterPath="$PROJECT_DIR$/WebSite/img/after_effects.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/flash.svg" afterPath="$PROJECT_DIR$/WebSite/img/flash.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/illustrator.svg" afterPath="$PROJECT_DIR$/WebSite/img/illustrator.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/indesign.svg" afterPath="$PROJECT_DIR$/WebSite/img/indesign.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/photoshop.svg" afterPath="$PROJECT_DIR$/WebSite/img/photoshop.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/img/trianglify-background.svg" afterPath="$PROJECT_DIR$/WebSite/img/trianglify-background.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/index.html" afterPath="$PROJECT_DIR$/WebSite/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/js/drifolio.js" afterPath="$PROJECT_DIR$/WebSite/js/drifolio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/WebSite/js/jquery.easing.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/js/jquery.jribbble-1.0.1.ugly.js" afterPath="$PROJECT_DIR$/WebSite/js/jquery.jribbble-1.0.1.ugly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/js/jquery.nicescroll.min.js" afterPath="$PROJECT_DIR$/WebSite/js/jquery.nicescroll.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/js/wow.min.js" afterPath="$PROJECT_DIR$/WebSite/js/wow.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,18 +54,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebSite/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -64,6 +93,7 @@
     <option name="width" value="1276" />
     <option name="height" value="777" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -79,42 +109,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FutureYou" />
+              <option name="myItemId" value="FutureYouProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FutureYou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FutureYou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FutureYou" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebSite" />
+              <option name="myItemId" value="FutureYouProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/comp6442" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -547,6 +562,7 @@
       <updated>1503574776077</updated>
       <workItem from="1503574780024" duration="840000" />
       <workItem from="1503577278846" duration="142000" />
+      <workItem from="1503578361972" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial model for website">
       <created>1503575021694</created>
@@ -559,7 +575,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="982000" />
+    <option name="totallyTimeSpent" value="1035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
@@ -578,7 +594,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25364667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25769854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -640,21 +656,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebSite/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebSite/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSite/index.html" />
+    <entry file="file://$PROJECT_DIR$/WebSite/index.html" />
   </component>
 </project>
