@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FutureYou.iml" filepath="$PROJECT_DIR$/FutureYou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FutureYou_master.iml" filepath="$PROJECT_DIR$/.idea/FutureYou_master.iml" />
     </modules>
   </component>
 </project>
