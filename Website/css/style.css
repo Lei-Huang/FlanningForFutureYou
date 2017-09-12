@@ -91,7 +91,6 @@ HERO AREA
 }
 
 
-
 /*================================
 ABOUT SECTION
 ================================*/
@@ -118,6 +117,7 @@ PORTFOLIO SECTION
     margin-top: 50px;
     padding: 80px 0;
     text-align: center;
+
 }
 
 #shotsByPlayerId li{
@@ -266,4 +266,185 @@ FOLLOW BUTTON
     margin-left: -3px;
     border-right-color: white;
 }
+
+
+
+/*pData.html stylesheet*/
+/* Create two columns that floats next to each other */
+.column {
+    float: left;
+    padding:60px 5px;
+}
+
+
+/* Left acolumn */
+.column.side {
+    width: 40%;
+}
+.column.middle{
+    width: 52%;
+    background:url("images/medalback.jpg") center 50px no-repeat;
+    background-size:100% 100%;
+    padding-left:30px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+/*-- main --*/
+.main {
+    padding: 0px 50px;
+}
+.main h1{
+    font-size:28px;
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Helvetica Neue', cursive;
+    color:#fff;
+    margin-bottom: 25px;
+    letter-spacing:1px;
+    font-weight:100;
+}
+.content{
+    width: 80%;
+    background:	#ffa500;
+    padding: 30px 30px;
+    height:auto;
+}
+.profile{
+    text-align: center;
+    border-bottom: 1px solid #ffc731;
+    padding-bottom: 20px;
+}
+.profile img {
+    width: 30%;
+}
+.profile h2{
+    margin: 7px 0;
+    color: #fff;
+    font-size: 17px;
+}
+.profile p{
+    font-size:14px;
+    color:#ffffff;
+}
+.skills {
+    width: 85%;
+    margin: 0 0 15px 0;
+    height: 10px;
+    background:	#ffa500;
+    border-radius: 3px;
+}
+.main-grid3{
+    margin:23px 0;
+}
+.bar p{
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 0 6px 0;
+}
+.skill1,.skill2 ,.skill3{
+    height: 100%;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.facebook ul {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.facebook ul li {
+    list-style-type:none;
+    display:inline-block;
+    margin:0 1px;
+}
+.facebook ul li a{
+    width:30px;
+    height:30px;
+    display:block;
+}
+.facebook ul li a.icon1{
+    background:url(../img/social.png) no-repeat 0px 0px;
+}
+.facebook ul li a.icon2{
+    background:url(../img/social.png) no-repeat -30px 0px;
+}
+.facebook ul li a.icon3{
+    background:url(../img/social.png) no-repeat -60px 0px;
+}
+
+.facebook ul li a:hover{
+    opacity: .5;
+}
+.follow{
+    text-align:center;
+    width: 38%;
+    margin:0 auto;
+}
+.follow a{
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #fff;
+    background: #ffb000;
+    border-bottom: 3px solid #ffc731;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.follow a:hover{
+    background: #ffc748;
+    border-bottom: 3px solid #ffc731;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.facebook {
+    margin-bottom: 18px;
+}
+
+.wall h2{
+    color: 	#d2691e;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+}
+.gallery{
+    padding: 10px 20px;
+    border: 0px solid;
+    float: left;
+    width: 100px;
+}
+
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery img:hover{
+    border: 5px solid #ffb000;
+}
+
+
+
+
+
+
 
