@@ -72,7 +72,6 @@ hr.separetor{
 HERO AREA
 ================================*/
 #home{
-    color: #333333;
     text-align: center;
     max-height: 880px;
     overflow: hidden;
@@ -273,7 +272,7 @@ FOLLOW BUTTON
 /* Create two columns that floats next to each other */
 .column {
     float: left;
-    padding:60px 5px;
+    padding:80px 5px;
 }
 
 
@@ -283,8 +282,8 @@ FOLLOW BUTTON
 }
 .column.middle{
     width: 52%;
-    background:url("images/medalback.jpg") center 50px no-repeat;
-    background-size:100% 100%;
+    background:url("images/medalback.jpg") center 80px no-repeat;
+    background-size:100% 88%;
     padding-left:30px;
 }
 /* Clear floats after the columns */
@@ -424,6 +423,7 @@ FOLLOW BUTTON
     font-size: 44px;
     font-weight: 700;
     text-align: center;
+    padding-top: 20px;
 }
 .gallery{
     padding: 10px 20px;
