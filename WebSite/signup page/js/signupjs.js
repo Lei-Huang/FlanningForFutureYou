@@ -78,5 +78,25 @@ $(".previous").click(function(){
 });
 
 $(".submit").click(function(){
+	document.getElementsByID(msform);
+    var name = ($(event.target).attr('id') == 'register') ? 'Registration' : 'Login';
+    $('#message').slideUp('fast');
+
+    $.post('service.php', $('#mainform').serialize()
+        +'&action='+ $(event.target).attr('id'), function(data) {
+        var code = $(data)[0].nodeName.toLowerCase();
+
+        $('#message').removeClass('error');
+        $('#message').removeClass('success');
+        $('#message').addClass(code);
+        if(code == 'success') {
+            $('#message').html(name + ' was successful.');
+        }
+        else if(code == 'error') {
+            $('#message').html('An error occurred, please try again.');
+        }
+        $('#message').slideDown('fast');
+    });
+    return e.preventDefault();
 	return false;
 })
