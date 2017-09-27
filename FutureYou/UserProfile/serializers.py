@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = BasicProfile
-        fields =('profile_id','user','study','study_status')
+        fields =('profile_id','first_name','last_name','user_group','study_status')
 
 class UserGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserGroup
-        fields =('name')
+        fields =('name',)
