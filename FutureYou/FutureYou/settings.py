@@ -56,7 +56,7 @@ ROOT_URLCONF = 'FutureYou.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/huanglei/Documents/master_term3/comp8715/FutureYou_FrontEnd/WebSite',],
+        'DIRS': ['../WebSite',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
