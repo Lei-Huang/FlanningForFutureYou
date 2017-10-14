@@ -1,3 +1,5 @@
+♦ [Project Wiki](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/wikis/home): Our project encyclopedia
+
 ♦ Project Name: PLANNING FOR FUTURE YOU
 
 ♦ Project Proposer: Kimberley Duong(Student Experience & Career Development)
