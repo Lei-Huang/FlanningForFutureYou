@@ -1,5 +1,13 @@
 ♦ [Project Wiki](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/wikis/home): Our project encyclopedia
 
+♦ Commit: 
+
+[Front End & Integration](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/Merge_v1)
+
+[Back End ](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/BackEnd)   
+
+[Django Rest ](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/DjangoREST) 
+
 ♦ Project Name: PLANNING FOR FUTURE YOU
 
 ♦ Project Proposer: Kimberley Duong(Student Experience & Career Development)
