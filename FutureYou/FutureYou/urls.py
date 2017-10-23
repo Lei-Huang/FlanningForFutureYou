@@ -17,13 +17,21 @@ from django.conf import settings
 from django.conf.urls import url,include
 from django.contrib import admin
 from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib import staticfiles
+
 import FutureYou.views
 urlpatterns = [
     url(r'^$',FutureYou.views.index,name='index'),
     url(r'^admin/', admin.site.urls),
     # rerouting all requests including 'api' in url to the apps` own url router
     url(r'^api/',include('UserProfile.urls',namespace='UserProfile')),
+
+
+    url(r'^static/',FutureYou.views.static,name='static'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
 
 if settings.DEBUG:
     from django.conf.urls.static import static

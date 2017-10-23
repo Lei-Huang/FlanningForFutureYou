@@ -3,6 +3,10 @@ from django.http import HttpResponse
 
 
 def index(request):
-    t = get_template('index.html')
+    t = get_template('test.html')
     html = t.render()
     return HttpResponse(html)
+
+
+def static(request):
+    return HttpResponse("hello")
