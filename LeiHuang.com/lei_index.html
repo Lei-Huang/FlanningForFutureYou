@@ -77,9 +77,9 @@
 						<div class="hover-background"></div>
 						<span>Resume</span><i class="fa fa-file-text fa-fw"></i>
 					</li>
-				   <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+					<li class="nav-btn folio-btn" data-filter="*" title="medal" data-page="medal">
 						<div class="hover-background"></div>
-						<span>Portfolio</span><i class="fa fa-suitcase fa-fw"></i>
+						<span>Medal Wall</span><i class="fa fa-suitcase fa-fw"></i>
 					</li>
 					<li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
 						<div class="hover-background"></div>
@@ -121,8 +121,7 @@
 						<!--ALL PERSONAL DETAILS-->
 						<h3 class="personal-info-title title">Personal Info</h3>
 						<ul class="personal-info">
-							<li class="rotate-out rotated"><label>Name</label><span>Lei Huang</span></li>                     
-							<li class="rotate-out rotated"><label>Address</label><span>Weeden Lodge, Belconnen, ACT 2617 ,Australia</span></li>
+							<li class="rotate-out rotated"><label>Name</label><span>Lei Huang</span></li>
 							<li class="rotate-out rotated"><label>Email</label><span>arley_huang@163.com</span></li>
 							<li class="rotate-out rotated"><label>Phone</label><span>+61 416680813</span></li>
 						</ul><!--/ul.personal-info-->
@@ -140,17 +139,16 @@
 						<div class='tabs tabs_animate'>
 							<!--RESUME TAB LISTS-->
 							<ul class='horizontal no-padding'>
-								<li><a href="#tab-1" class="icon-bg icon-skills"><div>Skills</div></a></li>
+								<li><a href="#tab-1" class="icon-bg icon-skills"><div>Overview</div></a></li>
 								<li><a href="#tab-2" class="icon-bg icon-education"><div>Educations</div></a></li>
 								<li><a href="#tab-3" class="icon-bg icon-employment"><div>Employment</div></a></li>
 							</ul><!--RESUME TAB LISTS ENDS-->
 
 							<!--RESUME FIRST TAB/SKILL TAB DETAILS-->
 							<div id='tab-1'>
-								<h3 class="title">OUR SKILLS</h3><!--SKILLS WITH BAR DISPLAY-->
 								<ul class="skills-list no-padding">
 									<li class="row">
-										<div class="col-xs-2"><div class="fw-mid">Java</div></div>
+										<div class="col-xs-2"><div class="fw-mid">Skills</div></div>
 										<div class="col-xs-9">
 											<div class="bar">
 												<div class="percentage" id="bar1" style="width: 75%;"></div>
@@ -158,7 +156,7 @@
 										</div>
 									</li>
 									<li class="row">
-										<div class="col-xs-2"><div class="fw-mid">Python</div></div>
+										<div class="col-xs-2"><div class="fw-mid">Networking</div></div>
 										<div class="col-xs-9">
 											<div class="bar">
 												<div class="percentage" id="bar2" style="width: 70%;"></div>
@@ -166,10 +164,18 @@
 										</div>
 									</li>
 									<li class="row">
-										<div class="col-xs-2"><div class="fw-mid">HTML</div></div>
+										<div class="col-xs-2"><div class="fw-mid">Preparation</div></div>
 										<div class="col-xs-9">
 											<div class="bar">
 												<div class="percentage" id="bar3" style="width: 60%;"></div>
+											</div>
+										</div>
+									</li>
+									<li class="row">
+										<div class="col-xs-2"><div class="fw-mid">Experience</div></div>
+										<div class="col-xs-9">
+											<div class="bar">
+												<div class="percentage" id="bar4" style="width: 80%;"></div>
 											</div>
 										</div>
 									</li>
@@ -177,7 +183,7 @@
 
 								<!--SKILLS WITH CIRCLE DISPLAY-->
 								<div class="circle-skill-container">
-									<h3 class="title">OTHER SKILLS</h3>
+									<h3 class="title">Major SKILLS</h3>
 									<div class="row">
 										<div class="col-xs-4 center-align">
 											<div class="circle-bar" id="line-container1">
@@ -268,101 +274,67 @@
 					</div>
 				</li>
 				<!--/#resume-->
-				<!--PORTFOLIO PAGE-->
-				<li id="portfolio" class="hidden">
+
+				<!--Medal PAGE-->
+				<li id="medal" class="hidden">
 					<div class="title-container">
 						<div class="shadow-img"></div>
-						<h2 class="rotate-out rotated">Portfolio</h2> <!--PORTFOLIO TITLE-->                         
+						<h2 class="rotate-out rotated">Medal Wall</h2> <!--PORTFOLIO TITLE-->
 					</div>
 
-					<!--PORTFOLIO CATEGORY LIST-->    
+					<!--PORTFOLIO CATEGORY LIST-->
 					<div class="abs-child">
 						<ul class="button-group filters-button-group">
-							<li class="button is-checked" data-filter="*">Show All</li>
-							<li class="button" data-filter=".pram">Pram to Scooter</li>
-							<li class="button" data-filter=".polaroid">Polaroid frame</li>
-<!--							<li class="button" data-filter=".potrait">Potrait</li>-->
+							<li class="button is-checked" data-filter="*">All Metals</li>
+							<li class="button" data-filter=".pram">Awarded</li>
+							<li class="button" data-filter=".polaroid">To be collected</li>
+							<!--<li class="button" data-filter=".potrait">Potrait</li>-->
 						</ul><!--/.button-group filters-button-group-->
 					</div>
-					
-					<div class ="sec-porfolio description"> 
+
+					<div class ="sec-porfolio description">
 						<div class="row">
 							<!--PORTFOLIO ITEM CONTAINER-->
 							<div class="folio-container">
 								<ul class="folio-item"><!--PORTFOLIO INDIVIDAUAL ITEM-->
-									<li class="view view-first pram">  
-										<img src="images/folio/pram1.jpg" alt="pram1" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
-										<div class="mask">    
-								            <h2>problem and solution</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
-                                            <!-- Button trigger modal -->
-											<a role="button" class="info" data-toggle="modal" data-target="#myModal1">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
+									<li class="view view-first pram">
+										<img src="images/medals/1.png" alt="pram1" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											<h2>Complete Registration </h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+										</div>
 									</li>
-                                    
-                                    <li class="view view-first pram">  
-										<img src="images/folio/pram2.jpg" alt="pram2" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
-										<div class="mask">    
-								            <h2>Pram to scooter </h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
-                                            <!-- Button trigger modal -->
-											<a role="button" class="info" data-toggle="modal" data-target="#myModal2">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
-									</li> 
-                                    <li class="view view-first pram">  
-										<img src="images/folio/pram3.jpg" alt="pram3" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
-										<div class="mask">    
-								            <h2>detail views </h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
-                                            <!-- Button trigger modal -->
-											<a role="button" class="info" data-toggle="modal" data-target="#myModal3">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
-									</li> 
-                                    <li class="view view-first pram">  
-										<img src="images/folio/pram4.jpg" alt="pram4" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE--> 
-										<div class="mask">    
-								            <h2>expolded views </h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->                               
-                                            <!-- Button trigger modal -->
-											<a role="button" class="info" data-toggle="modal" data-target="#myModal4">Read More</a><!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
-									</li> 
-														
-									<li class="view view-second polaroid"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
-										 <img src="images/folio/polaroid1.jpg" alt="polaroid1" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->   
-                                         <div class="mask"></div>
-                                         <div class="content">
-											 <h2>Polaroid photo frame</h2>                                    
-											 <a role="button" class="info" data-toggle="modal" data-target="#myModal5">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
-									</li>                         
-									<li class="view view-second polaroid"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
-										 <img src="images/folio/polaroid2.jpg" alt="polaroid2" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->   
-										 <div class="mask">  </div>
-                                         <div class="content">
-											 <h2>How to operate</h2>                                   
-											 <a role="button" class="info" data-toggle="modal" data-target="#myModal6">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
-                                        </div>
-									</li> 
-                                    <li class="view view-second polaroid"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
-										 <img src="images/folio/polaroid3.jpg" alt="polaroid3" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->   
-										 <div class="mask">  </div> 
-                                        <div class="content">
-											 <h2>Detail View</h2>                                   
-											 <a role="button" class="info" data-toggle="modal" data-target="#myModal7">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->  
-                                        </div>
-									</li> 
-                                    <li class="view view-second polaroid"><!--PORTFOLIO INDIVIDAUAL ITEM-->  
-										 <img src="images/folio/polaroid4.jpg" alt="polaroid4" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->   
-										 <div class="mask">  </div> 
-                                        <div class="content">
-											 <h2>Customized patterns</h2>                                   
-											 <a role="button" class="info" data-toggle="modal" data-target="#myModal8">Read More</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'--> 
-                                        </div>
-				 
-									</li> 
-																							
-											  
+
+									<li class="view view-first pram">
+										<img src="images/medals/2.png" alt="pram2" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											<h2>Fill in personal information data</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+										</div>
+									</li>
+									<li class="view view-first pram">
+										<img src="images/medals/3.png" alt="pram3" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											<h2>View documents about curriculum vitae </h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+										</div>
+									</li>
+									<li class="view view-first pram">
+										<img src="images/medals/4.png" alt="pram4" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask">
+											<h2>Finish personal Curriculum Vitae</h2> <!--PORTFOLIO INDIVIDAUAL ITEM TITLE-->
+										</div>
+									</li>
+
+									<li class="view view-second polaroid"><!--PORTFOLIO INDIVIDAUAL ITEM-->
+										<img src="images/medals/6.png" alt="polaroid1" /><!--PORTFOLIO INDIVIDAUAL ITEM IMAGE-->
+										<div class="mask"></div>
+										<div class="content">
+											<h2>Book an appointment</h2>
+											<a role="button" class="info" data-toggle="modal"  href="https://careerhub.anu.edu.au/students/login?ReturnUrl=%2f">ANU Career Hub</a> <!--PORTFOLIO INDIVIDAUAL ITEM MODAL LINK BY 'data-target'-->
+										</div>
+									</li>
 								</ul>
 							</div>
 							<!--PORTFOLIO ITEM CONTAINER ENDS-->
-						</div>                          
+						</div>
 					</div>
 				</li><!--/#portfolio-->
 
@@ -383,7 +355,6 @@
 							<div class="col-sm-5">
 								<!--CONTACT DESCRIPTION-->
 								<h3 class="title">Contact Info</h3>
-								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-map-marker"></i></span>Weeden Lodge, Belconnen, ACT 2617, Australia</h6>
 								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-phone"></i></span>+61 416680813</h6>
 								<h6 class="sm-title"><span class="address-icon"><i class="fa fa-envelope"></i></span>arley_huang@163.com</h6>
 								<!--/CONTACT DESCRIPTION ENDS-->
@@ -438,159 +409,11 @@
 	</div>
 </div><!--/.container -->
 
-<!--PORTFOLIO IMAGE MODAL LIST-->
-<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Pram to Scooter-problem</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/pram1.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>Because of the only child policy in China, pram becomes an one-off product. The parents prefer to buy a new pram rather than use second-hand one for their first and only child. It causes hugh pram waste in China. Even China has openned the only child policy, the idea of only child is still openned now.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel2">Pram to Scooter-solution</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/pram2.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>The possible solution is to increase the life span for pram product. According to several user-based research, the best practice is to transform pram into other product. The scooter is option that has concerned with both the needs of child and the maximum use of pram frame.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel3">Pram to Scooter-detail</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/pram3.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>The pram design is fully based on the user requirements. It could be folded into a small size that fit the normal size car trunk. The wheel is designed to be universal  and solid, which is easy to maintain.
-                    </p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel4">Pram to Scooter-material</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/pram4.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>The main material used for the pram frame is ABS and aluminum tube. The plastic parts including joints, handle, folding mechanism and others are manufactured through injection molding while the metal parts are shaped through bending and welding.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel5">polaroid frame</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/polaroid1.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>Well designed photo frame for polaroid photo size 54W * 86H mm.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-    
-<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel5">polaroid frame-operation</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/polaroid2.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>Simple click on operation to put photo onto the frame.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel5">polaroid frame-detail</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/polaroid3.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>Ultrasonic welding for the manufacture for high quality product.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-    
-<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel5">polaroid frame-style</h4><!--PORTFOLIO IMAGE TITLE-->
-			</div>
-			<div class="modal-body">
-				<img src="images/folio/polaroid4.jpg" class="img-responsive" alt="modal-image"><!--PORTFOLIO MODAL IMAGE-->
-			</div>
-			<div class="modal-footer">
-				<div class="mf-content">
-					<p>Different styles fit for different purpose- souveir, promotion gift and comic related product.</p>
-				</div>                      
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 <div class="modal fade" id="subscribe_modal_1" tabindex="-1" role="dialog" aria-labelledby="subscribe_modal_1" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
