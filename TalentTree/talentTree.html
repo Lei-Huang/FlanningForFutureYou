@@ -1,0 +1,39 @@
+<html>
+<title> Career Talent Tree Calculator </title>
+
+<head>
+    <script type="text/javascript">
+        function mouse_click( element )
+        {
+            if ( element.style.backgroundColor == "lime" )
+            {
+                element.style.backgroundColor = "pink";
+                element.title = "0%";
+            } else {
+                element.style.backgroundColor = "lime";
+                element.title = "33%";
+            }
+        }
+        function mouse_on (doc,element){
+            doc.getElementById("text").innerText = "mouse on "+element.id;
+        }
+        function mouse_off (element){
+            element.getElementById("text").innerText = "This is text describe";
+
+
+        }
+    </script>
+</head>
+<p id="text">This is text describe</p>
+<body>
+<form>
+    <input id ="a1" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="a2" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="a3" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+</form>
+<form>
+    <input id ="b1" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="b2" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="b3" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+</form>
+</body>
