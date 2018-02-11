@@ -19,11 +19,29 @@
         }
         function mouse_off (element){
             element.getElementById("text").innerText = "This is text describe";
-
-
         }
     </script>
 </head>
+
+<script>
+    var elementid = "academic";
+    switch (elementid){
+        case "academic":
+            document.write("academic direction");
+            break;
+        case "private":
+            document.write("private");
+            break;
+        case "public":
+            document.write("public");
+            break;
+        default:
+            document.write("not decided");
+
+
+    }
+</script>>
+
 <p id="text">This is text describe</p>
 <body>
 <form>
