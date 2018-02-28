@@ -24,7 +24,7 @@
 
 ♦ Project Category: Client project (2 semesters)
 
-♦ Introduction: AUN Student Careers Gamification Project is aim to create early awareness and engagement with career development among undergraduate students. It’s a web-based application that is designed and communicated a high level narrative that helps to set expectations and tracks progress of the students’ career planning.
+♦ Introduction: ANU Student Careers Gamification Project is aim to create early awareness and engagement with career development among undergraduate students. It’s a web-based application that is designed and communicated a high level narrative that helps to set expectations and tracks progress of the students’ career planning.
 
 ♦ Group Member: 
 
