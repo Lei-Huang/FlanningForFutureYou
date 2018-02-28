@@ -16,6 +16,24 @@
         }
         function mouse_on (doc,element){
             doc.getElementById("text").innerText = "mouse on "+element.id;
+            if (element.id.charAt(0)== "a"){
+                doc.getElementById("text").innerText = "This is the basic of "
+            } else if (element.id.charAt(0)== "b"){
+                doc.getElementById("text").innerText = "This is the foundation of "
+            } else if (element.id.charAt(0)== "c"){
+                doc.getElementById("text").innerText = "This is the advanced of "
+            } else if (element.id.charAt(0)== "d"){
+                doc.getElementById("text").innerText = "This is the expert of "
+            }
+            if (element.id.charAt(1)== "1"){
+                doc.getElementById("text").innerText += " Academic "
+            } else if (element.id.charAt(1)== "2"){
+                doc.getElementById("text").innerText += " Private "
+            } else if (element.id.charAt(1)== "3"){
+                doc.getElementById("text").innerText += " Public "
+            } else if (element.id.charAt(1)== "4"){
+                doc.getElementById("text").innerText += " Not decided "
+            }
         }
         function mouse_off (element){
             element.getElementById("text").innerText = "This is text describe";
@@ -38,7 +56,6 @@
         default:
             document.write("not decided");
 
-
     }
 </script>>
 
@@ -54,4 +71,20 @@
     <input id ="b2" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
     <input id ="b3" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
 </form>
+<form>
+    <input id ="c1" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="c2" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="c3" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+</form>
+<form>
+    <input id ="d1" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="d2" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+    <input id ="d3" type="button" style="background-color: pink;" title="0%" onclick="mouse_click(this);" onmouseover="mouse_on(document,this)" onmouseout="mouse_off(document)"/>
+</form>
+</form>
+
+<script type="text/javascript">
+    var buttons = document.getElementById("c1");
+    buttons.innerHTML = '<img src="/Users/huanglei/IdeaProjects/WebStormProjects/FutureYou/WebSite/img/s1.png" />';
+</script>
 </body>
