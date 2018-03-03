@@ -1,0 +1,450 @@
+*{	-webkit-transition: .7s ease-out;
+    -moz-transition: .7s ease-out;
+    -o-transition:  .7s ease-out;
+    transition: .7s ease-out;
+    list-style: none;
+}
+
+/*================================
+TYPOGRAPHY
+================================*/
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.8em;
+}
+
+.bigicon {font-size: 3em;}
+h2{font-size: 42px;}
+h3{font-size: 28px;}
+h4{font-size: 18px; line-height: 1.4em;}
+
+p{
+    letter-spacing: 1px;
+    color: #c3c3c3;
+    font-weight: lighter;
+}
+
+
+/*================================
+DEFAULT STYLE & FORMATING
+================================*/
+ul{padding: 0;}
+a{color: #ea9312}
+a:hover{color: #c3c3c3; text-decoration: none;}
+
+#services{text-align: center;}
+.col-md-4, .col-md-6{padding-bottom: 50px;}
+.col-md-3 {padding: 0;}
+
+.sectionhead{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+hr.separetor{
+    width: 80px;
+    color: #363942;
+    border-top: 2px solid #ea9312;
+}
+
+
+.btn-default{
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #c3c3c3;
+    letter-spacing: 2px;
+}
+
+.btn-default:hover{
+    background: none;
+    color: #ea9312;
+}
+
+.btnicon, .brandicon{
+    margin-right: 10px;
+}
+
+
+/*================================
+HERO AREA
+================================*/
+#home{
+    text-align: center;
+    max-height: 880px;
+    overflow: hidden;
+}
+
+.herocontent{
+    padding-top: 100px;
+    width: 100%;
+    max-width: 900px;
+}
+.heroshot{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+
+/*================================
+ABOUT SECTION
+================================*/
+#about{padding-top: 100px;}
+
+.myapps{margin-top: 25px;}
+.myapps li{display: inline}
+.myapps li img{
+    width: 30px;
+}
+
+/*================================
+Clear
+================================*/
+#clear {
+    clear: left;
+}
+
+/*================================
+PORTFOLIO SECTION
+================================*/
+#portfolio{
+    background: #efefef;
+    margin-top: 50px;
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+#shotsByPlayerId li{
+    width: 31%;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+#shotsByPlayerId li:hover{
+    box-shadow: 1px 2px 25px rgba(160, 160, 160, 0.4);
+    -webkit-transition: .7s ease-out;
+    -moz-transition: .7s ease-out;
+    -o-transition:  .7s ease-out;
+    transition: .7s ease-out;
+}
+
+#shotsByPlayerId li img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#shotsByPlayerId img:hover{
+    opacity: .5;
+    overflow: hidden;
+}
+
+#shotsByPlayerId a:hover{color: #ea9312;}
+
+#shotsByPlayerId h3{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: normal;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+#shotsByPlayerId h3 a{color: #363942;}
+
+.likecount a{float: left; color: #c3c3c3;}
+.commentcount a{float: right; color: #c3c3c3;}
+
+
+/*================================
+FOOTER SECTION
+================================*/
+
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background: #363942;
+}
+
+footer p, footer .bigicon {color: #7e7e7e;}
+
+.footerlinks{margin: 30px 0;}
+.footerlinks li{
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footersocial {margin-top: 30px;}
+
+.footersocial li{
+    display:inline;
+    padding: 0 15px;
+    font-size: 2em;
+}
+
+.footersocial li a {color: #7e7e7e;}
+.footersocial li a:hover {color: #ea9312;}
+
+/*================================
+FOLLOW BUTTON
+================================*/
+.dribbble-follow-button {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.dribbble-follow-button .label, .dribbble-follow-button .count {
+    font: bold 11px/18px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+}
+
+.dribbble-follow-button .label {
+    padding: 0 3px 0 1px;
+    white-space: nowrap;
+    background: #e3e3e3;
+    background: linear-gradient(top, white, #dedede);
+}
+
+.dribbble-follow-button .label i {
+    height: 18px;
+    width: 18px;
+    float: left;
+    background: url(../img/icon.png) no-repeat top left;
+}
+
+.dribbble-follow-button .label:hover {
+    border-color: #bbb;
+    background: #fff;
+    color: #333;
+}
+
+.dribbble-follow-button .label:active {
+    box-shadow: 0 1px 5px rgba(0,0,0,.15) inset;
+}
+
+.dribbble-follow-button .count {
+    margin-left: 5px;
+    padding: 0 3px;
+    color: #333;
+    border-color: #bbb;
+    font-weight: normal;
+    background: white;
+}
+
+.dribbble-follow-button .count:hover {
+    text-decoration: underline;
+}
+
+.dribbble-follow-button .count > * {
+    top: 50%;
+    left: 0;
+    margin: -4px 0 0 -4px;
+    border: 4px solid transparent;
+    border-right-color: #aaa;
+    border-left: 0;
+    position: absolute;
+}
+
+.dribbble-follow-button .count u {
+    margin-left: -3px;
+    border-right-color: white;
+}
+
+
+
+/*pData.html stylesheet*/
+/* Create two columns that floats next to each other */
+.column {
+    float: left;
+    padding:80px 5px;
+}
+
+
+/* Left acolumn */
+.column.side {
+    width: 40%;
+}
+.column.middle{
+    width: 52%;
+    background:url("images/medalback.jpg") center 80px no-repeat;
+    background-size:100% 88%;
+    padding-left:30px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+/*-- main --*/
+.main {
+    padding: 0px 50px;
+}
+.main h1{
+    font-size:28px;
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Helvetica Neue', cursive;
+    color:#fff;
+    margin-bottom: 25px;
+    letter-spacing:1px;
+    font-weight:100;
+}
+.content{
+    width: 80%;
+    background:	#ffa500;
+    padding: 30px 30px;
+    height:auto;
+}
+.profile{
+    text-align: center;
+    border-bottom: 1px solid #ffc731;
+    padding-bottom: 20px;
+}
+.profile img {
+    width: 30%;
+}
+.profile h2{
+    margin: 7px 0;
+    color: #fff;
+    font-size: 17px;
+}
+.profile p{
+    font-size:14px;
+    color:#ffffff;
+}
+.skills {
+    width: 85%;
+    margin: 0 0 15px 0;
+    height: 10px;
+    background:	#ffa500;
+    border-radius: 3px;
+}
+.main-grid3{
+    margin:23px 0;
+}
+.bar p{
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 0 6px 0;
+}
+.skill1,.skill2 ,.skill3{
+    height: 100%;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.facebook ul {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.facebook ul li {
+    list-style-type:none;
+    display:inline-block;
+    margin:0 1px;
+}
+.facebook ul li a{
+    width:30px;
+    height:30px;
+    display:block;
+}
+.facebook ul li a.icon1{
+    background:url(../img/social.png) no-repeat 0px 0px;
+}
+.facebook ul li a.icon2{
+    background:url(../img/social.png) no-repeat -30px 0px;
+}
+.facebook ul li a.icon3{
+    background:url(../img/social.png) no-repeat -60px 0px;
+}
+
+.facebook ul li a:hover{
+    opacity: .5;
+}
+.follow{
+    text-align:center;
+    width: 38%;
+    margin:0 auto;
+}
+.follow a{
+    padding: 10px 0px;
+    font-size: 14px;
+    color: #fff;
+    background: #ffb000;
+    border-bottom: 3px solid #ffc731;
+    display: block;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.follow a:hover{
+    background: #ffc748;
+    border-bottom: 3px solid #ffc731;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.facebook {
+    margin-bottom: 18px;
+}
+
+.wall h2{
+    color: 	#d2691e;
+    font-size: 44px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+.gallery{
+    padding: 10px 20px;
+    border: 0px solid;
+    float: left;
+    width: 100px;
+}
+
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery img:hover{
+    border: 5px solid #ffb000;
+}
+
+
+
+
+
+
+
