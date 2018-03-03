@@ -23,6 +23,8 @@ body {
 	text-align: center;
 	position: relative;
 }
+
+
 #msform fieldset {
 	background: white;
 	border: 0 none;
@@ -68,6 +70,14 @@ body {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/
+.copyright {
+	clear: both;
+	display: block;
+	position: absolute;
+	bottom: 100px;
+	color: #5e5e5e;
+	left:230px;
+}
 .fs-title {
 	font-size: 15px;
 	text-transform: uppercase;
