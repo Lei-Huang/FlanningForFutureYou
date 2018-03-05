@@ -9,8 +9,8 @@ html {
 	/*Image only BG fallback*/
 	
 	/*background = gradient + image pattern combo*/
-	background: 
-		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	background:
+	linear-gradient(rgba(97, 132, 196, 0.6), rgba(76, 105, 182, 0.6));
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 /*buttons*/
 #msform .action-button {
 	width: 100px;
-	background: #27AE60;
+	background: #9894aa;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -136,7 +136,7 @@ body {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: #27AE60;
+	background: #9894aa;
 	color: white;
 }
 
