@@ -6,6 +6,7 @@
 </head>
 <body>
 <form name=form method="POST" action="/login">
+    {% csrf_token %}
     <table>
         <tr>
             <td colspan=2>Login</td>

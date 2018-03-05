@@ -1,14 +1,15 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Signup Page</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-		<link rel="stylesheet" href="../static/css/signup.css" />
+		<link rel="stylesheet" href="{% static "PFFU/css/signup.css" %}" type="text/css"/>
 	</head>
 	<body>
 		<!-- multistep form -->
-		<form id="msform">	
+		<form id="msform" method="POST" action="/signup">
 			<!-- progressbar -->
 			<ul id="progressbar">
 				<li class="active">Account Setup</li>
@@ -18,7 +19,7 @@
 			
 			<!-- fieldsets -->
 			<fieldset>
-				<script type="text/javascript" src="../static/js/loginjs.js"></script>
+				<script type="text/javascript" src="loginjs.js"></script>
 				<h2 class="fs-title">Create your account</h2>
 				<h3 class="fs-subtitle">This is step 1</h3>
                 <input type="text" name="uid" placeholder="StudentID" />
@@ -42,7 +43,7 @@
 	
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-		<script  src="../static/js/signupjs.js"></script>
+		<script  src="{% static "PFFU/js/signupjs.js"%}"></script>
 		<h1 class = copyright>Original Template designed by Atakan Goktepe, Multistep form, Modified from:https://codepen.io/atakan/pen/gqbIz?editors=1000</h1>
 	</body>
 

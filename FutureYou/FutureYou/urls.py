@@ -19,7 +19,7 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^login', search),
-    url(r'^signup', regist),
-    url(r'^index', index)
+    #url(r'^login', search),
+    #url(r'^signup', regist),
+    url(r'^', include('PFFU.urls')),
 ]
