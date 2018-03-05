@@ -8,4 +8,4 @@ urlpatterns = [
     url(r'^signup/$', PFFU.views.regist, name='signup'),
     url(r'^loginVerify/$', PFFU.views.loginVerify, name='loginVerify'),
     url(r'^index/$', PFFU.views.index, name='index'),
-]
+] + static(s)
