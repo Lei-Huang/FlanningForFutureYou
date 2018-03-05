@@ -26,7 +26,7 @@ class Student(models.Model):
     name = models.CharField(max_length=60)
     graduation_year = models.CharField(max_length=30)
     YearOfStudy =models.CharField(max_length=10)
-    owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
+    #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
     highlighted = models.TextField()
 
     class Meta:

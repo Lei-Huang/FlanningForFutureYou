@@ -10,6 +10,7 @@
 	<body>
 		<!-- multistep form -->
 		<form id="msform" method="POST" action="/signup">
+			{% csrf_token %}
 			<!-- progressbar -->
 			<ul id="progressbar">
 				<li class="active">Account Setup</li>
