@@ -69,26 +69,20 @@ hr.separetor{
 
 
 /*================================
-HERO AREA
+MAIN PICTURE AREA
 ================================*/
 #home{
     text-align: center;
     max-height: 880px;
+    background: repeating-linear-gradient(-45deg, #ffdd68, #ffdd68 30px, white 30px, white 60px);
     overflow: hidden;
 }
 
-.herocontent{
+.homecontent{
     padding-top: 100px;
     width: 100%;
     max-width: 900px;
 }
-.heroshot{
-    margin-top: 20px;
-    width: 100%;
-    max-width: 1200px;
-
-}
-
 
 /*================================
 ABOUT SECTION
