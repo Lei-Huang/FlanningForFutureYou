@@ -37,9 +37,9 @@ def regist(request):
             return HttpResponse(html)
         except Student.DoesNotExist:
             test1=Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
-            #test2=Login(StudentId=Uid,password=Password)
+            test2=Login(StudentId=Uid,password=Password)
             test1.save()
-            #test2.save()
+            test2.save()
             return HttpResponse("Regist Success!")
     else:
         return render(request, 'signup.html')
