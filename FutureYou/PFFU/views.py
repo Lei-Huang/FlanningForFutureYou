@@ -30,7 +30,7 @@ def register(request):
         Password =request.POST.get('pw', None)
         Degree=request.POST.get('Degree', None)
         Dis = request.POST.get('Discipline', None)
-        GDate = request.POST.get('Gratuation Date', None)
+        GDate = request.POST.get('Graduation Date', None)
         context = {}
         context['username'] = FName
         try:
@@ -44,6 +44,6 @@ def register(request):
             test1.save()
             test2.save()
             #return render(request, 'login.html')
-            return render(request,'regist_success.html')
+            return render(request,'register_success.html')
     else:
         return render(request, 'signup.html')
