@@ -300,7 +300,7 @@ FOLLOW BUTTON
 }
 .column.middle{
     width: 52%;
-    background:url("images/medalback.jpg") center 80px no-repeat;
+    background:url("../../../../../WebSite/css/images/medalback.jpg") center 80px no-repeat;
     background-size:100% 88%;
     padding-left:30px;
 }
@@ -392,13 +392,13 @@ FOLLOW BUTTON
     display:block;
 }
 .facebook ul li a.icon1{
-    background:url(../img/social.png) no-repeat 0px 0px;
+    background:url(../../../img/social.png) no-repeat 0px 0px;
 }
 .facebook ul li a.icon2{
-    background:url(../img/social.png) no-repeat -30px 0px;
+    background:url(../../../img/social.png) no-repeat -30px 0px;
 }
 .facebook ul li a.icon3{
-    background:url(../img/social.png) no-repeat -60px 0px;
+    background:url(../../../img/social.png) no-repeat -60px 0px;
 }
 
 .facebook ul li a:hover{
