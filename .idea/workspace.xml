@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FutureYou/templates/regist_success.html" afterPath="$PROJECT_DIR$/FutureYou/templates/register_success.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/PFFU/views.py" afterPath="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebSite/signup page/signup.html" afterPath="$PROJECT_DIR$/WebSite/signup page/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/templates/signup.html" afterPath="$PROJECT_DIR$/FutureYou/templates/signup.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -44,21 +42,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_fail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FutureYou/templates/login_fail.html">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="210">
+              <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FutureYou/templates/login.html">
+      <file leaf-file-name="login_fail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/login_fail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -84,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
+            <state relative-caret-position="85">
               <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding />
             </state>
@@ -164,9 +162,9 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Lei Huang &lt;u6041747@anu.edu.au&gt;" />
         <option value="Wei  Wei &lt;u6137273@anu.edu.au&gt;" />
         <option value="Mengyao  Zhang &lt;u6020717@anu.edu.au&gt;" />
-        <option value="Lei Huang &lt;u6041747@anu.edu.au&gt;" />
       </list>
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -194,7 +192,6 @@
         <option value="$PROJECT_DIR$/TalentTree/talentTree.html" />
         <option value="$PROJECT_DIR$/FutureYou/FutureYou/settings.py" />
         <option value="$PROJECT_DIR$/FutureYou/FutureYou/urls.py" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/signup.html" />
         <option value="$PROJECT_DIR$/WebSite/css/style.css" />
         <option value="$PROJECT_DIR$/WebSite/index.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/index.html" />
@@ -206,6 +203,7 @@
         <option value="$PROJECT_DIR$/FutureYou/PFFU/admin.py" />
         <option value="$PROJECT_DIR$/WebSite/signup page/signup.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/signup.html" />
       </list>
     </option>
   </component>
@@ -447,7 +445,7 @@
       <workItem from="1519861138825" duration="1825000" />
       <workItem from="1520233873167" duration="3498000" />
       <workItem from="1520312981521" duration="795000" />
-      <workItem from="1520335331428" duration="1239000" />
+      <workItem from="1520335331428" duration="1284000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial model for website">
       <created>1503575021694</created>
@@ -554,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520316244077</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix typo">
+      <created>1520336962391</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1520336962391</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46389000" />
+    <option name="totallyTimeSpent" value="46434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,7 +661,8 @@
     <MESSAGE value="Change direction of &quot;login&quot; and 'register'" />
     <MESSAGE value="Change html file from local to static" />
     <MESSAGE value="update html file from local to static" />
-    <option name="LAST_COMMIT_MESSAGE" value="update html file from local to static" />
+    <MESSAGE value="fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -800,13 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="57" lean-forward="false" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -963,6 +962,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/register_success.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -971,10 +978,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="210">
+          <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
           <folding />
         </state>
       </provider>
