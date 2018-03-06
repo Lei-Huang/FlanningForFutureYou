@@ -25,7 +25,7 @@
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="../PFFU/static/PFFU/css/style.css">
+    <link rel="stylesheet" href="{% static "PFFU/css/style.css" %}" type="text/css"/>
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -353,7 +353,7 @@ FOOTER START
 <!--Other necessary scripts-->
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
-<script src="../../WebSite/js/drifolio.js"></script>
+<script src="{% static "PFFU/js/drifolio.js"%}"></script>
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
 </body>
