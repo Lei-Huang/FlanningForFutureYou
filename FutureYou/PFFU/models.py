@@ -48,7 +48,7 @@ class Staff(models.Model):
     PhoneNumber= models.CharField(max_length=30)
     ModifyDate = models.DateTimeField()
     # Todo check on_delete
-    StudentId =models.ForeignKey(Student,on_delete=models.DO_NOTHING)
+    StudentId =models.ForeignKey(Student,on_delete=models.CASCADE)
 
     Description = models.TextField()
     UserProfileYear =models.CharField(max_length=20)
@@ -72,7 +72,7 @@ class BadgeInfo(models.Model):
 
 class UserProfile(models.Model):
     # Todo check on_delete
-    StudentId = models.ForeignKey(Student,on_delete=models.DO_NOTHING)
+    StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
     ProfileYear = models.CharField(max_length=20)
     ProfileType = models.CharField(max_length=20)
     NetworkTree = models.CharField(max_length=30)
@@ -90,7 +90,7 @@ class Badge(models.Model):
     BadgeId = models.CharField(max_length=20)
     BadgeStatus = models.CharField(max_length=30)
     # Todo check on_delete
-    BadgeInfo = models.ForeignKey(BadgeInfo,on_delete=models.DO_NOTHING)
+    BadgeInfo = models.ForeignKey(BadgeInfo,on_delete=models.CASCADE)
 
 
 class Incentive(models.Model):
@@ -106,7 +106,7 @@ class Points(models.Model):
 
 class UserEvent(models.Model):
     # Todo check on_delete
-    StudentId = models.ForeignKey(Student,on_delete=models.DO_NOTHING)
+    StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
     UserEventId = models.CharField(max_length=20)
     UserEventType = models.CharField(max_length=20)
     UserEventDate = models.DateTimeField()

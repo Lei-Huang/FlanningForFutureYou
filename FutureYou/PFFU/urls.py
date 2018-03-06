@@ -10,7 +10,7 @@ app_name = 'PFFU'
 
 urlpatterns = [
     url(r'^login', PFFU.views.search, name='login'),
-    url(r'^signup', PFFU.views.regist, name='signup'),
+    url(r'^signup', PFFU.views.register, name='signup'),
     #(r'^loginVerify/$', PFFU.views.loginVerify, name='loginVerify'),
     url(r'^index/$', PFFU.views.index, name='index'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

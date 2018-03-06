@@ -22,7 +22,7 @@ def search(request):
         return render(request,'login.html')
 
 
-def regist(request):
+def register(request):
     if request.method == 'POST':
         Uid = request.POST.get('uid',None)
         FName = request.POST.get('fname', None)
