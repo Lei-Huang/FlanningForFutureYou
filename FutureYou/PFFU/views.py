@@ -4,7 +4,7 @@ from .models import Login, Student
 from django.core.exceptions import *
 
 def index(request):
-    return render(request, 'login.html')
+    return render(request, 'index.html')
 
 def search(request):
     if request.method == 'POST':
@@ -43,6 +43,7 @@ def regist(request):
             test2=Login(StudentId=Uid,password=Password)
             test1.save()
             test2.save()
-            return HttpResponse("Regist Success!")
+            return render(request, 'login.html')
+            #return HttpResponse("Regist Success!")
     else:
         return render(request, 'signup.html')
