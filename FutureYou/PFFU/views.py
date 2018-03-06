@@ -13,11 +13,11 @@ def search(request):
         try:
             user = Login.objects.get(StudentId = userName,password=password)
             #do something with user
-            html = (userName,"<H1>Success!</H1>")
-            #return render(request,'Signup_Success.html')
-            return HttpResponse(html)
+            #html = (userName,"<H1>Success!</H1>")
+            return render(request,'index.html')
+            #return HttpResponse(html)
         except Login.DoesNotExist:
-            return HttpResponse("No such user!")
+            return render(request, 'login_fail.html')
     else:
         return render(request,'login.html')
 
@@ -43,7 +43,7 @@ def regist(request):
             test2=Login(StudentId=Uid,password=Password)
             test1.save()
             test2.save()
-            return render(request, 'login.html')
-            #return HttpResponse("Regist Success!")
+            #return render(request, 'login.html')
+            return render(request,'regist_success.html')
     else:
         return render(request, 'signup.html')
