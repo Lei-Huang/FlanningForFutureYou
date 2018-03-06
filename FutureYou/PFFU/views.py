@@ -13,12 +13,13 @@ def search(request):
         try:
             user = Login.objects.get(StudentId = userName,password=password)
             #do something with user
-            html = ("<H1>Success!</H1>", user)
+            html = (userName,"<H1>Success!</H1>")
+            #return render(request,'Signup_Success.html')
             return HttpResponse(html)
         except Login.DoesNotExist:
             return HttpResponse("No such user!")
     else:
-        return render(request, 'login.html')
+        return render(request,'login.html')
 
 
 def regist(request):
@@ -30,11 +31,13 @@ def regist(request):
         Degree=request.POST.get('Degree', None)
         Dis = request.POST.get('Discipline', None)
         GDate = request.POST.get('Gratuation Date', None)
+        context = {}
+        context['username'] = FName
         try:
             user = Student.objects.get(FirstName=FName, LastName=LName)
             # do something with user
-            html = ("<H1>User already exsit!</H1>", user)
-            return HttpResponse(html)
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'UserExist.html',context)
         except Student.DoesNotExist:
             test1=Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
             test2=Login(StudentId=Uid,password=Password)
