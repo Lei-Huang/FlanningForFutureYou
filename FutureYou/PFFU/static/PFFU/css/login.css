@@ -2,7 +2,7 @@
 
 html {
     height: 100%;
-
+/*background color*/
     background:
             linear-gradient(rgba(97, 132, 196, 0.6), rgba(76, 105, 182, 0.6));
 }
@@ -17,29 +17,24 @@ body {
     text-align: center;
     position: relative;
 }
-
+/*Textfield color and form*/
 #loginform textfield {
-    border: 0 none;
     border-radius: 3px;
     padding: 20px 30px;
-    box-sizing: border-box;
     width: 80%;
-    margin: 0 10%;
     position: relative;
 }
-
+/*input form*/
 #loginform input {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 10px;
     width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
     color: #2C3E50;
-    font-size: 13px;
+    font-size: 15px;
 }
-
+/*button*/
 #loginform .action-button {
     width: 100px;
     background: #9894aa;
@@ -51,12 +46,12 @@ body {
     padding: 10px 5px;
     margin: 10px 5px;
     position: relative;
-    left: 36px;
+    left: 20px;
 }
 
 .login-title {
-    font-size: 15px;
+    font-size: 28px;
     text-transform: uppercase;
-    color: #2C3E50;
+    color: #f0eef9;
     margin-bottom: 10px;
 }
