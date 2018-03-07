@@ -123,6 +123,26 @@
 LOGIN SECTION
 =========================== -->
 <div id="login">
+    <h1 id = "testforinput"> balabala</h1>
+    <!--todo finish the script-->
+    <script>
+        var userName = "hi "+'{{userName}}';
+        document.getElementById("testforinput").innerHTML = userName;
+        if(userName==null){
+            var button = document.createElement("button");
+            button.innerHTML = "Login";
+            button.addEventListener ("click", function() {
+                location.href='/login.html';
+            });
+        } else {
+            document.getElementById("testforinput").innerHTML = userName;
+            var button = document.createElement("button");
+            button.innerHTML = "signout";
+            button.addEventListener ("click", function() {
+                location.href='/login.html';
+            });
+        }
+    </script>
     <input type="button" class="btn" value="LOGIN" onclick="{location.href='/login.html'}"/>
     <input type="button" class="btn" value="REGISTER" onclick="{location.href='/signup.html'}"/>
 </div>

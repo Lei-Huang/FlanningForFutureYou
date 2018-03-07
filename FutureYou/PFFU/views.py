@@ -10,6 +10,7 @@ def log(request):
     return render(request, 'log2.html')
 
 def search(request):
+    context = {}
     if request.method == 'POST':
         userName = request.POST.get('user', None)
         password = request.POST.get('password', None)
@@ -17,7 +18,8 @@ def search(request):
             user = Login.objects.get(StudentId = userName,password=password)
             #do something with user
             #html = (userName,"<H1>Success!</H1>")
-            return render(request,'index.html')
+            context['userName'] = userName
+            return render(request,'index.html',context)
             #return HttpResponse(html)
         except Login.DoesNotExist:
             return render(request, 'login_fail.html')
