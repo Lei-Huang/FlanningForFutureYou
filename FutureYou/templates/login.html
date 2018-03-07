@@ -4,29 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="{% static "PFFU/css/login.css" %}" type="text/css"/>
 </head>
 <body>
-<form name=form method="POST" action="/login">
+<form id="loginform" method="POST" action="/login">
     {% csrf_token %}
-    <table>
-        <tr>
-            <td colspan=2>Login</td>
-        </tr>
-        <tr>
-            <td>Username:</td>
-            <td><input type="text" name="user" size=20 ></td>
-        </tr>
-        <tr>
-            <td>Password:</td>
-            <td><input type="password" name="password" size=20 ></td>
-        </tr>
-        <tr>
-            <td><button type="submit">Login</button></td>
-            <td><input type="button" class="btn" value="Regist" onclick="{location.href='./signup.html'}"/></td>
-        </tr>
-    </table>
+    <textfield>
+        <h2 class="login-title">Login</h2>
+        <input type="text" name="user" placeholder="StudentID" />
+        <input type="text" name="password" placeholder="Password" />
+        <input type="submit" name="submit" class="submit action-button" value="Login" />
+        <input type="button" name="Regist" class="btn action-button" value="Register"  onclick="{location.href='./signup.html'}"/>
+    </textfield>
 </form>
 </body>
 </html>
