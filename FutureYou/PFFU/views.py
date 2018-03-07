@@ -6,6 +6,9 @@ from django.core.exceptions import *
 def index(request):
     return render(request, 'index.html')
 
+def log(request):
+    return render(request, 'log2.html')
+
 def search(request):
     if request.method == 'POST':
         userName = request.POST.get('user', None)

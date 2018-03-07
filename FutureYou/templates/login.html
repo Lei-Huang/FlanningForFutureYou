@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="{% static "PFFU/css/login.css" %}" type="text/css"/>
 </head>
 <body>
-<form id="loginform" method="POST" action="/login">
+<form id="loginform" method="POST" action="login">
     {% csrf_token %}
     <textfield>
         <h2 class="login-title">Login</h2>
         <input type="text" name="user" placeholder="StudentID" />
-        <input type="text" name="password" placeholder="Password" />
+        <input type="password" name="password" placeholder="Password" />
         <input type="submit" name="submit" class="submit action-button" value="Login" />
-        <input type="button" name="Regist" class="btn action-button" value="Register"  onclick="{location.href='./signup.html'}"/>
+        <input type="button" name="Regist" class="btn action-button" value="Register"  onclick="{location.href='/signup.html'}"/>
     </textfield>
 </form>
 </body>
