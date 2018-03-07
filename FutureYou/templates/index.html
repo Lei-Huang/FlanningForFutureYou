@@ -126,8 +126,7 @@ LOGIN SECTION
     <h1 id = "testforinput"> balabala</h1>
     <!--todo finish the script-->
     <script>
-        var userName = "hi "+'{{userName}}';
-        document.getElementById("testforinput").innerHTML = userName;
+        var userName = '{{userName}}';
         if(userName==null){
             var button = document.createElement("button");
             button.innerHTML = "Login";
@@ -135,6 +134,7 @@ LOGIN SECTION
                 location.href='/login.html';
             });
         } else {
+            document.getElementById("testforinput").innerHTML = "hi "+ userName;
             document.getElementById("testforinput").innerHTML = userName;
             var button = document.createElement("button");
             button.innerHTML = "signout";
