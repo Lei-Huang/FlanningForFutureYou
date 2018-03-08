@@ -37,10 +37,10 @@ def register(request):
         Dis = request.POST.get('Discipline', None)
         GDate = request.POST.get('Graduation Date', None)
         context = {}
-        context['username'] = FName
+        context['userid'] = Uid
         try:
             ##Todo use uid to check whether user exist
-            user = Student.objects.get(FirstName=FName, LastName=LName)
+            user = Student.objects.get(studentId=Uid)
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'UserExist.html',context)
