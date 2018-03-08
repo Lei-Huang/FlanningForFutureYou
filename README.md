@@ -2,11 +2,9 @@
 
 ♦ Commit: 
 
-[Front End & Integration](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/Merge_v1)
+   
 
-[Back End ](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/BackEnd)   
-
-[Django Rest ](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/commits/DjangoREST) 
+[Code of the Project ](https://gitlab.cecs.anu.edu.au/u6041747/FutureYou/tree/master) 
 
 ♦ Project Name: PLANNING FOR FUTURE YOU
 
