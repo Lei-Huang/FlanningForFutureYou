@@ -24,15 +24,11 @@
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="{% static "PFFU/css/index.css" %}" type="text/css"/>
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/animate.css">
 
     <!-- ===========================
     ICONS:
     =========================== -->
-    <link rel="stylesheet" href="css/simple-line-icons.css">
 
     <!-- ===========================
     GOOGLE FONTS
@@ -143,6 +139,8 @@ LOGIN SECTION
             });
         }
     </script>
+    <var> session</var>
+    session=request.session.userName
     <input type="button" class="btn" value="LOGIN" onclick="{location.href='/login.html'}"/>
     <input type="button" class="btn" value="REGISTER" onclick="{location.href='/signup.html'}"/>
 </div>
@@ -372,10 +370,7 @@ FOOTER START
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!--Other necessary scripts-->
-<script src="js/jquery.nicescroll.min.js"></script>
-<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
 <script src="{% static "PFFU/js/drifolio.js"%}"></script>
-<script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
 </body>
 </html>

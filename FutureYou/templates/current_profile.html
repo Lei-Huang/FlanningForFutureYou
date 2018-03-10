@@ -13,7 +13,7 @@
             <td>
                 <center>
 
-                <form id="current_profile" method="POST" action="/portfolio.html">
+                <form id="current_profile" method="POST" action="portfolio">
                     {% csrf_token %}
                         <fieldset>
                             <legend>Portfolio Information</legend>
@@ -57,7 +57,7 @@
                                 <tr>
                                     <td colspan="2">
                                         <center>
-                                            <input type="submit" value="Submit">
+                                            <input type="submit" name="submit" class="submit action-button" value="Submit" />
                                             <input type="reset" value="Reset">
                                         </center>
                                     </td>

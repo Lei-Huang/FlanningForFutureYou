@@ -6,7 +6,7 @@
 </head>
 <body>
     {% if request.session.userName %}
-    <h4 style='font-family:楷体;'>{{ welcome}} {{ request.session.userName }} </h4>
+    <h4 style='font-family:楷体;'> welcome{{ request.session.userName }} </h4>
 {% else %}
     <h3 style='font-family:楷体;'>请重新登陆</h3>
 {% endif %}

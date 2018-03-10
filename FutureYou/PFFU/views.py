@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
-from .models import Login, Student
+from .models import *
 from django.core.exceptions import *
 
 def index(request):
@@ -21,9 +21,9 @@ def search(request):
             user = Login.objects.get(StudentId = userName,password=password)
             #do something with user
             #html = (userName,"<H1>Success!</H1>")
-            context['userName'] = userName
+            #context['userName'] = userName
             request.session['userName'] = userName
-            return render(request,'index.html',context)
+            return render(request,'index.html')
             #return HttpResponse(html)
         except Login.DoesNotExist:
             return render(request, 'login_fail.html')
@@ -61,26 +61,25 @@ def register(request):
 
 def current_profile(request):
     if request.method == 'POST':
-        Major = request.POST.get('major',None)
-        Study_year = request.POST.get('study_year', None)
+        user1 = request.POST.get('user',None)
+        Study_year= request.POST.get('password', None)
         Work = request.POST.get('work', None)
         Volunteer =request.POST.get('volunteer', None)
         Detail_work=request.POST.get('detail_work', None)
         Detail_vol = request.POST.get('detail_vol', None)
         context = {}
-        #context['userid'] = Uid
+        context['userid'] = Uid
         try:
-            # Todo use uid to check whether user exist
-            user = Student.objects.get(studentId=request.session.userName)
-            test1 = Student(studentId=request.session.userName, Discipline=Major, YearOfStudy=Study_year)
-            test2 = UserProfile(Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
-            test1.save()
+            user = Student.objects.get(studentId=request.session['userName'])
+            user.YearOfStudy=Study_year
+            user.save(update_fields=['YearOfStudy'])
+            test2 = UserProfile(StudentId=Major,Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'portfolio.html')
+            return render(request, 'test2.html')
         except Student.DoesNotExist:
             #return render(request, 'login.html')
             return render(request,'index.html')
     else:
-        return render(request, 'current_profile.html')
+        return render(request, 'test2.html')
