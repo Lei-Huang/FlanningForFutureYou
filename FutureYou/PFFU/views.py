@@ -7,7 +7,7 @@ def index(request):
     return render(request, 'index.html')
 
 def log(request):
-    return render(request, 'log2.html')
+    return render(request, 'test.html')
 
 def search(request):
     context = {}
@@ -19,6 +19,7 @@ def search(request):
             #do something with user
             #html = (userName,"<H1>Success!</H1>")
             context['userName'] = userName
+            request.session['userName'] = userName
             return render(request,'index.html',context)
             #return HttpResponse(html)
         except Login.DoesNotExist:
@@ -39,7 +40,34 @@ def register(request):
         context = {}
         context['userid'] = Uid
         try:
-            ##Todo use uid to check whether user exist
+            # Todo use uid to check whether user exist
+            user = Student.objects.get(studentId=Uid)
+            # do something with user
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'UserExist.html',context)
+        except Student.DoesNotExist:
+            test1=Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
+            test2=Login(StudentId=Uid,password=Password)
+            test1.save()
+            test2.save()
+            #return render(request, 'login.html')
+            return render(request,'register_success.html')
+    else:
+        return render(request, 'signup.html')
+
+
+def portfolio(request):
+    if request.method == 'POST':
+        Major = request.POST.get('major',None)
+        Study_year = request.POST.get('study_year', None)
+        Work = request.POST.get('work', None)
+        Volunteer =request.POST.get('volunteer', None)
+        Detail_work=request.POST.get('detail_work', None)
+        Detail_vol = request.POST.get('detail_vol', None)
+        context = {}
+        #context['userid'] = Uid
+        try:
+            # Todo use uid to check whether user exist
             user = Student.objects.get(studentId=Uid)
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
