@@ -59,7 +59,7 @@ def register(request):
         return render(request, 'signup.html')
 
 
-def currentprofile(request):
+def current_profile(request):
     if request.method == 'POST':
         Major = request.POST.get('major',None)
         Study_year = request.POST.get('study_year', None)
@@ -78,9 +78,9 @@ def currentprofile(request):
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'UserExist.html')
+            return render(request, 'portfolio.html')
         except Student.DoesNotExist:
             #return render(request, 'login.html')
-            return render(request,'register_success.html')
+            return render(request,'index.html')
     else:
-        return render(request, 'currentprofile.html')
+        return render(request, 'current_profile.html')
