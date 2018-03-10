@@ -59,7 +59,7 @@ def register(request):
         return render(request, 'signup.html')
 
 
-def profile(request):
+def current_profile(request):
     if request.method == 'POST':
         Major = request.POST.get('major',None)
         Study_year = request.POST.get('study_year', None)
