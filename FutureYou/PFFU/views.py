@@ -7,6 +7,8 @@ def index(request):
     return render(request, 'index.html')
 
 def log(request):
+    user = Student.objects.get(studentId=request.session.userName)
+
     return render(request, 'test.html')
 
 def search(request):
@@ -56,7 +58,7 @@ def register(request):
         return render(request, 'signup.html')
 
 
-def portfolio(request):
+def profile(request):
     if request.method == 'POST':
         Major = request.POST.get('major',None)
         Study_year = request.POST.get('study_year', None)
@@ -68,15 +70,15 @@ def portfolio(request):
         #context['userid'] = Uid
         try:
             # Todo use uid to check whether user exist
-            user = Student.objects.get(studentId=Uid)
-            # do something with user
-            #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'UserExist.html',context)
-        except Student.DoesNotExist:
-            test1=Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
-            test2=Login(StudentId=Uid,password=Password)
+            user = Student.objects.get(studentId=request.session.userName)
+            test1 = Student(studentId=request.session.userName, Discipline=Major, YearOfStudy=Study_year)
+            test2 = UserProfile(Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test1.save()
             test2.save()
+            # do something with user
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'UserExist.html')
+        except Student.DoesNotExist:
             #return render(request, 'login.html')
             return render(request,'register_success.html')
     else:
