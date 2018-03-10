@@ -11,6 +11,7 @@ app_name = 'PFFU'
 urlpatterns = [
     url(r'^login', PFFU.views.search, name='login'),
     url(r'^signup', PFFU.views.register, name='signup'),
+    url(r'^test', PFFU.views.log, name='test'),
     #(r'^loginVerify/$', PFFU.views.loginVerify, name='loginVerify'),
     url(r'^index/$', PFFU.views.index, name='index'),
      url(r'^portfolio', PFFU.views.portfolio, name='portfolio')
