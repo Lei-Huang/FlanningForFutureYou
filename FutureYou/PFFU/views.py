@@ -6,6 +6,9 @@ from django.core.exceptions import *
 def index(request):
     return render(request, 'index.html')
 
+def portfolio(request):
+    return render(request, 'portfolio.html')
+
 def log(request):
     return render(request, 'log2.html')
 
