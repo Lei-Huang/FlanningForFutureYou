@@ -59,4 +59,28 @@ def register(request):
         return render(request, 'signup.html')
 
 
-
+def profile(request):
+    if request.method == 'POST':
+        Major = request.POST.get('major',None)
+        Study_year = request.POST.get('study_year', None)
+        Work = request.POST.get('work', None)
+        Volunteer =request.POST.get('volunteer', None)
+        Detail_work=request.POST.get('detail_work', None)
+        Detail_vol = request.POST.get('detail_vol', None)
+        context = {}
+        #context['userid'] = Uid
+        try:
+            # Todo use uid to check whether user exist
+            user = Student.objects.get(studentId=request.session.userName)
+            test1 = Student(studentId=request.session.userName, Discipline=Major, YearOfStudy=Study_year)
+            test2 = UserProfile(Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            test1.save()
+            test2.save()
+            # do something with user
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'UserExist.html')
+        except Student.DoesNotExist:
+            #return render(request, 'login.html')
+            return render(request,'register_success.html')
+    else:
+        return render(request, 'signup.html')
