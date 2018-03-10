@@ -6,9 +6,10 @@ from django.core.exceptions import *
 def index(request):
     return render(request, 'index.html')
 
-def log(request):
-    user = Student.objects.get(studentId=request.session.userName)
+def portfolio(request):
+    return render(request, 'portfolio.html')
 
+def log(request):
     return render(request, 'test.html')
 
 def search(request):
