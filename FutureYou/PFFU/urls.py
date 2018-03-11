@@ -14,6 +14,6 @@ urlpatterns = [
     #url(r'^test2', PFFU.views.current_profile, name='test2'),
     #(r'^loginVerify/$', PFFU.views.loginVerify, name='loginVerify'),
     url(r'^index', PFFU.views.index, name='index'),
-    #url(r'^portfolio', PFFU.views.portfolio, name='portfolio'),
+    url(r'^portfolio', PFFU.views.portfolio, name='portfolio'),
     url(r'^current_profile', PFFU.views.current_profile, name='current_profile')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -61,25 +61,26 @@ def register(request):
 
 def current_profile(request):
     if request.method == 'POST':
-        user1 = request.POST.get('user',None)
-        Study_year= request.POST.get('password', None)
+        major = request.POST.get('major',None)
+        Study_year= request.POST.get('study_year',None)
         Work = request.POST.get('work', None)
         Volunteer =request.POST.get('volunteer', None)
         Detail_work=request.POST.get('detail_work', None)
         Detail_vol = request.POST.get('detail_vol', None)
         context = {}
-        context['userid'] = Uid
+        #context['userid'] = Uid
         try:
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
-            test2 = UserProfile(StudentId=Major,Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            id = user.studentId
+            test2 = UserProfile(StudentId=id, Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'test2.html')
+            return render(request, 'portfolio.html')
         except Student.DoesNotExist:
             #return render(request, 'login.html')
             return render(request,'index.html')
     else:
-        return render(request, 'test2.html')
+        return render(request, 'current_profile.html')
