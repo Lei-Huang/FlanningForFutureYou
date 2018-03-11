@@ -72,7 +72,7 @@ class BadgeInfo(models.Model):
 
 class UserProfile(models.Model):
     # Todo check on_delete
-    StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     ProfileYear = models.CharField(max_length=20)
     ProfileType = models.CharField(max_length=20)
     NetworkTree = models.CharField(max_length=30)
