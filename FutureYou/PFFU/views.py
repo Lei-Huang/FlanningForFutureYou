@@ -9,6 +9,21 @@ def index(request):
 def portfolio(request):
     return render(request, 'portfolio.html')
 
+def workshops(request):
+    return render(request, 'portfolio_subpages/workshops.html')
+
+def understanding_yourself(request):
+    return render(request, 'portfolio_subpages/understanding_yourself.html')
+
+def research_employer(request):
+    return render(request, 'portfolio_subpages/research_employer.html')
+
+def interview_skill(request):
+    return render(request, 'portfolio_subpages/interview_skill.html')
+
+def career_goal(request):
+    return render(request, 'portfolio_subpages/career_goal.html')
+
 def log(request):
     return render(request, 'test.html')
 
