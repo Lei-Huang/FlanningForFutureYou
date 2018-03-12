@@ -9,6 +9,9 @@ def index(request):
 def portfolio(request):
     return render(request, 'portfolio.html')
 
+def profile(request):
+    return render(request, 'portfolio_subpages/profile.html')
+
 def workshops(request):
     return render(request, 'portfolio_subpages/workshops.html')
 

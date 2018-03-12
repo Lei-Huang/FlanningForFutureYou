@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="update session function and make profile page working">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/Preloader_7.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/click.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/front-image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/profile-thum.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/profile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/simpletextrotator.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/isotope.pkgd.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/jQueryTween-aio-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/jquery.simple-text-rotator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/jquery.tabslet.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/progressbar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/PFFU/urls.py" afterPath="$PROJECT_DIR$/FutureYou/PFFU/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/PFFU/views.py" afterPath="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" afterPath="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -60,11 +45,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="research_employer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/research_employer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,13 +187,13 @@
         <option value="$PROJECT_DIR$/FutureYou/templates/test.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/test2.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/index.html" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/urls.py" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio.html" />
         <option value="$USER_HOME$/Downloads/sum_of_squares.py" />
         <option value="$PROJECT_DIR$/FutureYou/templates/current_profile.html" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/models.py" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/urls.py" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
       </list>
     </option>
   </component>
@@ -199,8 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -331,6 +354,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -528,6 +553,7 @@
       <workItem from="1520400200531" duration="1931000" />
       <workItem from="1520848793476" duration="370000" />
       <workItem from="1520849222376" duration="147000" />
+      <workItem from="1520850083655" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial model for website">
       <created>1503575021694</created>
@@ -694,7 +720,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53235000" />
+    <option name="totallyTimeSpent" value="53533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,13 +839,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LeiHuang.com/lei_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/s6.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1033,14 +1052,6 @@
     <entry file="file://$PROJECT_DIR$/../hom2/sum_of_squares.py" />
     <entry file="file://$PROJECT_DIR$/../hom2/testing.py" />
     <entry file="file://$PROJECT_DIR$/../hom2/test_hw2.py" />
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1926">
-          <caret line="107" column="49" lean-forward="false" selection-start-line="107" selection-start-column="49" selection-end-line="107" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1055,28 +1066,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/current_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#4;n#table#0;n#fieldset#0;n#form#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#5;n#table#0;n#fieldset#0;n#form#0;n#center#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,30 +1089,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile/images/resume/skills.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/profile/images/resume/skills.png" />
+    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_03.png" />
+    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_02.png" />
+    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_01.png" />
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/research_employer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_02.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile/images/resume/icon_01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
           <folding />
         </state>
       </provider>

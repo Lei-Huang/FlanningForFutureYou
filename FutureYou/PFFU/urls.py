@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^index', PFFU.views.index, name='index'),
     url(r'^portfolio', PFFU.views.portfolio, name='portfolio'),
     url(r'^current_profile', PFFU.views.current_profile, name='current_profile'),
+    url(r'^profile', PFFU.views.profile, name='profile'),
     url(r'^workshops', PFFU.views.workshops, name='workshops'),
     url(r'^understanding_yourself', PFFU.views.understanding_yourself, name='understanding_yourself'),
     url(r'^research_employer', PFFU.views.research_employer, name='research_employer'),
