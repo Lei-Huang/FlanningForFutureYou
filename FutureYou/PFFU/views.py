@@ -10,6 +10,21 @@ def portfolio(request):
     return render(request, 'portfolio.html')
 
 def profile(request):
+    if request.method == 'POST':
+        context = {}
+        try:
+            user = Student.objects.get(studentId=request.session['userName'])
+            username=user.FirstName
+            context['username'] = username
+            # do something with user
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'portfolio.html',context)
+        except Student.DoesNotExist:
+            #return render(request, 'login.html')
+            return render(request,'index.html')
+    else:
+            return render(request, 'portfolio_subpages/profile.html')
+
     return render(request, 'portfolio_subpages/profile.html')
 
 def workshops(request):

@@ -5,43 +5,39 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
-<!-- Basic Page Needs
-================================================== -->
-<title>Profile</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="">
-<meta name="author" content="">
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Mobile Specific Metas 
-================================================== -->
-<meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
 
-<!-- Favicons
-================================================== -->
-<link rel="shortcut icon" href="images/favicon.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-<!--fonts
-====================================================-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
-<!--stylesheets
-====================================================-->
-<link rel="stylesheet" type="text/css" href="{% static "PFFU/css/bootstrap.min.css" %}">
-<link rel="stylesheet" type="text/css" href="{% static "PFFU/css/font-awesome.min.css" %}">
-<link rel="stylesheet" type="text/css" href="{% static "PFFU/css/profile.css"%}">
-<link rel="stylesheet" type="text/css" href="{% static "PFFU/css/simpletextrotator.css"%}">
+    <!--fonts
+    ====================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
+    <!--stylesheets
+    ====================================================-->
+    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/font-awesome.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/profile.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/simpletextrotator.css" %}">
 
-
-
-<!--[if lt IE 9]>
-	<script src="{% static "http://html5shim.googlecode.com/svn/trunk/html5.js"%}"></script>
-
-<![endif]-->
-
-<script src="{% static "PFFU/js/jquery.min.js"%}"></script> <!-- JQUERY -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="{% static "PFFU/js/jquery.min.js"%}"></script> <!-- JQUERY -->
 </head>
 <body>
 
@@ -49,92 +45,91 @@
 
 <div class="loading-screen"></div>
 
-<div id="frontpage"> 
-	<div class="shadow-img"></div> 
-	<img src="{% static "PFFU/img/front-image.png" %}"  class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
-
-	<h1><U>Lei <span class="invert">Huang</span></U></h1><!--PROFILE NAME-->
-	<h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;"><U>Software <span class="rotate">Developer, Designer, Artist</span></U></h3> <!--SUBTITLE IN PROFILE-->
-	<div class="frontclick"><img src="{% static "PFFU/img/click.png" %}" alt="" class="img-responsive"><span class="pulse"></span></div>
+<div id="frontpage">
+    <div class="shadow-img"></div>
+    <img src="{% static "PFFU/img/front-image.png" %}" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
+    <h1><U>Lei <span class="invert">Huang</span></U></h1><!--PROFILE NAME-->
+    <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;"><U>Software <span class="rotate">Developer, Designer, Artist</span></U></h3> <!--SUBTITLE IN PROFILE-->
+    <div class="frontclick"><img src="{% static "PFFU/img/click.png"%}" alt="" class="img-responsive"><span class="pulse"></span></div>
 </div>
 <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
 
 <!--container-->
 <div class="container">
-	<div id="content" class="row hidden">
-		<div class="col-sm-4">
-			<!--namecard-->
-			<div id="namecard" class="namecard">
-				<div class="shadow-img"></div>
-				<h1 class="maintitle"><U>Lei <span class="invert">Huang</span></U></h1><!--PROFILE NAME-->
-				<h3 class="invert sub-maintitle"><U>Software
-					<span class="rotate">Developer, Designer, Artist</span><!--SUBTITLE AFTET NAME-->
-				</U></h3>
-				<img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile-thum.png" %}" alt="profile-image"><!--PROFILE IMAGE-->
-			</div><!--/#namecard-->
+    <div id="content" class="row hidden">
+        <div class="col-sm-4">
+            <!--namecard-->
+            <div id="namecard" class="namecard">
+                <div class="shadow-img"></div>
+                <h1 class="maintitle"><U>Lei <span class="invert">Huang</span></U></h1><!--PROFILE NAME-->
+                <h3 class="invert sub-maintitle"><U>Software
+                    <span class="rotate">Developer, Designer, Artist</span><!--SUBTITLE AFTET NAME-->
+                </U></h3>
+                <img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile-thum.png"%}" alt="profile-image"><!--PROFILE IMAGE-->
+            </div><!--/#namecard-->
 
-			<!--menu-->
-			<div id="menu-container">
-				<!--PAGE MENU-->
-				<ul class="nav-menu no-padding">
-					<li class="nav-btn selected" title="Home" data-page="home">
-						<div class="hover-background"></div>
-						<span>Home</span><i class="fa fa-user fa-fw"></i>
-					</li>
-				</ul><!--/.nav-menu __PAGE MENU ENDS-->
+            <!--menu-->
+            <div id="menu-container">
+                <!--PAGE MENU-->
+                <ul class="nav-menu no-padding">
+                    <li class="nav-btn selected" title="Home" data-page="home">
+                        <div class="hover-background"></div>
+                        <span>Home</span><i class="fa fa-user fa-fw"></i>
+                    </li>
+                </ul><!--/.nav-menu __PAGE MENU ENDS-->
 
-			</div><!--#menu-container-->
-		</div>
+            </div><!--#menu-container-->
+        </div>
 
-		<div class="col-sm-8 page-segment">
-			<ul class="page-container no-padding">
-				<!--HOME/PROFILE PAGE-->
-				<li id="home" class="selected">
-					<div class="title-container hidden">
-						<div class="shadow-img"></div> 
-						<h2 class="rotate-out">Welcome To <span class="invert">My Profile</span></h2><!--HOME TITLE-->                          
-					</div>
-					<div class="description hidden">
-						<div class="watermark-home"></div> 
+        <div class="col-sm-8 page-segment">
+            <ul class="page-container no-padding">
+                <!--HOME/PROFILE PAGE-->
+                <li id="home" class="selected">
+                    <div class="title-container hidden">
+                        <div class="shadow-img"></div>
+                        <h2 class="rotate-out">Welcome To <span class="invert">My Profile</span></h2><!--HOME TITLE-->
+                    </div>
+                    <div class="description hidden">
+                        <div class="watermark-home"></div>
 
-						<div class="fade-text transparent">
-							<!--DESCRIPTION ON HOME-->
-							<div class="strong-text">Hello, I am <span><U>Lei Huang</U></span></div>
-							<div class="focus-text"><span><U>Software Developer & </U></span><span><U>Web Designer</U></span></div>
-							<p class="large-paragraph">I am a current <U>postgraduate</U> student in Australian National University majored in <U>software engineering</U>. <U>I hold a BEng degree in Product design and manufuacture from University of Nottingham. I have one year experience as a product designer and I have a love of clean, elegant styling. Recently I am practicing my design skills in web/interface design for modern websites.</U></p>
-							<!--DESCRIPTION ON HOME ENDS-->
-						</div>
+                        <div class="fade-text transparent">
+                            <!--DESCRIPTION ON HOME-->
+                            <div class="strong-text">Hello, I am <span><U>Lei Huang</U></span></div>
+                            <div class="focus-text"><span><U>Software Developer & </U></span><span><U>Web Designer</U></span></div>
+                            <p class="large-paragraph">I am a current <U>postgraduate</U> student in Australian National University majored in <U>software engineering</U>. <U>I hold a BEng degree in Product design and manufuacture from University of Nottingham. I have one year experience as a product designer and I have a love of clean, elegant styling. Recently I am practicing my design skills in web/interface design for modern websites.</U></p>
+                            <!--DESCRIPTION ON HOME ENDS-->
+                        </div>
 
-						<!--ALL PERSONAL DETAILS-->
-						<h3 class="personal-info-title title">Personal Info</h3>
-						<ul class="personal-info">
-							<li class="rotate-out rotated"><label>Name</label><span><U>Lei Huang</U></span></li>
-							<li class="rotate-out rotated"><label>Email</label><span><U>arley_huang@163.com</U></span></li>
-							<li class="rotate-out rotated"><label>Phone</label><span><U>+61 416680813</U></span></li>
-						</ul><!--/ul.personal-info-->
-					</div>
-				</li><!--/#home-->
+                        <!--ALL PERSONAL DETAILS-->
+                        <h3 class="personal-info-title title">Personal Info</h3>
+                        <ul class="personal-info">
+                            <li class="rotate-out rotated"><label>Name</label><span><U>Lei Huang</U></span></li>
+                            <li class="rotate-out rotated"><label>Email</label><span><U>arley_huang@163.com</U></span></li>
+                            <li class="rotate-out rotated"><label>Phone</label><span><U>+61 416680813</U></span></li>
+                        </ul><!--/ul.personal-info-->
+                    </div>
+                </li><!--/#home-->
 
-				<!--CONTACT PAGE-->
-				<li id="contact" class="hidden">
-					<div class="title-container" >
-						<div class="shadow-img"></div>
-					   <h2 class="rotate-out rotated">Contact</h2><!--CONTACT PAGE TITLE-->
-					</div>
-					<div class="description">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="map-container">
-									<div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
-								</div>
-							</div>
-						</div>
-					</div>
-				</li><!--/#contact-->
-			</ul>
-		</div><!--/.page-segment -->
-		<h6 class="copyright-text">Copyright © 2017 PlanningForFutureYou </h6> --> <!--if anyone wants copyright Texts-->
-	</div>
+                <!--CONTACT PAGE-->
+                <li id="contact" class="hidden">
+                    <div class="title-container" >
+                        <div class="shadow-img"></div>
+                        <h2 class="rotate-out rotated">Contact</h2><!--CONTACT PAGE TITLE-->
+                    </div>
+                    <div class="description">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="map-container">
+                                    <div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li><!--/#contact-->
+            </ul>
+        </div><!--/.page-segment -->
+        <h6 class="copyright-text">Copyright © 2017 PlanningForFutureYou </h6> --> <!--if anyone wants copyright Texts-->
+    </div>
 </div><!--/.container -->
 
 
@@ -151,9 +146,7 @@
 <script type="text/javascript" src="{% static "PFFU/js/jquery.simple-text-rotator.min.js"%}"></script> <!-- JQUERY Text Rotator-->
 <script type="text/javascript" src="{% static "PFFU/js/bootstrap.min.js"%}"></script> <!-- Bootstrap file-->
 <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBPNkCVoBW_Jzl6x-hgGU6e7QW1QMwKles"></script>
-<script type="text/javascript" src="{% static "PFFU/js/isotope.pkgd.min.js'></script>
+<script type="text/javascript" src="{% static "PFFU/js/isotope.pkgd.min.js"%}"></script>
 <script type="text/javascript" src="{% static "PFFU/js/custom.js"%}"></script>
 </body>
 </html>
-
-
