@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="update session function and make profile page working">
+    <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" afterPath="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" afterPath="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="85" column="14" lean-forward="true" selection-start-line="84" selection-start-column="40" selection-end-line="85" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -37,28 +37,28 @@
       <file leaf-file-name="lei_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeiHuang.com/lei_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="83" column="94" lean-forward="true" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="94" lean-forward="false" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+            <state relative-caret-position="1320">
+              <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="profile.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1613">
-              <caret line="471" column="23" lean-forward="true" selection-start-line="471" selection-start-column="23" selection-end-line="471" selection-end-column="23" />
+            <state relative-caret-position="120">
+              <caret line="551" column="0" lean-forward="false" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+            <state relative-caret-position="2100">
+              <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -130,9 +130,9 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Mengyao  Zhang &lt;u6020717@anu.edu.au&gt;" />
         <option value="Wei  Wei &lt;u6137273@anu.edu.au&gt;" />
         <option value="Lei Huang &lt;u6041747@anu.edu.au&gt;" />
-        <option value="Mengyao  Zhang &lt;u6020717@anu.edu.au&gt;" />
       </list>
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/FutureYou/templates/index.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" />
       </list>
     </option>
   </component>
@@ -202,7 +202,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="42" />
-    <option name="y" value="30" />
+    <option name="y" value="23" />
     <option name="width" value="1179" />
     <option name="height" value="709" />
   </component>
@@ -221,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -408,7 +409,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -428,19 +428,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\WebSite" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\img" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FutureYou/templates" />
       <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
       <recent name="$PROJECT_DIR$/FutureYou/PFFU" />
       <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css" />
       <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\WebSite" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\img" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU\js" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -593,7 +593,8 @@
       <workItem from="1520908700133" duration="60000" />
       <workItem from="1520914609792" duration="3306000" />
       <workItem from="1520989875591" duration="467000" />
-      <workItem from="1520990505994" duration="2134000" />
+      <workItem from="1520990505994" duration="2280000" />
+      <workItem from="1520993348408" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial model for website">
       <created>1503575021694</created>
@@ -791,11 +792,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520836708188</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add a button">
+      <created>1520992668045</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1520992668046</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62619000" />
+    <option name="totallyTimeSpent" value="62979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,18 +815,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="30" width="1179" height="709" extended-state="0" />
+    <frame x="42" y="23" width="1179" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49654576" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30983606" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2068404" sideWeight="0.48963732" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27228525" sideWeight="0.4871407" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990228" sideWeight="0.49654576" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -831,6 +837,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990228" sideWeight="0.49654576" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -838,6 +845,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -876,7 +884,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change font page &quot;p&quot; color and improve the page" />
     <MESSAGE value="Change facebook share button" />
     <MESSAGE value="Change email address and navigation bar" />
     <MESSAGE value="add talent tree initial page" />
@@ -901,7 +908,8 @@
     <MESSAGE value="add href in each button" />
     <MESSAGE value="Modify comments" />
     <MESSAGE value="write workshops pages add hyper link in text" />
-    <option name="LAST_COMMIT_MESSAGE" value="write workshops pages add hyper link in text" />
+    <MESSAGE value="add a button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1157,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeiHuang.com/lei_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="83" column="94" lean-forward="true" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
+        <state relative-caret-position="1245">
+          <caret line="83" column="94" lean-forward="false" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
           <folding />
         </state>
       </provider>
@@ -1175,7 +1183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="1184" lean-forward="false" selection-start-line="3" selection-start-column="1184" selection-end-line="3" selection-end-column="1184" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,15 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,22 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1613">
-          <caret line="471" column="23" lean-forward="true" selection-start-line="471" selection-start-column="23" selection-end-line="471" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="72" column="32" lean-forward="true" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1229,8 +1211,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="88" column="34" lean-forward="true" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+        <state relative-caret-position="1320">
+          <caret line="88" column="34" lean-forward="false" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="85" column="14" lean-forward="true" selection-start-line="84" selection-start-column="40" selection-end-line="85" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="551" column="0" lean-forward="false" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
           <folding />
         </state>
       </provider>
