@@ -33,6 +33,12 @@ def workshops(request):
 def understanding_yourself(request):
     return render(request, 'portfolio_subpages/understanding_yourself.html')
 
+def understanding_yourself_yes(request):
+    return render(request, 'portfolio_subpages/understanding_yourself_yes.html')
+
+def understanding_yourself_no(request):
+    return render(request, 'portfolio_subpages/understanding_yourself_no.html')
+
 def research_employer(request):
     return render(request, 'portfolio_subpages/research_employer.html')
 
