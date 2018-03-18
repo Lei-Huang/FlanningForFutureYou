@@ -41,9 +41,6 @@ def understanding_yourself(request):
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
 
-def uy_no(request):
-    return render(request, 'portfolio_subpages/uy_no.html')
-
 def research_employer(request):
     return render(request, 'portfolio_subpages/research_employer.html')
 

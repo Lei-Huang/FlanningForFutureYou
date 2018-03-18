@@ -20,7 +20,6 @@ urlpatterns = [
     url(r'^workshops', PFFU.views.workshops, name='workshops'),
     url(r'^understanding_yourself', PFFU.views.understanding_yourself, name='understanding_yourself'),
     url(r'^uy_yes', PFFU.views.uy_yes, name='uy_yes'),
-    url(r'^uy_no', PFFU.views.uy_no, name='uy_no'),
     url(r'^research_employer', PFFU.views.research_employer, name='research_employer'),
     url(r'^interview_skill', PFFU.views.interview_skill, name='interview_skill'),
     url(r'^career_goal', PFFU.views.career_goal, name='career_goal')
