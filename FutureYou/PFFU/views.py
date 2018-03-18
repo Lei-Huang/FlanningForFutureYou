@@ -114,6 +114,9 @@ def current_profile(request):
         context = {}
         #context['userid'] = Uid
         try:
+            return render(request,'UserExist.html')
+        
+        except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
@@ -123,8 +126,6 @@ def current_profile(request):
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'portfolio.html')
-        except Student.DoesNotExist:
             #return render(request, 'login.html')
-            return render(request,'index.html')
     else:
         return render(request, 'current_profile.html')
