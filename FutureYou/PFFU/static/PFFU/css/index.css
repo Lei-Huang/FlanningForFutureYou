@@ -17,6 +17,7 @@ body {
 h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
+h5 {font-size: 32px; color: #97f7ff; }
 
 p{
     letter-spacing: 1px;
