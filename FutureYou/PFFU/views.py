@@ -6,26 +6,31 @@ from django.core.exceptions import *
 def index(request):
     return render(request, 'index.html')
 
+
 def portfolio(request):
-    return render(request, 'portfolio.html')
+        return render(request, 'portfolio.html')
+
 
 def profile(request):
-    if request.method == 'POST':
+    if request.method == 'GET':
         context = {}
         try:
             user = Student.objects.get(studentId=request.session['userName'])
-            username=user.FirstName
-            context['username'] = username
+            userProfile = UserProfile.objects.get(StudentId=user)
+            context['Lastname'] = user.LastName
+            context['Firstname']=user.FirstName
+            context['Dis']=user.Discipline
+            context['degree'] = user.Degree
+            context['exp'] =  userProfile.Work_exp
+            context['skill']=userProfile.Detail_work
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'portfolio.html',context)
+            return render(request, 'portfolio_subpages/profile.html',context)
         except Student.DoesNotExist:
             #return render(request, 'login.html')
             return render(request,'index.html')
     else:
             return render(request, 'portfolio_subpages/profile.html')
-
-    return render(request, 'portfolio_subpages/profile.html')
 
 def workshops(request):
     return render(request, 'portfolio_subpages/workshops.html')
