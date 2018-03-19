@@ -3,6 +3,7 @@ from django.shortcuts import HttpResponse
 from .models import *
 from django.core.exceptions import *
 
+
 def index(request):
     return render(request, 'index.html')
 
@@ -35,8 +36,10 @@ def profile(request):
 def workshops(request):
     return render(request, 'portfolio_subpages/workshops.html')
 
+
 def understanding_yourself(request):
     return render(request, 'portfolio_subpages/understanding_yourself.html')
+
 
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
@@ -44,14 +47,18 @@ def uy_yes(request):
 def research_employer(request):
     return render(request, 'portfolio_subpages/research_employer.html')
 
+
 def interview_skill(request):
     return render(request, 'portfolio_subpages/interview_skill.html')
+
 
 def career_goal(request):
     return render(request, 'portfolio_subpages/career_goal.html')
 
+
 def log(request):
     return render(request, 'test.html')
+
 
 def search(request):
     context = {}
@@ -64,6 +71,8 @@ def search(request):
             #html = (userName,"<H1>Success!</H1>")
             #context['userName'] = userName
             request.session['userName'] = userName
+            request.session.set_expiry(300)
+            #request.session.clear()
             return render(request,'index.html')
             #return HttpResponse(html)
         except Login.DoesNotExist:
@@ -71,6 +80,16 @@ def search(request):
     else:
         return render(request,'login.html')
 
+
+
+def logout(request):
+    if request.method == 'POST':
+            request.session.clear()
+            return render(request,'index.html')
+            #return HttpResponse(html)
+    else:
+        request.session.clear()
+        return render(request,'index.html')
 
 def register(request):
     if request.method == 'POST':
@@ -112,7 +131,7 @@ def current_profile(request):
         #context['userid'] = Uid
         try:
             return render(request,'UserExist.html')
-        
+
         except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
