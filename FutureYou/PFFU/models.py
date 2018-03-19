@@ -1,22 +1,10 @@
 from django.db import models
 
 
-class Publisher(models.Model):
-    name = models.CharField(max_length=30)
-    address = models.CharField(max_length=50)
-    city = models.CharField(max_length=60)
-    state_province = models.CharField(max_length=30)
-    country = models.CharField(max_length=50)
-    website = models.URLField()
-
-    def __str__(self):
-        return self.name
-
-
 
 class Student(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    studentId = models.CharField(max_length=100, blank=True, default='')
+    studentId = models.CharField(max_length=100, default='', primary_key = True)
     FirstName = models.CharField(max_length=60)
     LastName = models.CharField(max_length=60)
     Degree= models.CharField(max_length=30)
@@ -41,7 +29,7 @@ class Login(models.Model):
 
 class Staff(models.Model):
     Created = models.DateTimeField(auto_now_add=True)
-    StaffId = models.CharField(max_length=100, blank=True, default='')
+    StaffId = models.CharField(max_length=100, default='', primary_key = True)
     FirstName = models.CharField(max_length=60)
     LastName = models.CharField(max_length=60)
     Email = models.EmailField(blank=True, verbose_name='e-mail')
@@ -55,63 +43,72 @@ class Staff(models.Model):
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
     #highlighted = models.TextField()
 
-class MainEvent(models.Model):
-    EventId = models.CharField(max_length=20)
-    EvenType = models.CharField(max_length=20)
-    EventDate= models.DateTimeField()
-    EventContent = models.TextField()
-
-
-class BadgeInfo(models.Model):
-    BageInfoId = models.CharField(max_length=20)
-    BageName = models.CharField(max_length=40)
-    Deprecation = models.TextField()
-    Relatiom = models.CharField(max_length=50)
-    Imageurl = models.URLField()
 
 
 class UserProfile(models.Model):
     # Todo check on_delete
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
-    ProfileYear = models.CharField(max_length=20)
-    ProfileType = models.CharField(max_length=20)
-    NetworkTree = models.CharField(max_length=30)
-    SkillTree = models.CharField(max_length=30)
-    ExperienceTree = models.CharField(max_length=30)
-    PreparationTree = models.CharField(max_length=30)
+    StudyYear = models.CharField(max_length=20)
+    FirstProgram = models.CharField(max_length=100)
+    SecondProgram = models.CharField(max_length=100)
+    FirstMajor = models.CharField(max_length=100)
+    SecondMajor = models.CharField(max_length=100)
+    # ProfileType = models.CharField(max_length=20)
+    # NetworkTree = models.CharField(max_length=30)
+    # SkillTree = models.CharField(max_length=30)
+    # ExperienceTree = models.CharField(max_length=30)
+    # PreparationTree = models.CharField(max_length=30)
     Work_exp = models.CharField(max_length=30)
     Volunteer_exp = models.CharField(max_length=30)
     Detail_work = models.TextField()
     Detail_volunteer=models.TextField()
-    Network = models.TextField()
-    Skill = models.TextField()
-    Experience = models.TextField()
-    Preparation = models.TextField()
-    Notes = models.TextField()
+    # Network = models.TextField()
+    # Skill = models.TextField()
+    # Experience = models.TextField()
+    # Preparation = models.TextField()
+    # Notes = models.TextField()
 
 
-class Badge(models.Model):
-    BadgeId = models.CharField(max_length=20)
-    BadgeStatus = models.CharField(max_length=30)
-    # Todo check on_delete
-    BadgeInfo = models.ForeignKey(BadgeInfo,on_delete=models.CASCADE)
+class ProgressionBar(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    CurrentProgress = models.IntegerField(default='')
 
 
-class Incentive(models.Model):
-    IncentiveId = models.CharField(max_length=20)
-    IncentiveType = models.CharField(max_length=30)
-    Description = models.TextField()
+class CareerVoyage(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
 
 
-class Points(models.Model):
-    PointsId = models.CharField(max_length=20)
-    CurrentPoints = models.CharField(max_length=20)
+class CareerValue(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
+    FileLink = models.CharField(max_length=100)
 
 
-class UserEvent(models.Model):
-    # Todo check on_delete
-    StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
-    UserEventId = models.CharField(max_length=20)
-    UserEventType = models.CharField(max_length=20)
-    UserEventDate = models.DateTimeField()
-    UserEventContent = models.TextField()
+class CareerGoal(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
+    FormInfo = models.CharField(max_length=200)
+
+
+class ResearchEmployer(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
+
+
+class ResearchJob(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
+
+
+class InterviewSkills(models.Model):
+    StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
+    Status = models.BooleanField(default=True)
+
+
+# class UserEvent(models.Model):
+#     StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
+#     UserEventId = models.CharField(max_length=20)
+#     UserEventType = models.CharField(max_length=20)
+#     UserEventDate = models.DateTimeField()
+#     UserEventContent = models.TextField()
