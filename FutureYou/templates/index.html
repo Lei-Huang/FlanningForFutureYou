@@ -139,9 +139,12 @@ LOGIN SECTION
             });
         }
     </script>
-    <input type="button" class="btn" value="LOGIN" onclick="{location.href='/login.html'}"/>
-    <input type="button" class="btn" value="REGISTER" onclick="{location.href='/signup.html'}"/>
-    <input type="button" class="btn" value="LOGOUT" onclick="{location.href='/index.html'}"/>
+    <form id="index" method="POST" action="index.html">
+        {% csrf_token %}
+        <input type="button" class="btn" value="LOGIN" onclick="{location.href='/login.html'}"/>
+        <input type="button" class="btn" value="REGISTER" onclick="{location.href='/signup.html'}"/>
+        <input type="submit" name="submit" class="btn action-button" value="LOGOUT" />
+    </form>
 </div>
 
 

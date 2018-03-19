@@ -94,7 +94,7 @@ def logout(request):
             return render(request,'index.html')
             #return HttpResponse(html)
     else:
-        request.session.clear()
+        #request.session.clear()
         return render(request,'index.html')
 
 def register(request):
