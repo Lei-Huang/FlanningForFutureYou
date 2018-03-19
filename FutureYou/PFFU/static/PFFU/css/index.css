@@ -25,7 +25,6 @@ p{
 
 }
 
-
 /*================================
 DEFAULT STYLE & FORMATING
 ================================*/
@@ -107,6 +106,21 @@ LOGIN SECTION
 }
 .btn:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.submit{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.reset{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /*================================
