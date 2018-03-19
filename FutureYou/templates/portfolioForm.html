@@ -16,14 +16,22 @@
                             <legend>Portfolio Information</legend>
                             <table>
                                 <tr>
-                                    <td align="right">Major：</td>
+                                    <td align="right">Program：</td>
+                                    <td><input type="text" name="program"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Major1：</td>
                                     <td><input type="text" name="major"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Major2：</td>
+                                    <td><input type="text" name="major2"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Study Year：</td>
                                     <td>
                                         <select name="study_year"/>
-                                        <option value="early">Early Degree</option>
+                                        <option value="early">First Year</option>
                                         <option value="middle">Mid-Degree or Penultimate Year</option>
                                         <option value="final">Final Year</option>
                                         </select>
@@ -37,16 +45,32 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td align="right">Working Period：</td>
+                                    <td>From <input type="text" name="work_p_s"/> to <input type="text" name="work_p_e"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Organization：</td>
+                                    <td><input type="text" name="work_org"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Job Title：</td>
+                                    <td><input type="text" name="title"/></td>
+                                </tr>
+                                <tr>
+                                    <td align="right">Detail about work experience：</td>
+                                    <td><input type="text" name="detail_work" style="height:60px;width:400px" /></td>
+                                </tr>
+                                <tr>
                                     <td align="right">Volunteer Experience：</td>
                                     <td><input type="radio" name="volunteer" value="vol_no"/>None
                                         <input type="radio" name="volunteer" value="vol_yes"/>Yes
                                     </td>
                                 </tr>
-
                                 <tr>
-                                    <td align="right">Detail about work experience：</td>
-                                    <td><input type="text" name="detail_work" style="height:60px;width:400px" /></td>
+                                    <td align="right">Organization：</td>
+                                    <td><input type="text" name="vol_org"/></td>
                                 </tr>
+
                                 <tr>
                                     <td align="right">Detail about volunteer experience：</td>
                                     <td><input type="text" name="detail_vol" style="height:60px;width:400px"/></td>
