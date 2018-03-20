@@ -45,6 +45,11 @@ def workshops(request):
 def understanding_yourself(request):
     return render(request, 'portfolio_subpages/understanding_yourself.html')
 
+def employability_skill(request):
+    return render(request, 'portfolio_subpages/employability_skill.html')
+
+def future_skill(request):
+    return render(request, 'portfolio_subpages/future_skill.html')
 
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
