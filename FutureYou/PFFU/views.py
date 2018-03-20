@@ -82,7 +82,7 @@ def search(request):
             #context['userName'] = userName
             request.session['userName'] = userName
             request.session.set_expiry(300)
-            context1['username'] = request.session['userName']
+            context1['userName'] = request.session['userName']
             #request.session.clear()
             return render(request,'index.html',context1)
             #return HttpResponse(html)
