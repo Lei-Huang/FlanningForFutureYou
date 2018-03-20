@@ -38,6 +38,19 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="{% static "PFFU/js/jquery.min.js"%}"></script> <!-- JQUERY -->
+    <script language="javascript" type="text/javascript">
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function edit(obj) {
+            var inp = obj.getElementsByTagName("input");
+            for (var i=0,len=inp.length;i<len;i++)
+                {
+                    inp[i].readOnly=false;
+                }
+        }
+    </script>
 </head>
 <body>
 
@@ -138,61 +151,54 @@
 
 
                     <div class="description">
-                        <h3>Personal Information</h3>
+                        <h3>Profile Information</h3>
+                        <p style="color: #7e7e7e">**Name and UID can not been changed</p>
 
                         <table border="1">
                             <tr>
                                 <td>Name</td>
-                                <td>XXX</td>
+                                <td>{{ Firstname }} {{ Lastname }}</td>
                             </tr>
                             <tr>
                                 <td>UID</td>
-                                <td>U*******</td>
+                                <td>u*******</td>
                             </tr>
                             <tr>
-                                <td>Program1</td>
-                                <td>Computing</td>
+                                <td>Program1 </td>
+                                <td class="s1"><input value="computer science" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Program2</td>
-                                <td></td>
+                                <td class="s2"><input value="program2" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major1</td>
-                                <td>Computing</td>
+                                <td class="s3"><input value="major1" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major2</td>
-                                <td></td>
+                                <td class="s4"><input value="major2" readonly="true"/></td>
                             </tr>
                             <tr>
-                                <td>Year of Study</td>
-                                <td></td>
+                                <td>Year of Study: (First Year/Mid-Degree/Final Year) </td>
+                                <td class="s5"><input value="year of study" readonly="true"/></td>
                             </tr>
-                            </table>
-                            <input type="button" class="edit_btn" value="Edit"/>
-                            <input type="button" class="save_btn" value="Save"/>
-                            <h3>Work Information</h3>
-                            <table border="1">
+
                             <tr>
-                                <td>Work and Volunteer Experience</td>
-                                <td>Y/N</td>
+                                <td>Work Type: (Causal/Full-time)</td>
+                                <td class="s6"><input value="Causal/Full-time" readonly="true"/></td>
                             </tr>
                             <tr>
-                                <td>Detail</td>
-                                <td>..</td>
+                                <td>Details of Work Experience:</td>
+                                <td class="s6"><input value="work experience" readonly="true"/></td>
                             </tr>
                             <tr>
-                                <td>Volunteer Experience</td>
-                                <td>Y/N</td>
-                            </tr>
-                            <tr>
-                                <td>Detail</td>
-                                <td>..</td>
+                                <td>Details of Volunteer Experience:</td>
+                                <td class="s6"><input value="volunteer experience" readonly="true"/></td>
                             </tr>
                         </table>
-                        <input type="button" class="edit_btn" value="Edit"/>
-                        <input type="button" class="save_btn" value="Save"/>
+                        <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>
+                        <input type="button" class="save_btn" value="Save"/></center>
                     </div>
                 </li>
                 <!--/#editInfor-->
