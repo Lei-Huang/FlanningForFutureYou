@@ -17,7 +17,7 @@ body {
 h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
-h5 {font-size: 18px; line-height: 1.4em; color: #9894aa;}/*for questions*/
+h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
 h6 {font-size: 18px; line-height: 1.4em; color: #ea9312;}/*for some answers*/
 
 p{
@@ -649,6 +649,25 @@ CareerGoal css begin
     width: 100%;
     color: #2C3E50;
     font-size: 15px;
+}
+
+
+.btn3{
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #2c3e50;
+    letter-spacing: 2px;
+}
+
+.btn3:hover{
+    background: none;
+    color: #ea9312;
+}
+
+.btn3icon, .brandicon{
+    margin-right: 10px;
 }
 /* Input end */
 
