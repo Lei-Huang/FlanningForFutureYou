@@ -709,37 +709,41 @@ h1.maintitle {
 	position: absolute;
 	bottom: 0px;
 	right: 15px;
-	background: url(../img/profile.png) no-repeat;
 	background-size: contain;
 	background-position: right;
 }
 .personal-info-title {
 	font-size: 22.5px;
-	margin-top: 65px;
+	margin-top: 25px;
 }
 .personal-info {
 	list-style: none;
 	padding: 0;
 }
+
+
 ul.personal-info li {
 	margin-bottom: 9px;
 	padding-left: 75px;
 	position: relative;
 	font-size: 12.5px;
 }
+
+
 .personal-info span {
 	background: #111111;
 	padding: 4px 10px 5px;
 	color: #fff;
-	display: inline-block;
+    display: inline-flex;
 	margin-left: 9px;
-	text-transform: capitalize;
 }
+
+
 
 .personal-info label {
 	position: absolute;
 	left: 0;
-	width: 75px;
+	width: 25px;
 	top: 0;
 	bottom: 0;
 	min-width: 75px;
@@ -747,9 +751,11 @@ ul.personal-info li {
 	font-weight: 600;
 	background: #f4d03f;
 	margin-right: 10px;
-	padding: 4px 10px 5px;
+	padding: 4px 4px 5px;
 	margin: 0;
 }
+
+
 
 
 

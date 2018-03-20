@@ -61,11 +61,11 @@
             <!--namecard-->
             <div id="namecard" class="namecard">
                 <div class="shadow-img"></div>
-                <h1 class="maintitle"><U>{{ Firstname }} <span class="invert">{{Lastname}}</span></U></h1><!--PROFILE NAME-->
+                <h1 class="maintitle"><U>{{ Firstname }}</U></h1><!--PROFILE NAME-->
                 <h3 class="invert sub-maintitle"><U>Software
                     <span class="rotate">Developer, Designer, Artist</span><!--SUBTITLE AFTET NAME-->
                 </U></h3>
-                <img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile-thum.png"%}" alt="profile-image"><!--PROFILE IMAGE-->
+                <img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile1.png"%}" alt="profile-image"><!--PROFILE IMAGE-->
             </div><!--/#namecard-->
 
             <!--menu-->
@@ -103,18 +103,28 @@
 
                         <div class="fade-text transparent">
                             <!--DESCRIPTION ON HOME-->
-                            <div class="strong-text">Hello, I am <span><U>{{ Firstname }} {{ Lastname }}</U></span></div>
-                            <div class="focus-text"><span><U>{{ Dis }} & </U></span><span><U>{{ degree }}</U></span></div>
-                            <p class="large-paragraph">I am a current <U>{{degree}}</U> student in Australian National University majored in <U>{{ Dis }}</U>.<U>{{ exp }}</U> <U>{{ skill }}</U></p>
+
                             <!--DESCRIPTION ON HOME ENDS-->
                         </div>
 
                         <!--ALL PERSONAL DETAILS-->
-                        <h3 class="personal-info-title title">Personal Info</h3>
+                        <h3 class="personal-info-title title">Personal Information</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>Name</label><span><U>{{ Firstname }} {{ Lastname }}</U></span></li>
-                            <li class="rotate-out rotated"><label>Email</label><span><U>arley_huang@163.com</U></span></li>
-                            <li class="rotate-out rotated"><label>Phone</label><span><U>+61 416680813</U></span></li>
+                            <li class="rotate-out rotated"><label>UID:</label><span><U>UID</U></span></li>
+                            <li class="rotate-out rotated"><label>Name:</label><span>{{ Firstname }} {{ Lastname }}</span></li>
+                            <li class="rotate-out rotated"><label>Email:</label><span><U>UID@anu.edu.au</U></span></li>
+                        </ul><!--/ul.personal-info-->
+
+                        <h3 class="personal-info-title title">Working Information</h3>
+                        <ul class="personal-info">
+                            <li class="rotate-out rotated"><label>Type: </label><span><U>no/causal/full-time</U></span></li>
+                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Detail of work</U></span></li>
+                        </ul><!--/ul.personal-info-->
+
+                        <h3 class="personal-info-title title">Volunteer Information</h3>
+                        <ul class="personal-info">
+                            <li class="rotate-out rotated"><label>Experience: </label><span><U>no/yes</U></span></li>
+                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Detail of volunteer</U></span></li>
                         </ul><!--/ul.personal-info-->
                     </div>
                 </li><!--/#home-->
@@ -123,7 +133,7 @@
                 <li id="resume" class="hidden">
                     <div class="title-container">
                         <div class="shadow-img"></div>
-                        <h2 class="rotate-out rotated"><span class="invert">Personal Information of</span> <U>Lei Huang</U></h2> <!--RESUME TITLE-->
+                        <h2 class="rotate-out rotated"><span class="invert">Personal Information of</span> <U>{{ Firstname }} {{ Lastname }}</U></h2> <!--RESUME TITLE-->
                     </div>
 
 
