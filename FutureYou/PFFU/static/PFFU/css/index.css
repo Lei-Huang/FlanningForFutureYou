@@ -18,7 +18,7 @@ h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 18px; line-height: 1.4em; color: #9894aa;}/*for questions*/
-h6 {font-size: 18px; line-height: 1.4em; color: #c474a8;}/*for some answers*/
+h6 {font-size: 18px; line-height: 1.4em; color: #ea9312;}/*for some answers*/
 
 p{
     letter-spacing: 1px;
@@ -480,7 +480,7 @@ FOLLOW BUTTON
 
 
 
-
+/*Portfolio bubble*/
 #bubblemenu li {
     display: inline;
     margin-left: 15px;
@@ -539,8 +539,64 @@ FOLLOW BUTTON
 }
 
 
+/*CareerGoal bubble*/
+
+#bubblecareer li {
+    display: inline;
+    margin-left: 15px;
+    cursor:pointer;
+}
 
 
+#bubblecareer li > div {
+
+    width: 600px;
+    height: 85px;
+    position: absolute;
+    display: inline;
+    margin-left: 200px;
+    padding: 5px;
+    visibility:hidden;
+    opacity: 0;
+    margin-top: -130px;
+    color: #f0eef9;
+    font-family: 'Helvetica Neue', cursive;
+
+    background-color: rgba(196, 116, 168, 0.6);
+    transition: all 0.4s ease-in-out;
+    font-size:1.15em;
+
+    /* Setting the border-radius property for all Browsers */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari and Chrome */
+    border-radius: 5px; /* Browsers that Support it like Opera */
+
+    /* Setting the box-shadow property for all Browsers */
+    -moz-box-shadow: 0 0 8px gray; /* Firefox */
+    -webkit-box-shadow: 0 0 8px gray; /* Safari and Chrome */
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#272229', Direction=135, Strength=3); /* IE */
+    box-shadow: 0 0 8px gray; /* Browsers that Support it like Opera */
+    /* Setting the transition property for all Browsers */
+    -moz-transition: all 0.5s ease-in-out; /* Firefox */
+    -webkit-transition: all 0.5s ease-in-out; /* Safari and Chrome */
+    -o-transition: all 0.5s ease-in-out; /* Opera */
+    transition: all 0.5s ease-in-out; /* Browsers that Support it */
+
+}
+
+
+#bubblecareer li:hover > div {
+
+    visibility:visible;
+    opacity: 1;
+    margin-top: -80px;
+
+    /* Setting the transition property for all Browsers */
+    -moz-transition: all 0.5s ease-in-out; /* Firefox */
+    -webkit-transition: all 0.5s ease-in-out; /* Safari and Chrome */
+    -o-transition: all 0.5s ease-in-out;  /* Opera */
+    transition: all 0.5s ease-in-out; /* Browsers that Support it */
+}
 
 
 
