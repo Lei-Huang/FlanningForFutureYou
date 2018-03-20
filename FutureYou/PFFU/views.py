@@ -79,7 +79,7 @@ def progress(request):
              user = Login.objects.get(StudentId=request.session.get('userName',None))
              user2= Student.objects.get(studentId=request.session['userName'])
              progression= ProgressionBar.objects.get(StudentId=user2)
-             context1['progressInteger'] = 5
+             context1['progressInt'] = int(progression.CurrentProgress)
              return render(request, 'portfolio.html',context1)
         except Login.DoesNotExist:
             return render(request, 'Needlogin.html')
@@ -98,7 +98,7 @@ def search(request):
             #html = (userName,"<H1>Success!</H1>")
             #context['userName'] = userName
             request.session['userName'] = userName
-            request.session.set_expiry(300)
+            request.session.set_expiry(3600)
             context1['userName'] = request.session['userName']
             #request.session.clear()
             return render(request,'index.html',context1)
