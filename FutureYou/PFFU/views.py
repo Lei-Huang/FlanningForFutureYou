@@ -152,6 +152,14 @@ def register(request):
 
 
 def current_profile(request):
+    if request.method == 'GET':
+        try:
+             user = Student.objects.get(studentId=request.session['userName'])
+             userPro=UserProfile.objects.get(StudentId=user)
+             return render(request,'portfolio_subpages/profile.html')
+        except UserProfile.DoesNotExist:
+            return render(request,'portfolio_subpages/profile.html')
+
     if request.method == 'POST':
         program = request.POST.get('program',None)
         program2 = request.POST.get('program2', None)
@@ -167,7 +175,7 @@ def current_profile(request):
         try:
             user = Student.objects.get(studentId=request.session['userName'])
             userPro=UserProfile.objects.get(StudentId=user)
-            return render(request,'profile.html')
+            return render(request,'portfolio_subpages/profile.html')
 
         except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
@@ -177,7 +185,7 @@ def current_profile(request):
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'portfolio_subpages/portfolio.html')
+            return render(request, 'portfolio.html')
             #return render(request, 'login.html')
     else:
         return render(request, 'current_profile.html')
