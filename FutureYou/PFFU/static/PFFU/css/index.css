@@ -17,7 +17,9 @@ body {
 h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
-h5 {font-size: 14px; color: #9894aa;}
+h5 {font-size: 18px; line-height: 1.4em; color: #9894aa;}/*for questions*/
+h6 {font-size: 18px; line-height: 1.4em; color: #c474a8;}/*for some answers*/
+
 p{
     letter-spacing: 1px;
     color: #afafaf;
