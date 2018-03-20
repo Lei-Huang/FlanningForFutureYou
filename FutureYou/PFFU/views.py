@@ -77,7 +77,10 @@ def progress(request):
     if request.method == 'GET':
         try:
              user = Login.objects.get(StudentId=request.session.get('userName',None))
-             return render(request, 'portfolio.html',)
+             user2= Student.objects.get(studentId=request.session['userName'])
+             progression= ProgressionBar.objects.get(StudentId=user2)
+             context1['progressInteger'] = 5
+             return render(request, 'portfolio.html',context1)
         except Login.DoesNotExist:
             return render(request, 'Needlogin.html')
     else:
@@ -136,10 +139,12 @@ def register(request):
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'UserExist.html',context)
         except Student.DoesNotExist:
-            test1=Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
-            test2=Login(StudentId=Uid,password=Password)
+            test1 = Student(studentId=Uid,FirstName=FName,LastName=LName,Degree=Degree,Discipline=Dis,graduation_year=GDate)
+            test2 = Login(StudentId=Uid,password=Password)
+            test3 = ProgressionBar(StudentId=test1,CurrentProgress=0)
             test1.save()
             test2.save()
+            test3.save()
             #return render(request, 'login.html')
             return render(request,'register_success.html')
     else:
@@ -162,17 +167,17 @@ def current_profile(request):
         try:
             user = Student.objects.get(studentId=request.session['userName'])
             userPro=UserProfile.objects.get(StudentId=user)
-            return render(request,'UserExist.html')
+            return render(request,'profile.html')
 
         except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
-            test2 = UserProfile (StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'portfolio.html')
+            return render(request, 'portfolio_subpages/portfolio.html')
             #return render(request, 'login.html')
     else:
         return render(request, 'current_profile.html')
