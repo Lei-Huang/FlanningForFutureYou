@@ -22,6 +22,7 @@ def profile(request):
         try:
             user = Student.objects.get(studentId=request.session['userName'])
             userProfile = UserProfile.objects.get(StudentId=user)
+            context['Uid'] = user.studentId
             context['Lastname'] = user.LastName
             context['Firstname']=user.FirstName
             context['Dis']=user.Discipline
