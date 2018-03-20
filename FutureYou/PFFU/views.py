@@ -79,7 +79,7 @@ def progress(request):
              user = Login.objects.get(StudentId=request.session.get('userName',None))
              user2= Student.objects.get(studentId=request.session['userName'])
              progression= ProgressionBar.objects.get(StudentId=user2)
-             context1['progressInteger'] = 5
+             context1['progressInt'] = int(progression.CurrentProgress)
              return render(request, 'portfolio.html',context1)
         except Login.DoesNotExist:
             return render(request, 'Needlogin.html')
@@ -98,7 +98,7 @@ def search(request):
             #html = (userName,"<H1>Success!</H1>")
             #context['userName'] = userName
             request.session['userName'] = userName
-            request.session.set_expiry(300)
+            request.session.set_expiry(3600)
             context1['userName'] = request.session['userName']
             #request.session.clear()
             return render(request,'index.html',context1)
@@ -153,12 +153,23 @@ def register(request):
 
 def current_profile(request):
     if request.method == 'GET':
+        context = {}
         try:
-             user = Student.objects.get(studentId=request.session['userName'])
-             userPro=UserProfile.objects.get(StudentId=user)
-             return render(request,'portfolio_subpages/profile.html')
+            user = Student.objects.get(studentId=request.session['userName'])
+            userProfile = UserProfile.objects.get(StudentId=user)
+            context['Uid'] = user.studentId
+            context['Lastname'] = user.LastName
+            context['Firstname']=user.FirstName
+            context['Dis']=user.Discipline
+            context['degree'] = user.Degree
+            context['exp'] =  userProfile.Work_exp
+            context['skill']=userProfile.Detail_work
+                    # do something with user
+                    #html = ("<H1>User already exsit!</H1> ")
+            userPro=UserProfile.objects.get(StudentId=user)
+            return render(request,'portfolio_subpages/profile.html',context)
         except UserProfile.DoesNotExist:
-            return render(request,'portfolio_subpages/profile.html')
+            return render(request,'current_profile.html')
 
     if request.method == 'POST':
         program = request.POST.get('program',None)
