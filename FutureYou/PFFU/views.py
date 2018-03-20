@@ -12,8 +12,8 @@ def index(request):
     else:
         return render(request, 'index.html')
 
-def portfolio(request):
-        return render(request, 'portfolio.html')
+# def portfolio(request):
+#         return render(request, 'portfolio.html')
 
 
 def profile(request):
@@ -69,6 +69,19 @@ def career_goal(request):
 
 def log(request):
     return render(request, 'test.html')
+
+
+
+def progress(request):
+    context1 = {}
+    if request.method == 'GET':
+        try:
+             user = Login.objects.get(StudentId=request.session.get('userName',None))
+             return render(request, 'portfolio.html',)
+        except Login.DoesNotExist:
+            return render(request, 'Needlogin.html')
+    else:
+        return render(request, 'login.html')
 
 
 def search(request):
