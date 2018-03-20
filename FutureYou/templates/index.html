@@ -106,29 +106,49 @@
                     <!--NAVIGATION ITEMS STRAT BELOW-->
                     <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
                     <li><a href="/profile"><span class="btnicon icon-bubble"></span>Profile</a></li>
-                    <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+                    <li id="nav_bar"><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
 
                     <!--TODO-->
-                    <li id="userNotLogin">
-                        <form method="POST" action="index.html">
-                        {% csrf_token %}
-                        <input type="button" id="login" class="btnicon icon-bubble" value="LOGIN" onclick="{location.href='/login.html'}"/>
-                        <input type="button" id="signup" class="btnicon icon-bubble" value="REGISTER" onclick="{location.href='/signup.html'}"/>
-                        </form>
-                    </li>
-                    <li id="userHasLogin">
-                        <form method="POST" action="index.html">
-                        {% csrf_token %}
-                        <input type="submit" id="logout" class="btn action-button" value="LOGOUT" />
-                        </form>
-                    </li>
+                    <!--<li id =loginSector>-->
+                        <!--<form method="POST" action="index.html">-->
+                            <!--<a href="/profile"><span class="btnicon icon-bubble"></span>Hi,{{userName}}</a>-->
+                            <!--{% csrf_token %}-->
+                            <!--<input type="submit" id="logout" class="btn action-button" value="LOGOUT" />-->
+                        <!--</form>-->
+                    <!--</li>-->
+                    <!--<form method="POST" action="index.html">-->
+                        <!--{% csrf_token %}-->
+                        <!--<input type="button" id="login" class="btnicon icon-bubble" value="LOGIN" onclick="{location.href='/login.html'}"/>-->
+                        <!--<input type="button" id="signup" class="btnicon icon-bubble" value="REGISTER" onclick="{location.href='/signup.html'}"/>-->
+                    <!--</form>-->
+
+                        <!--<form method="POST" action="index.html">-->
+                        <!--{% csrf_token %}-->
+                        <!--<input type="submit" id="logout" class="btn action-button" value="LOGOUT" />-->
+                        <!--</form>-->
 
                     <script>
                         var userName = "{{userName}}"
-                        if(userName!=1){
-                            document.getElementById("userNotLogin").style.visibility = 'hidden';}
+                        if(userName==1){
+                            parent = document.getElementById("nav_bar");
+                            child = "<li id =loginSector>\n" +
+                                "                        <form method=\"POST\" action=\"index.html\">\n" +
+                                "                            {% csrf_token %}\n" +
+                                "                            <input type=\"button\" id=\"login\" class=\"btnicon icon-bubble\" value=\"LOGIN\" onclick=\"{location.href='/login.html'}\"/>\n" +
+                                "                            <input type=\"button\" id=\"signup\" class=\"btnicon icon-bubble\" value=\"REGISTER\" onclick=\"{location.href='/signup.html'}\"/>\n" +
+                                "                        </form>\n" +
+                                "                    </li>"
+                            parent.insertAdjacentHTML('afterend', child);}
                         else{
-                            document.getElementById("userHasLogin").style.visibility = 'hidden';}
+                            parent = document.getElementById("nav_bar");
+                            child = "<li id =loginSector>\n" +
+                                "                        <form method=\"POST\" action=\"index.html\">\n" +
+                                "                            <a href=\"/profile\"><span class=\"btnicon icon-bubble\"></span>Hi,{{userName}}</a>\n" +
+                                "                            {% csrf_token %}\n" +
+                                "                            <input type=\"submit\" id=\"logout\" class=\"btn action-button\" value=\"LOGOUT\" />\n" +
+                                "                        </form>\n" +
+                                "                    </li>"
+                            parent.insertAdjacentHTML('afterend', child);}
                     </script>
                 </ul>
 
