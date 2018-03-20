@@ -133,7 +133,7 @@
 
                     <script>
                         var userName = "{{userName}}"
-                        if(userName==1){
+                        if(userName==1||userName.length==0){
                             parent = document.getElementById("nav_bar");
                             child = "<li id =login>\n" +
                                 "                        <form method=\"POST\" action=\"index.html\">\n" +
