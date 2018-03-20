@@ -326,7 +326,7 @@ span.year{color: #F9BF3B; float: right;}
 	background: #f4d03f; 
 	border-color: #f4d03f; 
 	width: 100%; 
-	color: #000000; 
+	color: #000000;
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 }
@@ -614,7 +614,7 @@ ul.nav-menu li.selected span {
 
 .title-container{
 	position: relative;
-	height: 130px;
+	height: 80px;
 	background-color: #666;
 	margin-bottom: 15px;
 	padding: 15px;
@@ -639,16 +639,16 @@ h1.maintitle {
 	/* Description Design Section */
 /*-------------------------------------------------------*/
 .description {
-	height: 475px;
+	height: 1500px;
 	position: relative;
 	background-color: #fff;
 	padding: 15px 30px;
-	overflow: hidden;		
+
 }
 
 .description p {
-	margin: 15px 0px;
-	padding-right: 75px;
+	margin: 2px 0px;
+	padding-right: 15px;
 }
 
 .strong-text {
