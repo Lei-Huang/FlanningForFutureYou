@@ -539,6 +539,10 @@ FOLLOW BUTTON
 }
 
 
+/*--------------------
+CareerGoal css begin
+---------------------*/
+
 /*CareerGoal bubble*/
 
 #bubblecareer li {
@@ -598,6 +602,33 @@ FOLLOW BUTTON
     transition: all 0.5s ease-in-out; /* Browsers that Support it */
 }
 
+/* Career Goal input form */
+#careerinput {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+/*Textfield color and form*/
+#careerinput textfield {
+    border-radius: 3px;
+    padding: 20px 30px;
+    width: 80%;
+    position: relative;
+}
+/*input form*/
+#careerinput input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #2C3E50;
+    font-size: 15px;
+}
+/* Input end */
 
 
-
+/*--------------------
+CareerGoal css end
+---------------------*/
