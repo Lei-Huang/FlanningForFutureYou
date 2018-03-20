@@ -627,6 +627,30 @@ CareerGoal css begin
 }
 /* Input end */
 
+/* Career Goal input form for part3 */
+#careerinput3 {
+    width: 1200px;
+    text-align: right;
+    position: relative;
+}
+/*Textfield color and form*/
+#careerinput3 textfield {
+    border-radius: 3px;
+    padding: 20px 30px;
+    width: 80%;
+    position: relative;
+}
+/*input form*/
+#careerinput3 input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #2C3E50;
+    font-size: 15px;
+}
+/* Input end */
 
 /*--------------------
 CareerGoal css end
