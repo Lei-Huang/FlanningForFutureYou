@@ -97,7 +97,7 @@ def logout(request):
     context2 = {}
     if request.method == 'POST':
             request.session.clear()
-            context2['userName'] = null
+            context2['userName'] = 1
             return render(request,'index.html',context2)
             #return HttpResponse(html)
     else:
