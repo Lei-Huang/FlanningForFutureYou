@@ -5,8 +5,12 @@ from django.core.exceptions import *
 
 
 def index(request):
-    return render(request, 'index.html')
+    if request.method == 'GET':
+        context['username'] = request.session['userName']
 
+        return render(request, 'index.html',context)
+    else:
+        return render(request, 'index.html')
 
 def portfolio(request):
         return render(request, 'portfolio.html')
@@ -127,7 +131,10 @@ def register(request):
 
 def current_profile(request):
     if request.method == 'POST':
-        major = request.POST.get('major',None)
+        program = request.POST.get('program',None)
+        program2 = request.POST.get('program2', None)
+        major = request.POST.get('major', None)
+        major2 = request.POST.get('major2', None)
         Study_year= request.POST.get('study_year',None)
         Work = request.POST.get('work', None)
         Volunteer =request.POST.get('volunteer', None)
@@ -136,14 +143,15 @@ def current_profile(request):
         context = {}
         #context['userid'] = Uid
         try:
+            user = Student.objects.get(studentId=request.session['userName'])
+            userPro=UserProfile.objects.get(StudentId=user)
             return render(request,'UserExist.html')
 
         except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
-            id = user.studentId
-            test2 = UserProfile (StudentId=user, Work_exp=Work, Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            test2 = UserProfile (StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
