@@ -605,8 +605,7 @@ CareerGoal css begin
 /* Career Goal input form */
 #careerinput {
     width: 400px;
-    margin: 50px auto;
-    text-align: center;
+    text-align: right;
     position: relative;
 }
 /*Textfield color and form*/
