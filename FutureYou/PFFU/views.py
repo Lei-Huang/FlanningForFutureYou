@@ -71,7 +71,7 @@ def log(request):
 
 
 def search(request):
-    context = {}
+    context1 = {}
     if request.method == 'POST':
         userName = request.POST.get('user', None)
         password = request.POST.get('password', None)
