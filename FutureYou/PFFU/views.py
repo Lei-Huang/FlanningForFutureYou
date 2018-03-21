@@ -45,6 +45,11 @@ def workshops(request):
 def understanding_yourself(request):
     return render(request, 'portfolio_subpages/understanding_yourself.html')
 
+def employability_skill(request):
+    return render(request, 'portfolio_subpages/employability_skill.html')
+
+def future_skill(request):
+    return render(request, 'portfolio_subpages/future_skill.html')
 
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
@@ -192,8 +197,12 @@ def current_profile(request):
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
+            progress2=ProgressionBar.objects.get(StudentId=user)
+            progress2.CurrentProgress=1
+            progress2.save(update_fields=['CurrentProgress'])
             test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
+
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'portfolio.html')
