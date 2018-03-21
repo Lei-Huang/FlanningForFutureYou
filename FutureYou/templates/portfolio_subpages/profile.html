@@ -123,20 +123,20 @@
                         <!--ALL PERSONAL DETAILS-->
                         <h3 class="personal-info-title title">Personal Information</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>UID:</label><span><U>UID</U></span></li>
+                            <li class="rotate-out rotated"><label>UID:</label><span><U>{{Uid}}</U></span></li>
                             <li class="rotate-out rotated"><label>Name:</label><span>{{ Firstname }} {{ Lastname }}</span></li>
-                            <li class="rotate-out rotated"><label>Email:</label><span><U>UID@anu.edu.au</U></span></li>
+                            <li class="rotate-out rotated"><label>Email:</label><span><U>{{Uid}}@anu.edu.au</U></span></li>
                         </ul><!--/ul.personal-info-->
 
                         <h3 class="personal-info-title title">Working Information</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>Type: </label><span><U>Casual/Full-Time</U></span></li>
-                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Detail of work</U></span></li>
+                            <li class="rotate-out rotated"><label>Type: </label><span><U>{{exp}}</U></span></li>
+                            <li class="rotate-out rotated"><label>Detail: </label><span><U>{{skill}}</U></span></li>
                         </ul><!--/ul.personal-info-->
 
                         <h3 class="personal-info-title title">Volunteer Information</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Detail of volunteer</U></span></li>
+                            <li class="rotate-out rotated"><label>Detail: </label><span><U>{{detail_vol}}</U></span></li>
                         </ul><!--/ul.personal-info-->
                     </div>
                 </li><!--/#home-->
@@ -160,23 +160,23 @@
                             </tr>
                             <tr>
                                 <td>UID</td>
-                                <td>u*******</td>
+                                <td>{{Uid}}</td>
                             </tr>
                             <tr>
                                 <td>Program1 </td>
-                                <td class="s1"><input value="computer science" readonly="true"/></td>
+                                <td class="s1"><input value={{program}} readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Program2</td>
-                                <td class="s2"><input value="program2" readonly="true"/></td>
+                                <td class="s2"><input value={{program2}} readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major1</td>
-                                <td class="s3"><input value="major1" readonly="true"/></td>
+                                <td class="s3"><input value={{major}} readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major2</td>
-                                <td class="s4"><input value="major2" readonly="true"/></td>
+                                <td class="s4"><input value={{major2}} readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Year of Study: (First/Mid/Final Year) </td>
@@ -185,15 +185,15 @@
 
                             <tr>
                                 <td>Work Type: (Causal/Full-time)</td>
-                                <td class="s6"><input value="Causal/Full-time" readonly="true"/></td>
+                                <td class="s6"><input value={{exp}} readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td height="85px">Details of Work Experience:</td>
-                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">Work experience</textarea>
+                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{skill}}</textarea>
                             </tr>
                             <tr>
                                 <td height="85px">Details of Volunteer Experience:</td>
-                                <td height="85px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">Volunteer experience</textarea>
+                                <td height="85px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
                             </tr>
                         </table>
                         <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>

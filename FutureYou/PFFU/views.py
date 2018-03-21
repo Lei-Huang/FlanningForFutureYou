@@ -29,6 +29,12 @@ def profile(request):
             context['degree'] = user.Degree
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
+            context['vol']=userProfile.Volunteer_exp
+            context['detail_vol']=userProfile.Detail_vol
+            context['program'] = userProfile.FirstProgram
+            context['program2'] = userProfile.SecondProgram
+            context['major'] = userProfile.FirstMajor
+            context['major2'] = userProfile.SecondMajor
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'portfolio_subpages/profile.html',context)
@@ -200,7 +206,9 @@ def current_profile(request):
             progress2=ProgressionBar.objects.get(StudentId=user)
             progress2.CurrentProgress=1
             progress2.save(update_fields=['CurrentProgress'])
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            if Volunteer==None:
+                Volunteer="no"
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_volunteer)
             test2.save()
 
             # do something with user
