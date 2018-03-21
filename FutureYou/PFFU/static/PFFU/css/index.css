@@ -28,6 +28,11 @@ h8 {font-size: 28px;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;}/*for some subtitle*/
+h9 {font-size: 20px; line-height: 1.4em; color: #293aaa;margin-left: 150px;}/*for some answers*/
+h10 {font-size: 20px; line-height: 1.4em; color: #ea9312;;
+    background-color: #f0eef9;
+    padding-left:2em;
+    }/*for some answers*/
 
 
 p{
@@ -39,6 +44,15 @@ p{
 /*================================
 DEFAULT STYLE & FORMATING
 ================================*/
+.feedbacktxt{height: auto;
+    width: auto;
+    background-color: #f0eef9;
+    padding-left: 1em;
+    margin-left: 30px;
+
+}
+
+
 ul{padding: 0;}
 a{color: #ea9312}
 a:hover{color: #c3c3c3; text-decoration: none;}
@@ -639,8 +653,9 @@ CareerGoal css begin
 
 /* Understanding yourself and Career Goal input form for part3 */
 #careerinput3 {
-    width: 1200px;
-    text-align: right;
+    width: 1110px;
+    height: auto;
+    text-align: left;
     position: relative;
 }
 /*Textfield color and form*/
