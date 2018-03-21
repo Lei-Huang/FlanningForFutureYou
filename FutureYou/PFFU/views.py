@@ -197,8 +197,12 @@ def current_profile(request):
             user = Student.objects.get(studentId=request.session['userName'])
             user.YearOfStudy=Study_year
             user.save(update_fields=['YearOfStudy'])
+            progress2=ProgressionBar.objects.get(StudentId=user)
+            progress2.CurrentProgress=1
+            progress2.save(update_fields=['CurrentProgress'])
             test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
+
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'portfolio.html')
