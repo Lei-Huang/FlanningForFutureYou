@@ -44,7 +44,7 @@
         }
 
         function edit(obj) {
-            var inp = obj.getElementsByTagName("input");
+            var inp = obj.getElementsByTagName("input" &&"textarea");
             for (var i=0,len=inp.length;i<len;i++)
                 {
                     inp[i].readOnly=false;
@@ -190,11 +190,11 @@
                             </tr>
                             <tr>
                                 <td height="85px">Details of Work Experience:</td>
-                                <td height="85px" class="s7"><input type="text" style="height:80px; width: 300px" value="work experience" readonly="true"/></td>
+                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">Work experience</textarea>
                             </tr>
                             <tr>
                                 <td height="85px">Details of Volunteer Experience:</td>
-                                <td height="85px" class="s8"><input type="text" style="height:80px; width: 300px"value="volunteer experience" readonly="true"/></td>
+                                <td height="85px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">Volunteer experience</textarea>
                             </tr>
                         </table>
                         <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>
@@ -221,7 +221,8 @@
                 </li><!--/#contact-->
             </ul>
         </div><!--/.page-segment -->
-        <h6 class="copyright-text">Copyright © 2017 PlanningForFutureYou </h6>  <!--if anyone wants copyright Texts-->
+
+        <h6 class="copyright-text" style="margin-top: 15px">Copyright © 2017 PlanningForFutureYou </h6>  <!--if anyone wants copyright Texts-->
     </div>
 </div><!--/.container -->
 
