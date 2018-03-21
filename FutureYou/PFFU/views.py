@@ -89,7 +89,6 @@ def progress(request):
     context1 = {}
     if request.method == 'GET':
         try:
-            # question: two users for what?
              user = Login.objects.get(StudentId=request.session.get('userName',None))
              user2= Student.objects.get(studentId=request.session['userName'])
              progression= ProgressionBar.objects.get(StudentId=user2)
