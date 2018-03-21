@@ -3,7 +3,7 @@ from django.shortcuts import HttpResponse
 from .models import *
 from django.core.exceptions import *
 
-
+# use session to keep user loginin, distinguished by username
 def index(request):
     if request.method == 'GET':
         context['username'] = request.session['userName']
@@ -15,11 +15,12 @@ def index(request):
 # def portfolio(request):
 #         return render(request, 'portfolio.html')
 
-
+# retrieve user profile detail from database
 def profile(request):
     if request.method == 'GET':
         context = {}
         try:
+            # check session that if any current user has been login            
             user = Student.objects.get(studentId=request.session['userName'])
             userProfile = UserProfile.objects.get(StudentId=user)
             context['Uid'] = user.studentId
@@ -30,11 +31,12 @@ def profile(request):
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
             context['vol']=userProfile.Volunteer_exp
-            context['detail_vol']=userProfile.Detail_volunteer
+            context['detail_vol']=userProfile.Detail_vol
             context['program'] = userProfile.FirstProgram
             context['program2'] = userProfile.SecondProgram
             context['major'] = userProfile.FirstMajor
             context['major2'] = userProfile.SecondMajor
+
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
             return render(request, 'portfolio_subpages/profile.html',context)
@@ -82,11 +84,12 @@ def log(request):
     return render(request, 'test.html')
 
 
-
+#use an integer to tell user which step they are currently at
 def progress(request):
     context1 = {}
     if request.method == 'GET':
         try:
+            # question: two users for what?
              user = Login.objects.get(StudentId=request.session.get('userName',None))
              user2= Student.objects.get(studentId=request.session['userName'])
              progression= ProgressionBar.objects.get(StudentId=user2)
@@ -109,6 +112,7 @@ def search(request):
             #html = (userName,"<H1>Success!</H1>")
             #context['userName'] = userName
             request.session['userName'] = userName
+            # user logging in expiry time by seconds 
             request.session.set_expiry(3600)
             context1['userName'] = request.session['userName']
             #request.session.clear()
@@ -124,6 +128,7 @@ def search(request):
 def logout(request):
     context2 = {}
     if request.method == 'POST':
+            #clear the session, return to index page.
             request.session.clear()
             context2['userName'] = 1
             return render(request,'index.html',context2)
@@ -132,12 +137,14 @@ def logout(request):
         #request.session.clear()
         return render(request,'index.html')
 
+# user create account with their basic information, save data into database.
 def register(request):
     if request.method == 'POST':
         Uid = request.POST.get('uid',None)
         FName = request.POST.get('fname', None)
         LName = request.POST.get('lname', None)
         Password =request.POST.get('pw', None)
+        # todo: change degree into drop down menu?
         Degree=request.POST.get('Degree', None)
         Dis = request.POST.get('Discipline', None)
         GDate = request.POST.get('Graduation Date', None)
@@ -161,7 +168,8 @@ def register(request):
     else:
         return render(request, 'signup.html')
 
-
+# retrieve user current profile detail from database,
+# save new or update existing profile information, and save into database 
 def current_profile(request):
     if request.method == 'GET':
         context = {}
@@ -208,7 +216,7 @@ def current_profile(request):
             progress2.save(update_fields=['CurrentProgress'])
             if Volunteer==None:
                 Volunteer="no"
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_volunteer)
             test2.save()
 
             # do something with user
