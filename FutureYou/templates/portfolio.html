@@ -34,20 +34,24 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if IE 6]>
+    <script src="{% static "PFFU/js/iepng.js" type="text/javascript"%}"></script>
+    <script type="text/javascript">
+            EvPNG.fix('div, ul, img, li, input,a,span');
+    </script>
+    <![endif]-->
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- ===========================
-     GOOGLE ANALYTICS (Optional)
-     =========================== -->
+    <script src="{% static "PFFU/js/jquery-1.8.3.min.js"%}"></script>
 
-    <!--Replace this line with your analytics code-->
-
-    <!-- Analytics end-->
 
 </head>
+
 <body data-spy="scroll">
 <!-- Preloader -->
 <div id="preloader">
@@ -106,6 +110,23 @@
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
         <h3>Portfolio</h3>
+
+        <!-- Image Display SECTION START -->
+        <div class="ban" id="demo1">
+            <div class="ban2" id="ban_pic1">
+                <div class="prev1" id="prev1"><img src="{% static "PFFU/img/tab_r.png"%}" width="51" height="51"  alt=""></div>
+                <div class="next1" id="next1"><img src="{% static "PFFU/img/tab_l.png"%}" width="51" height="51"  alt=""></div>
+                <ul>
+                    <li><a href="javascript:;"><img src="{% static "PFFU/img/p1.jpg" %}"  width=85% alt=""></a></li>
+                    <li><a href="javascript:;"><img src="{% static "PFFU/img/p2.jpg" %}"  width=85% alt=""></a></li>
+                    <li><a href="javascript:;"><img src="{% static "PFFU/img/p3.jpg" %}"  width=85% alt=""></a></li>
+                    <li><a href="javascript:;"><img src="{% static "PFFU/img/p4.jpg" %}"  width=85% alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="progressbar">
         <hr class="separetor">
         <!--progress bar-->
         <img id="progressbar" src="{% static "PFFU/img/progressbar1.png" %}" width=50%>
@@ -141,6 +162,7 @@
             changePicture(progressInt)
         </script>
         <hr class="separetor">
+        </div>
     </div><!--PORTFOLIO SECTION HEADING END-->
 
 
@@ -253,6 +275,20 @@ FOOTER START
 
 <!--progress bar scripts-->
 <script src="{% static "PFFU/js/progressbar.js"%}"></script>
+
+<!--image display bar scripts-->
+<script src="{% static "PFFU/js/pic_tab.js"%}"></script>
+<script type="text/javascript">
+    jq('#demo1').banqh({
+        box:"#demo1", //Frame
+        pic:"#ban_pic1",//Frame of the picture
+        prev:"#prev1",//previous arrow
+        next:"#next1",//next arrow
+        autoplay:true,//auto display
+        order:0,//display picture from 0
+        picdire:true,//direction of the pictures change
+    })
+</script>
 
 <!--Other necessary scripts-->
 <script src="{% static "PFFU/js/drifolio.js"%}"></script>

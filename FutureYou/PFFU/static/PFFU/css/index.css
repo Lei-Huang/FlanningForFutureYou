@@ -562,6 +562,25 @@ FOLLOW BUTTON
     transition: all 0.5s ease-in-out; /* Browsers that Support it */
 }
 
+/*================================
+Portfolio Image Display
+================================*/
+#ban {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.ban{ width:580px; height:300px; position:relative; overflow:hidden;margin:20px auto 0 auto;}
+.ban2{ width:580px; height:300px; position:relative; overflow:hidden;}
+.ban2 ul{ position:absolute; left:0; top:0;}
+.ban2 ul li{ width:580px; height:300px;}
+.prev1{ position:absolute; top:130px; left:0px; width:51px; height:51px;z-index:9;cursor:pointer;}
+.next1{ position:absolute; top:130px; right:0px; width:51px; height:51px;z-index:9;cursor:pointer;}
+
+
+
 
 /*--------------------
 CareerGoal css begin
