@@ -19,6 +19,16 @@ h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
 h6 {font-size: 18px; line-height: 1.4em; color: #ea9312;}/*for some answers*/
+h7 {font-size: 18px; line-height: 1.4em; color: #546273;}/*for Description*/
+h8 {font-size: 28px;
+    color: #ea9312;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;}/*for some subtitle*/
+
 
 p{
     letter-spacing: 1px;
