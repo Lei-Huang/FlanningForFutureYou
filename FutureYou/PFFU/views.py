@@ -31,7 +31,7 @@ def profile(request):
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
             context['vol']=userProfile.Volunteer_exp
-            context['detail_vol']=userProfile.Detail_vol
+            context['detail_vol']=userProfile.Detail_volunteer
             context['program'] = userProfile.FirstProgram
             context['program2'] = userProfile.SecondProgram
             context['major'] = userProfile.FirstMajor
@@ -216,7 +216,7 @@ def current_profile(request):
             progress2.save(update_fields=['CurrentProgress'])
             if Volunteer==None:
                 Volunteer="no"
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_volunteer)
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
             test2.save()
 
             # do something with user
