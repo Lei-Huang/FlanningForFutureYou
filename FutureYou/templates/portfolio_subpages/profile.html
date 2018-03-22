@@ -38,17 +38,23 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <script src="{% static "PFFU/js/jquery.min.js"%}"></script> <!-- JQUERY -->
+
     <script language="javascript" type="text/javascript">
         function $(id) {
             return document.getElementById(id);
         }
 
         function edit(obj) {
-            var inp = obj.getElementsByTagName("input" &&"textarea");
+            var inp = obj.getElementsByTagName("input");
+            var inp2 = obj.getElementsByTagName("textarea");
             for (var i=0,len=inp.length;i<len;i++)
                 {
                     inp[i].readOnly=false;
                 }
+            for (var i=0,len=inp2.length;i<len;i++)
+            {
+                inp2[i].readOnly=false;
+            }
         }
     </script>
 </head>
@@ -156,7 +162,7 @@
                         <table border="1">
                             <tr>
                                 <td>Name</td>
-                                <td>{{ Firstname }} {{ Lastname }}</td>
+                                <td>XXX</td>
                             </tr>
                             <tr>
                                 <td>UID</td>
@@ -184,8 +190,13 @@
                             </tr>
 
                             <tr>
+<<<<<<< Updated upstream
                                 <td>Work Type: (Causal/Full-time)</td>
                                 <td class="s6"><input value={{exp}} readonly="true"/></td>
+=======
+                                <td>Work Type: (Casual/Full-time)</td>
+                                <td class="s6"><input value="Casual/Full-time" readonly="true"/></td>
+>>>>>>> Stashed changes
                             </tr>
                             <tr>
                                 <td height="85px">Details of Work Experience:</td>
@@ -196,8 +207,8 @@
                                 <td height="85px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
                             </tr>
                         </table>
-                        <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>
-                        <input type="button" class="save_btn" value="Save"/></center>
+                        <input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>
+                        <input type="button" class="save_btn" value="Save"/>
                     </div>
                 </li>
                 <!--/#editInfor-->
