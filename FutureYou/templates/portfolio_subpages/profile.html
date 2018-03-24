@@ -68,7 +68,7 @@
     <div class="shadow-img"></div>
     <img src="{% static "PFFU/img/front-image.png" %}" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
     <h1><U>{{ Firstname }} <span class="invert">{{Lastname}}</span></U></h1><!--PROFILE NAME-->
-    <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;"><U>Software <span class="rotate">Developer, Designer, Artist</span></U></h3> <!--SUBTITLE IN PROFILE-->
+    <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">{{major}}</h3> <!--SUBTITLE IN PROFILE-->
     <div class="frontclick"><img src="{% static "PFFU/img/click.png"%}" alt="" class="img-responsive"><span class="pulse"></span></div>
 </div>
 <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
@@ -81,9 +81,9 @@
             <div id="namecard" class="namecard">
                 <div class="shadow-img"></div>
                 <h1 class="maintitle"><U>{{ Firstname }}</U></h1><!--PROFILE NAME-->
-                <h3 class="invert sub-maintitle"><U>Software
-                    <span class="rotate">Developer, Designer, Artist</span><!--SUBTITLE AFTET NAME-->
-                </U></h3>
+                <h3 class="invert sub-maintitle">
+                    <span class="rotate">{{program}},{{major}}</span><!--SUBTITLE AFTET NAME-->
+                </h3>
                 <img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile1.png"%}" alt="profile-image"><!--PROFILE IMAGE-->
             </div><!--/#namecard-->
 
@@ -129,18 +129,18 @@
                         <!--ALL PERSONAL DETAILS-->
                         <h3 class="personal-info-title title">Personal Information</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>UID:</label><span><U>{{Uid}}</U></span></li>
+                            <li class="rotate-out rotated"><label>UID:</label><span>{{Uid}}/span></li>
                             <li class="rotate-out rotated"><label>Name:</label><span>{{ Firstname }} {{ Lastname }}</span></li>
-                            <li class="rotate-out rotated"><label>Email:</label><span><U>{{Uid}}@anu.edu.au</U></span></li>
+                            <li class="rotate-out rotated"><label>Email:</label><span>{{Uid}}@anu.edu.au</span></li>
                         </ul><!--/ul.personal-info-->
 
-                        <h3 class="personal-info-title title">Working Information</h3>
+                        <h3 class="personal-info-title title">Work Experience</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>Type: </label><span><U>{{exp}}</U></span></li>
-                            <li class="rotate-out rotated"><label>Detail: </label><span><U>{{skill}}</U></span></li>
+                            <li class="rotate-out rotated"><label>Type: </label><span>{{exp}}</span></li>
+                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Work period: From {start_date} to {end_date}<br>Detail: {{skill}}</U></span></li>
                         </ul><!--/ul.personal-info-->
 
-                        <h3 class="personal-info-title title">Volunteer Information</h3>
+                        <h3 class="personal-info-title title">Volunteer Experience</h3>
                         <ul class="personal-info">
                             <li class="rotate-out rotated"><label>Detail: </label><span><U>{{detail_vol}}</U></span></li>
                         </ul><!--/ul.personal-info-->
@@ -162,31 +162,31 @@
                         <table border="1">
                             <tr>
                                 <td>Name</td>
-                                <td>XXX</td>
+                                <td> {{Firstname}} {{Lastname}}</td>
                             </tr>
                             <tr>
                                 <td>UID</td>
-                                <td>{{Uid}}</td>
+                                <td> {{Uid}}</td>
                             </tr>
                             <tr>
                                 <td>Program1 </td>
-                                <td class="s1"><input value="program" readonly="true"/></td>
+                                <td class="s1"><input value="{{program}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Program2</td>
-                                <td class="s2"><input value="program2" readonly="true"/></td>
+                                <td class="s2"><input value="{{program2}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major1</td>
-                                <td class="s3"><input value="major" readonly="true"/></td>
+                                <td class="s3"><input value="{{major}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major2</td>
-                                <td class="s4"><input value="major2" readonly="true"/></td>
+                                <td class="s4"><input value="{{major2}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Year of Study: (First/Mid/Final Year) </td>
-                                <td class="s5"><input value="year of study" readonly="true"/></td>
+                                <td class="s5"><input value="{{study_year}}" readonly="true"/></td>
                             </tr>
 
                             <tr>
@@ -196,7 +196,7 @@
                             </tr>
                             <tr>
                                 <td height="85px">Details of Work Experience:</td>
-                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{skill}}</textarea>
+                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">From {start_date} to {end_date}; Detail: {{skill}}</textarea>
                             </tr>
                             <tr>
                                 <td height="85px">Details of Volunteer Experience:</td>
