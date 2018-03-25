@@ -31,7 +31,7 @@ def profile(request):
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
             context['vol']=userProfile.Volunteer_exp
-            context['detail_vol']=userProfile.Detail_volunteer
+            context['detail_vol'] = userProfile.Detail_volunteer
             context['program'] = userProfile.FirstProgram
             context['program2'] = userProfile.SecondProgram
             context['major'] = userProfile.FirstMajor
@@ -83,6 +83,41 @@ def career_goal(request):
 def log(request):
     return render(request, 'test.html')
 
+
+def current_profile(request):
+    if request.method == 'POST':
+        sector = request.POST.get('cg_industry',None)
+        firstRole = request.POST.get('firstgoal', None)
+        secondRole = request.POST.get('secondgoal', None)
+        thirdRole = request.POST.get('thirdgoal', None)
+        FirstPlan= request.POST.get('cg_q1',None)
+        SecondPlan = request.POST.get('cg_q2', None)
+        ThirdPlan =request.POST.get('cg_q3', None)
+        context = {}
+        #context['userid'] = Uid
+        try:
+            user = Student.objects.get(studentId=request.session['userName'])
+            userPro=CareerGoal.objects.get(StudentId=user)
+            return render(request,'portfolio_subpages/career_goal.html')
+
+        except UserProfile.DoesNotExist:
+            user = Student.objects.get(studentId=request.session['userName'])
+            #user.YearOfStudy=Study_year
+            #user.save(update_fields=['YearOfStudy'])
+            progress2=ProgressionBar.objects.get(StudentId=user)
+            progress2.CurrentProgress=2
+            progress2.save(update_fields=['CurrentProgress'])
+            #if Volunteer==None:
+             #   Volunteer="no"
+            test2 = CareerGoal(StudentId=user,Sector=sector,FirstRow=firstRole, SecondRow=secondRole,ThirdRow=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
+            test2.save()
+
+            # do something with user
+            #html = ("<H1>User already exsit!</H1> ")
+            return render(request, 'portfolio.html')
+            #return render(request, 'login.html')
+    else:
+        return render(request, 'portfolio_subpages/career_goal.html')
 
 #use an integer to tell user which step they are currently at
 def progress(request):
@@ -182,6 +217,7 @@ def current_profile(request):
             context['degree'] = user.Degree
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
+            context['detail_vol'] = userProfile.Detail_volunteer
                     # do something with user
                     #html = ("<H1>User already exsit!</H1> ")
             userPro=UserProfile.objects.get(StudentId=user)
@@ -198,7 +234,7 @@ def current_profile(request):
         Work = request.POST.get('work', None)
         Volunteer =request.POST.get('volunteer', None)
         Detail_work=request.POST.get('detail_work', None)
-        Detail_vol = request.POST.get('detail_vol', None)
+        Detail_vol = request.POST.get('detailvol', None)
         context = {}
         #context['userid'] = Uid
         try:
@@ -215,7 +251,7 @@ def current_profile(request):
             progress2.save(update_fields=['CurrentProgress'])
             if Volunteer==None:
                 Volunteer="no"
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work, Detail_volunteer=Detail_vol)
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work,Detail_volunteer=Detail_vol)
             test2.save()
 
             # do something with user
