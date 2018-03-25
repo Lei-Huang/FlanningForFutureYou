@@ -58,6 +58,8 @@ class UserProfile(models.Model):
     # SkillTree = models.CharField(max_length=30)
     # ExperienceTree = models.CharField(max_length=30)
     # PreparationTree = models.CharField(max_length=30)
+    WorkStartDate = models.DateTimeField()
+    WorkEndDate = models.DateTimeField
     Work_exp = models.CharField(max_length=30)
     Volunteer_exp = models.CharField(max_length=30)
     Detail_work = models.TextField()
@@ -82,7 +84,13 @@ class CareerVoyage(models.Model):
 class CareerValue(models.Model):
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     Status = models.BooleanField(default=True)
-    FileLink = models.CharField(max_length=100)
+    Sector = models.CharField(max_length=30)
+    FirstRow = models.CharField(max_length=100)
+    SecondRow = models.CharField(max_length=100)
+    ThirdRow = models.CharField(max_length=100)
+    FirstPlan = models.TextField()
+    SecondPlan = models.TextField()
+    ThirdPlan = models.TextField()
 
 
 class CareerGoal(models.Model):
