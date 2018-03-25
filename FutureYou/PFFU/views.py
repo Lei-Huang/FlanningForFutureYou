@@ -95,11 +95,11 @@ def career_goal(request):
             userGoal = CareerGoal.objects.get(StudentId=user)
             context['cg_sector1'] = userGoal.Sector
             context['cg_goal1'] = userGoal.FirstRow
-            context['cg_goal2']=user.SecondRow
-            context['cg_goal3']=user.ThirdRow
-            context['cg_q1'] = user.FirstPlan
-            context['cg_q2'] =  userProfile.SecondPlan
-            context['cg_q3']=userProfile.ThirdPlan
+            context['cg_goal2']=userGoal.SecondRow
+            context['cg_goal3']=userGoal.ThirdRow
+            context['cg_q1'] = userGoal.FirstPlan
+            context['cg_q2'] =  userGoal.SecondPlan
+            context['cg_q3']=userGoal.ThirdPlan
                     # do something with user
                     #html = ("<H1>User already exsit!</H1> ")
             return render(request,'portfolio_subpages/career_goaldone.html',context)
