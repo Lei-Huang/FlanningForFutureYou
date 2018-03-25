@@ -37,6 +37,7 @@
 </head>
 <body data-spy="scroll">
 <!-- Preloader -->
+<form id="career_goal" method="POST" action="career_goal">
 <div id="preloader">
     <div id="status">
         <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
@@ -147,19 +148,19 @@ CAREER GOAL SECTION START
     <div>
         <td>
             <ul id="bubblecareer"><li>
-                <h6><input type="radio" name="work" value="work_no"/>Private Sector</h6>
+                <h6><input type="radio" name="cg_industry" value="work_no"/>Private Sector</h6>
                 <div>The private sector is the part of the economy, sometimes referred to as the citizen sector, which is run by private individuals or groups, usually as a means of enterprise for profit, and is not controlled by the State.</div></li>
             </ul>
             <ul id="bubblecareer"><li>
-                <h6><input type="radio" name="work" value="work_no"/>Public Sector</h6>
+                <h6><input type="radio" name="cg_industry" value="work_no"/>Public Sector</h6>
                 <div>The public sector is the part of the economy composed of both public services and public enterprises. </div></li>
             </ul>
             <ul id="bubblecareer"><li>
-                <h6><input type="radio" name="work" value="work_no"/>Not For Profit Sector</h6>
+                <h6><input type="radio" name="cg_industry" value="work_no"/>Not For Profit Sector</h6>
                 <div>A not for profit organization is a type of organization that does not earn profits for its owners. All of the money earned by or donated to a not for profit organization is used in pursuing the organization's objectives.</div></li>
             </ul>
                 <ul id="bubblecareer"><li>
-                <h6><input type="radio" name="work" value="work_no"/>Entrepreneurship</h6>
+                <h6><input type="radio" name="cg_industry" value="work_no"/>Entrepreneurship</h6>
             <div>Entrepreneurship is the process of designing, launching and running a new business, which is often initially a small business.</div></li>
             </ul>
         </td>
@@ -237,7 +238,7 @@ CAREER GOAL SECTION START
 
     <div id="careerinput3">
         <textfield>
-            <textarea cols='180' rows='8'></textarea>
+            <textarea name="cg_q1" cols='180' rows='8'></textarea>
         </textfield>
     </div>
 
@@ -250,7 +251,7 @@ CAREER GOAL SECTION START
     <h3>2. How and when will I gain the additional employability skills and expierence I need</h3>
     <div id="careerinput3">
         <textfield>
-            <textarea cols='180' rows='8'></textarea>
+            <textarea name="cg_q2" cols='180' rows='8'></textarea>
         </textfield>
     </div>
 
@@ -262,7 +263,7 @@ CAREER GOAL SECTION START
     <h3>3. How can I expand my network and by whom?</h3>
     <div id="careerinput3">
         <textfield>
-            <textarea cols='180' rows='8'></textarea>
+            <textarea name="cg_q3" cols='180' rows='8'></textarea>
         </textfield>
     </div>
 
@@ -272,12 +273,13 @@ CAREER GOAL SECTION START
     </div>
 
 
+    <input type="button"  name="cg_submit" class="btn6  action-button" value="Submit"/>
 
     <!-- ===========================
     ACTION PLAN END
     =========================== -->
 </div><!-- ABOUT SECTION END -->
-
+</form>
 
 
 
