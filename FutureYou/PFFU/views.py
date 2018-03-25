@@ -79,6 +79,9 @@ def interview_skill(request):
 def career_goal(request):
     return render(request, 'portfolio_subpages/career_goal.html')
 
+def career_goaldone(request):
+    return render(request, 'portfolio_subpages/career_goaldone.html')
+
 
 def log(request):
     return render(request, 'test.html')
