@@ -88,6 +88,23 @@ def log(request):
 
 
 def career_goal(request):
+    if request.method == 'GET':
+        context = {}
+        try:
+            user = Student.objects.get(studentId=request.session['userName'])
+            userGoal = CareerGoal.objects.get(StudentId=user)
+            context['cg_sector1'] = userGoal.Sector
+            context['cg_goal1'] = userGoal.FirstRow
+            context['cg_goal2']=user.SecondRow
+            context['cg_goal3']=user.ThirdRow
+            context['cg_q1'] = user.FirstPlan
+            context['cg_q2'] =  userProfile.SecondPlan
+            context['cg_q3']=userProfile.ThirdPlan
+                    # do something with user
+                    #html = ("<H1>User already exsit!</H1> ")
+            return render(request,'portfolio_subpages/career_goaldone.html',context)
+        except CareerGoal.DoesNotExist:
+            return render(request,'career_goald.html')
     if request.method == 'POST':
         sector = request.POST.get('cg_industry',None)
         firstRole = request.POST.get('firstgoal', None)
