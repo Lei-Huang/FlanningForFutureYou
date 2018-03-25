@@ -87,20 +87,12 @@
                             <legend>Personal Information</legend>
                             <table id="tb">
                                 <tr>
-                                    <td align="right">Program1：</td>
-                                    <td><input type="text" name="program"/></td>
+                                    <td align="right" style="margin-top: 10px">Program：</td>
+                                    <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add" onclick="show(t1);" ><input type="text" name="program2" id="t1" style="display: none"/></td>
                                 </tr>
                                 <tr>
-                                    <td align="right">Program2：</td>
-                                    <td><input type="text" name="program2"/></td>
-                                </tr>
-                                <tr>
-                                    <td align="right">Major1：</td>
-                                    <td><input type="text" name="major"/></td>
-                                </tr>
-                                <tr>
-                                    <td align="right">Major2：</td>
-                                    <td><input type="text" name="major2"/></td>
+                                    <td align="right">Major：</td>
+                                    <td><input type="text" name="major"/><input type="button" id="btn2" value="Add" onclick="display(t2);" > <input type="text" name="major2" id="t2" style="display: none"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Study Year：</td>
@@ -145,20 +137,24 @@
     </table>
 </center>
 
-    <script type="text/javascript">
-        function add(){
-            var tmp = '';
-            for(var i=0; i<1; i++){
-                tmp += '	<tr><td align="right">Work Type：</td>' +
-                    '<td><input type="radio" name="work" value="casual"/>Causal<input type="radio" name="work" value="full-time"/>Full-time</td></tr>' +
-                    '<tr><td align="right">Working Period:</td>' +
-                    '<td>From <input type="date" name="start_date"> To <input type="date" name="end_date"></td></tr>' +
-                    '<tr><td align="right" width="220">Details of work experience： (Please include organisation and job title)</td>' +
-                    '<td><input type="text" name="detail_work" style="height:60px;width:400px" /></td></tr>';
+    <script>
+        function show(id){
+            var show1 = document.getElementById('t1');
+
+                if(show1.style.display != 'block') {
+                    show1.style.display = 'block';
+                }
+        }
+
+        function display(id){
+            var display1 = document.getElementById('t2');
+
+            if(display1.style.display != 'block') {
+                display1.style.display = 'block';
             }
-            $('#tb').append(tmp);
         }
     </script>
+
 
 <!-- ===========================
 FOOTER START

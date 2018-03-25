@@ -40,7 +40,14 @@ h10 {font-size: 20px; line-height: 1.4em; color: #ea9312;;
     background-color: #f0eef9;
     padding-left:2em;
     }/*for some answers*/
-
+h11 {font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    color: #2c3e50;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0; }/*for some SubSubtitles*/
 
 p{ font-size: 18px;
     letter-spacing: 1px;
