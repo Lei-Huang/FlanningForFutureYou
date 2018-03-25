@@ -37,7 +37,6 @@
 </head>
 <body data-spy="scroll">
 <!-- Preloader -->
-<form id="career_goal" method="POST" action="career_goal">
 <div id="preloader">
     <div id="status">
         <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
@@ -144,6 +143,9 @@ CAREER GOAL SECTION START
     </div>
 
     <!--QUESTION START-->
+    <form id="career_goal" method="POST" action="career_goal">
+        <p></p>
+    {% csrf_token %}
     <h3>1. What are the industried that appeal to you?</h3>
     <div>
         <td>
@@ -273,7 +275,7 @@ CAREER GOAL SECTION START
     </div>
 
 
-    <input type="button"  name="cg_submit" class="btn6  action-button" value="Submit"/>
+    <input type="submit"  name="cg_submit" class="btn6  action-button" value="Submit"/>
 
     <!-- ===========================
     ACTION PLAN END

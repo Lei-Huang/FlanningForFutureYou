@@ -84,7 +84,7 @@ def log(request):
     return render(request, 'test.html')
 
 
-def current_profile(request):
+def career_goal(request):
     if request.method == 'POST':
         sector = request.POST.get('cg_industry',None)
         firstRole = request.POST.get('firstgoal', None)
@@ -100,7 +100,7 @@ def current_profile(request):
             userPro=CareerGoal.objects.get(StudentId=user)
             return render(request,'portfolio_subpages/career_goal.html')
 
-        except UserProfile.DoesNotExist:
+        except CareerGoal.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])
             #user.YearOfStudy=Study_year
             #user.save(update_fields=['YearOfStudy'])
