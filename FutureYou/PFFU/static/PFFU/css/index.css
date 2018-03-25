@@ -66,6 +66,13 @@ DEFAULT STYLE & FORMATING
 
 }
 
+.answertxt{height: auto;
+    width: auto;
+    background-color: #f9f0f8;
+    padding-left: 1em;
+    margin-left: 30px;
+
+}
 
 ul{padding: 0;}
 a{color: #ea9312}
