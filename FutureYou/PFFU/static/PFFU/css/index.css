@@ -722,6 +722,25 @@ CareerGoal css begin
 }
 /* Input end */
 
+.btn6{
+    background: #c48ea8;
+    border: none;
+    text-transform: uppercase;
+    float:right;
+    margin: 50px 0;
+    color: #f0eef9;
+    letter-spacing: 2px;
+}
+
+.btn6:hover{
+    background: none;
+    color: #ea9312;
+}
+
+.btn6icon, .brandicon{
+    margin-right: 10px;
+}
+
 /*--------------------
 Understanding yourself and CareerGoal css end
 ---------------------*/
