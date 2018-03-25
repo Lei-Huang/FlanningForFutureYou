@@ -81,7 +81,7 @@ class CareerVoyage(models.Model):
     Status = models.BooleanField(default=True)
 
 
-class CareerValue(models.Model):
+class CareerGoal(models.Model):
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     Status = models.BooleanField(default=True)
     Sector = models.CharField(max_length=30)
@@ -93,7 +93,7 @@ class CareerValue(models.Model):
     ThirdPlan = models.TextField()
 
 
-class CareerGoal(models.Model):
+class CareerValue(models.Model):
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     Status = models.BooleanField(default=True)
     FormInfo = models.CharField(max_length=200)
