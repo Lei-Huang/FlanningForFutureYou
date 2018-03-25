@@ -93,14 +93,28 @@ INFOR SECTION START
         <hr class="separetor">
     </div>
 
-    <h3>In this page, you can develop your self-awareness by: </h3>
+    <h3>In this page, you can develop your self-awareness by 3 steps: </h3>
+    <h3><a href="#basics"> 1. Take care of some basics</a> </h3>
+    <h3><a href="#appointment"> 2. Book a short appointment</a></h3>
+    <h3><a href="#followup"> 3. Follow up</a></h3>
 
+</div><!-- ABOUT SECTION END -->
+
+<!-- ===========================
+BASICS SECTION START
+=========================== -->
+<a name="basics"></a>
+<div id="about" class="container">
+    <div class="sectionhead  row wow fadeInUp">
+        <span class="bigicon icon-cup "></span>
+        <h2>First: The Basics</h2>
+        <hr class="separetor">
+    </div>
     <div class="col-md-6">
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Employability Skills</h8>
 
-            <p class="wow fadeInDown" data-wow-duration="3s">It takes more than a degree to get a good job. Employers have a clear idea of the skills, knowledge and attributes required to do the job and work in their organisation. Depending on the industry or occupation you wish to work in these could be very specific technical skills or knowledge. However, there are general skills and competencies (often referred to as employability skills) that employers commonly seek in new recruits.
-            </p>
+            <p class="wow fadeInDown" data-wow-duration="3s">In a competitive labour market you need to have a clear understanding of the skills and qualities that will make you employable in your chosen field. With this information in mind, you can participate in a range of experiences that will demonstrate that you have the desired skills, qualities and motivation enabling you to stand out to potential employers.</p>
             <input type="button" class="btn3" value="LEARN MORE" onclick="{location.href='/employability_skill'}"/>
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
@@ -129,73 +143,46 @@ INFOR SECTION START
         <img src="{% static "PFFU/img/future_skill.jpg" %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div id="clear"></div>
-
-    <!-- QUESTION START -->
-    <h3>Now you should have a general idea about what skills are needed to find a suitbale job, would you like to know more about what kind of industry or jobs are you really want to find? Please answer the following first </h3>
-    <h4>Have you already done the</h4>
-    <h4>Career Voyage </h4>
-
-    <h5>(What is <a href="#anchor1"> Career Voyage</a>?) </h5>
-    <h3></h3>
-    <h4>OR</h4>
-    <h3></h3>
-    <h4>New Directions </h4>
-
-    <h5>(What is <a href="#anchor2"> New Directions</a>?) </h5>
-
-    <div class="footerlinks"><!-- ASK LINKS START -->
-        <ul>
-            <li><a href="uy_yes">Yes</a></li>
-            <li><a href="#anchor">No</a></li>
-        </ul>
-    </div><!-- ASK LINKS END -->
-    <!-- QUESTION END -->
-
 </div><!-- ABOUT SECTION END -->
-
 
 
 <!-- ===========================
-DO YOU KNOW START
+SHORT APPOINTMENT SECTION START
 =========================== -->
- <a name="anchor1"></a> <a name="anchor3"></a> <a name="anchor2"></a>
+<a name="appointment"></a>
 <div id="about" class="container">
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
-        <h2>Do You Know?</h2>
+        <h2>Second: Book An Appointment</h2>
         <hr class="separetor">
     </div>
 
-    <div class="col-md-6">
-        <div class="row">
-                <h3 class="wow fadeInDown" data-wow-duration="2s">Career Voyage</h3>
-            <p class="wow fadeInDown" data-wow-duration="3s">Develop self-awareness is the first step for everyone to get on the right track, understanding what is important to you in life and work will underpin compatible career choices and effective job search strategies and will affect your career satification. What are you waiting for? Click
-                <a href="https://careerhub.anu.edu.au/students/appointments/app/?campusId=197" >here </a> and book an appointment today!</p>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
+    <h8>Short Appointment</h8>
+    <p>Come along to a drop-in consultation for individual feedback and advice on career planning, applications, job search, how to build employability, accessing internships and work experience and interview and selection processes. Drop-ins can be booked through CareerHub.</p>
+    <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='https://careerhub.anu.edu.au/students/appointments/app/topic/1?campusId=197'}"/>
 
-    <div class="col-md-6">
-        <div class="row">
-            <h3 class="wow fadeInDown" data-wow-duration="2s">New Directions</h3>
-            <p class="wow fadeInDown" data-wow-duration="3s">Develop self-awareness is the first step for everyone to get on the right track, understanding what is important to you in life and work will underpin compatible career choices and effective job search strategies and will affect your career satification. What are you waiting for? Click
-                <a href="https://careerhub.anu.edu.au/students/appointments/app/?campusId=197" >here </a> and book an appointment today!</p>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
 
 </div><!-- ABOUT SECTION END -->
 
-<!-- ANSWERNO START -->
-<a name="anchor"></a>
+
+
+
+
+<!-- THIERD START -->
+<a name="followup"></a>
 <div id="about" class="container">
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
-        <h2>If Your Answer Is No?</h2>
+        <h2>Third: Follow Up</h2>
         <hr class="separetor">
     </div>
 
-    <h3>Now you have two choices</h3>
+    <!-- QUESTION START -->
+    <h3>Now you should have a general idea about what skills are needed to find a suitbale job, would you like to know more about what kind of industry or jobs are you really want to find?  </h3>
+    <!-- QUESTION END -->
+
+
+    <h8>Please pick one of them and finish the follow up:</h8>
     <h4>1. Career Voyage </h4>
     <h5>(What is <a href="#anchor1"> Career Voyage</a>?) </h5>
     <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='/uy_choice1'}"/>
@@ -209,7 +196,46 @@ DO YOU KNOW START
 
 
 </div><!-- ABOUT SECTION END -->
-<!-- QUESTION END -->
+
+
+
+
+
+
+
+
+<!-- ===========================
+DO YOU KNOW START
+=========================== -->
+<a name="anchor1"></a> <a name="anchor3"></a> <a name="anchor2"></a>
+<div id="about" class="container">
+    <div class="sectionhead  row wow fadeInUp">
+        <span class="bigicon icon-cup "></span>
+        <h2>Do You Know?</h2>
+        <hr class="separetor">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <h3 class="wow fadeInDown" data-wow-duration="2s">Career Voyage</h3>
+            <h7>In four easy stages you will be able to develop a career plan.</h7>
+            <h7>Section Choice - working with the appropriate level of education and training. Levels range from minimum education and training to university graduate level.</h7>
+            <h7>Occupational Interest Guide - provides links from personal interests to the world of work presented in specific and supportive graphical and text format</h7>
+            <h7>Job Suggestions -On completion of this section the system generates twenty job suggestions for you, ranked in order of suitability based on what you have said about yourself.</h7>
+            <h7>Research and Action Planning - software features enable you to develop realistic career plans.</h7>
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <div class="col-md-6">
+        <div class="row">
+            <h3 class="wow fadeInDown" data-wow-duration="2s">New Directions</h3>
+            <h7>This tool helps you better understand yourself through analysis of education, work history, skills, interests, personality, values, aspirations, personal circumstances, and external influences.  </h7>
+            <h7>Likely compatible Industries, Career Clusters, Occupations, Occupation Specialisations and Career Combinations are explored to facilitate well informed decision making.</h7>
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+
+</div><!-- ABOUT SECTION END -->
 
 
 

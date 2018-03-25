@@ -19,7 +19,14 @@ h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
 h6 {font-size: 18px; line-height: 1.4em; color: #ea9312;}/*for some answers*/
-h7 {font-size: 18px; line-height: 1.4em; color: #546273;}/*for Description*/
+h7 {font-size: 18px;
+    color: #546273;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;}/*for Description*/
 h8 {font-size: 28px;
     color: #ea9312;
     display: block;
@@ -35,7 +42,7 @@ h10 {font-size: 20px; line-height: 1.4em; color: #ea9312;;
     }/*for some answers*/
 
 
-p{
+p{ font-size: 18px;
     letter-spacing: 1px;
     color: #afafaf;
 
