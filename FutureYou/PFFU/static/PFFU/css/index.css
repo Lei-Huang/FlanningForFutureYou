@@ -662,7 +662,7 @@ CareerGoal css begin
 /* Career Goal input form */
 #careerinput {
     width: 400px;
-    text-align: right;
+    text-align: left;
     position: relative;
 }
 /*Textfield color and form*/
