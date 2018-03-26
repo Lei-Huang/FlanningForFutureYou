@@ -104,7 +104,7 @@ def career_goal(request):
                     #html = ("<H1>User already exsit!</H1> ")
             return render(request,'portfolio_subpages/career_goaldone.html',context)
         except CareerGoal.DoesNotExist:
-            return render(request,'career_goald.html')
+            return render(request,'portfolio_subpages/career_goal.html')
     if request.method == 'POST':
         sector = request.POST.get('cg_industry',None)
         firstRole = request.POST.get('firstgoal', None)
@@ -238,6 +238,8 @@ def current_profile(request):
             context['exp'] =  userProfile.Work_exp
             context['skill']=userProfile.Detail_work
             context['detail_vol'] = userProfile.Detail_volunteer
+            context['start_date'] = userProfile.WorkStartDate
+            context['end_date'] = userProfile.WorkEndDate
                     # do something with user
                     #html = ("<H1>User already exsit!</H1> ")
             userPro=UserProfile.objects.get(StudentId=user)
