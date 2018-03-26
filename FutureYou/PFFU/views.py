@@ -242,7 +242,7 @@ def current_profile(request):
             context['detail_vol'] = userProfile.Detail_volunteer
             context['start_date'] = userProfile.WorkStartDate
             context['end_date'] = userProfile.WorkEndDate
-            context['study_year'] = userProfile.StudyYear
+            context['study_year'] = user.YearOfStudy
                     # do something with user
                     #html = ("<H1>User already exsit!</H1> ")
             userPro=UserProfile.objects.get(StudentId=user)
