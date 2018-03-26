@@ -125,7 +125,7 @@ def career_goal(request):
             #user.YearOfStudy=Study_year
             #user.save(update_fields=['YearOfStudy'])
             progress2=ProgressionBar.objects.get(StudentId=user)
-            progress2.CurrentProgress=2
+            progress2.CurrentProgress=3
             progress2.save(update_fields=['CurrentProgress'])
             #if Volunteer==None:
              #   Volunteer="no"
