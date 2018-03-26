@@ -252,9 +252,10 @@ def current_profile(request):
         major2 = request.POST.get('major2', None)
         Study_year= request.POST.get('study_year',None)
         Work = request.POST.get('work', None)
-        Volunteer =request.POST.get('volunteer', None)
         Detail_work=request.POST.get('detail_work', None)
-        Detail_vol = request.POST.get('detailvol', None)
+        Detail_vol = request.POST.get('detail_vol', None)
+        start = request.POST.get('start_date', None)
+        end = request.POST.get('end_date', None)
         context = {}
         #context['userid'] = Uid
         try:
@@ -269,9 +270,9 @@ def current_profile(request):
             progress2=ProgressionBar.objects.get(StudentId=user)
             progress2.CurrentProgress=1
             progress2.save(update_fields=['CurrentProgress'])
-            if Volunteer==None:
-                Volunteer="no"
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2, FirstMajor=major,SecondMajor=major2,Volunteer_exp=Volunteer,Detail_work=Detail_work,Detail_volunteer=Detail_vol)
+            if Detail_vol==None:
+                Detail_vol="no"
+            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2,WorkStartDate=start,WorkEndDate=end, FirstMajor=major,SecondMajor=major2,Volunteer_exp="no",Detail_work=Detail_work,Detail_volunteer=Detail_vol)
             test2.save()
 
             # do something with user
