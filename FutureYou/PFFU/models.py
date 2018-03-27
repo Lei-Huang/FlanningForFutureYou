@@ -58,12 +58,12 @@ class UserProfile(models.Model):
     # SkillTree = models.CharField(max_length=30)
     # ExperienceTree = models.CharField(max_length=30)
     # PreparationTree = models.CharField(max_length=30)
-    WorkStartDate = models.DateTimeField()
-    WorkEndDate = models.DateTimeField
+    WorkStartDate = models.CharField(max_length=50)
     Work_exp = models.CharField(max_length=30)
+    WorkEndDate = models.CharField(max_length=50)
     Volunteer_exp = models.CharField(max_length=30)
     Detail_work = models.TextField()
-    Detail_volunteer=models.TextField()
+    Detail_volunteer = models.TextField()
     # Network = models.TextField()
     # Skill = models.TextField()
     # Experience = models.TextField()
@@ -73,7 +73,7 @@ class UserProfile(models.Model):
 
 class ProgressionBar(models.Model):
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
-    CurrentProgress = models.IntegerField(default='')
+    CurrentProgress = models.IntegerField(default="")
 
 
 class CareerVoyage(models.Model):
