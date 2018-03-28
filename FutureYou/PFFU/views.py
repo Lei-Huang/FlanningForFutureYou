@@ -76,9 +76,6 @@ def interview_skill(request):
     return render(request, 'portfolio_subpages/interview_skill.html')
 
 
-def career_goal(request):
-    return render(request, 'portfolio_subpages/career_goal.html')
-
 def career_goaldone(request):
     return render(request, 'portfolio_subpages/career_goaldone.html')
 
@@ -131,10 +128,10 @@ def career_goal(request):
              #   Volunteer="no"
             test2 = CareerGoal(StudentId=user,Sector=sector,FirstRow=firstRole, SecondRow=secondRole,ThirdRow=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
             test2.save()
-
+            context['progressInt']=progress2.CurrentProgress
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
-            return render(request, 'portfolio.html')
+            return render(request, 'portfolio.html',context)
             #return render(request, 'login.html')
     else:
         return render(request, 'portfolio_subpages/career_goal.html')
