@@ -144,7 +144,9 @@
                         <ul class="personal-info">
                             <li class="rotate-out rotated"><label>Detail: </label><span><U>{{detail_vol}}</U></span></li>
                         </ul><!--/ul.personal-info-->
+                        <h6 class="copyright-text" style="margin-top: 100px">Copyright © PlanningForFutureYou. <br/>The profile developed from Lei Huang's <a href="https://github.com/Lei-Huang/PersonalPage">Personal Page </a > </h6>
                     </div>
+
                 </li><!--/#home-->
 
                 <!--EDITINFOR PAGE-->
@@ -169,66 +171,60 @@
                                 <td> {{Uid}}</td>
                             </tr>
                             <tr>
-                                <td>Program1 </td>
-                                <td class="s1"><input value="{{program}}" readonly="true"/></td>
+                                <td>Program </td>
+                                <td class="s1"><input value="{{program}}" readonly="true"/><input value="{{program2}}" readonly="true"/></td>
                             </tr>
                             <tr>
-                                <td>Program2</td>
-                                <td class="s2"><input value="{{program2}}" readonly="true"/></td>
-                            </tr>
-                            <tr>
-                                <td>Major1</td>
-                                <td class="s3"><input value="{{major}}" readonly="true"/></td>
-                            </tr>
-                            <tr>
-                                <td>Major2</td>
-                                <td class="s4"><input value="{{major2}}" readonly="true"/></td>
+                                <td>Major</td>
+                                <td class="s2"><input value="{{major}}" readonly="true"/><input value="{{major2}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Year of Study: (First/Mid/Final Year) </td>
-                                <td class="s5"><input value="{{study_year}}" readonly="true"/></td>
+                                <td class="s3"><input value="{{study_year}} year" readonly="true"/></td>
                             </tr>
 
                             <tr>
-                                <td>Work Type: (Casual/Full-time)</td>
+                                <td>Work Type: (Casual/Full-time/Internship)</td>
                                 <td class="s6"><input value={{exp}} readonly="true"/></td>
 
                             </tr>
                             <tr>
-                                <td height="85px">Details of Work Experience:</td>
-                                <td height="85px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">From {{start_date}} to {{end_date}}; Detail: {{skill}}</textarea>
+                                <td height="83px">Details of Work Experience:</td>
+                                <td height="83px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">From {{start_date}} to {{end_date}}; Detail: {{skill}}</textarea>
                             </tr>
                             <tr>
-                                <td height="85px">Details of Volunteer Experience:</td>
-                                <td height="85px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
+                                <td height="83px">Details of Volunteer Experience:</td>
+                                <td height="83px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
                             </tr>
                         </table>
-                        <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 10px" value="Edit"/>
-                        <input type="button" class="save_btn" value="Save"/><center>
+                        <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 2px" value="Edit"/>
+                        <input type="button" class="save_btn" value="Save"/>
+                        </center>
                     </div>
                 </li>
                 <!--/#editInfor-->
 
                 <!--CONTACT PAGE-->
                 <li id="contact" class="hidden">
-                    <div class="title-container" >
-                        <div class="shadow-img"></div>
-                        <h2 class="rotate-out rotated">Contact</h2><!--CONTACT PAGE TITLE-->
-                    </div>
-                    <div class="description">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="map-container">
-                                    <div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
-                                </div>
+                <div class="title-container" >
+                    <div class="shadow-img"></div>
+                    <h2 class="rotate-out rotated">Contact</h2><!--CONTACT PAGE TITLE-->
+                </div>
+                <div class="description">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="map-container">
+                                <div id="map" style="width:100%;height:325px;"></div><!--GOOGLE MAP-->
                             </div>
                         </div>
                     </div>
-                </li><!--/#contact-->
+                </div>
+            </li><!--/#contact-->
             </ul>
         </div><!--/.page-segment -->
 
-        <h6 class="copyright-text" style="margin-top: 15px">Copyright © 2017 PlanningForFutureYou </h6>  <!--if anyone wants copyright Texts-->
+
+        <!--if anyone wants copyright Texts-->
     </div>
 </div><!--/.container -->
 
