@@ -54,6 +54,14 @@ p{ font-size: 18px;
     color: #a7a7a7;
 
 }
+p1{ font-size: 14px;
+    color: #5e5e5e;
+
+}
+
+
+
+
 
 /*================================
 DEFAULT STYLE & FORMATING
@@ -583,17 +591,24 @@ FOLLOW BUTTON
     transition: all 0.5s ease-in-out; /* Browsers that Support it */
 }
 
+
+
 /*================================
-Portfolio Image Display
+Portfolio Image & Hint Display
 ================================*/
 #ban {
     margin: 0;
     padding: 0;
     list-style: none;
+    width: 100%;
+
 }
-
-
-.ban{ width:580px; height:300px; position:relative; overflow:hidden;margin:20px auto 0 auto;}
+.hint{
+    float: right;
+    width: 32%;
+    margin-left: 0px;
+}
+.ban{ width:90%; height:300px; position:relative; overflow:hidden;margin:20px auto 0 auto;}
 .ban2{ width:580px; height:300px; position:relative; overflow:hidden;}
 .ban2 ul{ position:absolute; left:0; top:0;}
 .ban2 ul li{ width:580px; height:300px;}
