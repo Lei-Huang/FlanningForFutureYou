@@ -110,6 +110,10 @@ def career_goal(request):
         FirstPlan= request.POST.get('cg_q1',None)
         SecondPlan = request.POST.get('cg_q2', None)
         ThirdPlan =request.POST.get('cg_q3', None)
+        check_box_list2 = request.POST.getlist('cg_industry', None)
+        l = ""
+        for i in range(len(check_box_list2)):
+            l = l + check_box_list2[i] + " "
         context = {}
         #context['userid'] = Uid
         try:
@@ -126,7 +130,7 @@ def career_goal(request):
             progress2.save(update_fields=['CurrentProgress'])
             #if Volunteer==None:
              #   Volunteer="no"
-            test2 = CareerGoal(StudentId=user,Sector=sector,FirstRow=firstRole, SecondRow=secondRole,ThirdRow=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
+            test2 = CareerGoal(StudentId=user,Sector=l,FirstRow=firstRole, SecondRow=secondRole,ThirdRow=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
             test2.save()
             context['progressInt']=progress2.CurrentProgress
             # do something with user
@@ -256,11 +260,15 @@ def current_profile(request):
         major = request.POST.get('major', None)
         major2 = request.POST.get('major2', None)
         Study_year= request.POST.get('study_year',None)
-        Work = request.POST.get('work', None)
+        #Work = request.POST.get('work', None)
         Detail_work=request.POST.get('detail_work', None)
         Detail_vol = request.POST.get('detail_vol', None)
         start = request.POST.get('start_date', None)
         end = request.POST.get('end_date', None)
+        check_box_list = request.POST.getlist('work',None)
+        k = ""
+        for i in range(len(check_box_list)):
+            k=k+check_box_list[i]+" "
         context = {}
         #context['userid'] = Uid
         try:
@@ -277,7 +285,7 @@ def current_profile(request):
             progress2.save(update_fields=['CurrentProgress'])
             if Detail_vol==None:
                 Detail_vol="no"
-            test2 = UserProfile(StudentId=user, Work_exp=Work,FirstProgram=program,SecondProgram=program2,WorkStartDate=start,WorkEndDate=end, FirstMajor=major,SecondMajor=major2,Volunteer_exp="no",Detail_work=Detail_work,Detail_volunteer=Detail_vol)
+            test2 = UserProfile(StudentId=user, Work_exp=k,FirstProgram=program,SecondProgram=program2,WorkStartDate=start,WorkEndDate=end, FirstMajor=major,SecondMajor=major2,Volunteer_exp="no",Detail_work=Detail_work,Detail_volunteer=Detail_vol)
             test2.save()
 
             # do something with user
