@@ -261,7 +261,7 @@ def current_profile(request):
         major2 = request.POST.get('major2', None)
         Study_year= request.POST.get('study_year',None)
         #Work = request.POST.get('work', None)
-        Detail_work=request.POST.get('detail_work', None)
+        Detail_work=request.POST.get('exp', None)
         Detail_vol = request.POST.get('detail_vol', None)
         start = request.POST.get('start_date', None)
         end = request.POST.get('end_date', None)
@@ -273,8 +273,40 @@ def current_profile(request):
         #context['userid'] = Uid
         try:
             user = Student.objects.get(studentId=request.session['userName'])
+            userProfile = UserProfile.objects.get(StudentId=user)
+            context['Uid'] = user.studentId
+            context['Lastname'] = user.LastName
+            context['Firstname'] = user.FirstName
+            context['Dis'] = user.Discipline
+            context['program'] = userProfile.FirstProgram
+            context['major'] = userProfile.FirstMajor
+            context['degree'] = user.Degree
+            context['exp'] = userProfile.Work_exp
+            context['skill'] = userProfile.Detail_work
+            context['detail_vol'] = userProfile.Detail_volunteer
+            context['start_date'] = userProfile.WorkStartDate
+            context['end_date'] = userProfile.WorkEndDate
+            context['study_year'] = user.YearOfStudy
+            context['program2'] = userProfile.SecondProgram
+            context['major2'] = userProfile.SecondMajor
+            user = Student.objects.get(studentId=request.session['userName'])
             userPro=UserProfile.objects.get(StudentId=user)
-            return render(request,'portfolio_subpages/profile.html')
+            userPro.FirstProgram=program
+            userPro.SecondProgram = program2
+            userPro.FirstMajor = major
+            userPro.SecondMajor = major2
+            user.YearOfStudy = Study_year
+            userPro.Work_exp=Detail_work
+            userPro.Detail_volunteer=Detail_vol
+
+            userPro.save(update_fields=['FirstProgram'])
+            userPro.save(update_fields=['SecondProgram'])
+            userPro.save(update_fields=['FirstMajor'])
+            userPro.save(update_fields=['SecondMajor'])
+            user.save(update_fields=['YearOfStudy'])
+            userPro.save(update_fields=['Work_exp'])
+            userPro.save(update_fields=['Detail_volunteer'])
+            return render(request,'portfolio_subpages/profile.html',context)
 
         except UserProfile.DoesNotExist:
             user = Student.objects.get(studentId=request.session['userName'])

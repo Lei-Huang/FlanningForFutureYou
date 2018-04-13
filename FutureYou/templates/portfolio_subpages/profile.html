@@ -109,6 +109,9 @@
             </div><!--#menu-container-->
         </div>
 
+        <form id="current_profile" method="POST" action="current_profile">
+        <p></p>
+    {% csrf_token %}
         <div class="col-sm-8 page-segment">
             <ul class="page-container no-padding">
                 <!--HOME/PROFILE PAGE-->
@@ -172,20 +175,22 @@
                             </tr>
                             <tr>
                                 <td>Program </td>
-                                <td class="s1"><input value="{{program}}" readonly="true"/><input value="{{program2}}" readonly="true"/></td>
+                                <td class="s1"><input name="program" value="{{program}}" readonly="true"/>
+                                    <input name="program2" value="{{program2}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Major</td>
-                                <td class="s2"><input value="{{major}}" readonly="true"/><input value="{{major2}}" readonly="true"/></td>
+                                <td class="s2"><input name="major" value="{{major}}" readonly="true"/>
+                                    <input name="major2" value="{{major2}}" readonly="true"/></td>
                             </tr>
                             <tr>
                                 <td>Year of Study: (First/Mid/Final Year) </td>
-                                <td class="s3"><input value="{{study_year}} year" readonly="true"/></td>
+                                <td class="s3"><input name="study_year" value="{{study_year}} year" readonly="true"/></td>
                             </tr>
 
                             <tr>
                                 <td>Work Type: (Casual/Full-time/Internship)</td>
-                                <td class="s6"><input value={{exp}} readonly="true"/></td>
+                                <td class="s6"><input name="exp" value={{exp}} readonly="true"/></td>
 
                             </tr>
                             <tr>
@@ -194,11 +199,11 @@
                             </tr>
                             <tr>
                                 <td height="83px">Details of Volunteer Experience:</td>
-                                <td height="83px" class="s8"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
+                                <td height="83px" class="s8"><textarea id="TextArea" name="detail_vol" cols="40" rows="4" readonly="true">{{detail_vol}}</textarea>
                             </tr>
                         </table>
                         <center><input type="button" onclick="edit(this.parentNode.parentNode)" class="edit_btn" style="margin-top: 2px" value="Edit"/>
-                        <input type="button" class="save_btn" value="Save"/>
+                        <input type="submit" class="save_btn action-button" value="Save"/>
                         </center>
                     </div>
                 </li>
@@ -222,7 +227,7 @@
             </li><!--/#contact-->
             </ul>
         </div><!--/.page-segment -->
-
+        </form>
 
         <!--if anyone wants copyright Texts-->
     </div>
