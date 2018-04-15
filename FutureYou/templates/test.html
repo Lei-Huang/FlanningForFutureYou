@@ -7,9 +7,9 @@
 <body>
     {% if request.session.userName %}
     <h4 style='font-family:楷体;'> welcome{{ request.session.userName }} </h4>
-{% else %}
+        {% else %}
     <h3 style='font-family:楷体;'>Invalid username/password, please try to login again</h3>
-{% endif %}
+    {% endif %}
 
 </body>
 </html>
