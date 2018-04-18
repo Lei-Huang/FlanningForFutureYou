@@ -217,7 +217,7 @@
         <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
                 <ul id="bubblemenu"><li>
                     <a href="/research_employer">
-                    <img src="{% static "PFFU/img/s14.png" %}" alt="" width=100px>
+                    <img src="{% static 'PFFU/img/s14.png' %}" alt="" width=100px>
                     <h4>Engaging with Employers</h4>
                      </a >
                     <div>Social networking, Resources for narrowing down target list of employers</div></li>
@@ -227,20 +227,23 @@
         <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
                 <ul id="bubblemenu"><li>
                     <a href="/workshops">
-                    <img src="{% static "PFFU/img/s15.png" %}" alt="" width="100px">
+                    <img src="{% static 'PFFU/img/s15.png' %}" alt="" width="100px">
                     <h4>Researching Potential Jobs</h4>
-                    </a >
+                    </a>
                 <div>Links to workshops in career hub (Resume, graduation program).</div></li>
                 </ul>
         </div>
 
         <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="3s">
-                <ul id="bubblemenu"><li>
+                <ul id="bubblemenu">
+                    <li>
                     <a href="/interview_skill">
-                    <img src="{% static "PFFU/img/s16.png" %}" alt="" width=100px>
+                    <img src="{% static 'PFFU/img/s16.png' %}" alt="" width=100px>
                     <h4>Getting Ready for Graduate Employment</h4>
                     </a >
-                    <div>Links to interview skill workshops and graduate programs</div></li></ul>
+                    <div>Links to interview skill workshops and graduate programs</div>
+                    </li>
+                </ul>
         </div>
 
     </div><!-- SERVICE ITEMS END-->
@@ -291,10 +294,10 @@ FOOTER START
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!--progress bar scripts-->
-<script src="{% static "PFFU/js/progressbar.js"%}"></script>
+<script src="{% static 'PFFU/js/progressbar.js'%}"></script>
 
 <!--image display bar scripts-->
-<script src="{% static "PFFU/js/pic_tab.js"%}"></script>
+<script src="{% static 'PFFU/js/pic_tab.js'%}"></script>
 <script type="text/javascript">
     jq('#demo1').banqh({
         box:"#demo1", //Frame
@@ -308,7 +311,7 @@ FOOTER START
 </script>
 
 <!--Other necessary scripts-->
-<script src="{% static "PFFU/js/drifolio.js"%}"></script>
+<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 
 </body>
 </html>
