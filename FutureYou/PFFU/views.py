@@ -91,9 +91,9 @@ def career_goal(request):
             user = Student.objects.get(studentId=request.session['userName'])
             userGoal = CareerGoal.objects.get(StudentId=user)
             context['cg_sector1'] = userGoal.Sector
-            context['cg_goal1'] = userGoal.FirstRow
-            context['cg_goal2']=userGoal.SecondRow
-            context['cg_goal3']=userGoal.ThirdRow
+            context['cg_goal1'] = userGoal.FirstRole
+            context['cg_goal2']=userGoal.SecondRole
+            context['cg_goal3']=userGoal.ThirdRole
             context['cg_q1'] = userGoal.FirstPlan
             context['cg_q2'] =  userGoal.SecondPlan
             context['cg_q3']=userGoal.ThirdPlan
@@ -130,7 +130,7 @@ def career_goal(request):
             progress2.save(update_fields=['CurrentProgress'])
             #if Volunteer==None:
              #   Volunteer="no"
-            test2 = CareerGoal(StudentId=user,Sector=l,FirstRow=firstRole, SecondRow=secondRole,ThirdRow=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
+            test2 = CareerGoal(StudentId=user,Sector=l,FirstRole=firstRole, SecondRole=secondRole,ThirdRole=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
             test2.save()
             context['progressInt']=progress2.CurrentProgress
             # do something with user
@@ -261,7 +261,7 @@ def current_profile(request):
         major2 = request.POST.get('major2', None)
         Study_year= request.POST.get('study_year',None)
         #Work = request.POST.get('work', None)
-        Detail_work=request.POST.get('exp', None)
+        Detail_work=request.POST.get('detail_work', None)
         Detail_vol = request.POST.get('detail_vol', None)
         start = request.POST.get('start_date', None)
         end = request.POST.get('end_date', None)
