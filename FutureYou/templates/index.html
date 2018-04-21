@@ -106,6 +106,9 @@
                     LOGIN SECTION
                     =========================== -->
 
+                    <!--Another version of login implementation, used for alpha version testing
+                    Sign-off: Lei Huang u6041747@anu.edu.au-->
+
                     <!--<li id =loginSector>-->
                         <!--<form method="POST" action="index.html">-->
                             <!--<a href="/profile"><span class="btnicon icon-bubble"></span>Hi,{{userName}}</a>-->
@@ -124,27 +127,35 @@
                         <!--<input type="submit" id="logout" class="btn action-button" value="LOGOUT" />-->
                         <!--</form>-->
 
+
+                    <!--===================================
+                    This script is used for display username in the navbar.
+                    The value is passed from login session as a context variable.
+                    Please refer to FutureYou/PFFU/views.py for further information.
+                    Sign-off: Lei Huang u6041747@anu.edu.au
+                    ====================================-->
                     <script>
+                        // The function checks whether userName is void or not.
                         var userName = "{{userName}}"
                         if(userName==1||userName.length==0){
                             parent = document.getElementById("nav_bar");
                             child = "<li id =login>\n" +
-                                "                        <form method=\"POST\" action=\"index.html\">\n" +
-                                "                            {% csrf_token %}\n" +
-                                "                            <input type=\"button\" id=\"loginbutton\" class=\"btn action-button\" value=\"LOGIN\" onclick=\"{location.href='/login.html'}\"/>\n" +
-                                "                            <input type=\"button\" id=\"signupbutton\" class=\"btn action-button\" value=\"REGISTER\" onclick=\"{location.href='/signup.html'}\"/>\n" +
-                                "                        </form>\n" +
-                                "                    </li>"
+                                "<form method=\"POST\" action=\"index.html\">\n" +
+                                "{% csrf_token %}\n" +
+                                "<input type=\"button\" id=\"loginbutton\" class=\"btn action-button\" value=\"LOGIN\" onclick=\"{location.href='/login.html'}\"/>\n" +
+                                "<input type=\"button\" id=\"signupbutton\" class=\"btn action-button\" value=\"REGISTER\" onclick=\"{location.href='/signup.html'}\"/>\n" +
+                                "</form>\n" +
+                                "</li>"
                             parent.insertAdjacentHTML('afterend', child);}
                         else{
                             parent = document.getElementById("nav_bar");
                             child = "<li id =login>\n" +
-                                "                        <form method=\"POST\" action=\"index.html\">\n" +
-                                "                            <a href=\"/profile\"><span class=\"btnicon icon-bubble\"></span>Hi,{{userName}}</a>\n" +
-                                "                            {% csrf_token %}\n" +
-                                "                            <input type=\"submit\" id=\"logoutbutton\" class=\"btn action-button\" value=\"LOGOUT\" />\n" +
-                                "                        </form>\n" +
-                                "                    </li>"
+                                "<form method=\"POST\" action=\"index.html\">\" +
+                                "<a href=\"/profile\"><span class=\"btnicon icon-bubble\"></span>Hi,{{userName}}</a>\n" +
+                                "{% csrf_token %}\n" +
+                                "<input type=\"submit\" id=\"logoutbutton\" class=\"btn action-button\" value=\"LOGOUT\" />\n" +
+                                "</form>\n" +
+                                "</li>"
                             parent.insertAdjacentHTML('afterend', child);}
                     </script>
                 </ul>
@@ -153,8 +164,6 @@
         </div>
     </nav><!--navbar end-->
 </header><!--header end-->
-
-
 
 <div id="about" class="container">
     <h2>You should know:</h2>
@@ -165,8 +174,7 @@
         <div class="row">
             <h3 class="wow fadeInDown" data-wow-duration="2s">Skills</h3>
 
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Develop your transferrable skills.</h4>
-
+            <h4 class="wow fadeInUp" data-wow-duration="3s">Develop your transferable skills.</h4>
 
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
