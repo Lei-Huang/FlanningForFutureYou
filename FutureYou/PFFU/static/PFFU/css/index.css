@@ -534,14 +534,14 @@ FOLLOW BUTTON
 
 
 /*Portfolio bubble*/
-#bubblemenu li {
+.bubblemenu li {
     display: inline;
     margin-left: 15px;
     cursor:pointer;
 }
 
 
-#bubblemenu li > div {
+.bubblemenu li > div {
 
     width: 220px;
     height: 100px;
@@ -578,7 +578,7 @@ FOLLOW BUTTON
 }
 
 
-#bubblemenu li:hover > div {
+.bubblemenu li:hover > div {
 
     visibility:visible;
     opacity: 1;
