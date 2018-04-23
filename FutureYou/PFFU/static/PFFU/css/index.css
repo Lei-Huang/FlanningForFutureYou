@@ -624,14 +624,14 @@ CareerGoal css begin
 
 /*CareerGoal bubble*/
 
-#bubblecareer li {
+.bubblecareer li {
     display: inline;
     margin-left: 15px;
     cursor:pointer;
 }
 
 
-#bubblecareer li > div {
+.bubblecareer li > div {
 
     width: 600px;
     height: 85px;
@@ -668,7 +668,7 @@ CareerGoal css begin
 }
 
 
-#bubblecareer li:hover > div {
+.bubblecareer li:hover > div {
 
     visibility:visible;
     opacity: 1;
