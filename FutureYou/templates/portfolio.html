@@ -15,16 +15,12 @@
     FAVICONS
     =========================== -->
     <link rel="icon" href="img/anu_logo_fb_350.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{% static "PFFU/img/anu_logo_fb_350.png" %}"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="img/anu_logo_fb_350.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="img/anu_logo_fb_350.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/anu_logo_fb_350.png" />
-
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'PFFU/img/anu_logo_fb_350.png' %}"/>
     <!-- ===========================
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static "PFFU/css/index.css" %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
 
 
     <!-- ===========================
@@ -36,7 +32,7 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
     <!--[if IE 6]>
-    <script src="{% static "PFFU/js/iepng.js" type="text/javascript"%}"></script>
+    <script src="{% static 'PFFU/js/iepng.js' type='text/javascript'%}"></script>
     <script type="text/javascript">
             EvPNG.fix('div, ul, img, li, input,a,span');
     </script>
@@ -47,7 +43,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script src="{% static "PFFU/js/jquery-1.8.3.min.js"%}"></script>
+    <script src="{% static 'PFFU/js/jquery-1.8.3.min.js'%}"></script>
 
 
 </head>
@@ -76,13 +72,11 @@
                 </button>
 
                 <a class="navbar-brand" href="/index">
-                    <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                    <!--The brand name on the left side of the nav bar-->
                     <span class="brandicon icon-grid"></span>
                     <span class="brandname">FutureYou</span>
                 </a>
             </div>
-
-
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -96,10 +90,7 @@
         </div>
     </nav><!--navbar end-->
 </header><!--header end-->
-
-
 <!-- ===========================
-
 
 <!-- ========================
     PORTFOLIO SECTION START
@@ -110,71 +101,70 @@
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
         <h2>Portfolio</h2>
-
-
-
         <!-- Image Display SECTION START -->
             <div class="ban" id="demo1">
                 <div class="hint">
                     <table  style="border:3px #7e7e7e solid;padding:5px;" height=300px >
                     <tr>
                         <td align="left" border="1">
-                    <p1>Once you have settled into your studies and life at ANU, it is worth taking the time to think about what you want to get out of your education. You may have a clear idea of your career direction or you may not be sure what you want to do after university. <br/>
-                        It's never too early to start planning your career.This site will provide the steps recommended to start planning your career and are skills you can use for the rest of your career. Follow the steps on this site and see your progress as you go.<br/>
-
+                    <p1>Once you have settled into your studies and life at ANU, it is worth taking the time to think
+                        about what you want to get out of your education. You may have a clear idea of your career
+                        direction or you may not be sure what you want to do after university. <br/>
+                        It's never too early to start planning your career.This site will provide the steps recommended
+                        to start planning your career and are skills you can use for the rest of your career. Follow the
+                        steps on this site and see your progress as you go.<br/>
                     </p1>
                     </td>
                     </tr>
                     </table>
                 </div>
                 <div class="ban2" id="ban_pic1">
-                    <div class="prev1" id="prev1"><img src="{% static "PFFU/img/tab_r.png"%}" width="51" height="51"  alt=""></div>
-                    <div class="next1" id="next1"><img src="{% static "PFFU/img/tab_l.png"%}" width="51" height="51"  alt=""></div>
+                    <div class="prev1" id="prev1"><img src="{% static 'PFFU/img/tab_r.png'%}" width="51" height="51"  alt=""></div>
+                    <div class="next1" id="next1"><img src="{% static 'PFFU/img/tab_l.png'%}" width="51" height="51"  alt=""></div>
                     <ul>
-                        <li><a href="javascript:;"><img src="{% static "PFFU/img/p1.jpg" %}"  width=85% alt=""></a></li>
-                        <li><a href="javascript:;"><img src="{% static "PFFU/img/p2.jpg" %}"  width=85% alt=""></a></li>
-                        <li><a href="javascript:;"><img src="{% static "PFFU/img/p3.jpg" %}"  width=85% alt=""></a></li>
-                        <li><a href="javascript:;"><img src="{% static "PFFU/img/p4.jpg" %}"  width=85% alt=""></a></li>
+                        <li><a href="javascript:;"><img src="{% static 'PFFU/img/p1.jpg' %}"  width=85% alt=""></a></li>
+                        <li><a href="javascript:;"><img src="{% static 'PFFU/img/p2.jpg' %}"  width=85% alt=""></a></li>
+                        <li><a href="javascript:;"><img src="{% static 'PFFU/img/p3.jpg' %}"  width=85% alt=""></a></li>
+                        <li><a href="javascript:;"><img src="{% static 'PFFU/img/p4.jpg' %}"  width=85% alt=""></a></li>
                     </ul>
                 </div>
             </div>
 
-
-
         <div class="progressbar">
         <hr class="separetor">
         <!--progress bar-->
-        <img style=" margin-left: 120px" id="progressbar" src="{% static "PFFU/img/progressbar1.png" %}" width=50%>
-        <script>
+            <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+        <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" width=50%>
+            <script>
             var img = document.getElementById("progressbar")
             var progressInt = "{{progressInt}}";
             function changePicture(progressInt) {
                 switch (progressInt){
                     case "0":
-                        img.src = "{% static "PFFU/img/progressBar0.png" %}"
+                        img.src = "{% static 'PFFU/img/progressBar0.png' %}"
                         break
                     case "1":
-                        img.src = "{% static "PFFU/img/progressbar1.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar1.png' %}"
                         break
                     case "2":
-                        img.src = "{% static "PFFU/img/progressbar2.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar2.png' %}"
                         break
                     case "3":
-                        img.src = "{% static "PFFU/img/progressbar3.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar3.png' %}"
                         break
                     case "4":
-                        img.src = "{% static "PFFU/img/progressbar4.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar4.png' %}"
                         break
                     case "5":
-                        img.src = "{% static "PFFU/img/progressbar5.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar5.png' %}"
                         break
                     case "6":
-                        img.src = "{% static "PFFU/img/progressbar6.png" %}"
+                        img.src = "{% static 'PFFU/img/progressbar6.png' %}"
                         break
                 }
             }
-            changePicture(progressInt)
-        </script>
+                changePicture(progressInt)
+            </script>
         <hr class="separetor">
         </div>
     </div><!--PORTFOLIO SECTION HEADING END-->
