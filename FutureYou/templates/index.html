@@ -101,42 +101,16 @@
                     <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
                     <li id="nav_bar"><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
 
-
-                    <!-- ===========================
-                    LOGIN SECTION
-                    =========================== -->
-
-                    <!--Another version of login implementation, used for alpha version testing
-                    Sign-off: Lei Huang u6041747@anu.edu.au-->
-
-                    <!--<li id =loginSector>-->
-                        <!--<form method="POST" action="index.html">-->
-                            <!--<a href="/profile"><span class="btnicon icon-bubble"></span>Hi,{{userName}}</a>-->
-                            <!--{% csrf_token %}-->
-                            <!--<input type="submit" id="logout" class="btn action-button" value="LOGOUT" />-->
-                        <!--</form>-->
-                    <!--</li>-->
-                    <!--<form method="POST" action="index.html">-->
-                        <!--{% csrf_token %}-->
-                        <!--<input type="button" id="login" class="btnicon icon-bubble" value="LOGIN" onclick="{location.href='/login.html'}"/>-->
-                        <!--<input type="button" id="signup" class="btnicon icon-bubble" value="REGISTER" onclick="{location.href='/signup.html'}"/>-->
-                    <!--</form>-->
-
-                        <!--<form method="POST" action="index.html">-->
-                        <!--{% csrf_token %}-->
-                        <!--<input type="submit" id="logout" class="btn action-button" value="LOGOUT" />-->
-                        <!--</form>-->
-
-
                     <!--===================================
                     This script is used for display username in the navbar.
                     The value is passed from login session as a context variable.
                     Please refer to FutureYou/PFFU/views.py for further information.
                     Sign-off: Lei Huang u6041747@anu.edu.au
                     ====================================-->
+
                     <script>
-                        // The function checks whether userName is void or not.
                         var userName = "{{userName}}"
+                        // The function checks whether userName is void or not.
                         if(userName==1||userName.length==0){
                             parent = document.getElementById("nav_bar");
                             child = "<li id =login>\n" +
@@ -150,13 +124,15 @@
                         else{
                             parent = document.getElementById("nav_bar");
                             child = "<li id =login>\n" +
-                                "<form method=\"POST\" action=\"index.html\">\" +
+                                "<form method=\"POST\" action=\"index.html\">\n" +
+                                "{% csrf_token %}\n" +
                                 "<a href=\"/profile\"><span class=\"btnicon icon-bubble\"></span>Hi,{{userName}}</a>\n" +
                                 "{% csrf_token %}\n" +
                                 "<input type=\"submit\" id=\"logoutbutton\" class=\"btn action-button\" value=\"LOGOUT\" />\n" +
                                 "</form>\n" +
                                 "</li>"
-                            parent.insertAdjacentHTML('afterend', child);}
+                            parent.insertAdjacentHTML('afterend', child);
+                        }
                     </script>
                 </ul>
 
