@@ -534,14 +534,14 @@ FOLLOW BUTTON
 
 
 /*Portfolio bubble*/
-#bubblemenu li {
+.bubblemenu li {
     display: inline;
     margin-left: 15px;
     cursor:pointer;
 }
 
 
-#bubblemenu li > div {
+.bubblemenu li > div {
 
     width: 220px;
     height: 100px;
@@ -578,7 +578,7 @@ FOLLOW BUTTON
 }
 
 
-#bubblemenu li:hover > div {
+.bubblemenu li:hover > div {
 
     visibility:visible;
     opacity: 1;
@@ -624,14 +624,14 @@ CareerGoal css begin
 
 /*CareerGoal bubble*/
 
-#bubblecareer li {
+.bubblecareer li {
     display: inline;
     margin-left: 15px;
     cursor:pointer;
 }
 
 
-#bubblecareer li > div {
+.bubblecareer li > div {
 
     width: 600px;
     height: 85px;
@@ -668,7 +668,7 @@ CareerGoal css begin
 }
 
 
-#bubblecareer li:hover > div {
+.bubblecareer li:hover > div {
 
     visibility:visible;
     opacity: 1;
