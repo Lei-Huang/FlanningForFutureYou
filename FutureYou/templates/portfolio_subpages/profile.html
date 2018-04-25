@@ -29,15 +29,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700%7cOswald:400,700" rel="stylesheet">
     <!--stylesheets
     ====================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/bootstrap.min.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/font-awesome.min.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/profile.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "PFFU/css/simpletextrotator.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'PFFU/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'PFFU/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'PFFU/css/profile.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'PFFU/css/simpletextrotator.css' %}">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script src="{% static "PFFU/js/jquery.min.js"%}"></script> <!-- JQUERY -->
+    <script src="{% static 'PFFU/js/jquery.min.js'%}"></script> <!-- JQUERY -->
 
     <script language="javascript" type="text/javascript">
         function $(id) {
@@ -66,10 +66,10 @@
 
 <div id="frontpage">
     <div class="shadow-img"></div>
-    <img src="{% static "PFFU/img/front-image.png" %}" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
+    <img src="{% static 'PFFU/img/front-image.png' %}" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
     <h1><U>{{ Firstname }} <span class="invert">{{Lastname}}</span></U></h1><!--PROFILE NAME-->
     <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">{{major}}</h3> <!--SUBTITLE IN PROFILE-->
-    <div class="frontclick"><img src="{% static "PFFU/img/click.png"%}" alt="" class="img-responsive"><span class="pulse"></span></div>
+    <div class="frontclick"><img src="{% static 'PFFU/img/click.png'%}" alt="" class="img-responsive"><span class="pulse"></span></div>
 </div>
 <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
 
@@ -84,7 +84,7 @@
                 <h3 class="invert sub-maintitle">
                     <span class="rotate">{{program}},{{major}}</span><!--SUBTITLE AFTET NAME-->
                 </h3>
-                <img id="profile-img" class="profile-img transparent" src="{% static "PFFU/img/profile1.png"%}" alt="profile-image"><!--PROFILE IMAGE-->
+                <img id="profile-img" class="profile-img transparent" src="{% static 'PFFU/img/profile1.png'%}" alt="profile-image"><!--PROFILE IMAGE-->
             </div><!--/#namecard-->
 
             <!--menu-->
@@ -241,13 +241,13 @@
 
 <!--javascript files
 =============================================================-->
-<script type="text/javascript" src="{% static "PFFU/js/jQueryTween-aio-min.js"%}"></script> <!-- JQUERY Tween Plugin -->
-<script type="text/javascript" src="{% static "PFFU/js/jquery.tabslet.min.js"%}"></script> <!-- JQUERY Tab plugin-->
-<script type="text/javascript" src="{% static "PFFU/js/progressbar.min.js"%}"></script> <!-- JQUERY Progressbar Plugin-->
-<script type="text/javascript" src="{% static "PFFU/js/jquery.simple-text-rotator.min.js"%}"></script> <!-- JQUERY Text Rotator-->
-<script type="text/javascript" src="{% static "PFFU/js/bootstrap.min.js"%}"></script> <!-- Bootstrap file-->
+<script type="text/javascript" src="{% static 'PFFU/js/jQueryTween-aio-min.js'%}"></script> <!-- JQUERY Tween Plugin -->
+<script type="text/javascript" src="{% static 'PFFU/js/jquery.tabslet.min.js'%}"></script> <!-- JQUERY Tab plugin-->
+<script type="text/javascript" src="{% static 'PFFU/js/progressbar.min.js'%}"></script> <!-- JQUERY Progressbar Plugin-->
+<script type="text/javascript" src="{% static 'PFFU/js/jquery.simple-text-rotator.min.js'%}"></script> <!-- JQUERY Text Rotator-->
+<script type="text/javascript" src="{% static 'PFFU/js/bootstrap.min.js'%}"></script> <!-- Bootstrap file-->
 <script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBPNkCVoBW_Jzl6x-hgGU6e7QW1QMwKles"></script>
-<script type="text/javascript" src="{% static "PFFU/js/isotope.pkgd.min.js"%}"></script>
-<script type="text/javascript" src="{% static "PFFU/js/custom.js"%}"></script>
+<script type="text/javascript" src="{% static 'PFFU/js/isotope.pkgd.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'PFFU/js/custom.js'%}"></script>
 </body>
 </html>
