@@ -35,7 +35,7 @@ h8 {font-size: 28px;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;}/*for some subtitle*/
-h9 {font-size: 20px; line-height: 1.4em; color: #293aaa;}/*for some answers*/
+h9 {font-size: 20px; line-height: 1.4em; color: #050101;font-weight: 600}/*for some answers*/
 h10 {font-size: 20px; line-height: 1.4em; color: #ea9312;;
     background-color: #f0eef9;
     padding-left:2em;
@@ -48,6 +48,12 @@ h11 {font-size: 20px;
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0; }/*for some SubSubtitles*/
+h12{font-size: 28px;/*for hyperlink SubSubtitles*/
+    color: #ea723a;
+    font-weight: bold}
+h13{font-size: 18px;/*for hyperlink content*/
+    color: #ea723a;
+    font-weight: bold}
 
 p{ font-size: 18px;
     letter-spacing: 1px;
@@ -83,7 +89,7 @@ DEFAULT STYLE & FORMATING
 }
 
 ul{padding: 0;}
-a{color: #ea6486
+a{color: #ea9312
 }
 a:hover{color: #c3c3c3; text-decoration: none;}
 
