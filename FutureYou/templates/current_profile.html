@@ -60,23 +60,23 @@
             </div>
         </nav><!--navbar end-->
     </header><!--header end-->
-    <table width="660" border="2" style="margin-top: 80px; margin-bottom: 30px; margin-left: 50px; margin-right: 50px" >
+    <table width="660" border="2" style="margin-top: 80px; margin-bottom: 30px; margin-left: auto; margin-right: auto" >
 
         <tr>
             <td>
-                <form id="current_profile" method="POST" action="current_profile">
+                <form id="current_profile" method="POST" action="current_profile"  >
                     <p></p>
                     {% csrf_token %}
                         <fieldset>
-                            <legend>Personal Information</legend>
+                            <legend style="text-align: center">Personal Information</legend>
                             <table id="tb">
                                 <tr>
                                     <td align="right" style="margin-top: 10px">Program：</td>
-                                    <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add" onclick="show(t1);" ><input type="text" name="program2" id="t1" style="display: none"/></td>
+                                    <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add Second Program" onclick="show(t1);" style="width: 155px" ><input type="text" name="program2" id="t1" style="display: none"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Major：</td>
-                                    <td><input type="text" name="major"/><input type="button" id="btn2" value="Add" onclick="display(t2);" > <input type="text" name="major2" id="t2" style="display: none"/></td>
+                                    <td><input type="text" name="major"/><input type="button" id="btn2" value="Add Second Major" onclick="display(t2);" style="width: 155px" > <input type="text" name="major2" id="t2" style="display: none"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Study Year：</td>
@@ -111,8 +111,10 @@
                                     <td><input type="text" name="detail_vol" style="height:60px;width:400px"/></td>
                                 </tr>
                             </table>
-                                <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                                <input type="reset" value="Reset">
+                                <div class="sandr" style="text-align: center">
+                                    <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                                    <input type="reset" value="Reset" align="center">
+                                </div>
                         </fieldset>
                     </form>
             </td>
