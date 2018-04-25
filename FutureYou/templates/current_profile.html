@@ -125,6 +125,8 @@
         window.onload=function(){
             var odiv=document.getElementById("t1");
             var obt=document.getElementById("btn");
+            var odiv2=document.getElementById("t2");
+            var obt2=document.getElementById("btn2");
             obt.onclick=function(){
                 if(odiv.style.display=="none"){
                     odiv.style.display="block";
@@ -134,7 +136,18 @@
                     this.value="Add Second Program";
                 }
             }
+
+            obt2.onclick=function(){
+                if(odiv2.style.display=="none"){
+                    odiv2.style.display="block";
+                    this.value="Delete Second Major";
+                }else{
+                    odiv2.style.display="none";
+                    this.value="Add Second Major";
+                }
+            }
         }
+
     </script>
 
 
