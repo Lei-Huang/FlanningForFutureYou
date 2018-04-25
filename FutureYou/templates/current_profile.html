@@ -72,11 +72,11 @@
                             <table id="tb">
                                 <tr>
                                     <td align="right" style="margin-top: 10px">Program：</td>
-                                    <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add Second Program" onclick="show(t1);" style="width: 155px" ><input type="text" name="program2" id="t1" style="display: none"/></td>
+                                    <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add Second Program" style="width: 170px" > <input type="text" name="program2" id="t1" style="display: none"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Major：</td>
-                                    <td><input type="text" name="major"/><input type="button" id="btn2" value="Add Second Major" onclick="display(t2);" style="width: 155px" > <input type="text" name="major2" id="t2" style="display: none"/></td>
+                                    <td><input type="text" name="major"/><input type="button" id="btn2" value="Add Second Major" style="width: 170px" > <input type="text" name="major2" id="t2" style="display: none"/></td>
                                 </tr>
                                 <tr>
                                     <td align="right">Study Year：</td>
@@ -103,12 +103,13 @@
                                 </tr>
                                 <tr>
                                     <td align="right" width="220">Details of <strong>work experience</strong>： (Please include organisation and job title)</td>
-                                    <td><input type="text" name="detail_work" style="height:60px;width:400px" /></td>
+                                    <td><textarea name="detail_work" style="height:100px;width:400px" placeholder="For example, I worked in Smith & Partners, a commercial law firm, as a paralegal. The job responsibilities includes drafting legal documents, providing briefs and legal administration for commercial litigation matters."></textarea></td>
+
                                 </tr>
                                 <tr>
                                     <td align="right" >Details of <strong>volunteer experience</strong>：（Please include
                                         the organisation) </td>
-                                    <td><input type="text" name="detail_vol" style="height:60px;width:400px"/></td>
+                                    <td><textarea name="detail_vol" style="height:60px;width:400px" placeholder="For example, I has volunteer experience with Oxfam Australia community."></textarea></td>
                                 </tr>
                             </table>
                                 <div class="sandr" style="text-align: center">
@@ -122,19 +123,34 @@
     </table>
 
     <script>
-        function show(id){
-            var show1 = document.getElementById('t1');
-            if(show1.style.display != 'block') {
-                show1.style.display = 'block';
+        window.onload=function(){
+            var odiv=document.getElementById("t1");
+            var obt=document.getElementById("btn");
+            var odiv2=document.getElementById("t2");
+            var obt2=document.getElementById("btn2");
+            obt.onclick=function(){
+                if(odiv.style.display=="none"){
+                    odiv.style.display="block";
+                    this.value="Delete Second Program";
+                }else{
+                    odiv.style.display="none";
+                    this.value="Add Second Program";
+                }
+            }
+
+            obt2.onclick=function(){
+                if(odiv2.style.display=="none"){
+                    odiv2.style.display="block";
+                    this.value="Delete Second Major";
+                }else{
+                    odiv2.style.display="none";
+                    this.value="Add Second Major";
+                }
             }
         }
-        function display(id){
-            var display1 = document.getElementById('t2');
-            if(display1.style.display != 'block') {
-                display1.style.display = 'block';
-            }
-        }
+
     </script>
+
 
 
 <!-- ===========================
