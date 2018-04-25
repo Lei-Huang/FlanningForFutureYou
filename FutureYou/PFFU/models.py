@@ -13,7 +13,7 @@ class Student(models.Model):
     residentStatus = models.BooleanField(default=False)
     name = models.CharField(max_length=200, null=True, blank=True)
     graduation_year = models.CharField(max_length=30, null=True, blank=True)
-    YearOfStudy =models.CharField(max_length=10, null=True, blank=True)
+    YearOfStudy =models.CharField(max_length=100, null=True, blank=True)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
     highlighted = models.TextField()
 
