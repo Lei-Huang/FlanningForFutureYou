@@ -162,7 +162,7 @@ def search(request):
         userName = request.POST.get('user', None)
         password = request.POST.get('password', None)
         try:
-            user = Login.objects.get(StudentId = userName,password=password)
+            user = Login.objects.get(StudentId = userName)
             #do something with user
             #html = (userName,"<H1>Success!</H1>")
             #context['userName'] = userName
@@ -170,8 +170,11 @@ def search(request):
             # user logging in expiry time by seconds 
             request.session.set_expiry(3600)
             context1['userName'] = request.session['userName']
+            if user.password==password:
             #request.session.clear()
-            return render(request,'index.html',context1)
+                return render(request,'index.html',context1)
+            else:
+                return render(request, 'password_wrong.html')
             #return HttpResponse(html)
         except Login.DoesNotExist:
             return render(request, 'login_fail.html')
