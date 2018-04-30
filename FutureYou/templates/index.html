@@ -161,43 +161,62 @@
     }
 
     div.desc {
-        padding: 20px;
+        padding: 10px;
         text-align: center;
     }
 </style>
 </head>
 <body>
+<div id="about" class="container">
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/skill.jpg' %}">
+            <img src="{% static 'PFFU/img/skill.jpg' %}" alt="skills" >
+        </a>
+        <div class="desc"><h3>Skills</h3></div>
+        <div class="desc">Develop your transferable skills.</div>
+    </div>
 
-<div class="gallery">
-    <a target="_blank" href="{% static 'PFFU/img/skill.jpg' %}">
-        <img src="{% static 'PFFU/img/skill.jpg' %}" alt="skills" >
-    </a>
-    <div class="desc"><h3>Skills</h3></div>
-    <div class="desc">Develop your transferable skills.</div>
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/netnet.jpg' %}">
+            <img src="{% static 'PFFU/img/netnet.jpg' %}" alt="net" >
+        </a>
+        <div class="desc"><h3>Networking</h3></div>
+        <div class="desc">Get involved, join clubs and societies or volunteer.Connect with your lecturers, tutors and fellow students.</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/experience.jpg' %}">
+            <img src="{% static 'PFFU/img/experience.jpg' %}" alt="experience" >
+        </a>
+        <div class="desc"><h3>Experience</h3></div>
+        <div class="desc">Get involved in an association/community.Connect with your lecturers, tutors and fellow students.</div>
+
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/preparation.jpg' %}">
+            <img src="{% static 'PFFU/img/preparation.jpg' %}" alt="preparation" >
+        </a>
+        <div class="desc"><h3>Preparation</h3></div>
+        <div class="desc">Look for cadetships and employment opportunities.Research career paths, jobs and employers, attend career events.</div>
+    </div>
 </div>
+<!-- ===========================
+START SECTION START
+=========================== -->
+<div id="register">
+    <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
+        <span class="bigicon icon-rocket"></span>
+        <a href="/portfolio"><h3>Start to plan for future!</h3></a>
+        <hr class="separetor">
+    </div><!-- REGISTER SECTION HEAD END -->
 
-<div class="gallery">
-    <a target="_blank" href="{% static 'PFFU/img/netnet.jpg' %}">
-        <img src="{% static 'PFFU/img/netnet.jpg' %}" alt="net" >
-    </a>
-    <div class="desc"><h3>Networking</h3></div>
-    <div class="desc">Get involved, join clubs and societies or volunteer.Connect with your lecturers, tutors and fellow students.</div>
-</div>
+    <!-- PORTFOLIO ITEMS START -->
+    <div class="portfolioitems container">
+        <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
+    </div><!-- PORTFOLIO ITEMS END -->
 
-<div class="gallery">
-    <a target="_blank" href="{% static 'PFFU/img/experience.jpg' %}">
-        <img src="{% static 'PFFU/img/experience.jpg' %}" alt="experience" >
-    </a>
-    <div class="desc"><h3>Experience</h3></div>
-    <div class="desc">Get involved in an association/community.Connect with your lecturers, tutors and fellow students.</div></div>
-
-<div class="gallery">
-    <a target="_blank" href="{% static 'PFFU/img/preparation.jpg' %}">
-        <img src="{% static 'PFFU/img/preparation.jpg' %}" alt="preparation" >
-    </a>
-    <div class="desc"><h3>Preparation</h3></div>
-    <div class="desc">Look for cadetships and employment opportunities.Research career paths, jobs and employers, attend career events.</div></div>
-
+</div><!-- START SECTION END -->
 
 
 <div id="about" class="container">
@@ -295,23 +314,6 @@
 
 </div><!-- ABOUT SECTION END -->
 
-
-<!-- ===========================
-REGISTER SECTION START
-=========================== -->
-<div id="register">
-    <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-        <span class="bigicon icon-rocket"></span>
-        <a href="/portfolio"><h3>Start to plan for future!</h3></a>
-        <hr class="separetor">
-    </div><!-- REGISTER SECTION HEAD END -->
-
-    <!-- PORTFOLIO ITEMS START -->
-    <div class="portfolioitems container">
-        <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
-    </div><!-- PORTFOLIO ITEMS END -->
-
-</div><!-- PORTFOLIO SECTION END -->
 
 <!-- ===========================
 FOOTER START
