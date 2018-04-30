@@ -611,9 +611,16 @@ Portfolio Image & Hint Display
 }
 .hint{
     float: right;
-    width: 32%;
+    width: 35%;
     margin-left: 2em;
     background-color: #f9f0f8;
+}
+.hint table{
+    height: 300px;
+}
+.hint table td{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .ban{ width:90%; height:300px; position:relative; overflow:hidden;margin:20px auto 0 auto;}
 .ban2{ width:580px; height:300px; position:relative; overflow:hidden;}
