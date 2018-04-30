@@ -1,5 +1,5 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -61,7 +61,6 @@
 <body>
 
 <!--FRONT PAGE/ SPLASH SCREEN SECTION-->
-
 <div class="loading-screen"></div>
 
 <div id="frontpage">
@@ -111,7 +110,7 @@
 
         <form id="current_profile" method="POST" action="current_profile">
         <p></p>
-    {% csrf_token %}
+        {% csrf_token %}
         <div class="col-sm-8 page-segment">
             <ul class="page-container no-padding">
                 <!--HOME/PROFILE PAGE-->
@@ -158,7 +157,6 @@
                         <div class="shadow-img"></div>
                         <h2 class="rotate-out rotated"><span class="invert">Personal Information of</span> <U>{{ Firstname }} {{ Lastname }}</U></h2> <!--RESUME TITLE-->
                     </div>
-
 
                     <div class="description">
                         <h3>Profile Information</h3>
@@ -228,8 +226,6 @@
             </ul>
         </div><!--/.page-segment -->
         </form>
-
-        <!--if anyone wants copyright Texts-->
     </div>
 </div><!--/.container -->
 
