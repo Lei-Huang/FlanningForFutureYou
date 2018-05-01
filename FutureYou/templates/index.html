@@ -145,10 +145,11 @@
 <!--gallary style-->
 <style>
     div.gallery {
-        margin: 10px;
+        margin: 20px 10px 0px 10px;
         border: 1px solid #ea9312;
         float: left;
         width: 23%;
+
     }
 
     div.gallery:hover {
@@ -168,13 +169,13 @@
 </style>
 </head>
 <body>
-<div id="mainpage" class="container">
+<div  class="container">
     <div class="gallery">
         <a target="_blank" href="{% static 'PFFU/img/skill.jpg' %}">
             <img src="{% static 'PFFU/img/skill.jpg' %}" alt="skills" >
         </a>
         <div class="desc"><h3>Skills</h3></div>
-        <div class="desc">Develop your transferable skills.</div>
+        <div class="desc">Develop your transferable skills. Gaining academic knowledge and employability skills are bases for a successful career. </div>
     </div>
 
     <div class="gallery">
@@ -199,25 +200,32 @@
             <img src="{% static 'PFFU/img/preparation.jpg' %}" alt="preparation" >
         </a>
         <div class="desc"><h3>Preparation</h3></div>
-        <div class="desc">Look for cadetships and employment opportunities.Research career paths, jobs and employers, attend career events.Find casual work.</div>
+        <div class="desc">Look for employment opportunities.Research career paths, jobs and employers, attend career events.</div>
     </div>
+
+
+</div>
+
+<div id="register">
+    <a href="/portfolio"><h3>Start to plan for future!</h3></a>
+    <hr class="separetor">
 </div>
 <!-- ===========================
 START SECTION START
 =========================== -->
-<div id="register">
-    <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-        <span class="bigicon icon-rocket"></span>
-        <a href="/portfolio"><h3>Start to plan for future!</h3></a>
-        <hr class="separetor">
-    </div><!-- REGISTER SECTION HEAD END -->
+<!--<div id="register">-->
+    <!--<div class="sectionhead wow bounceInUp" data-wow-duration="2s">-->
+        <!--<span class="bigicon icon-rocket"></span>-->
+        <!--<a href="/portfolio"><h3>Start to plan for future!</h3></a>-->
+        <!--<hr class="separetor">-->
+    <!--</div>&lt;!&ndash; REGISTER SECTION HEAD END &ndash;&gt;-->
 
-    <!-- PORTFOLIO ITEMS START -->
-    <div class="portfolioitems container">
-        <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
-    </div><!-- PORTFOLIO ITEMS END -->
+    <!--&lt;!&ndash; PORTFOLIO ITEMS START &ndash;&gt;-->
+    <!--<div class="portfolioitems container">-->
+        <!--<ul><div id="shotsByPlayerId"> </div></ul>&lt;!&ndash;REFER TO THE js/drifolio.js&ndash;&gt;-->
+    <!--</div>&lt;!&ndash; PORTFOLIO ITEMS END &ndash;&gt;-->
 
-</div><!-- START SECTION END -->
+<!--</div>&lt;!&ndash; START SECTION END &ndash;&gt;-->
 
 
 <!--<div id="about" class="container">-->
