@@ -1,6 +1,6 @@
-{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+{% load staticfiles %}
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static "PFFU/css/index.css" %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
     <!-- ===========================
     GOOGLE FONTS
     =========================== -->
@@ -27,13 +27,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- ===========================
-     GOOGLE ANALYTICS (Optional)
-     =========================== -->
-
-    <!--Replace this line with your analytics code-->
-
-    <!-- Analytics end-->
 </head>
 <body data-spy="scroll">
 <!-- Preloader -->
@@ -60,14 +53,11 @@
                     </button>
 
                     <a class="navbar-brand" href="/index">
-                        <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
-                        <span class="brandicon icon-grid"></span>
+                        <!--The home button on the top left of the page-->
+                         <span class="brandicon icon-grid"></span>
                         <span class="brandname">Home</span>
                     </a>
                 </div>
-
-
-
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
 
@@ -80,9 +70,6 @@
             </div>
         </nav><!--navbar end-->
     </header><!--header end-->
-
-
-
 
     <!-- ===========================
     CAREER GOAL SECTION START
@@ -97,12 +84,11 @@
         <h3>In this page, you can set up your own career goals </h3>
 
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/careergoal1.jpg" %}" width="100%" alt="Skill">
-
+            <img src="{% static 'PFFU/img/careergoal1.jpg' %}" width="100%" alt="Skill">
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/careergoal2.jpg" %}" width="100%" alt="Skill">
+            <img src="{% static 'PFFU/img/careergoal2.jpg' %}" width="100%" alt="Skill">
 
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
         <!--QUESTION START-->
@@ -116,6 +102,7 @@
             </ul>
         </div>
 
+        <!--This is the space for actual feedback. This feedback should be provided by Career staff-->
         <div class="feedbacktxt">
             <h6>Summary Sheet</h6>
             <h5>....</h5>
@@ -175,7 +162,7 @@
 
         <!-- RIGHT PART OF THE ABOUT SECTION -->
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/employability.jpg" %}" width="100%" alt="Skill">
+            <img src="{% static 'PFFU/img/employability.jpg' %}" width="100%" alt="Skill">
 
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
         <div id="clear"></div>
@@ -193,7 +180,7 @@
 
         <!-- RIGHT PART OF THE ABOUT SECTION -->
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/future_skill.jpg" %}" width="100%" alt="Skill">
+            <img src="{% static 'PFFU/img/future_skill.jpg' %}" width="100%" alt="Skill">
 
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
         <!--QUESTION END-->
@@ -220,17 +207,18 @@
             <h6>{{cg_q1}}</h6>
         </div>
 
+        <!--This feedback should be provided by career staff after reviewing students response-->
         <div class="feedbacktxt">
             <h6>Feedback:</h6>
             <h5>Your goal is clear...</h5>
         </div>
 
-
-        <h3>2. How and when will I gain the additional employability skills and expierence I need</h3>
+        <h3>2. How and when will I gain the additional employability skills and experience I need</h3>
         <div class="answertxt">
             <h6>{{cg_q2}}</h6>
         </div>
 
+        <!--This feedback should be provided by career staff after reviewing students response-->
         <div class="feedbacktxt">
             <h6>Feedback:</h6>
             <h5>Your goal is clear</h5>
@@ -241,6 +229,7 @@
             <h6>{{cg_q3}}</h6>
         </div>
 
+        <!--This feedback should be provided by career staff after reviewing students response-->
         <div class="feedbacktxt">
             <h6>Feedback:</h6>
             <h5>Your goal is clear</h5>
@@ -254,10 +243,6 @@
         =========================== -->
     </div><!-- ABOUT SECTION END -->
 </form>
-
-
-
-
 
 <!-- ===========================
 FOOTER START
@@ -299,10 +284,11 @@ FOOTER START
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!--Other necessary scripts-->
-<script src="{% static "PFFU/js/drifolio.js"%}"></script>
+<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 
 </body>
 </html>
 
+<!--Planning for future you team, ANU CECS Techlaucher project-->
 <!--//mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->
 <!--// pictures are from https://www.flickr.com/photos/anu-image-library///-->
