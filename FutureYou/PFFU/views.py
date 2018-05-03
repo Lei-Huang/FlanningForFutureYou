@@ -59,6 +59,9 @@ def employability_skill(request):
 def future_skill(request):
     return render(request, 'portfolio_subpages/future_skill.html')
 
+def re_em_info(request):
+    return render(request, 'portfolio_subpages/re_em_info.html')
+
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
 
