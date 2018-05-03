@@ -46,6 +46,9 @@ def profile(request):
     else:
             return render(request, 'portfolio_subpages/profile.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 def workshops(request):
     return render(request, 'portfolio_subpages/workshops.html')
 
@@ -64,6 +67,7 @@ def re_em_info(request):
 
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
+
 
 def uy_choice1(request):
     return render(request, 'portfolio_subpages/uy_choice1.html')

@@ -28,5 +28,6 @@ urlpatterns = [
     url(r'^interview_skill', PFFU.views.interview_skill, name='interview_skill'),
     url(r'^career_goaldone', PFFU.views.career_goaldone, name='career_goaldone'),
     url(r'^re_em_info', PFFU.views.re_em_info, name='re_em_info'),
-    url(r'^career_goal', PFFU.views.career_goal, name='career_goal')
+    url(r'^career_goal', PFFU.views.career_goal, name='career_goal'),
+    url(r'^contact', PFFU.views.contact, name='contact'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
