@@ -173,35 +173,62 @@
                                     </td>
 
                                 </tr>
-                                
+
                                 <tr>
-                                    <td align="right" >Details of <strong>volunteer experience</strong>：（Please include
-                                        the organisation) </td>
-                                    <td><textarea name="detail_vol" style="height:100px;width:430px" placeholder="For example, I has volunteer experience with Oxfam Australia community."></textarea></td>
+
+                                    <td align="right" >
+
+                                        Details of <strong>volunteer experience</strong>：（Please include the organisation)
+
+                                    </td>
+
+                                    <td>
+
+                                        <textarea name="detail_vol" style="height:100px;width:430px" placeholder="For example, I has volunteer experience with Oxfam Australia community."></textarea>
+
+                                    </td>
+
                                 </tr>
+
                             </table>
+
                                 <div class="sandr" style="text-align: center">
+
                                     <input type="submit" name="submit" class="submit action-button" value="Submit"/>
                                     <input type="reset" value="Reset" align="center">
+
                                 </div>
+
                         </fieldset>
+
                     </form>
+
             </td>
+
         </tr>
+
     </table>
+
 
     <!--The script is for adding one more program or major in the form-->
     <script>
+
         window.onload=function(){
+
             var odiv=document.getElementById("t1");
             var obt=document.getElementById("btn");
             var odiv2=document.getElementById("t2");
             var obt2=document.getElementById("btn2");
+
             obt.onclick=function(){
+
                 if(odiv.style.display=="none"){
+
                     odiv.style.display="block";
                     this.value="Delete Second Program";
+
                 }else{
+
                     odiv.style.display="none";
                     this.value="Add Second Program";
                 }
