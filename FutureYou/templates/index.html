@@ -55,7 +55,8 @@
     <div id="home">
         <div class="container homecontent">
             <h2 class="wow fadeInUp" data-wow-duration="2s">Planning for Future You</h2>
-            <h4 class="wow fadeInDown" data-wow-duration="3s">This is an ANU Student gamification platform to engage you early in career planning early in your university time. </h4>
+            <h4 class="wow fadeInDown" data-wow-duration="3s">This is an ANU Student gamification platform to engage you early  </h4>
+        <h4>in career planning in your university life.</h4>
         </div>
 
         <!-- Featured image on the HOME area -->
@@ -98,8 +99,8 @@
                     <!--NAVIGATION ITEMS STRAT BELOW-->
 
                     <!--This will lead to portfolio page-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
-                    <li id="nav_bar"><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
+                    <li id="nav_bar"><a href="/contact"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
 
                     <!--===================================
                     This script is used for display username in the navbar.
@@ -145,10 +146,11 @@
 <!--gallary style-->
 <style>
     div.gallery {
-        margin: 10px;
+        margin: 20px 10px 0px 10px;
         border: 1px solid #ea9312;
         float: left;
         width: 23%;
+
     }
 
     div.gallery:hover {
@@ -163,34 +165,35 @@
     div.desc {
         padding: 10px;
         text-align: center;
+        height: 240px;
     }
 
 </style>
 </head>
 <body>
-<div id="mainpage" class="container">
+<div  class="container">
     <div class="gallery">
         <a target="_blank" href="{% static 'PFFU/img/skill.jpg' %}">
             <img src="{% static 'PFFU/img/skill.jpg' %}" alt="skills" >
         </a>
-        <div class="desc"><h3>Skills</h3></div>
-        <div class="desc">Develop your transferable skills.</div>
+        <div class="desc"><h3>Skills</h3><br/>
+        <p1>Develop your transferable skills. Gaining academic knowledge and employability skills are basisth for a successful career. </p1></div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="{% static 'PFFU/img/netnet.jpg' %}">
             <img src="{% static 'PFFU/img/netnet.jpg' %}" alt="net" >
         </a>
-        <div class="desc"><h3>Networking</h3></div>
-        <div class="desc">Get involved, join clubs and societies or volunteer.Connect with your lecturers, tutors and fellow students.</div>
+        <div class="desc"><h3>Networking</h3><br/>
+        <p1>Get involved, join and attend events at clubs, societies and/or professional associations. Connect with your lecturers, tutors and fellow students.</p1></div>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="{% static 'PFFU/img/experience.jpg' %}">
             <img src="{% static 'PFFU/img/experience.jpg' %}" alt="experience" >
         </a>
-        <div class="desc"><h3>Experience</h3></div>
-        <div class="desc">Get involved in an association/community.Connect with your lecturers, tutors and fellow students.</div>
+        <div class="desc"><h3>Experience</h3><br/>
+        <p1>Get experience working in a casual/part-time job, and volunteer on campus or for community organizations.</p1></div>
 
     </div>
 
@@ -198,122 +201,129 @@
         <a target="_blank" href="{% static 'PFFU/img/preparation.jpg' %}">
             <img src="{% static 'PFFU/img/preparation.jpg' %}" alt="preparation" >
         </a>
-        <div class="desc"><h3>Preparation</h3></div>
-        <div class="desc">Look for cadetships and employment opportunities.Research career paths, jobs and employers, attend career events.</div>
+        <div class="desc"><h3>Preparation</h3><br/>
+            <p1>Look for employment opportunities.Research career paths, jobs and employers, attend career events.</p1></div>
     </div>
+
+
+</div>
+
+<div id="register">
+    <a href="/portfolio"><h3>Start to plan for future!</h3></a>
+    <hr class="separetor">
 </div>
 <!-- ===========================
 START SECTION START
 =========================== -->
-<div id="register">
-    <div class="sectionhead wow bounceInUp" data-wow-duration="2s">
-        <span class="bigicon icon-rocket"></span>
-        <a href="/portfolio"><h3>Start to plan for future!</h3></a>
-        <hr class="separetor">
-    </div><!-- REGISTER SECTION HEAD END -->
+<!--<div id="register">-->
+    <!--<div class="sectionhead wow bounceInUp" data-wow-duration="2s">-->
+        <!--<span class="bigicon icon-rocket"></span>-->
+        <!--<a href="/portfolio"><h3>Start to plan for future!</h3></a>-->
+        <!--<hr class="separetor">-->
+    <!--</div>&lt;!&ndash; REGISTER SECTION HEAD END &ndash;&gt;-->
 
-    <!-- PORTFOLIO ITEMS START -->
-    <div class="portfolioitems container">
-        <ul><div id="shotsByPlayerId"> </div></ul><!--REFER TO THE js/drifolio.js-->
-    </div><!-- PORTFOLIO ITEMS END -->
+    <!--&lt;!&ndash; PORTFOLIO ITEMS START &ndash;&gt;-->
+    <!--<div class="portfolioitems container">-->
+        <!--<ul><div id="shotsByPlayerId"> </div></ul>&lt;!&ndash;REFER TO THE js/drifolio.js&ndash;&gt;-->
+    <!--</div>&lt;!&ndash; PORTFOLIO ITEMS END &ndash;&gt;-->
 
-</div><!-- START SECTION END -->
-
-
-<div id="about" class="container">
-
-    <h2>You should know:</h2>
-
-    <!--SKILL SECTION-->
-    <!-- LEFT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6">
-        <div class="row">
-            <h3 class="wow fadeInDown" data-wow-duration="2s">Skills</h3>
-
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Develop your transferable skills.</h4>
-
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
-
-    <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static 'PFFU/img/skill.jpg' %}" width="100%" alt="Skill">
-
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div id="clear"></div>
-    <!--Skill Section part end-->
+<!--</div>&lt;!&ndash; START SECTION END &ndash;&gt;-->
 
 
-    <!--NETWORKING SECTION-->
-    <!-- LEFT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6">
-        <div class="row">
-            <h3 class="wow fadeInDown" data-wow-duration="2s">Networking</h3>
+<!--<div id="about" class="container">-->
 
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Get involved, join clubs and societies or volunteer.</h4>
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Connect with your lecturers, tutors and fellow students.</h4>
+    <!--<h2>You should know:</h2>-->
 
-                   <a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
+    <!--&lt;!&ndash;SKILL SECTION&ndash;&gt;-->
+    <!--&lt;!&ndash; LEFT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6">-->
+        <!--<div class="row">-->
+            <!--<h3 class="wow fadeInDown" data-wow-duration="2s">Skills</h3>-->
 
-    <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <!--todo fix this invalid src for networking picture-->
-        <img src="{% static 'PFFU/img/netnet.jpg' %}" width="100%" alt="Networking">
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Develop your transferable skills.</h4>-->
 
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div id="clear"></div>
-    <!--Networking Section part end-->
+        <!--</div> &lt;!&ndash; ABOUT INFO END &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; LEFT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--&lt;!&ndash;Left part end&ndash;&gt;-->
 
-    <!--Experience SECTION-->
-    <!-- LEFT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6">
-        <div class="row">
-            <h3 class="wow fadeInDown" data-wow-duration="2s">Experience</h3>
+    <!--&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+        <!--<img src="{% static 'PFFU/img/skill.jpg' %}" width="100%" alt="Skill">-->
 
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Get involved in an association/community.</h4>
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Look for volunteer or casual opportunities.</h4>
-            <a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--<div id="clear"></div>-->
+    <!--&lt;!&ndash;Skill Section part end&ndash;&gt;-->
 
-    <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static 'PFFU/img/experience.jpg' %}" width="100%" alt="Experience">
 
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div id="clear"></div>
-    <!--Experience Section part end-->
+    <!--&lt;!&ndash;NETWORKING SECTION&ndash;&gt;-->
+    <!--&lt;!&ndash; LEFT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6">-->
+        <!--<div class="row">-->
+            <!--<h3 class="wow fadeInDown" data-wow-duration="2s">Networking</h3>-->
 
-    <!--Preparation SECTION-->
-    <!-- LEFT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6">
-        <div class="row">
-            <h3 class="wow fadeInDown" data-wow-duration="2s">Preparation</h3>
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Get involved, join clubs and societies or volunteer.</h4>-->
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Connect with your lecturers, tutors and fellow students.</h4>-->
 
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Look for cadetships and employment opportunities.</h4>
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Research career paths, jobs and employers, attend career events.</h4>
-            <h4 class="wow fadeInUp" data-wow-duration="3s">Find casual work.</h4>
+                   <!--<a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>-->
+        <!--</div> &lt;!&ndash; ABOUT INFO END &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; LEFT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--&lt;!&ndash;Left part end&ndash;&gt;-->
 
-            <a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
+    <!--&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+        <!--&lt;!&ndash;todo fix this invalid src for networking picture&ndash;&gt;-->
+        <!--<img src="{% static 'PFFU/img/netnet.jpg' %}" width="100%" alt="Networking">-->
 
-    <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--<div id="clear"></div>-->
+    <!--&lt;!&ndash;Networking Section part end&ndash;&gt;-->
 
-        <img src="{% static 'PFFU/img/preparation.jpg' %}" width="100%" alt="Preparation">
+    <!--&lt;!&ndash;Experience SECTION&ndash;&gt;-->
+    <!--&lt;!&ndash; LEFT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6">-->
+        <!--<div class="row">-->
+            <!--<h3 class="wow fadeInDown" data-wow-duration="2s">Experience</h3>-->
 
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div id="clear"></div>
-    <!--Preparation Section part end-->
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Get involved in an association/community.</h4>-->
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Look for volunteer or casual opportunities.</h4>-->
+            <!--<a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>-->
+        <!--</div> &lt;!&ndash; ABOUT INFO END &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; LEFT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--&lt;!&ndash;Left part end&ndash;&gt;-->
 
-</div><!-- ABOUT SECTION END -->
+    <!--&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+        <!--<img src="{% static 'PFFU/img/experience.jpg' %}" width="100%" alt="Experience">-->
+
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--<div id="clear"></div>-->
+    <!--&lt;!&ndash;Experience Section part end&ndash;&gt;-->
+
+    <!--&lt;!&ndash;Preparation SECTION&ndash;&gt;-->
+    <!--&lt;!&ndash; LEFT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6">-->
+        <!--<div class="row">-->
+            <!--<h3 class="wow fadeInDown" data-wow-duration="2s">Preparation</h3>-->
+
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Look for cadetships and employment opportunities.</h4>-->
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Research career paths, jobs and employers, attend career events.</h4>-->
+            <!--<h4 class="wow fadeInUp" data-wow-duration="3s">Find casual work.</h4>-->
+
+            <!--<a class="dribbble-follow-button wow bounce" href="http://dribbble.com"></a>-->
+        <!--</div> &lt;!&ndash; ABOUT INFO END &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; LEFT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--&lt;!&ndash;Left part end&ndash;&gt;-->
+
+    <!--&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION &ndash;&gt;-->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+
+        <!--<img src="{% static 'PFFU/img/preparation.jpg' %}" width="100%" alt="Preparation">-->
+
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
+    <!--<div id="clear"></div>-->
+    <!--&lt;!&ndash;Preparation Section part end&ndash;&gt;-->
+
+<!--</div>&lt;!&ndash; ABOUT SECTION END &ndash;&gt;-->
 
 
 <!-- ===========================
@@ -327,7 +337,7 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->

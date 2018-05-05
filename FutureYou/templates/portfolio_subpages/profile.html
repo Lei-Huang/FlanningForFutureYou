@@ -138,8 +138,8 @@
 
                         <h3 class="personal-info-title title">Work Experience</h3>
                         <ul class="personal-info">
-                            <li class="rotate-out rotated"><label>Type: </label><span>{{exp}}</span></li>
-                            <li class="rotate-out rotated"><label>Detail: </label><span><U>Work period: From {{start_date}} to {{end_date}}<br>Detail: {{skill}}</U></span></li>
+                            <!--<li class="rotate-out rotated"><label>Type: </label><span>{{exp}}</span></li>-->
+                            <li class="rotate-out rotated"><label>Detail: </label><span>{{skill}}</U></span></li>
                         </ul><!--/ul.personal-info-->
 
                         <h3 class="personal-info-title title">Volunteer Experience</h3>
@@ -186,14 +186,14 @@
                                 <td class="s3"><input name="study_year" value="{{study_year}}" readonly="true"/></td>
                             </tr>
 
-                            <tr>
+                           <!-- <tr>
                                 <td>Work Type: (Casual/Full-time/Internship)</td>
                                 <td class="s6"><input name="detail_work" value="{{exp}}" readonly="true"/></td>
 
-                            </tr>
+                            </tr>-->
                             <tr>
                                 <td height="83px">Details of Work Experience:</td>
-                                <td height="83px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">From {{start_date}} to {{end_date}}; Detail: {{skill}}</textarea>
+                                <td height="83px" class="s7"><textarea id="TextArea" cols="40" rows="4" readonly="true">{{skill}}</textarea>
                             </tr>
                             <tr>
                                 <td height="83px">Details of Volunteer Experience:</td>
@@ -228,12 +228,6 @@
         </form>
     </div>
 </div><!--/.container -->
-
-
-
-
-
-
 
 <!--javascript files
 =============================================================-->

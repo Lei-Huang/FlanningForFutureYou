@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>FutureYou</title><!-- This is what you see on your browser tab-->
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
+    <!-- ===========================
+    GOOGLE FONTS
+    =========================== -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body data-spy="scroll">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
+    </div>
+</div>
+
+<header>
+    <!-- ===========================
+     NAVBAR START
+     =========================== -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/index">
+                    <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                    <span class="brandicon icon-grid"></span>
+                    <span class="brandname">Home</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!--NAVIGATION ITEMS STRAT BELOW-->
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
+                    <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav><!--navbar end-->
+</header><!--header end-->
+<!-- ===========================
+WORKSHOPS SECTION START
+=========================== -->
+<div id="about" class="container">
+    <div class="sectionhead  row wow fadeInUp">
+        <span class="bigicon icon-cup "></span>
+        <h2>Information Page</h2>
+        <hr class="separetor">
+    </div>
+
+
+    <div class="col-md-6">
+        <div class="row">
+            <h8>Resources For you</h8>
+            <h6>Here are some tips to identify and research potential employers:
+            </h6>
+            <h4>>Attend events like <a href="#anchor"><h13>campus presentations</h13></a>  and <a href="#anchor"><h13>career fairs</h13></a></h4>
+            <h4>>Talk to people – identify people that may have information you need; conduct information interviews</h4>
+            <h4>>Network in person and on relevant social media sites</h4>
+            <h4>>Read publications like annual reports, graduate recruitment guides and newspapers</h4>
+            <h4>>Investigate relevant professional associations and become a student member</h4>
+            <h4>>Consult websites for peak employer bodies as well as employer websites</h4>
+            <h4>>Use CareerHub for job listings (and other on-line job search sites), employer profiles and industry resources</h4>
+            <h4>>Gain paid employment or unpaid work experience in your fields of interest</h4>
+            <h4>>Contact recruitment agencies and talk to their staff about opportunities</h4>
+            <a name="anchor1"></a>
+            <h8></h8>
+
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <!-- RIGHT PART OF THE ABOUT SECTION -->
+    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+        <img src="{% static 'PFFU/img/resourse.jpeg' %}" width="100%" alt="Skill">
+    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <div class="sectionhead  row wow fadeInUp">
+        <hr class="separetor">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <h8>On-Campus Presentations and Career Fairs
+            </h8>
+            <h4>Employers will present in range of ways, sometimes as a ‘panel’ of presenters, with recent graduates or
+                senior managers.Sometimes they will run workshops, or present in a lecture style. Get to as many of
+                these types of events as possible to see what is out there for you, try to create networks with these
+                employers, because if you can stand out, they will remember you. </h4>
+            <h4>Career fairs are usually big events, held in large spaces or exhibitions halls where employers showcase
+                their organisations at booths, displaying their branding and merchandise. They will often have people from
+                different parts of their organisation, including senior leaders, or recent graduates. It gives you an
+                opportunity to chat with them and find out what the application processes are like, How they run their
+                recruitment process and gives you an opportunity to promote yourself and your skills to them. </h4>
+            <a name="anchor2"></a>
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <!-- RIGHT PART OF THE ABOUT SECTION -->
+    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+        <img src="{% static 'PFFU/img/re2.jpeg' %}" width="100%" alt="Skill">
+    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <div class="sectionhead  row wow fadeInUp">
+        <hr class="separetor">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <h8> Entrepreneurialism Events
+            </h8>
+            <h4>To be effective in this environment, you will need to be comfortable with risk and develop some basic
+                business skills. Innovation ANU connects ideas, research, government and business to create value for the
+                community. Innovation and entrepreneurship are supported through a range of education, licensing,
+                consultancies, advice and funding opportunities for start-ups. </h4>
+            <h4>Visit: </h4>
+            <a href="https://www.anu.edu.au/research/innovation"><h13>   •	www.anu.edu.au/research/innovation</h13></a>
+            <br><br>
+            <a href="https://www.innovationact.org"><h13>   •	www.innovationact.org</h13></a>
+            <br><br>
+            <a href="https://www.cbrin.com.au"><h13>   •	www.cbrin.com.au</h13></a>
+            <a name="anchor3"></a>
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <!-- RIGHT PART OF THE ABOUT SECTION -->
+    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+        <img src="{% static 'PFFU/img/workplace.jpg' %}" width="100%" alt="Skill">
+    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <div class="sectionhead  row wow fadeInUp">
+        <hr class="separetor">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <h8> Professional Associations
+            </h8>
+            <h4>These are some of the benefits of Professional Association membership:</h4>
+            <h4>  ·         Access to industry professionals and work experience opportunities</h4>
+            <h4>  ·         Education, training and professional development opportunities - Conferences and Seminars            </h4>
+            <h4>  ·         Exposure to current research and new developments in your industry            </h4>
+            <h4>  ·         Networking opportunities            </h4>
+            <h4>  ·         Access to publications / journal subscriptions            </h4>
+            <h4>  ·         Increase awareness of career options            </h4>
+            <h4>  ·         Prizes and grants            </h4>
+            <h4>  ·         Service discounts            </h4>
+            <h4>  ·         Students may be entitled to FREE or reduced memberships fees            </h4>
+            <a name="anchor4"></a>
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <!-- RIGHT PART OF THE ABOUT SECTION -->
+    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+        <img src="{% static 'PFFU/img/re1.jpeg' %}" width="100%" alt="Skill">
+    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <div class="sectionhead  row wow fadeInUp">
+        <hr class="separetor">
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <h8> Assessment Centres
+            </h8>
+            <h4>This may involve a few hours of your time or even a number of days. The process is designed to allow employers to assess applicants more holistically against the selection criteria.
+            </h4>
+            <h4>An assessment centre is an opportunity to demonstrate your strengths and abilities in a variety of ways. You should receive information from the organisation regarding the format and duration of the assessment centre. It is important to read and understand these details, including where and when to arrive, what to wear and what to bring along. Read over the selection criteria again, to ensure you understand what the employer will be assessing on the day.
+            </h4>
+
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+    <!-- RIGHT PART OF THE ABOUT SECTION -->
+    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+        <img src="{% static 'PFFU/img/ipj2.jpg' %}" width="100%" alt="Skill">
+    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <div class="sectionhead  row wow fadeInUp">
+        <hr class="separetor">
+    </div>
+
+
+    <input type="button" class="btn3" value="Previous page" onclick="javascript:history.back(-1);"/>
+
+
+</div>
+<!-- ===========================
+FOOTER START
+=========================== -->
+<footer>
+    <div class="container">
+        <span class="bigicon icon-speedometer "></span>
+
+        <div class="footerlinks"><!-- FOOTER LINKS START -->
+            <ul>
+                <li><a href="/index">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
+                <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
+            </ul>
+        </div><!-- FOOTER LINKS END -->
+
+        <div class="copyright"><!-- FOOTER COPYRIGHT START -->
+            <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and
+                coded by <a href="">EvenFly Team</a>. All logo and images in this template used for preview purpose
+                only. You are free to use the template but make sure to use your own images.More Templates
+                <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from
+                <a href="http://www.cssmoban.com/" title="" target="_blank"></a></p>
+            <p>The images used in this page are from Pexel. Retrieve from: https://www.pexels.com/ The copyright of the
+                information are belong to ANU Career Center.   </p>
+        </div><!-- FOOTER COPYRIGHT END -->
+
+        <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+            <ul>
+                <li><a href="http://facebook.com"><span class="icon-social-facebook"></span></a></li>
+                <li><a href="http://twitter.com"><span class="icon-social-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                <li><a href="http://dribbble.com"><span class="icon-social-dribbble"></span></a></li>
+                <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+            </ul>
+        </div><!-- FOOTER SOCIAL ICONS END -->
+    </div>
+</footer><!-- FOOTER END -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<!--Other necessary scripts-->
+<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
+
+</body>
+</html>
+
+<!--//mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->
+<!--//resourse.jpeg is from the free img website :https://www.pexels.com/-->

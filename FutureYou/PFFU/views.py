@@ -46,6 +46,9 @@ def profile(request):
     else:
             return render(request, 'portfolio_subpages/profile.html')
 
+def contact(request):
+    return render(request, 'contact.html')
+
 def workshops(request):
     return render(request, 'portfolio_subpages/workshops.html')
 
@@ -59,8 +62,12 @@ def employability_skill(request):
 def future_skill(request):
     return render(request, 'portfolio_subpages/future_skill.html')
 
+def re_em_info(request):
+    return render(request, 'portfolio_subpages/re_em_info.html')
+
 def uy_yes(request):
     return render(request, 'portfolio_subpages/uy_yes.html')
+
 
 def uy_choice1(request):
     return render(request, 'portfolio_subpages/uy_choice1.html')

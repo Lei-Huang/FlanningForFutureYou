@@ -62,7 +62,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!--NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                     <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                 </ul>
             </div><!--.nav-collapse -->
@@ -94,6 +94,8 @@ WORKSHOPS SECTION START
                 and may not be directly related to the content of your degree. Increasingly, employers are looking for
                 graduates that have ‘enterprise’ skills that enable people to be flexible and adaptable to changing
                 environments. </h4>
+            <input type="button" class="btn3" value="FOR MORE INFO" onclick="{location.href='/re_em_info'}"/>
+            <input type="button" class="btn3" value="FIND THE RESOURCES" onclick="{location.href='https://careerhub.anu.edu.au/students/resources/search?order=Relevance&topicsUseAnd=true'}"/>
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
     <!--Left part end-->
@@ -103,31 +105,32 @@ WORKSHOPS SECTION START
         <img src="{% static 'PFFU/img/resourse.jpeg' %}" width="100%" alt="Skill">
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
-    <div class="col-md-6">
-        <div class="row">
-            <input type="button" class="btn3" value="CLICK HERE" onclick="{location.href='https://careerhub.anu.edu.au/students/resources/search?order=Relevance&topicsUseAnd=true'}"/>
-            <p>(Button will redirect you to the Career Hub Resource Website)</p>
-            <br><br>
-            <h6>Here are some tips to identify and research potential employers:
-            </h6>
-            <h4>>Attend events like <a href="#anchor"><h13>campus presentations</h13></a>  and <a href="#anchor"><h13>career fairs</h13></a></h4>
-            <h4>>Talk to people – identify people that may have information you need; conduct information interviews</h4>
-            <h4>>Network in person and on relevant social media sites</h4>
-            <h4>>Read publications like annual reports, graduate recruitment guides and newspapers</h4>
-            <h4>>Investigate relevant professional associations and become a student member</h4>
-            <h4>>Consult websites for peak employer bodies as well as employer websites</h4>
-            <h4>>Use CareerHub for job listings (and other on-line job search sites), employer profiles and industry resources</h4>
-            <h4>>Gain paid employment or unpaid work experience in your fields of interest</h4>
-            <h4>>Contact recruitment agencies and talk to their staff about opportunities</h4>
-            <a name="anchor"></a>
-        </div> <!-- ABOUT INFO END -->
-    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--<div class="col-md-6">-->
+        <!--<div class="row">-->
+            <!--&lt;!&ndash;<input type="button" class="btn3" value="FOR MORE INFO" onclick="{location.href='/re_em_info'}"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="button" class="btn3" value="CLICK HERE" onclick="{location.href='https://careerhub.anu.edu.au/students/resources/search?order=Relevance&topicsUseAnd=true'}"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<p>(Button will redirect you to the Career Hub Resource Website)</p>&ndash;&gt;-->
+            <!--&lt;!&ndash;<br><br>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h6>Here are some tips to identify and research potential employers:&ndash;&gt;-->
+            <!--&lt;!&ndash;</h6>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Attend events like <a href="#anchor"><h13>campus presentations</h13></a>  and <a href="#anchor"><h13>career fairs</h13></a></h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Talk to people – identify people that may have information you need; conduct information interviews</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Network in person and on relevant social media sites</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Read publications like annual reports, graduate recruitment guides and newspapers</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Investigate relevant professional associations and become a student member</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Consult websites for peak employer bodies as well as employer websites</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Use CareerHub for job listings (and other on-line job search sites), employer profiles and industry resources</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Gain paid employment or unpaid work experience in your fields of interest</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>>Contact recruitment agencies and talk to their staff about opportunities</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a name="anchor"></a>&ndash;&gt;-->
+        <!--</div> &lt;!&ndash; ABOUT INFO END &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; LEFT PART OF THE ABOUT SECTION END &ndash;&gt;-->
     <!--Left part end-->
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static 'PFFU/img/re3.jpeg' %}" width="100%" alt="Skill">
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+        <!--<img src="{% static 'PFFU/img/re3.jpeg' %}" width="100%" alt="Skill">-->
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
 
     <div id="clear"></div>
 
@@ -141,53 +144,58 @@ WORKSHOPS SECTION START
                 seek out opportunities to engage with employers and this will help you to find organisations that align
                 with your values, skills and interests.</h4>
             <h8></h8>
-
-            <h9>Ways to engage with employers:
-            </h9>
-            <h6>1. On-Campus Presentations and Career Fairs</h6>
-            <h4>Opportunity to meet and network with employers through professional associations and you can also attend
-                professional development sessions and meet people working in the industry you are interested in.</h4>
-            <p>Employers will present in range of ways, sometimes as a ‘panel’ of presenters, with recent graduates or
-                senior managers.Sometimes they will run workshops, or present in a lecture style. Get to as many of
-                these types of events as possible to see what is out there for you, try to create networks with these
-                employers, because if you can stand out, they will remember you. </p>
-            <p>Career fairs are usually big events, held in large spaces or exhibitions halls where employers showcase
-                their organisations at booths, displaying their branding and merchandise. They will often have people from
-                different parts of their organisation, including senior leaders, or recent graduates. It gives you an
-                opportunity to chat with them and find out what the application processes are like, How they run their
-                recruitment process and gives you an opportunity to promote yourself and your skills to them. </p>
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
-    <!--Left part end-->
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
         <img src="{% static 'PFFU/img/employer_meeting.jpeg' %}" width="100%" alt="Skill">
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
+    <div class="col-md-6">
+        <div class="row">
+            <h9>Ways to engage with employers:
+            </h9>
+            <h6>1. On-Campus Presentations and Career Fairs</h6>
+            <h4>Opportunity to meet and network with employers through professional associations and you can also attend
+                professional development sessions and meet people working in the industry you are interested in.</h4>
+            <input type="button" class="btn3" value="FOR MORE INFO" onclick="{location.href='/re_em_info#anchor1'}"/>
+            <!--<p>Employers will present in range of ways, sometimes as a ‘panel’ of presenters, with recent graduates or-->
+                <!--senior managers.Sometimes they will run workshops, or present in a lecture style. Get to as many of-->
+                <!--these types of events as possible to see what is out there for you, try to create networks with these-->
+                <!--employers, because if you can stand out, they will remember you. </p>-->
+            <!--<p>Career fairs are usually big events, held in large spaces or exhibitions halls where employers showcase-->
+                <!--their organisations at booths, displaying their branding and merchandise. They will often have people from-->
+                <!--different parts of their organisation, including senior leaders, or recent graduates. It gives you an-->
+                <!--opportunity to chat with them and find out what the application processes are like, How they run their-->
+                <!--recruitment process and gives you an opportunity to promote yourself and your skills to them. </p>-->
+        </div> <!-- ABOUT INFO END -->
+    </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+    <!--Left part end-->
+
+
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
         <img src="{% static 'PFFU/img/re2.jpeg' %}" width="100%" alt="Skill">
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-    <div class="sectionhead  row wow fadeInUp">
-        <hr class="separetor">
-    </div>
+
 
     <div class="col-md-6">
         <div class="row">
             <h6>2. Entrepreneurialism Events</h6>
             <h4>Want to be your own boss? The changing world of work means that many people will be either self-employed,
                 freelancers or fully entrepreneurial in the future. </h4>
-            <p>To be effective in this environment, you will need to be comfortable with risk and develop some basic
-                business skills. Innovation ANU connects ideas, research, government and business to create value for the
-                community. Innovation and entrepreneurship are supported through a range of education, licensing,
-                consultancies, advice and funding opportunities for start-ups. </p>
-            <p>Visit:</p>
-            <a href="https://www.anu.edu.au/research/innovation"><h13>   •	www.anu.edu.au/research/innovation</h13></a>
-            <br><br>
-            <a href="https://www.innovationact.org"><h13>   •	www.innovationact.org</h13></a>
-            <br><br>
-            <a href="https://www.cbrin.com.au"><h13>   •	www.cbrin.com.au</h13></a>
+            <input type="button" class="btn3" value="FOR MORE INFO" onclick="{location.href='/re_em_info#anchor2'}"/>
+            <!--<p>To be effective in this environment, you will need to be comfortable with risk and develop some basic-->
+                <!--business skills. Innovation ANU connects ideas, research, government and business to create value for the-->
+                <!--community. Innovation and entrepreneurship are supported through a range of education, licensing,-->
+                <!--consultancies, advice and funding opportunities for start-ups. </p>-->
+            <!--<p>Visit:</p>-->
+            <!--<a href="https://www.anu.edu.au/research/innovation"><h13>   •	www.anu.edu.au/research/innovation</h13></a>-->
+            <!--<br><br>-->
+            <!--<a href="https://www.innovationact.org"><h13>   •	www.innovationact.org</h13></a>-->
+            <!--<br><br>-->
+            <!--<a href="https://www.cbrin.com.au"><h13>   •	www.cbrin.com.au</h13></a>-->
 
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
@@ -199,9 +207,9 @@ WORKSHOPS SECTION START
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
-    <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static 'PFFU/img/uy6.jpg' %}" width="100%" alt="Skill">
-    </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+    <!--<div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">-->
+        <!--<img src="{% static 'PFFU/img/uy6.jpg' %}" width="100%" alt="Skill">-->
+    <!--</div>&lt;!&ndash; RIGHT PART OF THE ABOUT SECTION END &ndash;&gt;-->
 
 
     <div class="col-md-6">
@@ -210,16 +218,17 @@ WORKSHOPS SECTION START
             <h4>A professional association (also called a professional body, professional organization, or professional
                 society) is usually a nonprofit organisation seeking to further a particular profession, the interests
                 of individuals engaged in that profession and the public interest.</h4>
-            <p>These are some of the benefits of Professional Association membership:</p>
-            <p>  ·         Access to industry professionals and work experience opportunities</p>
-            <p>  ·         Education, training and professional development opportunities - Conferences and Seminars            </p>
-            <p>  ·         Exposure to current research and new developments in your industry            </p>
-            <p>  ·         Networking opportunities            </p>
-            <p>  ·         Access to publications / journal subscriptions            </p>
-            <p>  ·         Increase awareness of career options            </p>
-            <p>  ·         Prizes and grants            </p>
-            <p>  ·         Service discounts            </p>
-            <p>  ·         Students may be entitled to FREE or reduced memberships fees            </p>
+            <!--<p>These are some of the benefits of Professional Association membership:</p>-->
+            <!--<p>  ·         Access to industry professionals and work experience opportunities</p>-->
+            <!--<p>  ·         Education, training and professional development opportunities - Conferences and Seminars            </p>-->
+            <!--<p>  ·         Exposure to current research and new developments in your industry            </p>-->
+            <!--<p>  ·         Networking opportunities            </p>-->
+            <!--<p>  ·         Access to publications / journal subscriptions            </p>-->
+            <!--<p>  ·         Increase awareness of career options            </p>-->
+            <!--<p>  ·         Prizes and grants            </p>-->
+            <!--<p>  ·         Service discounts            </p>-->
+            <!--<p>  ·         Students may be entitled to FREE or reduced memberships fees            </p>-->
+            <input type="button" class="btn3" value="FOR MORE INFO" onclick="{location.href='/re_em_info#anchor3'}"/>
             <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='https://careerhub.anu.edu.au/students/events/search?query=&EventType=4'}"/>
             <p>(Button will redirect you to the Career Hub Website)</p>
 
@@ -245,7 +254,7 @@ WORKSHOPS SECTION START
                 potential career opportunities so treat it like a job interview.
             </h4>
 
-            <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
+            <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf#page=23'}"/>
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
     <!--Left part end-->
@@ -265,7 +274,7 @@ WORKSHOPS SECTION START
                 start a conversation or be noticed by an employer. As always, take care to create a positive impression.
             </h4>
 
-            <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
+            <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf#page=24'}"/>
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
     <!--Left part end-->
@@ -287,13 +296,13 @@ WORKSHOPS SECTION START
                 <h4>Good networkers know that networking relies on reciprocity: it’s about staying in touch with others
                     in your profession, those with common interests and those who may be in influential positions in
                     organisations.</h4>
-                <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
+                <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf#page=22'}"/>
                 <h6>2. Personal Brand</h6>
                 <h4>There are lots of social media platforms, so find out which ones people in your field are using and
                     join them. Keep up with the evolution of online platforms and how best they can work for you. Be
                     proactive but use cold calling with caution.
                 </h4>
-                <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
+                <input type="button" class="btn3" value=" For more info" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf#page=24'}"/>
             </div> <!-- ABOUT INFO END -->
         </div><!-- LEFT PART OF THE ABOUT SECTION END -->
         <!--Left part end-->
@@ -319,7 +328,7 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->
