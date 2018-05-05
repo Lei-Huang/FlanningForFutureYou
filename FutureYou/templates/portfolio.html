@@ -1,5 +1,5 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -82,7 +82,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!--NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                     <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                 </ul>
 
@@ -100,21 +100,21 @@
     <!-- PORTFOLIO SECTION HEADING START -->
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
-        <h2>My Portfolio</h2>
+        <h2>My Career Portfolio</h2>
         <!-- Image Display SECTION START -->
             <div class="ban" id="demo1">
                 <div class="hint">
-                    <table  style="border:3px #7e7e7e solid;padding:5px;" height=300px >
+                    <table style="border:3px #7e7e7e solid;">
                     <tr>
                         <td align="left" border="1" >
-                    <h5>Once you have settled into your studies and life at ANU, it is worth taking the time to think
-                        about what you want to get out of your education. You may have a clear idea of your career
-                        direction or you may not be sure what you want to do after university. <br/>
-                        It's never too early to start planning your career.This site will provide the steps recommended
-                        to start planning your career and are skills you can use for the rest of your career. Follow the
-                        steps on this site and see your progress as you go.<br/>
-                    </>
-                    </td>
+                            <h5>Once you have settled into your studies and life at ANU, it is worth taking the time to think
+                                about what you want to get out of your education. You may have a clear idea of your career
+                                direction or you may not be sure what you want to do after university. <br/>
+                                It's never too early to start planning your career.This site will provide the steps recommended
+                                to start planning your career and are skills you can use for the rest of your career. Follow the
+                                steps on this site and see your progress as you go.<br/>
+                            </h5>
+                        </td>
                     </tr>
                     </table>
                 </div>
@@ -133,8 +133,21 @@
         <div class="progressbar">
         <hr class="separetor">
         <!--progress bar-->
+        <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+        <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+        <!--code for progress bar image map-->
+        <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+        <map name="image-map">
+            <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
+            <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
+            <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
+            <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
+            <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
+            <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+        </map>
+
+            <!--script for changing progressbar picture according to progressInt from view content-->
             <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
-        <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" width=50%>
             <script>
             var img = document.getElementById("progressbar")
             var progressInt = "{{progressInt}}";
@@ -196,7 +209,7 @@
                  <ul class="bubblemenu"><li>
                      <a href="/career_goal">
                     <img src="{% static 'PFFU/img/s13.png' %}" alt="" width=100px>
-                    <h4>Career Goal</h4>
+                    <h4>Career Goals</h4>
                      </a >
                    <div>Link to some tools about setting up career goals</div></li>
                  </ul>
@@ -253,7 +266,7 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->

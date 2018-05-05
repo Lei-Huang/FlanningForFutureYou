@@ -1,5 +1,5 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -27,13 +27,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- ===========================
-     GOOGLE ANALYTICS (Optional)
-     =========================== -->
-
-    <!--Replace this line with your analytics code-->
-
-    <!-- Analytics end-->
 </head>
 <body data-spy="scroll">
 <!-- Preloader -->
@@ -59,7 +52,7 @@
                 </button>
 
                 <a class="navbar-brand" href="/index">
-                    <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
+                    <!--The home button at the left top-->
                     <span class="brandicon icon-grid"></span>
                     <span class="brandname">Home</span>
                 </a>
@@ -69,7 +62,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!--NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                     <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                 </ul>
 
@@ -81,6 +74,57 @@
 <!-- ===========================
 CAREER GOAL SECTION START
 =========================== -->
+
+<div class="progressbar" style="margin-left: 20%; margin-right: auto">
+    <hr class="separetor">
+    <!--progress bar-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+    <!--code for progress bar image map-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <map name="image-map">
+        <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
+        <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
+        <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
+        <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
+        <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
+        <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+    </map>
+
+    <!--script for changing progressbar picture according to progressInt from view content-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <script>
+        var img = document.getElementById("progressbar")
+        var progressInt = "{{progressInt}}";
+        function changePicture(progressInt) {
+            switch (progressInt){
+                case "0":
+                    img.src = "{% static 'PFFU/img/progressBar0.png' %}"
+                    break
+                case "1":
+                    img.src = "{% static 'PFFU/img/progressbar1.png' %}"
+                    break
+                case "2":
+                    img.src = "{% static 'PFFU/img/progressbar2.png' %}"
+                    break
+                case "3":
+                    img.src = "{% static 'PFFU/img/progressbar3.png' %}"
+                    break
+                case "4":
+                    img.src = "{% static 'PFFU/img/progressbar4.png' %}"
+                    break
+                case "5":
+                    img.src = "{% static 'PFFU/img/progressbar5.png' %}"
+                    break
+                case "6":
+                    img.src = "{% static 'PFFU/img/progressbar6.png' %}"
+                    break
+            }
+        }
+        changePicture(progressInt)
+    </script>
+</div>
+
 <div id="about" class="container">
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
@@ -148,23 +192,30 @@ CAREER GOAL SECTION START
         <td>
             <ul class="bubblecareer"><li>
                 <h6><input type="checkbox" name="cg_industry" value="Private Sector"/>Private Sector</h6>
-                <div>The private sector is the part of the economy, sometimes referred to as the citizen sector, which is run by private individuals or groups, usually as a means of enterprise for profit, and is not controlled by the State.</div></li>
+                <div>The private sector is the part of the economy, sometimes referred to as the citizen sector,
+                    which is run by private individuals or groups, usually as a means of enterprise for profit,
+                    and is not controlled by the State.</div></li>
             </ul>
             <ul class="bubblecareer"><li>
                 <h6><input type="checkbox" name="cg_industry" value="Public Sector"/>Public Sector</h6>
-                <div>The public sector is the part of the economy composed of both public services and public enterprises. </div></li>
+                <div>The public sector is the part of the economy composed of both public services and public
+                    enterprises.</div></li>
             </ul>
             <ul class="bubblecareer"><li>
                 <h6><input type="checkbox" name="cg_industry" value="Not For Profit Sector"/>Not For Profit Sector</h6>
-                <div>A not for profit organization is a type of organization that does not earn profits for its owners. All of the money earned by or donated to a not for profit organization is used in pursuing the organization's objectives.</div></li>
+                <div>A not for profit organization is a type of organization that does not earn profits for its owners.
+                    All of the money earned by or donated to a not for profit organization is used in pursuing the
+                    organization's objectives.</div></li>
             </ul>
             <ul class="bubblecareer"><li>
                 <h6><input type="checkbox" name="cg_industry" value="Entrepreneurship"/>Entrepreneurship</h6>
-            <div>Entrepreneurship is the process of designing, launching and running a new business, which is often initially a small business.</div></li>
+            <div>Entrepreneurship is the process of designing, launching and running a new business, which is often
+                initially a small business.</div></li>
             </ul>
             <ul class="bubblecareer"><li>
                 <h6><input type="checkbox" name="cg_industry" value="Academic"/>Academic</h6>
-                <div>Academic positions are always set in the universities, you need to do with publications, teaching, descriptions of research and details of funding awarded</div></li>
+                <div>Academic positions are always set in the universities, you need to do with publications, teaching,
+                    descriptions of research and details of funding awarded</div></li>
             </ul>
         </td>
     </div>
@@ -172,7 +223,8 @@ CAREER GOAL SECTION START
     <!--QUESTION END-->
 
     <!--QUESTION START-->
-    <h3>2. What types of roles might appeal or suit you best?(Please refer to job suggestions report and Career Voyage if completed, or match to values, skills and interests)?</h3>
+    <h3>2. What types of roles might appeal or suit you best?(Please refer to job suggestions report and Career Voyage/New Directions
+        if completed, or match to values, skills and interests)?</h3>
     <div id="careerinput">
         <textfield>
             <h3></h3>
@@ -189,7 +241,11 @@ CAREER GOAL SECTION START
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Employability Skills</h8>
 
-            <p class="wow fadeInDown" data-wow-duration="3s">It takes more than a degree to get a good job. Employers have a clear idea of the skills, knowledge and attributes required to do the job and work in their organisation. Depending on the industry or occupation you wish to work in these could be very specific technical skills or knowledge. However, there are general skills and competencies (often referred to as employability skills) that employers commonly seek in new recruits.
+            <p class="wow fadeInDown" data-wow-duration="3s">It takes more than a degree to get a good job. Employers
+                have a clear idea of the skills, knowledge and attributes required to do the job and work in their
+                organisation. Depending on the industry or occupation you wish to work in these could be very specific
+                technical skills or knowledge. However, there are general skills and competencies (often referred to as
+                employability skills) that employers commonly seek in new recruits.
             </p>
             <input type="button" class="btn3" value="LEARN MORE" onclick="{location.href='/employability_skill'}"/>
         </div> <!-- ABOUT INFO END -->
@@ -207,7 +263,9 @@ CAREER GOAL SECTION START
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Future Skills</h8>
 
-            <p class="wow fadeInDown" data-wow-duration="3s"> The Institute for the Future analyses key drivers that will reshape the landscape of work and identifies 10 key work skills needed in the next 10 years. Consider taking up opportunities that allow you to develop these skills.
+            <p class="wow fadeInDown" data-wow-duration="3s"> The Institute for the Future analyses key drivers that
+                will reshape the landscape of work and identifies 10 key work skills needed in the next 10 years.
+                Consider taking up opportunities that allow you to develop these skills.
             </p>
             <input type="button" class="btn3" value="LEARN MORE" onclick="{location.href='/future_skill'}"/>
         </div> <!-- ABOUT INFO END -->
@@ -237,16 +295,29 @@ CAREER GOAL SECTION START
         <hr class="separetor">
     </div>
 
-    <h3>1. What do I want to achieve within the next 6, 12,18 months</h3>
+    <h3>1. What do I want to achieve within the next 6 months?</h3>
 
     <div id="careerinput3">
         <textfield>
-            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q1" cols="90" rows='8' placeholder="For example, Get my first internship, practice my interview skills, develop my networking...etc"></textarea>
+            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q1" cols="90" rows='8' placeholder="Consider your career values"></textarea>
         </textfield>
     </div>
-    
+        <h3>2. What do I want to achieve within the next 12 months?</h3>
 
-    <h3>2. How and when will I gain the additional employability skills and experience I need</h3>
+        <div id="careerinput3">
+            <textfield>
+            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q2" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+            </textfield>
+        </div>
+        <h3>3. What do I want to achieve within the next 18 months?</h3>
+
+        <div id="careerinput3">
+            <textfield>
+            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q3" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+            </textfield>
+        </div>
+
+    <h3>4. How and when will I gain the additional employability skills and experience I need?</h3>
     <div id="careerinput3">
         <textfield>
             <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q2" cols="90" rows='8' placeholder="Please refer to the employability skills above"></textarea>
@@ -254,7 +325,7 @@ CAREER GOAL SECTION START
     </div>
 
 
-    <h3>3. How can I expand my network and by whom?</h3>
+    <h3>5. How can I expand my network and with whom?</h3>
     <div id="careerinput3">
         <textfield>
             <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q3" cols="90" rows='8' placeholder="For example, attend career center workshops"></textarea>
@@ -285,7 +356,7 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->

@@ -1,5 +1,5 @@
-{% load staticfiles %}
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static "PFFU/css/index.css" %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
     <!-- ===========================
     GOOGLE FONTS
     =========================== -->
@@ -72,7 +72,7 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <!--NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
+                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                     <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                 </ul>
 
@@ -81,11 +81,60 @@
     </nav><!--navbar end-->
 </header><!--header end-->
 
-
-
 <!-- ===========================
 WORKSHOPS SECTION START
 =========================== -->
+
+<div class="progressbar" style="margin-left: 20%; margin-right: auto">
+    <hr class="separetor">
+    <!--progress bar-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+    <!--code for progress bar image map-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <map name="image-map">
+        <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
+        <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
+        <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
+        <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
+        <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
+        <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+    </map>
+
+    <!--script for changing progressbar picture according to progressInt from view content-->
+    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+    <script>
+        var img = document.getElementById("progressbar")
+        var progressInt = "{{progressInt}}";
+        function changePicture(progressInt) {
+            switch (progressInt){
+                case "0":
+                    img.src = "{% static 'PFFU/img/progressBar0.png' %}"
+                    break
+                case "1":
+                    img.src = "{% static 'PFFU/img/progressbar1.png' %}"
+                    break
+                case "2":
+                    img.src = "{% static 'PFFU/img/progressbar2.png' %}"
+                    break
+                case "3":
+                    img.src = "{% static 'PFFU/img/progressbar3.png' %}"
+                    break
+                case "4":
+                    img.src = "{% static 'PFFU/img/progressbar4.png' %}"
+                    break
+                case "5":
+                    img.src = "{% static 'PFFU/img/progressbar5.png' %}"
+                    break
+                case "6":
+                    img.src = "{% static 'PFFU/img/progressbar6.png' %}"
+                    break
+            }
+        }
+        changePicture(progressInt)
+    </script>
+</div>
+
 <div id="about" class="container">
     <div class="sectionhead  row wow fadeInUp">
         <span class="bigicon icon-cup "></span>
@@ -93,11 +142,10 @@ WORKSHOPS SECTION START
         <hr class="separetor">
     </div>
 
-
     <div class="col-md-6">
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Selection Criteria</h8>
-            <p class="wow fadeInDown" data-wow-duration="3s">Selection criteria are the qualifications, skills, personal attributes and the standards needed to perform the duties listed on the duty statement/position description. Employers use them to identify the most suitable person for the role.</p>
+            <h7 class="wow fadeInDown" data-wow-duration="3s">Selection criteria are the qualifications, skills, personal attributes and the standards needed to perform the duties listed on the duty statement/position description. Employers use them to identify the most suitable person for the role.</h7>
             <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='https://careerhub.anu.edu.au/students/events/type/8/seminar-workshop'}"/>
             <p>(Button will redirect you to the Career Hub Website)</p>
 
@@ -107,7 +155,7 @@ WORKSHOPS SECTION START
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static "PFFU/img/Workshops_Photo.jpg" %}" width="100%" alt="Skill">
+        <img src="{% static 'PFFU/img/uy6.jpg' %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
     <div id="clear"></div>
@@ -119,8 +167,8 @@ WORKSHOPS SECTION START
     <div class="col-md-6">
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Interviews</h8>
-            <p> The employer will want to meet you in order to find out why you really want to work for their organisation. They also want to see if you will fit into the culture of the organisation by getting a sense of how well you could work with their staff and clients.
-            </p>
+            <h7> The employer will want to meet you in order to find out why you really want to work for their organisation. They also want to see if you will fit into the culture of the organisation by getting a sense of how well you could work with their staff and clients.
+            </h7>
             <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='https://careerhub.anu.edu.au/students/events/detail/155860/graduate-recruitment-workshop-'}"/>
             <p>(Button will redirect you to the Career Hub Website)</p>
 
@@ -129,26 +177,22 @@ WORKSHOPS SECTION START
     <!--Left part end-->
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static "PFFU/img/graduate_recruitment.jpg" %}" width="100%" alt="Networking">
+        <img src="{% static 'PFFU/img/graduate_recruitment.jpg' %}" width="100%" alt="Networking">
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
-
-
 
     <div class="col-md-6">
         <div class="row">
             <h8 class="wow fadeInDown" data-wow-duration="2s">Interview Stream</h8>
-            <p>InterviewStream allows you to practice your interview using the latest in interview simulation software.
-            </p>
+            <h7>InterviewStream allows you to practice your interview using the latest in interview simulation software.
+            </h7>
             <p>Email careers@anu.edu.au for more info on accessing this tool. Book and appointment to gain interview tips</p>
-
-
         </div> <!-- ABOUT INFO END -->
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
     <!--Left part end-->
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-        <img src="{% static "PFFU/img/ipj2.jpg" %}" width="100%" alt="Networking">
+        <img src="{% static 'PFFU/img/ipj2.jpg' %}" width="100%" alt="Networking">
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
     <div class="sectionhead  row wow fadeInUp">
@@ -158,7 +202,7 @@ WORKSHOPS SECTION START
         <div class="col-md-6">
             <div class="row">
                 <h8 class="wow fadeInDown" data-wow-duration="2s">Other recruitment approaches</h8>
-                <p> Book an appointment for assistance and refer to Careers Guide</p>
+                <h7> Book an appointment for assistance and refer to Careers Guide</h7>
                 <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
                 <p>(Button will redirect you to the Career Hub Website)</p>
 
@@ -168,7 +212,7 @@ WORKSHOPS SECTION START
 
         <!-- RIGHT PART OF THE ABOUT SECTION -->
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/ipj3.jpg" %}" width="100%" alt="Networking">
+            <img src="{% static 'PFFU/img/ipj3.jpg' %}" width="100%" alt="Networking">
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
     </div>
 
@@ -176,8 +220,8 @@ WORKSHOPS SECTION START
         <div class="col-md-6">
             <div class="row">
                 <h8 class="wow fadeInDown" data-wow-duration="2s">You're hired and your first job</h8>
-                <p> Book an appointment and/or refer to Careers Guide</p>
-                <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf'}"/>
+                <h7> Book an appointment and/or refer to Careers Guide</h7>
+                <input type="button" class="btn3" value="DO IT NOW" onclick="{location.href='http://www.anu.edu.au/files/resource/DSA173813%20Careers%20Guide%20v7%20WEB.pdf#page=41'}"/>
                 <p>(Button will redirect you to the Career Hub Website)</p>
 
             </div> <!-- ABOUT INFO END -->
@@ -186,7 +230,7 @@ WORKSHOPS SECTION START
 
         <!-- RIGHT PART OF THE ABOUT SECTION -->
         <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
-            <img src="{% static "PFFU/img/re2.jpeg" %}" width="100%" alt="Networking">
+            <img src="{% static 'PFFU/img/re2.jpeg' %}" width="100%" alt="Networking">
         </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
     </div>
     <input type="button" class="btn3" value="Previous Section" onclick="{location.href='/research_employer'}"/>
@@ -204,7 +248,7 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->
@@ -233,10 +277,10 @@ FOOTER START
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!--Other necessary scripts-->
-<script src="{% static "PFFU/js/drifolio.js"%}"></script>
+<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 
 </body>
 </html>
 
-<!--//mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->
-<!--// appointment.jpg from https://pixabay.com//-->
+<!--mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->
+<!-- appointment.jpg from https://pixabay.com//-->

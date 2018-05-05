@@ -1,37 +1,28 @@
-{% load staticfiles %}
 <!DOCTYPE html>
-
+{% load staticfiles %}
 <html lang="en">
-
-  <head>
-
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Portfolio Form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
-
-
     <!-- ===========================
     GOOGLE FONTS
     =========================== -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
     <![endif]-->
 
-  </head>
-
-  <body data-spy="scroll">
+</head>
+<body data-spy="scroll">
     <div id="preloader">
         <div id="status">
             <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
@@ -62,7 +53,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <!--NAVIGATION ITEMS STRAT BELOW-->
-                        <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Portfolio</a></li>
+                        <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                         <li><a href="mailto:u6020717@anu.edu.au"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
                     </ul>
                 </div><!--.nav-collapse -->
@@ -77,8 +68,8 @@
                     <p></p>
                     {% csrf_token %}
                         <fieldset>
-                            <legend style="text-align: center">Personal Information</legend>
-                            <table id="tb">
+                            <legend style="text-align: center"><h3><strong>Personal Information</strong></h3></legend>
+                            <table id="tb" style="border-collapse:separate; border-spacing:0px 5px;">
                                 <tr>
                                     <td align="right" style="margin-top: 10px">Program：</td>
                                     <td><input type="text" width="10px" name="program"/><input type="button" id="btn" value="Add Second Program" style="width: 170px" > <input type="text" name="program2" id="t1" style="display: none"/></td>
@@ -97,28 +88,18 @@
                                         </select>
                                     </td>
                                 </tr>
-
                                 <tr>
-                                    <td align="right">Work Experience：</td>
-                                    <td><input type="checkbox" name="work" value="work_no"/>None
-                                        <input type="checkbox" name="work" value="casual"/>Casual
-                                        <input type="checkbox" name="work" value="internship"/>Internship
-                                        <input type="checkbox" name="work" value="full-time"/>Full-time
-                                    </td>
+                                    
                                 </tr>
                                 <tr>
-                                    <td align="right">Work Period：</td>
-                                    <td>From <input type="date" value="dd-mm-yyyy" name="start_date"> To <input type="date" value="dd-mm-yyyy" name="end_date"></td>
-                                </tr>
-                                <tr>
-                                    <td align="right" width="220">Details of <strong>work experience</strong>： (Please include organisation and job title)</td>
-                                    <td><textarea name="detail_work" style="height:100px;width:400px" placeholder="For example, I worked in Smith & Partners, a commercial law firm, as a paralegal. The job responsibilities includes drafting legal documents, providing briefs and legal administration for commercial litigation matters."></textarea></td>
+                                    <td align="right" width="220">Details of <strong>work experience</strong>： (Please include work period, organisation and job title)</td>
+                                    <td><textarea name="detail_work" style="height:120px;width:430px" placeholder="For example, 1.1/11/2017--1/3/2018, I worked in Smith & Partners (a commercial law firm), as a paralegal.&#13;&#10;2. 1/4/2018--1/6/2018, I worked in David Jones as a retail assistant " ></textarea></td>
 
                                 </tr>
                                 <tr>
                                     <td align="right" >Details of <strong>volunteer experience</strong>：（Please include
                                         the organisation) </td>
-                                    <td><textarea name="detail_vol" style="height:60px;width:400px" placeholder="For example, I has volunteer experience with Oxfam Australia community."></textarea></td>
+                                    <td><textarea name="detail_vol" style="height:100px;width:430px" placeholder="For example, I has volunteer experience with Oxfam Australia community."></textarea></td>
                                 </tr>
                             </table>
                                 <div class="sandr" style="text-align: center">
@@ -131,6 +112,7 @@
         </tr>
     </table>
 
+    <!--The script is for adding one more program or major in the form-->
     <script>
         window.onload=function(){
             var odiv=document.getElementById("t1");
@@ -157,10 +139,7 @@
                 }
             }
         }
-
     </script>
-
-
 
 <!-- ===========================
 FOOTER START
@@ -173,15 +152,13 @@ FOOTER START
             <ul>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="mailto:u6020717@anu.edu.au">Contact</a></li>
             </ul>
         </div><!-- FOOTER LINKS END -->
 
         <div class="copyright"><!-- FOOTER COPYRIGHT START -->
             <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.More Templates <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from <a href="http://www.cssmoban.com/" title="" target="_blank"></a></p>
-            <p>The images used in this page are from ANU image library. Retrieve from: flicker: https://www.flickr.com/photos/anu-image-library/ The copyright of the information are belong to ANU Career Center.   </p>
-            <p>The profile developed from Lei Huang's <a href="https://github.com/Lei-Huang/PersonalPage">Personal Page </a></p>
         </div><!-- FOOTER COPYRIGHT END -->
 
         <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
@@ -203,7 +180,7 @@ FOOTER START
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 <!--Other necessary scripts-->
-<script src="{% static "PFFU/js/drifolio.js"%}"></script>
+<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 
-  </body>
+</body>
 </html>
