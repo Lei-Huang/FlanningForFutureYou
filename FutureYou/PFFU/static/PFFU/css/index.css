@@ -765,6 +765,29 @@ CareerGoal css begin
 }
 /* Input end */
 
+
+/* Most used button  */
+
+.btn5{
+    background:skyblue;
+    border: none;
+    text-transform: uppercase;
+    margin: 50px 0;
+    color: #2c3e50;
+    letter-spacing: 2px;
+}
+
+.btn5:hover{
+    background: none;
+    color: #ea9312;
+}
+
+.btn5icon, .brandicon{
+    margin-right: 10px;
+}
+/* Most used button end */
+
+
 .btn6{
     background: #c48ea8;
     border: none;
@@ -783,6 +806,10 @@ CareerGoal css begin
 .btn6icon, .brandicon{
     margin-right: 10px;
 }
+
+
+
+
 
 /*--------------------
 Understanding yourself and CareerGoal css end
