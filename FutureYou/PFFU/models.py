@@ -61,7 +61,9 @@ class UserProfile(models.Model):
     WorkStartDate = models.CharField(max_length=50, null=True, blank=True)
     Work_exp = models.CharField(max_length=100, null=True, blank=True)
     WorkEndDate = models.CharField(max_length=50, null=True, blank=True)
-    Volunteer_exp = models.CharField(max_length=100, null=True, blank=True)
+    Volunteer_exp = models.CharField(max_length=100, null=True, blank=True
+
+                                     )
     Detail_work = models.TextField()
     Detail_volunteer = models.TextField()
     # Network = models.TextField()
