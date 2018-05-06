@@ -5,16 +5,19 @@ from django.core.exceptions import *
 
 # use session to keep user loginin, distinguished by username
 def index(request):
+    context = {}
     if request.method == 'GET':
-        context['username'] = request.session['userName']
+        try:
+            context['userName'] = request.session['userName']
+            return render(request, 'index.html',context)
+        except:
+            return render(request, 'index.html')
 
-        return render(request, 'index.html',context)
     else:
         return render(request, 'index.html')
 
 # def portfolio(request):
 #         return render(request, 'portfolio.html')
-
 
 
 # class ForgetPwdView(View):
@@ -241,11 +244,11 @@ def logout(request):
             #clear the session, return to index page.
             request.session.clear()
             context2['userName'] = 1
-            return render(request,'index.html',context2)
+            return render(request,'logout.html',context2)
             #return HttpResponse(html)
     else:
-        #request.session.clear()
-        return render(request,'index.html')
+        request.session.clear()
+        return render(request,'logout.html',context2)
 
 # user create account with their basic information, save data into database.
 def register(request):

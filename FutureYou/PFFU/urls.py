@@ -10,10 +10,11 @@ app_name = 'PFFU'
 
 urlpatterns = [
     url(r'^login', PFFU.views.search, name='login'),
+    url(r'^logout', PFFU.views.logout, name='logout'),
     url(r'^signup', PFFU.views.register, name='signup'),
     #url(r'^test2', PFFU.views.current_profile, name='test2'),
     #(r'^loginVerify/$', PFFU.views.loginVerify, name='loginVerify'),
-    url(r'^index', PFFU.views.logout, name='index'),
+    url(r'^index', PFFU.views.index, name='index'),
     url(r'^portfolio', PFFU.views.progress, name='portfolio'),
     url(r'^current_profile', PFFU.views.current_profile, name='current_profile'),
     url(r'^profile', PFFU.views.profile, name='profile'),
