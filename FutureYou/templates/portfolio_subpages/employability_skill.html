@@ -1,266 +1,385 @@
 <!DOCTYPE html>
+
 {% load staticfiles %}
+
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- ===========================
-    SITE TITLE
-    =========================== -->
-    <title>FutureYou</title><!-- This is what you see on your browser tab-->
-    <!-- ===========================
-    STYLESHEETS
-    =========================== -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
-    <!-- ===========================
-    GOOGLE FONTS
-    =========================== -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
+  <head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body data-spy="scroll">
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
-    </div>
-</div>
+      <!-- ===========================
+      SITE TITLE
+      =========================== -->
+      <title>FutureYou</title><!-- This is what you see on your browser tab-->
 
-<header>
-    <!-- ===========================
-     NAVBAR START
-     =========================== -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+      <!-- ===========================
+      STYLESHEETS
+      =========================== -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+      <!-- ===========================
+      GOOGLE FONTS
+      =========================== -->
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Antic|Raleway:300">
 
-                <a class="navbar-brand" href="/index">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+      <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll">
+
+  <!-- Preloader -->
+  <div id="preloader">
+
+      <div id="status">
+
+          <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
+
+      </div>
+
+  </div>
+
+
+  <header>
+
+      <!-- ===========================
+      NAVBAR START
+      =========================== -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+          <div class="container">
+
+              <div class="navbar-header">
+
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+
+                  </button>
+
+                  <a class="navbar-brand" href="/index">
+
                     <!-- Replace Drifolio Bootstrap with your Site Name and remove icon-grid to remove the placeholder icon -->
                     <span class="brandicon icon-grid"></span>
                     <span class="brandname">Home</span>
-                </a>
-            </div>
 
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                  </a>
 
-                    <!--NAVIGATION ITEMS STRAT BELOW-->
-                    <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
-                    <li><a href="/contact"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
-                </ul>
-
-            </div><!--.nav-collapse -->
-        </div>
-    </nav><!--navbar end-->
-</header><!--header end-->
-
-<!-- ===========================
-EMPLOYABILITY SKILLS START
-=========================== -->
-<div class="progressbar" style="margin-left: 20%; margin-right: auto">
-    <hr class="separetor">
-    <!--progress bar-->
-    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
-    <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
-    <!--code for progress bar image map-->
-    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
-    <map name="image-map">
-        <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
-        <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
-        <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
-        <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
-        <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
-        <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
-    </map>
-
-    <!--script for changing progressbar picture according to progressInt from view content-->
-    <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
-    <script>
-        var img = document.getElementById("progressbar")
-        var progressInt = "{{progressInt}}";
-        function changePicture(progressInt) {
-            switch (progressInt){
-                case "0":
-                    img.src = "{% static 'PFFU/img/progressBar0.png' %}"
-                    break
-                case "1":
-                    img.src = "{% static 'PFFU/img/progressbar1.png' %}"
-                    break
-                case "2":
-                    img.src = "{% static 'PFFU/img/progressbar2.png' %}"
-                    break
-                case "3":
-                    img.src = "{% static 'PFFU/img/progressbar3.png' %}"
-                    break
-                case "4":
-                    img.src = "{% static 'PFFU/img/progressbar4.png' %}"
-                    break
-                case "5":
-                    img.src = "{% static 'PFFU/img/progressbar5.png' %}"
-                    break
-                case "6":
-                    img.src = "{% static 'PFFU/img/progressbar6.png' %}"
-                    break
-            }
-        }
-        changePicture(progressInt)
-    </script>
-</div>
-
-<div id="about" class="container">
-    <div class="sectionhead  row wow fadeInUp">
-        <span class="bigicon icon-cup "></span>
-        <h2>Employability Skills</h2>
-        <hr class="separetor">
-    </div>
-
-    <div><h7>It takes more than a degree to get a good job. Employers have a clear idea of the skills,
-        knowledge and attributes required to do the job and work in their organisation. Depending on the
-        industry or occupation you wish to work in these could be very specific technical skills or knowledge.
-        However, there are general skills and competencies (often referred to as employability skills)
-        that employers commonly seek in new recruits.</h7>
-    </div>
-
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Communication</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to both written and verbal communication.
-                It involves being a good listener, expressing yourself clearly, concisely and persuasively and
-                communicating well with different audiences and people from diverse cultures.  Your ability to
-                negotiate with others towards a suitable outcome for all is another vital communication skill.
-            </h7>
-    </div>
-
-    <div >
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Teamwork</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">This involves working well with others to achieve results
-                and recognising the value of other people's contributions and ideas. You'll need to show you can take
-                on responsibility as well as manage and delegate to others.
-            </h7>
-    </div>
-
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Problem-solving</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">You'll need to demonstrate you have the ability to think
-                critically and logically and identify solutions to arrive at a favourable outcome.  It's good to show
-                you can apply a range of strategies to problem-solving, make optimal use of available resources and
-                enlist others to achieve an outcome.
-            </h7>
-    </div>
-
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Initiative</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">This involves being able to see innovative ways of doing
-                things seizing opportunities, adapting to new situations and taking initiative. It may involve a newer
-                way of looking at a situation or the addition of an innovative solution to improve or streamline an
-                existing process.
-            </h7>
-    </div>
+              </div>
 
 
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Planning and organising</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">It will be important to show employers that you can manage
-                your time efficiently, establish clear goals and objectives and prioritise what tasks need to be done
-                to achieve a goal. This also involves being able to identify what is required in a given situation
-                coordinating tasks and being resourceful.
-            </h7>
-    </div>
+              <div class="collapse navbar-collapse">
 
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Self-management</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to having a personal vision and goals, being
-                able to evaluate and monitor your own performance, having the confidence and ability to take
-                responsibility for your own actions. You may face many challenges in your work or personal life and you
-                need to show employers you have the ability to work under pressure and work through challenges without
-                becoming too overwhelmed.
-            </h7>
-    </div>
+                  <ul class="nav navbar-nav navbar-right">
 
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Using technology</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">Having a basic understanding of word processing,
-                spreadsheets the internet and email is a base requirement. You will also need to show an employer
-                that you can quickly adapt to and apply new and emerging technologies.
-            </h7>
-    </div>
+                      <!--NAVIGATION ITEMS STRAT BELOW-->
+                      <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
+                      <li><a href="/contact"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
 
-    <div>
-            <h8 class="wow fadeInDown" data-wow-duration="2s">Learning</h8>
-            <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to your ability to manage your own learning
-                and contribute actively to ongoing improvement and expansion in your own knowledge and skill set.
-                This also refers to your ability to learn workplace skills and expectations specific to your organisations.
-            </h7>
-    </div>
+                  </ul>
 
-    <!-- Source: Future Work Skills 2020 report -->
-    <div class="sectionhead  row wow fadeInUp">
-        <hr class="separetor">
-    </div>
+              </div><!--.nav-collapse -->
 
-    <!--The button back to previous page-->
-    <input type="button" class="btn3" value="Previous page" onclick="javascript:history.back(-1);"/>
+          </div>
 
-</div><!-- ABOUT SECTION END -->
-<!-- ===========================
-FOOTER START
-=========================== -->
-<footer>
-    <div class="container">
-        <span class="bigicon icon-speedometer "></span>
+      </nav><!--navbar end-->
 
-        <div class="footerlinks"><!-- FOOTER LINKS START -->
-            <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/portfolio">Career Portfolio</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </div><!-- FOOTER LINKS END -->
+  </header><!--header end-->
 
-        <div class="copyright"><!-- FOOTER COPYRIGHT START -->
-            <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.More Templates <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from <a href="http://www.cssmoban.com/" title="" target="_blank"></a></p>
-            <p>The images used in this page are from Pixabay. Retrieve from: https://pixabay.com/ The copyright of the information are belong to ANU Career Center.   </p>
-        </div><!-- FOOTER COPYRIGHT END -->
+  <!-- ===========================
+  EMPLOYABILITY SKILLS START
+  =========================== -->
+  <div class="progressbar" style="margin-left: 20%; margin-right: auto">
 
-        <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
-            <ul>
-                <li><a href="http://facebook.com"><span class="icon-social-facebook"></span></a></li>
-                <li><a href="http://twitter.com"><span class="icon-social-twitter"></span></a></li>
-                <li><a href="#"><span class="icon-social-youtube"></span></a></li>
-                <li><a href="http://dribbble.com"><span class="icon-social-dribbble"></span></a></li>
-                <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
-            </ul>
-        </div><!-- FOOTER SOCIAL ICONS END -->
-    </div>
-</footer><!-- FOOTER END -->
+      <hr class="separetor">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <!--progress bar-->
+      <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+      <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
 
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <!--code for progress bar image map-->
+      <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+      <map name="image-map">
 
-<!--Other necessary scripts-->
-<script src="{% static 'PFFU/js/drifolio.js'%}"></script>
+          <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
+          <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
+          <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
+          <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
+          <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
+          <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
 
-</body>
+      </map>
+
+      <!--script for changing progressbar picture according to progressInt from view content-->
+      <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
+      <script>
+
+          var img = document.getElementById("progressbar")
+          var progressInt = "{{progressInt}}";
+
+          function changePicture(progressInt) {
+
+              switch (progressInt){
+
+                  case "0":
+                      img.src = "{% static 'PFFU/img/progressBar0.png' %}"
+                      break
+                  case "1":
+                      img.src = "{% static 'PFFU/img/progressbar1.png' %}"
+                      break
+                  case "2":
+                      img.src = "{% static 'PFFU/img/progressbar2.png' %}"
+                      break
+                  case "3":
+                      img.src = "{% static 'PFFU/img/progressbar3.png' %}"
+                      break
+                  case "4":
+                      img.src = "{% static 'PFFU/img/progressbar4.png' %}"
+                      break
+                  case "5":
+                      img.src = "{% static 'PFFU/img/progressbar5.png' %}"
+                      break
+                  case "6":
+                      img.src = "{% static 'PFFU/img/progressbar6.png' %}"
+                      break
+              }
+          }
+
+          changePicture(progressInt)
+
+      </script>
+
+  </div>
+
+
+  <div id="about" class="container">
+
+      <div class="sectionhead  row wow fadeInUp">
+
+          <span class="bigicon icon-cup "></span>
+
+          <h2>Employability Skills</h2>
+
+          <hr class="separetor">
+
+      </div>
+
+
+      <div>
+
+          <h7>It takes more than a degree to get a good job. Employers have a clear idea of the skills,
+          knowledge and attributes required to do the job and work in their organisation. Depending on the
+          industry or occupation you wish to work in these could be very specific technical skills or knowledge.
+          However, there are general skills and competencies (often referred to as employability skills)
+          that employers commonly seek in new recruits.</h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Communication</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to both written and verbal communication.
+              It involves being a good listener, expressing yourself clearly, concisely and persuasively and
+              communicating well with different audiences and people from diverse cultures.  Your ability to
+              negotiate with others towards a suitable outcome for all is another vital communication skill.
+          </h7>
+
+      </div>
+
+
+      <div >
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Teamwork</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">This involves working well with others to achieve results
+              and recognising the value of other people's contributions and ideas. You'll need to show you can take
+              on responsibility as well as manage and delegate to others.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Problem-solving</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">You'll need to demonstrate you have the ability to think
+              critically and logically and identify solutions to arrive at a favourable outcome.  It's good to show
+              you can apply a range of strategies to problem-solving, make optimal use of available resources and
+              enlist others to achieve an outcome.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Initiative</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">This involves being able to see innovative ways of doing
+              things seizing opportunities, adapting to new situations and taking initiative. It may involve a newer
+              way of looking at a situation or the addition of an innovative solution to improve or streamline an
+              existing process.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Planning and organising</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">It will be important to show employers that you can manage
+              your time efficiently, establish clear goals and objectives and prioritise what tasks need to be done
+              to achieve a goal. This also involves being able to identify what is required in a given situation
+              coordinating tasks and being resourceful.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Self-management</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to having a personal vision and goals, being
+              able to evaluate and monitor your own performance, having the confidence and ability to take
+              responsibility for your own actions. You may face many challenges in your work or personal life and you
+              need to show employers you have the ability to work under pressure and work through challenges without
+              becoming too overwhelmed.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Using technology</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">Having a basic understanding of word processing,
+              spreadsheets the internet and email is a base requirement. You will also need to show an employer
+              that you can quickly adapt to and apply new and emerging technologies.
+          </h7>
+
+      </div>
+
+
+      <div>
+
+          <h8 class="wow fadeInDown" data-wow-duration="2s">Learning</h8>
+
+          <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to your ability to manage your own learning
+              and contribute actively to ongoing improvement and expansion in your own knowledge and skill set.
+              This also refers to your ability to learn workplace skills and expectations specific to your organisations.
+          </h7>
+
+      </div>
+
+
+      <!-- Source: Future Work Skills 2020 report -->
+      <div class="sectionhead  row wow fadeInUp">
+
+          <hr class="separetor">
+
+      </div>
+
+
+      <!--The button back to previous page-->
+      <input type="button" class="btn3" value="Previous page" onclick="javascript:history.back(-1);"/>
+
+  </div><!-- ABOUT SECTION END -->
+
+
+  <!-- ===========================
+  FOOTER START
+  =========================== -->
+  <footer>
+
+      <div class="container">
+
+          <span class="bigicon icon-speedometer "></span>
+
+          <div class="footerlinks"><!-- FOOTER LINKS START -->
+
+              <ul>
+
+                  <li><a href="/index">Home</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/portfolio">Career Portfolio</a></li>
+                  <li><a href="/contact">Contact</a></li>
+
+              </ul>
+
+          </div><!-- FOOTER LINKS END -->
+
+
+          <div class="copyright"><!-- FOOTER COPYRIGHT START -->
+
+              <p>
+
+                  <a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by
+                  <a href="">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are
+                  free to use the template but make sure to use your own images.More Templates
+                  <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from
+                  <a href="http://www.cssmoban.com/" title="" target="_blank"></a>
+
+              </p>
+
+              <p>
+
+                  The images used in this page are from Pixabay. Retrieve from: https://pixabay.com/ The copyright of the
+                  information are belong to ANU Career Center.
+
+              </p>
+
+          </div><!-- FOOTER COPYRIGHT END -->
+
+
+          <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+
+              <ul>
+
+                  <li><a href="http://facebook.com"><span class="icon-social-facebook"></span></a></li>
+                  <li><a href="http://twitter.com"><span class="icon-social-twitter"></span></a></li>
+                  <li><a href="#"><span class="icon-social-youtube"></span></a></li>
+                  <li><a href="http://dribbble.com"><span class="icon-social-dribbble"></span></a></li>
+                  <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+
+              </ul>
+
+          </div><!-- FOOTER SOCIAL ICONS END -->
+
+      </div>
+
+  </footer><!-- FOOTER END -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  <!--Other necessary scripts-->
+  <script src="{% static 'PFFU/js/drifolio.js'%}"></script>
+
+  </body>
+
 </html>
 
 <!--//mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->
