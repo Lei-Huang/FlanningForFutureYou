@@ -1,3 +1,5 @@
+from django import forms
+from captcha.fields import CaptchaField
 class ForgetPwdForm(forms.Form):
     email = forms.EmailField(required=True)
     captcha = CaptchaField(error_messages={"invalid": u"validate code wrong"})
