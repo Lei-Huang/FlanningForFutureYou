@@ -15,7 +15,7 @@ class Student(models.Model):
     graduation_year = models.CharField(max_length=30, null=True, blank=True)
     YearOfStudy =models.CharField(max_length=100, null=True, blank=True)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
-    commnets = models.TextField()
+    comments = models.TextField()
 
     class Meta:
         ordering = ('created',)
