@@ -86,7 +86,7 @@ class CareerGoal(models.Model):
     SecondRole = models.CharField(max_length=100)
     ThirdRole = models.CharField(max_length=100)
     FirstPlanSix = models.TextField(verbose_name="Six month plan")
-    FirstPlanSixFeedback=models.TextField("Waiting for feedback")
+    FirstPlanSixFeedback=models.TextField(default="Waiting for feedback")
     FirstPlanTwelve = models.TextField(verbose_name="Twelve month plan")
     FirstPlanTwelveFeedback = models.TextField(default="Waiting for feedback")
     FirstPlanEighteen = models.TextField(verbose_name="Eighteen month plan")
@@ -94,7 +94,7 @@ class CareerGoal(models.Model):
     SecondPlan = models.TextField(verbose_name="Gain ability")
     SecondPlanFeedback = models.TextField(default="Waiting for feedback")
     ThirdPlan = models.TextField(verbose_name="Expend network")
-    ThirdPlanFeedback = models.TextField("Waiting for feedback")
+    ThirdPlanFeedback = models.TextField(default="Waiting for feedback")
 
 
 class CareerValue(models.Model):
