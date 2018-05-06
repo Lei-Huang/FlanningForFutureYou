@@ -3,8 +3,8 @@ from .models import Student
 from .models import UserProfile
 from .models import Staff
 from .models import ProgressionBar
+from .models import CareerGoal
 
-admin.site.register(Staff)
 # Register your models here.
 
 
@@ -33,6 +33,8 @@ class UserprofileAdmin(admin.ModelAdmin):
     list_filter = ['StudentId']
     search_fields = ['StudentId']
 
+
+
 class ProgressionBarAdmin(admin.ModelAdmin):
     fieldsets = [
         (None,{'fields': ('StudentId','CurrentProgress')})
@@ -40,6 +42,22 @@ class ProgressionBarAdmin(admin.ModelAdmin):
     list_display = ('StudentId', 'CurrentProgress')
     search_fields = ['StudentId']
 
+
+
+class CareerGoalAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,{'fields': ('StudentId','Sector','FirstPlanSix','FirstPlanSixFeedback','FirstPlanTwelve',
+                          'FirstPlanTwelveFeedback','FirstPlanEighteen','FirstPlanEighteenFeedback'
+                          , 'SecondPlan','SecondPlanFeedback', 'ThirdPlan', 'ThirdPlanFeedback')}),
+        ('More Information',{'classes': ('collapse',),
+            'fields':('FirstRole','SecondRole','ThirdRole','pub_date') })
+    ]
+    list_display = ('StudentId', 'Sector', 'FirstRole', 'pub_date','was_published_recently')
+    list_filter = ['pub_date']
+    search_fields = ['StudentId']
+
+
 admin.site.register(Student,StudentAdmin)
 admin.site.register(UserProfile,UserprofileAdmin)
 admin.site.register(ProgressionBar,ProgressionBarAdmin)
+admin.site.register(CareerGoal,CareerGoalAdmin)
