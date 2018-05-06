@@ -4,6 +4,7 @@ import PFFU.views
 admin.autodiscover()
 from django.conf import settings
 from django.conf.urls.static import static
+from PFFU.views import *
 
 
 app_name = 'PFFU'
@@ -31,7 +32,7 @@ urlpatterns = [
     url(r'^re_em_info', PFFU.views.re_em_info, name='re_em_info'),
     url(r'^career_goal', PFFU.views.career_goal, name='career_goal'),
     url(r'^contact', PFFU.views.contact, name='contact'),
-    #url(r'^forget/$', ForgetPwdView.as_view(), name="forget_pwd"),
-    #url(r'^reset/(?P<active_code>.*)/$', ResetView.as_view(), name="reset_pwd"),
-    #url(r'^modify_pwd/$', ModifyPwdView.as_view(), name="modify_pwd"),
+    #url(r'^forget', ForgetPwdView.as_view(), name="forget_pwd"),
+    #url(r'^reset/(?P<active_code>.*)', ResetView.as_view(), name="reset_pwd"),
+    #url(r'^modify_pwd', ModifyPwdView.as_view(), name="modify_pwd"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
