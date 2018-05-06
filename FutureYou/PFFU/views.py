@@ -102,7 +102,21 @@ def workshops(request):
 
 
 def understanding_yourself(request):
-    return render(request, 'portfolio_subpages/understanding_yourself.html')
+    context1 = {}
+    if request.method == 'GET':
+        try:
+            user = Login.objects.get(StudentId=request.session.get('userName', None))
+            user2 = Student.objects.get(studentId=request.session['userName'])
+            progression = ProgressionBar.objects.get(StudentId=user2)
+            context1['progressInt'] = int(progression.CurrentProgress)
+            return render(request, 'portfolio_subpages/understanding_yourself.html', context1)
+        except Login.DoesNotExist:
+            return render(request, 'Needlogin.html')
+    else:
+        return render(request, 'login.html')
+
+    #return render(request, 'portfolio_subpages/understanding_yourself.html')
+
 
 def employability_skill(request):
     return render(request, 'portfolio_subpages/employability_skill.html')
@@ -195,6 +209,7 @@ def career_goal(request):
     else:
         return render(request, 'portfolio_subpages/career_goal.html')
 
+
 #use an integer to tell user which step they are currently at
 def progress(request):
     context1 = {}
@@ -209,6 +224,7 @@ def progress(request):
             return render(request, 'Needlogin.html')
     else:
         return render(request, 'login.html')
+
 
 
 def search(request):
