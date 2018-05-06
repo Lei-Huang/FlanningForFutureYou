@@ -39,72 +39,102 @@
 
     <!-- Preloader -->
     <form id="career_goal" method="POST" action="career_goal">
-    <div id="preloader">
-        <div id="status">
-            <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
+
+        <div id="preloader">
+
+            <div id="status">
+
+                <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
+
+            </div>
+
         </div>
-    </div>
 
     <header>
+
         <!-- ===========================
          NAVBAR START
          =========================== -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
             <div class="container">
 
                 <div class="navbar-header">
+
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+
                     </button>
 
                     <a class="navbar-brand" href="/index">
+
                         <!--The home button on the top left of the page-->
-                         <span class="brandicon icon-grid"></span>
+                        <span class="brandicon icon-grid"></span>
                         <span class="brandname">Home</span>
+
                     </a>
+
                 </div>
+
+
                 <div class="collapse navbar-collapse">
+
                     <ul class="nav navbar-nav navbar-right">
 
                         <!--NAVIGATION ITEMS STRAT BELOW-->
                         <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                         <li><a href="/contact"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+
                     </ul>
 
                 </div><!--.nav-collapse -->
+
             </div>
+
         </nav><!--navbar end-->
+
     </header><!--header end-->
+
 
     <!-- ===========================
     CAREER GOAL SECTION START
     =========================== -->
     <div class="progressbar" style="margin-left: 20%; margin-right: auto">
+
         <hr class="separetor">
+
         <!--progress bar-->
         <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
         <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+
         <!--code for progress bar image map-->
         <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
         <map name="image-map">
+
             <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
             <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
             <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
             <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
             <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
             <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+
         </map>
 
         <!--script for changing progressbar picture according to progressInt from view content-->
         <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
         <script>
+
             var img = document.getElementById("progressbar")
             var progressInt = "{{progressInt}}";
+
             function changePicture(progressInt) {
+
                 switch (progressInt){
+
                     case "0":
                         img.src = "{% static 'PFFU/img/progressBar0.png' %}"
                         break
@@ -128,8 +158,11 @@
                         break
                 }
             }
+
             changePicture(progressInt)
+
         </script>
+
     </div>
 
     <div id="about" class="container">
