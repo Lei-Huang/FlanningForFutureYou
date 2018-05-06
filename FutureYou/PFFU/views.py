@@ -102,17 +102,24 @@ def workshops(request):
 
 
 def understanding_yourself(request):
+
     context1 = {}
+
     if request.method == 'GET':
+
         try:
             user = Login.objects.get(StudentId=request.session.get('userName', None))
             user2 = Student.objects.get(studentId=request.session['userName'])
             progression = ProgressionBar.objects.get(StudentId=user2)
             context1['progressInt'] = int(progression.CurrentProgress)
+
             return render(request, 'portfolio_subpages/understanding_yourself.html', context1)
+
         except Login.DoesNotExist:
+
             return render(request, 'Needlogin.html')
     else:
+
         return render(request, 'login.html')
 
     #return render(request, 'portfolio_subpages/understanding_yourself.html')
@@ -137,8 +144,29 @@ def uy_choice1(request):
 def uy_choice2(request):
     return render(request, 'portfolio_subpages/uy_choice2.html')
 
+
 def research_employer(request):
-    return render(request, 'portfolio_subpages/research_employer.html')
+
+    context1 = {}
+
+    if request.method == 'GET':
+
+        try:
+            user = Login.objects.get(StudentId=request.session.get('userName', None))
+            user2 = Student.objects.get(studentId=request.session['userName'])
+            progression = ProgressionBar.objects.get(StudentId=user2)
+            context1['progressInt'] = int(progression.CurrentProgress)
+
+            return render(request, 'portfolio_subpages/research_employer.html', context1)
+
+        except Login.DoesNotExist:
+
+            return render(request, 'Needlogin.html')
+    else:
+
+        return render(request, 'login.html')
+
+    #return render(request, 'portfolio_subpages/research_employer.html')
 
 
 def interview_skill(request):
