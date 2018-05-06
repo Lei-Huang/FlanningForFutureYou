@@ -68,6 +68,33 @@
             </div><!--.nav-collapse -->
         </div>
     </nav><!--navbar end-->
+
+    <!--gallary style-->
+    <style>
+        div.gallery {
+            margin: 20px 10px 0px 10px;
+            border: 1px solid #ea9312;
+            float: left;
+            width: 23%;
+
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 90%;
+        }
+
+        div.desc {
+            padding: 10px;
+            text-align: center;
+            height: 240px;
+        }
+
+    </style>
 </header><!--header end-->
 
 <!-- ===========================
@@ -138,8 +165,47 @@ INFORMATION SECTION START
 </div><!-- ABOUT SECTION END -->
 
 <!-- ===========================
-BASICS SECTION START
+What type of people are you section start
 =========================== -->
+<div  class="container">
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/skill.jpg' %}">
+            <img src="{% static 'PFFU/img/skill.jpg' %}" alt="skills" >
+        </a>
+        <div class="desc"><h3>Skills</h3><br/>
+            <p1>Develop your transferable skills. Gaining academic knowledge and employability skills are basisth for a successful career. </p1></div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/netnet.jpg' %}">
+            <img src="{% static 'PFFU/img/netnet.jpg' %}" alt="net" >
+        </a>
+        <div class="desc"><h3>Networking</h3><br/>
+            <p1>Get involved, join and attend events at clubs, societies and/or professional associations. Connect with your lecturers, tutors and fellow students.</p1></div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/experience.jpg' %}">
+            <img src="{% static 'PFFU/img/experience.jpg' %}" alt="experience" >
+        </a>
+        <div class="desc"><h3>Experience</h3><br/>
+            <p1>Get experience working in a casual/part-time job, and volunteer on campus or for community organizations.</p1></div>
+
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="{% static 'PFFU/img/preparation.jpg' %}">
+            <img src="{% static 'PFFU/img/preparation.jpg' %}" alt="preparation" >
+        </a>
+        <div class="desc"><h3>Preparation</h3><br/>
+            <p1>Look for employment opportunities.Research career paths, jobs and employers, attend career events.</p1></div>
+    </div>
+
+</div>
+<!-- ===========================
+What type of people are you section end
+=========================== -->
+
 <a name="basics"></a>
 <div id="about" class="container">
     <div class="sectionhead  row wow fadeInUp">
