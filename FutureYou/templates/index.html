@@ -123,7 +123,7 @@
                                 "{% csrf_token %}\n" +
                                 "<a href=\"/profile\"><span class=\"btnicon icon-bubble\"></span>Hi,{{userName}}</a>\n" +
                                 "{% csrf_token %}\n" +
-                                "<input type=\"submit\" id=\"logoutbutton\" class=\"btn action-button\" value=\"LOGOUT\" />\n" +
+                                "<input type=\"button\" id=\"logoutbutton\" class=\"btn action-button\" value=\"LOGOUT\" onclick=\"{location.href='/logout.html'}\"/>\n" +
                                 "</form>\n" +
                                 "</li>"
                             parent.insertAdjacentHTML('afterend', child);
