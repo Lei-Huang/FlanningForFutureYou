@@ -101,28 +101,37 @@ CAREER GOAL SECTION START
 =========================== -->
 
 <div class="progressbar" style="margin-left: 20%; margin-right: auto">
+
     <hr class="separetor">
+
     <!--progress bar-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+
     <!--code for progress bar image map-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <map name="image-map">
+
         <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
         <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
         <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
         <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
         <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
         <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+
     </map>
 
     <!--script for changing progressbar picture according to progressInt from view content-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <script>
+
         var img = document.getElementById("progressbar")
         var progressInt = "{{progressInt}}";
+
         function changePicture(progressInt) {
+
             switch (progressInt){
+
                 case "0":
                     img.src = "{% static 'PFFU/img/progressBar0.png' %}"
                     break
@@ -146,8 +155,10 @@ CAREER GOAL SECTION START
                     break
             }
         }
+
         changePicture(progressInt)
     </script>
+
 </div>
 
 <div id="about" class="container">
