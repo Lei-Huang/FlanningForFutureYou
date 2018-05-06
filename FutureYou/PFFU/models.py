@@ -16,7 +16,8 @@ class Student(models.Model):
     YearOfStudy =models.CharField(max_length=100, null=True, blank=True)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
     comments = models.TextField()
-
+    def __str__(self):
+        return self.studentId
     class Meta:
         ordering = ('created',)
 
@@ -84,9 +85,16 @@ class CareerGoal(models.Model):
     FirstRole = models.CharField(max_length=100)
     SecondRole = models.CharField(max_length=100)
     ThirdRole = models.CharField(max_length=100)
-    FirstPlan = models.TextField()
-    SecondPlan = models.TextField()
-    ThirdPlan = models.TextField()
+    FirstPlanSix = models.TextField(verbose_name="six month plan")
+    FirstPlanSixFeedback=models.TextField()
+    FirstPlanTwelve = models.TextField(verbose_name="twelve month plan")
+    FirstPlanTwelveFeedback = models.TextField()
+    FirstPlanEighteen = models.TextField(verbose_name="eighteen month plan")
+    FirstPlanEighteenFeedback = models.TextField()
+    SecondPlan = models.TextField(verbose_name="gain ability")
+    SecondPlanFeedback = models.TextField()
+    ThirdPlan = models.TextField(verbose_name="expend network")
+    ThirdPlanFeedback = models.TextField()
 
 
 class CareerValue(models.Model):
