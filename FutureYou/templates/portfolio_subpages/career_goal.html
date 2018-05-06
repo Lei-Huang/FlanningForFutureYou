@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+
 {% load staticfiles %}
 <html lang="en">
-<head>
+
+  <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +13,13 @@
     SITE TITLE
     =========================== -->
     <title>FutureYou</title><!-- This is what you see on your browser tab-->
+
     <!-- ===========================
     STYLESHEETS
     =========================== -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'PFFU/css/index.css' %}" type="text/css"/>
+
     <!-- ===========================
     GOOGLE FONTS
     =========================== -->
@@ -25,79 +30,108 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 
-</head>
-<body data-spy="scroll">
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status">
-        <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
-    </div>
-</div>
+  </head>
 
-<header>
-    <!-- ===========================
-     NAVBAR START
-     =========================== -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+  <body data-spy="scroll">
+
+    <!-- Preloader -->
+    <div id="preloader">
+
+        <div id="status">
+
+           <div class="loadicon icon-moustache wow tada infinite" data-wow-duration="2s"></div>
+
+        </div>
+
+    </div>
+
+  <header>
+
+      <!-- ===========================
+      NAVBAR START
+      =========================== -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+          <div class="container">
 
             <div class="navbar-header">
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+
                 </button>
 
                 <a class="navbar-brand" href="/index">
+
                     <!--The home button at the left top-->
                     <span class="brandicon icon-grid"></span>
                     <span class="brandname">Home</span>
+
                 </a>
+
             </div>
 
             <div class="collapse navbar-collapse">
+
                 <ul class="nav navbar-nav navbar-right">
 
                     <!--NAVIGATION ITEMS STRAT BELOW-->
                     <li><a href="/portfolio"><span class="btnicon icon-bubble"></span>Career Portfolio</a></li>
                     <li><a href="/contact"><span class="btnicon icon-envelope-open"></span>Contact</a></li>
+
                 </ul>
 
             </div><!--.nav-collapse -->
-        </div>
-    </nav><!--navbar end-->
-</header><!--header end-->
+
+          </div>
+
+      </nav><!--navbar end-->
+
+  </header><!--header end-->
 
 <!-- ===========================
 CAREER GOAL SECTION START
 =========================== -->
 
 <div class="progressbar" style="margin-left: 20%; margin-right: auto">
+
     <hr class="separetor">
+
     <!--progress bar-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+
     <!--code for progress bar image map-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <map name="image-map">
+
         <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
         <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
         <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
         <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
         <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
         <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+
     </map>
 
     <!--script for changing progressbar picture according to progressInt from view content-->
     <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
     <script>
+
         var img = document.getElementById("progressbar")
         var progressInt = "{{progressInt}}";
+
         function changePicture(progressInt) {
+
             switch (progressInt){
+
                 case "0":
                     img.src = "{% static 'PFFU/img/progressBar0.png' %}"
                     break
@@ -121,42 +155,64 @@ CAREER GOAL SECTION START
                     break
             }
         }
+
         changePicture(progressInt)
     </script>
+
 </div>
 
 <div id="about" class="container">
+
     <div class="sectionhead  row wow fadeInUp">
+
         <span class="bigicon icon-cup "></span>
+
         <h2>Career Goals</h2>
+
         <hr class="separetor">
+
     </div>
+
 
     <h3>In this page, you can set your own career goals </h3>
 
+
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+
         <img src="{% static 'PFFU/img/careergoal1.jpg' %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
 
+
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+
         <img src="{% static 'PFFU/img/careergoal2.jpg' %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+
+
     <!--QUESTION START-->
     <h3>Have you completed the steps involved in <a href="/understanding_yourself">  Understanding Yourself</a> ?</h3>
+
     <a name="anchor"></a>
 
     <div class="footerlinks">
+
         <ul>
+
             <li><a href="#anchor"> Yes</a></li><!--link to summary sheet-->
             <li><a href="/understanding_yourself">No</a></li>
+
         </ul>
+
     </div>
+
 
     <h3>Please refer to Job Suggestions report from Career Voyage or New Directions if completed.</h3>
 
+
     <div class="feedbacktxt">
+
         <h6>Summary Sheet</h6>
         <h5>....</h5>
         <h5>....</h5>
@@ -170,213 +226,398 @@ CAREER GOAL SECTION START
     </div>
     <!--QUESTION END-->
 
+
     <!-- ===========================
     SETTING DIRECTION START
     =========================== -->
     <div class="sectionhead  row wow fadeInUp">
+
         <hr class="separetor">
+
     </div>
 
     <div class="sectionhead  row wow fadeInUp">
+
         <span class="bigicon icon-cup "></span>
+
         <h2>Setting Direction</h2>
+
         <hr class="separetor">
+
     </div>
+
 
     <!--QUESTION START-->
     <form id="career_goal" method="POST" action="career_goal">
+
         <p></p>
+
     {% csrf_token %}
+
     <h3>1. What are the industries that appeal to you?</h3>
+
     <div>
+
         <td>
-            <ul class="bubblecareer"><li>
-                <h6><input type="checkbox" name="cg_industry" value="Private Sector"/>Private Sector</h6>
-                <div>The private sector is the part of the economy, sometimes referred to as the citizen sector,
-                    which is run by private individuals or groups, usually as a means of enterprise for profit,
-                    and is not controlled by the State.</div></li>
+
+            <ul class="bubblecareer">
+
+                <li>
+
+                   <h6><input type="checkbox" name="cg_industry" value="Private Sector"/>Private Sector</h6>
+
+                   <div>
+
+                       The private sector is the part of the economy, sometimes referred to as the citizen sector,
+                       which is run by private individuals or groups, usually as a means of enterprise for profit,
+                       and is not controlled by the State.
+
+                   </div>
+
+                </li>
+
             </ul>
-            <ul class="bubblecareer"><li>
-                <h6><input type="checkbox" name="cg_industry" value="Public Sector"/>Public Sector</h6>
-                <div>The public sector is the part of the economy composed of both public services and public
-                    enterprises.</div></li>
+
+
+            <ul class="bubblecareer">
+
+                <li>
+
+                    <h6><input type="checkbox" name="cg_industry" value="Public Sector"/>Public Sector</h6>
+
+                    <div>
+
+                        The public sector is the part of the economy composed of both public services and public
+                        enterprises.
+
+                    </div>
+
+                </li>
+
             </ul>
-            <ul class="bubblecareer"><li>
-                <h6><input type="checkbox" name="cg_industry" value="Not For Profit Sector"/>Not For Profit Sector</h6>
-                <div>A not for profit organization is a type of organization that does not earn profits for its owners.
-                    All of the money earned by or donated to a not for profit organization is used in pursuing the
-                    organization's objectives.</div></li>
+
+
+            <ul class="bubblecareer">
+
+                <li>
+
+                    <h6><input type="checkbox" name="cg_industry" value="Not For Profit Sector"/>Not For Profit Sector</h6>
+
+                    <div>
+
+                        A not for profit organization is a type of organization that does not earn profits for its owners.
+                        All of the money earned by or donated to a not for profit organization is used in pursuing the
+                        organization's objectives.
+
+                    </div>
+
+                </li>
+
             </ul>
-            <ul class="bubblecareer"><li>
-                <h6><input type="checkbox" name="cg_industry" value="Entrepreneurship"/>Entrepreneurship</h6>
-            <div>Entrepreneurship is the process of designing, launching and running a new business, which is often
-                initially a small business.</div></li>
+
+
+            <ul class="bubblecareer">
+
+                <li>
+
+                    <h6><input type="checkbox" name="cg_industry" value="Entrepreneurship"/>Entrepreneurship</h6>
+
+                    <div>
+
+                        Entrepreneurship is the process of designing, launching and running a new business, which is often
+                        initially a small business.
+
+                    </div>
+
+                </li>
+
             </ul>
-            <ul class="bubblecareer"><li>
-                <h6><input type="checkbox" name="cg_industry" value="Academic"/>Academic</h6>
-                <div>Academic positions are always set in the universities, you need to do with publications, teaching,
-                    descriptions of research and details of funding awarded</div></li>
+
+
+            <ul class="bubblecareer">
+
+                <li>
+
+                    <h6><input type="checkbox" name="cg_industry" value="Academic"/>Academic</h6>
+
+                    <div>
+
+                        Academic positions are always set in the universities, you need to do with publications, teaching,
+                        descriptions of research and details of funding awarded
+
+                    </div>
+
+                </li>
+
             </ul>
+
         </td>
+
     </div>
+
+
     <!--Description are from wikipedia-->
     <!--QUESTION END-->
-
     <!--QUESTION START-->
     <h3>2. What types of roles might appeal or suit you best?(Please refer to job suggestions report and Career Voyage/New Directions
         if completed, or match to values, skills and interests)?</h3>
+
     <div id="careerinput">
+
         <textfield>
+
             <h3></h3>
+
             <input type="text" name="firstgoal" placeholder="First" />
             <input type="text" name="secondgoal" placeholder="Second" />
             <input type="text" name="thirdgoal" placeholder="Third" />
-        </textfield>
-    </div>
-    <!--QUESTION END-->
 
+        </textfield>
+
+    </div>
+
+
+    <!--QUESTION END-->
     <!--QUESTION START-->
     <h3>3. What Skills do I need to develop in the future?</h3>
+
     <div class="col-md-6">
+
         <div class="row">
+
             <h8 class="wow fadeInDown" data-wow-duration="2s">Employability Skills</h8>
 
-            <p class="wow fadeInDown" data-wow-duration="3s">It takes more than a degree to get a good job. Employers
+            <p class="wow fadeInDown" data-wow-duration="3s">
+
+                It takes more than a degree to get a good job. Employers
                 have a clear idea of the skills, knowledge and attributes required to do the job and work in their
                 organisation. Depending on the industry or occupation you wish to work in these could be very specific
                 technical skills or knowledge. However, there are general skills and competencies (often referred to as
                 employability skills) that employers commonly seek in new recruits.
+
             </p>
+
             <input type="button" class="btn3" value="LEARN MORE" onclick="{location.href='/employability_skill'}"/>
+
         </div> <!-- ABOUT INFO END -->
+
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+
     <!--Left part end-->
+
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+
         <img src="{% static 'PFFU/img/employability.jpg' %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+
+
     <div id="clear"></div>
 
     <div class="col-md-6">
+
         <div class="row">
+
             <h8 class="wow fadeInDown" data-wow-duration="2s">Future Skills</h8>
 
-            <p class="wow fadeInDown" data-wow-duration="3s"> The Institute for the Future analyses key drivers that
+            <p class="wow fadeInDown" data-wow-duration="3s">
+
+                The Institute for the Future analyses key drivers that
                 will reshape the landscape of work and identifies 10 key work skills needed in the next 10 years.
                 Consider taking up opportunities that allow you to develop these skills.
+
             </p>
+
             <input type="button" class="btn3" value="LEARN MORE" onclick="{location.href='/future_skill'}"/>
+
         </div> <!-- ABOUT INFO END -->
+
     </div><!-- LEFT PART OF THE ABOUT SECTION END -->
+
     <!--Left part end-->
+
 
     <!-- RIGHT PART OF THE ABOUT SECTION -->
     <div class="col-md-6 wow fadeInUp myphoto" data-wow-duration="4s">
+
         <img src="{% static 'PFFU/img/future_skill.jpg' %}" width="100%" alt="Skill">
 
     </div><!-- RIGHT PART OF THE ABOUT SECTION END -->
+
     <!--QUESTION END-->
+
     <!-- ===========================
         SETTING DIRECTION END
         =========================== -->
+
 
     <!-- ===========================
     ACTION PLAN START
     =========================== -->
     <div class="sectionhead  row wow fadeInUp">
+
         <hr class="separetor">
+
     </div>
 
+
     <div class="sectionhead  row wow fadeInUp">
+
         <span class="bigicon icon-cup "></span>
+
         <h2>Action Plan</h2>
+
         <hr class="separetor">
+
     </div>
+
 
     <h3>1. What do I want to achieve within the next 6 months?</h3>
 
     <div id="careerinput3">
+
         <textfield>
+
             <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q1" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+
         </textfield>
+
     </div>
+
+
         <h3>2. What do I want to achieve within the next 12 months?</h3>
 
         <div id="careerinput3">
+
             <textfield>
-            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q2" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+
+                <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q2" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+
             </textfield>
+
         </div>
+
+
         <h3>3. What do I want to achieve within the next 18 months?</h3>
 
         <div id="careerinput3">
+
             <textfield>
-            <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q3" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+
+                <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q3" cols="90" rows='8' placeholder="Consider your career values"></textarea>
+
             </textfield>
+
         </div>
 
+
     <h3>4. How and when will I gain the additional employability skills and experience I need?</h3>
+
     <div id="careerinput3">
+
         <textfield>
+
             <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q2" cols="90" rows='8' placeholder="Please refer to the employability skills above"></textarea>
+
         </textfield>
+
     </div>
 
 
     <h3>5. How can I expand my network and with whom?</h3>
+
     <div id="careerinput3">
+
         <textfield>
+
             <textarea style="font-size:22px;font-family:Arial;width: 90%;margin:auto;"  name="cg_q3" cols="90" rows='8' placeholder="For example, attend career center workshops"></textarea>
+
         </textfield>
+
     </div>
 
 
     <input type="submit"  name="cg_submit" class="btn6  action-button" value="Submit"/>
-    <h8>
-    </h8>
+
+    <h8></h8>
+
         <input type="button" class="btn3" value="Previous Section" onclick="{location.href='/understanding_yourself'}"/>
         <input type="button" class="btn3" value="Portfolio Page" onclick="{location.href='/portfolio'}"/>
         <input type="button" class="btn3" value="Next Section" onclick="{location.href='/research_employer'}"/>
+
     <!-- ===========================
     ACTION PLAN END
     =========================== -->
-</div><!-- ABOUT SECTION END -->
+    </form>
+
+  </div><!-- ABOUT SECTION END -->
+
 </form>
 
 <!-- ===========================
 FOOTER START
 =========================== -->
 <footer>
+
     <div class="container">
+
         <span class="bigicon icon-speedometer "></span>
 
         <div class="footerlinks"><!-- FOOTER LINKS START -->
+
             <ul>
+
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/portfolio">Career Portfolio</a></li>
                 <li><a href="/contact">Contact</a></li>
+
             </ul>
+
         </div><!-- FOOTER LINKS END -->
 
+
         <div class="copyright"><!-- FOOTER COPYRIGHT START -->
-            <p><a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="">EvenFly Team</a>. All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own images.More Templates <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from <a href="http://www.cssmoban.com/" title="" target="_blank"></a></p>
-            <p>The images used in this page are from flickr. Retrieve from:www.flickr.com/photos/anu-image-library/ The copyright of the information are belong to ANU Career Center.   </p>
+
+            <p>
+
+                <a href="#">Drifolio</a> stands for Dribbble-Portolio. This is a free HTML template designed and coded by <a href="">EvenFly Team</a>.
+                All logo and images in this template used for preview purpose only. You are free to use the template but make sure to use your own
+                images.More Templates <a href="http://www.cssmoban.com/" target="_blank" title=""></a> - Collect from
+                <a href="http://www.cssmoban.com/" title="" target="_blank"></a>
+
+            </p>
+
+            <p>
+
+                The images used in this page are from flickr. Retrieve from:www.flickr.com/photos/anu-image-library/ The copyright of the information are
+                belong to ANU Career Center.
+
+            </p>
+
         </div><!-- FOOTER COPYRIGHT END -->
 
+
         <div class="footersocial wow fadeInUp" data-wow-duration="3s"><!-- FOOTER SOCIAL ICONS START -->
+
             <ul>
+
                 <li><a href="http://facebook.com"><span class="icon-social-facebook"></span></a></li>
                 <li><a href="http://twitter.com"><span class="icon-social-twitter"></span></a></li>
                 <li><a href="#"><span class="icon-social-youtube"></span></a></li>
                 <li><a href="http://dribbble.com"><span class="icon-social-dribbble"></span></a></li>
                 <li><a href="#"><span class="icon-social-tumblr"></span></a></li>
+
             </ul>
+
         </div><!-- FOOTER SOCIAL ICONS END -->
+
     </div>
+
 </footer><!-- FOOTER END -->
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -388,6 +629,7 @@ FOOTER START
 <script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 
 </body>
+
 </html>
 
 <!--//mobanzhijia. Modified from: mobanzhijia: http://www.cssmoban.com/-->

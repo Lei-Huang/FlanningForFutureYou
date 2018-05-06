@@ -54,31 +54,40 @@
     =========================== -->
     <div id="home">
         <div class="container homecontent">
-            <h2 class="wow fadeInUp" data-wow-duration="2s">Planning for Future You </h2>
-            <h3>ANU Careers <br> </h3>
-            <h4>
-                Student Experience and Career Development <br>
-                T 61253593 <br>
-                E careers@anu.edu.au <br>
-                W careers.anu.edu.au <br>
-                1/25 Childers Street <br>
-                Canberra ACT 2601 <br>
-            </h4>
-            <h4>
-                Like us on Facebook <br>
-                facebook.com/ANUCareers <br>
-            </h4>
-            <h3 class="wow fadeInUp" data-wow-duration="2s">Planning for Future You Developer Team</h3>
-            <h4>
-                u6041747 Lei Huang <br>
-                u6137273 Wei Wei <br>
-                u6020717 Mengyao Zhang <br>
-                u6100097 Jiangchuan Luo <br>
-                u6039111 Yunlong Pi <br>
-                u6106850 Yuxi Chen <br>
-            </h4>
+                <h2>Contact Information</h2>
+
+            <div class="contact">
+                <div class="row_contact">
+
+                    <div class="column_contact">
+                        <div id="map" style="width:100%; height: 450px; "></div>
+                    </div>
+                    <div class="column_contact">
+                        <h11>
+                            Student Experience and Career Development <br>
+                            Telephone: 61253593 <br>
+                            Email: careers@anu.edu.au <br>
+                            Website: careers.anu.edu.au <br>
+                            1/25 Childers Street <br>
+                            Canberra ACT 2601 <br>
+                        </h11>
+
+
+                        <hr class="separetor">
+
+                        <h11>
+                            Planning for Future You team<br>
+                            u6041747 Lei Huang<br>
+                            u6137273 Wei Wei <br>
+                            u6020717 Mengyao Zhang<br>
+                            u6100097 Jiangchuan Luo <br>
+                            u6039111 Yunlong Pi<br>
+                            u6106850 Yuxi Chen <br>
+                        </h11>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div><!--MAIN PICTURE AREA END-->
 
     <!-- ===========================
@@ -158,7 +167,6 @@
 
 
 </head>
-<body>
 
 
 <!-- ===========================
@@ -200,9 +208,24 @@ FOOTER START
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+<script>
+    // Initialize google maps
+    function myMap() {
+        var myCenter = new google.maps.LatLng(-35.277443, 149.124605);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {center: myCenter, zoom: 14};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBaHQkyjSmLkxq2RagGobcQ6I0594w2Rs&callback=myMap"></script>
+
 <!--Other necessary scripts-->
 <script src="{% static 'PFFU/js/drifolio.js'%}"></script>
 <script>new WOW().init();</script>
+
 </body>
 </html>
 
