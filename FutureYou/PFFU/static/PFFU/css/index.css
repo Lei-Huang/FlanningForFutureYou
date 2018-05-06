@@ -777,6 +777,7 @@ CareerGoal css begin
     color: #2C3E50;
     font-size: 15px;
 }
+/* Input end */
 
 
 .btn3{
@@ -796,19 +797,19 @@ CareerGoal css begin
 .btn3icon, .brandicon{
     margin-right: 10px;
 }
-/* Input end */
 
 
 /* Most used button  */
 
 .btn5{
-    background:skyblue;
+    background: #ea9312;
     border: none;
     text-transform: uppercase;
     margin: 50px 0;
-    color: #2c3e50;
+    color: white;
     letter-spacing: 2px;
 }
+
 
 .btn5:hover{
     background: none;
