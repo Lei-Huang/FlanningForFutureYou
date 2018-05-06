@@ -103,28 +103,37 @@
   EMPLOYABILITY SKILLS START
   =========================== -->
   <div class="progressbar" style="margin-left: 20%; margin-right: auto">
+
       <hr class="separetor">
+
       <!--progress bar-->
       <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
       <img style=" margin-left: 120px" id="progressbar" src="{% static 'PFFU/img/progressbar1.png' %}" usemap="#image-map">
+
       <!--code for progress bar image map-->
       <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
       <map name="image-map">
+
           <area target="/profile" alt="profile" title="" href="/current_profile" coords="30,148,30" shape="circle">
           <area target="/understanding_yourself.html" alt="understanding_yourself" title="" href="/understanding_yourself" coords="134,149,30" shape="circle">
           <area target="/career_goal" alt="career_goal" title="" href="/career_goal" coords="236,148,30" shape="circle">
           <area target="/research_employer" alt="research_employer" title="" href="/research_employer" coords="342,149,30" shape="circle">
           <area target="/workshops" alt="workshops" title="" href="/workshops" coords="445,149,30" shape="circle">
           <area target="/interview_skill" alt="interview_skill" title="" href="/interview_skill" coords="550,149,30" shape="circle">
+
       </map>
 
       <!--script for changing progressbar picture according to progressInt from view content-->
       <!--Sign-off: Lei Huang u6041747@anu.edu.au-->
       <script>
+
           var img = document.getElementById("progressbar")
           var progressInt = "{{progressInt}}";
+
           function changePicture(progressInt) {
+
               switch (progressInt){
+
                   case "0":
                       img.src = "{% static 'PFFU/img/progressBar0.png' %}"
                       break
@@ -148,95 +157,140 @@
                       break
               }
           }
+
           changePicture(progressInt)
+
       </script>
+
   </div>
 
+
   <div id="about" class="container">
+
       <div class="sectionhead  row wow fadeInUp">
+
           <span class="bigicon icon-cup "></span>
+
           <h2>Employability Skills</h2>
+
           <hr class="separetor">
+
       </div>
 
-      <div><h7>It takes more than a degree to get a good job. Employers have a clear idea of the skills,
+
+      <div>
+
+          <h7>It takes more than a degree to get a good job. Employers have a clear idea of the skills,
           knowledge and attributes required to do the job and work in their organisation. Depending on the
           industry or occupation you wish to work in these could be very specific technical skills or knowledge.
           However, there are general skills and competencies (often referred to as employability skills)
           that employers commonly seek in new recruits.</h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Communication</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to both written and verbal communication.
               It involves being a good listener, expressing yourself clearly, concisely and persuasively and
               communicating well with different audiences and people from diverse cultures.  Your ability to
               negotiate with others towards a suitable outcome for all is another vital communication skill.
           </h7>
+
       </div>
 
+
       <div >
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Teamwork</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">This involves working well with others to achieve results
               and recognising the value of other people's contributions and ideas. You'll need to show you can take
               on responsibility as well as manage and delegate to others.
           </h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Problem-solving</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">You'll need to demonstrate you have the ability to think
               critically and logically and identify solutions to arrive at a favourable outcome.  It's good to show
               you can apply a range of strategies to problem-solving, make optimal use of available resources and
               enlist others to achieve an outcome.
           </h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Initiative</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">This involves being able to see innovative ways of doing
               things seizing opportunities, adapting to new situations and taking initiative. It may involve a newer
               way of looking at a situation or the addition of an innovative solution to improve or streamline an
               existing process.
           </h7>
+
       </div>
 
 
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Planning and organising</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">It will be important to show employers that you can manage
               your time efficiently, establish clear goals and objectives and prioritise what tasks need to be done
               to achieve a goal. This also involves being able to identify what is required in a given situation
               coordinating tasks and being resourceful.
           </h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Self-management</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to having a personal vision and goals, being
               able to evaluate and monitor your own performance, having the confidence and ability to take
               responsibility for your own actions. You may face many challenges in your work or personal life and you
               need to show employers you have the ability to work under pressure and work through challenges without
               becoming too overwhelmed.
           </h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Using technology</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">Having a basic understanding of word processing,
               spreadsheets the internet and email is a base requirement. You will also need to show an employer
               that you can quickly adapt to and apply new and emerging technologies.
           </h7>
+
       </div>
 
+
       <div>
+
           <h8 class="wow fadeInDown" data-wow-duration="2s">Learning</h8>
+
           <h7 class="wow fadeInDown" data-wow-duration="3s">This refers to your ability to manage your own learning
               and contribute actively to ongoing improvement and expansion in your own knowledge and skill set.
               This also refers to your ability to learn workplace skills and expectations specific to your organisations.
           </h7>
+
       </div>
 
+      
       <!-- Source: Future Work Skills 2020 report -->
       <div class="sectionhead  row wow fadeInUp">
           <hr class="separetor">
