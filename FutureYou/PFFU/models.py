@@ -44,7 +44,6 @@ class Staff(models.Model):
 
 
 class UserProfile(models.Model):
-    # Todo check on_delete
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     FirstProgram = models.CharField(max_length=500, null=True, blank=True)
     SecondProgram = models.CharField(max_length=500, null=True, blank=True)
