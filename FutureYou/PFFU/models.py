@@ -35,7 +35,6 @@ class Staff(models.Model):
     Email = models.EmailField(blank=True, verbose_name='e-mail')
     PhoneNumber= models.CharField(max_length=30)
     ModifyDate = models.DateTimeField()
-    # Todo check on_delete
     StudentId =models.ForeignKey(Student,on_delete=models.CASCADE)
     Description = models.TextField()
     UserProfileYear =models.CharField(max_length=20)
@@ -45,7 +44,6 @@ class Staff(models.Model):
 
 
 class UserProfile(models.Model):
-    # Todo check on_delete
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
     FirstProgram = models.CharField(max_length=500, null=True, blank=True)
     SecondProgram = models.CharField(max_length=500, null=True, blank=True)

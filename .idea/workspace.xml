@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="update login and register function on index page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/FutureYou/PFFU/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/FutureYou/PFFU/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/FutureYou/PFFU/models.py" afterPath="$PROJECT_DIR$/FutureYou/PFFU/models.py" />
-      <change beforePath="$PROJECT_DIR$/Website/js/drifolio.js" afterPath="" />
+    <list default="true" id="3103c6f4-d3da-4210-973b-ee9c4dac528f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FutureYou/templates/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/FutureYou/templates/portfolio.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -24,32 +22,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="current_profile.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="current_profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FutureYou/templates/current_profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="158">
+              <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+      <file leaf-file-name="forgetpwd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/forgetpwd.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="143">
+              <caret line="118" column="59" lean-forward="true" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_fail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/login_fail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Needlogin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/Needlogin.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="password_reset.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/password_reset.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="58" selection-start-column="58" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="password_wrong.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/password_wrong.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="85" column="41" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,23 +108,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>address</find>
-      <find>resu</find>
-      <find>academic direction</find>
-      <find>futureyou</find>
-      <find>main</find>
-      <find>wa</find>
-      <find>is_reis_relation</find>
-      <find>is_relation</find>
-      <find>graduation</find>
-      <find>curr</find>
       <find>responsive.css</find>
       <find>css</find>
       <find>preloader</find>
@@ -94,14 +133,25 @@
       <find>todo</find>
       <find>userName</find>
       <find>context1</find>
-      <find>form</find>
-      <find>body</find>
+      <find>network</find>
+      <find>center</find>
+      <find>nav_bar</find>
+      <find>button</find>
+      <find>career</find>
+      <find>career appointment</find>
+      <find>key</find>
+      <find>portfolip</find>
+      <find>first</find>
+      <find>more</find>
+      <find>/contact</find>
+      <find>mail</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Lei Huang &lt;u6041747@anu.edu.au&gt;" />
+        <option value="Lei  Huang &lt;u6041747@anu.edu.au&gt;" />
         <option value="Wei  Wei &lt;u6137273@anu.edu.au&gt;" />
         <option value="Mengyao  Zhang &lt;u6020717@anu.edu.au&gt;" />
       </list>
@@ -113,6 +163,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -122,10 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebSite/css/responsive.css" />
-        <option value="$PROJECT_DIR$/WebSite/personalData.html" />
-        <option value="$PROJECT_DIR$/WebSite/pData.html" />
-        <option value="$PROJECT_DIR$/LeiHuang.com/lei_index.html" />
         <option value="$PROJECT_DIR$/LeiHuang.com/css/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/TalentTree/talentTree.html" />
@@ -135,16 +182,12 @@
         <option value="$PROJECT_DIR$/WebSite/index.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/regist_success.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/login_fail.html" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/login.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/admin.py" />
         <option value="$PROJECT_DIR$/WebSite/signup page/signup.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/login.css" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/signup.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/signup.css" />
         <option value="$PROJECT_DIR$/FutureYou/templates/UserExist.html" />
         <option value="$PROJECT_DIR$/WebSite/portfolioForm.html" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/register_success.html" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/test.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/test2.html" />
         <option value="$USER_HOME$/Downloads/sum_of_squares.py" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_sub_sages/understanding_yourself.html" />
@@ -152,19 +195,35 @@
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_sub_sages/research_employer.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_sub_sages/workshops.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_sub_sages/interview_skill.html" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/workshops.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/progressbar.js" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/index.html" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/urls.py" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/Needlogin.html" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goal.html" />
-        <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
         <option value="$PROJECT_DIR$/FutureYou/PFFU/models.py" />
-        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio.html" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/progressbar.js" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/signup.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/test.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/register_success.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolioForm.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/contract.html" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/urls.py" />
+        <option value="$PROJECT_DIR$/FutureYou/PFFU/views.py" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/workshops.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goal.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goaldone.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/employability_skill.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/future_skill.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/interview_skill.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/research_employer.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/understanding_yourself.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_choice1.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_choice2.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_yes.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/index.html" />
         <option value="$PROJECT_DIR$/FutureYou/templates/current_profile.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/contact.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/login.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/password_reset.html" />
+        <option value="$PROJECT_DIR$/FutureYou/templates/portfolio.html" />
       </list>
     </option>
   </component>
@@ -174,24 +233,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="42" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="23" />
-    <option name="width" value="1179" />
+    <option name="width" value="1276" />
     <option name="height" value="709" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -211,66 +260,48 @@
               <item name="FutureYou" type="b2602c69:ProjectViewProjectNode" />
               <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
               <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="PFFU" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FutureYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="PFFU" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FutureYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="PFFU" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FutureYou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
-              <item name="FutureYou" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/FutureYou" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FutureYou/templates" />
+      <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\WebSite" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
+      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img" />
       <recent name="$PROJECT_DIR$/FutureYou/templates" />
       <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
       <recent name="$PROJECT_DIR$/FutureYou/PFFU" />
       <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\WebSite" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\img" />
-      <recent name="C:\Users\lenovo\PycharmProjects\FutureYou_django\FutureYou\PFFU\static\PFFU\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,11 +317,11 @@
     </option>
   </component>
   <component name="RunManager" selected="JavaScript Debug.workshops.html">
-    <configuration name="Login Page.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou_20180306/WebSite/Login Page.html" />
+    <configuration name="current_profile.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou/FutureYou/templates/current_profile.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou/FutureYou/templates/index.html" />
-    <configuration name="login.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou_20180306/FutureYou/templates/login.html" />
-    <configuration name="signup.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou_20180306/WebSite/signup page/signup.html" />
-    <configuration name="workshops.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYouDjango/FutureYou/templates/portfolio_subpages/workshops.html" />
+    <configuration name="portfolioForm.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou/FutureYou/templates/portfolioForm.html" />
+    <configuration name="portfolio.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou/FutureYou/templates/portfolio.html" />
+    <configuration name="workshops.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/FutureYou/FutureYou/templates/portfolio_subpages/workshops.html" />
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -349,25 +380,22 @@
       <arguments />
       <envs />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.signup.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Login Page.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.workshops.html" />
+    <list>
+      <item itemvalue="JavaScript Debug.current_profile.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.portfolio.html" />
+      <item itemvalue="JavaScript Debug.portfolioForm.html" />
+      <item itemvalue="JavaScript Debug.workshops.html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.workshops.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.login.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Login Page.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.signup.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list>
+        <item itemvalue="JavaScript Debug.workshops.html" />
+        <item itemvalue="JavaScript Debug.portfolio.html" />
+        <item itemvalue="JavaScript Debug.portfolioForm.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.current_profile.html" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -417,299 +445,386 @@
       <workItem from="1521506745105" duration="97000" />
       <workItem from="1521507074636" duration="3236000" />
       <workItem from="1521515242867" duration="1013000" />
+      <workItem from="1523332456559" duration="4000" />
+      <workItem from="1523626949945" duration="356000" />
+      <workItem from="1523786635808" duration="3988000" />
+      <workItem from="1523794135079" duration="1176000" />
+      <workItem from="1523859717036" duration="220000" />
+      <workItem from="1523860147939" duration="46000" />
+      <workItem from="1523952815261" duration="183000" />
+      <workItem from="1524053699146" duration="539000" />
+      <workItem from="1524090606111" duration="32000" />
+      <workItem from="1524104179832" duration="695000" />
+      <workItem from="1524137290408" duration="897000" />
+      <workItem from="1524271664739" duration="1296000" />
+      <workItem from="1524446712337" duration="459000" />
+      <workItem from="1524526296038" duration="1820000" />
+      <workItem from="1524535885107" duration="609000" />
+      <workItem from="1524647666469" duration="814000" />
+      <workItem from="1524703835185" duration="276000" />
+      <workItem from="1524704732474" duration="3043000" />
+      <workItem from="1524738839538" duration="588000" />
+      <workItem from="1524739793087" duration="1420000" />
+      <workItem from="1524927416632" duration="837000" />
+      <workItem from="1525041317116" duration="284000" />
+      <workItem from="1525086567505" duration="1560000" />
+      <workItem from="1525130966202" duration="883000" />
+      <workItem from="1525258726587" duration="642000" />
+      <workItem from="1525317746444" duration="922000" />
+      <workItem from="1525320578395" duration="3378000" />
+      <workItem from="1525348316322" duration="1340000" />
+      <workItem from="1525391963880" duration="1084000" />
+      <workItem from="1525496317138" duration="5457000" />
+      <workItem from="1525518835404" duration="334000" />
     </task>
-    <task id="LOCAL-00001" summary="Add initial model for website">
-      <created>1503575021694</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00085" summary="add \n in the line over 120 chars to fit the coding style.">
+      <created>1525086949602</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1503575021694</updated>
+      <updated>1525086949602</updated>
     </task>
-    <task id="LOCAL-00002" summary="Add s3">
-      <created>1503742527783</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00086" summary="add \n in the line over 120 chars to fit the coding style.">
+      <created>1525087000904</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1503742527783</updated>
+      <updated>1525087000904</updated>
     </task>
-    <task id="LOCAL-00003" summary="Add link between home page and sign_up page, make improvement in personalData page">
-      <created>1506336240018</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00087" summary="change the code accordingly based on coding style">
+      <created>1525087102297</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1506336240018</updated>
+      <updated>1525087102298</updated>
     </task>
-    <task id="LOCAL-00004" summary="add share to facebook function">
-      <created>1506337783856</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00088" summary="fix the relative path">
+      <created>1525087223207</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
       <option name="project" value="LOCAL" />
-      <updated>1506337783856</updated>
+      <updated>1525087223207</updated>
     </task>
-    <task id="LOCAL-00005" summary="Change font page &quot;p&quot; color and improve the page">
-      <created>1508740328550</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00089" summary="fix the error message for coding style">
+      <created>1525087386741</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
       <option name="project" value="LOCAL" />
-      <updated>1508740328550</updated>
+      <updated>1525087386741</updated>
     </task>
-    <task id="LOCAL-00006" summary="Change facebook share button">
-      <created>1508740852827</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00090" summary="remove the comment for GOOGLE ANALYTICS, fix the &lt;!DOCTYPE html&gt; position.">
+      <created>1525087444442</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
       <option name="project" value="LOCAL" />
-      <updated>1508740852827</updated>
+      <updated>1525087444442</updated>
     </task>
-    <task id="LOCAL-00007" summary="Change email address and navigation bar">
-      <created>1508740979099</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00091" summary="fix the relative path">
+      <created>1525087496514</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
       <option name="project" value="LOCAL" />
-      <updated>1508740979099</updated>
+      <updated>1525087496514</updated>
     </task>
-    <task id="LOCAL-00008" summary="add talent tree initial page">
-      <created>1516271062956</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00092" summary="add \n for the line over 120 chars">
+      <created>1525087631724</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
       <option name="project" value="LOCAL" />
-      <updated>1516271062956</updated>
+      <updated>1525087631724</updated>
     </task>
-    <task id="LOCAL-00009" summary="add new script to display the sector.">
-      <created>1518326632124</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00093" summary="add \n for the line over 120 chars">
+      <created>1525087678108</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
       <option name="project" value="LOCAL" />
-      <updated>1518326632124</updated>
+      <updated>1525087678108</updated>
     </task>
-    <task id="LOCAL-00010" summary="add more button with correct index and text">
-      <created>1519776695045</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00094" summary="fix all relative path in research_employer page">
+      <created>1525087826510</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
       <option name="project" value="LOCAL" />
-      <updated>1519776695045</updated>
+      <updated>1525087826510</updated>
     </task>
-    <task id="LOCAL-00011" summary="Upload Django framework to gitlab">
-      <created>1520226917062</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00095" summary="remove the google analyze and change the position of &lt;!DOCTYPE html&gt;">
+      <created>1525087882429</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1520226917062</updated>
+      <updated>1525087882429</updated>
     </task>
-    <task id="LOCAL-00012" summary="Update &quot;what employers look for&quot;">
-      <created>1520235400480</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00096" summary="change the position of &lt;!DOCTYPE html&gt; to fix the error massage">
+      <created>1525087956440</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1520235400480</updated>
+      <updated>1525087956440</updated>
     </task>
-    <task id="LOCAL-00013" summary="Change direction of &quot;login&quot; and 'register'">
-      <created>1520313251117</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00097" summary="fix the relative path in home page">
+      <created>1525088020743</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1520313251117</updated>
+      <updated>1525088020743</updated>
     </task>
-    <task id="LOCAL-00014" summary="Change html file from local to static">
-      <created>1520315344080</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00098" summary="fix the relative path in index">
+      <created>1525088074546</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
       <option name="project" value="LOCAL" />
-      <updated>1520315344080</updated>
+      <updated>1525088074546</updated>
     </task>
-    <task id="LOCAL-00015" summary="update html file from local to static">
-      <created>1520316244077</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00099" summary="crop the picture to fit the latest change for home page. Lei with Yunlong and Wei">
+      <created>1525131297199</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
       <option name="project" value="LOCAL" />
-      <updated>1520316244077</updated>
+      <updated>1525131297200</updated>
     </task>
-    <task id="LOCAL-00016" summary="fix typo">
-      <created>1520336962391</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00100" summary="remove the GOOGLE ANALYTICS comment from template">
+      <created>1525270100521</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
       <option name="project" value="LOCAL" />
-      <updated>1520336962391</updated>
+      <updated>1525270100522</updated>
     </task>
-    <task id="LOCAL-00017" summary="fix typo">
-      <created>1520337000354</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00101" summary="change the relative path">
+      <created>1525317813411</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
       <option name="project" value="LOCAL" />
-      <updated>1520337000354</updated>
+      <updated>1525317813412</updated>
     </task>
-    <task id="LOCAL-00018" summary="update footer for copyright">
-      <created>1520383145933</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00102" summary="move &lt;!DOCTYPE html&gt; to first line">
+      <created>1525318760285</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
       <option name="project" value="LOCAL" />
-      <updated>1520383145933</updated>
+      <updated>1525318760285</updated>
     </task>
-    <task id="LOCAL-00019" summary="try to show name on homepage">
-      <created>1520398406812</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00103" summary="fix text with client&#10;Lei huang Wei wei jiangchuan luo mengyao zhang yunlong pi">
+      <created>1525320813893</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
       <option name="project" value="LOCAL" />
-      <updated>1520398406812</updated>
+      <updated>1525320813893</updated>
     </task>
-    <task id="LOCAL-00020" summary="Change UserId check">
-      <created>1520468389524</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00104" summary="fix the text in client meeting&#10;with team">
+      <created>1525320865894</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
       <option name="project" value="LOCAL" />
-      <updated>1520468389524</updated>
+      <updated>1525320865894</updated>
     </task>
-    <task id="LOCAL-00021" summary="Add session testing.">
-      <created>1520640345092</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00105" summary="add contact page, need fix all the contact link&#10;with team">
+      <created>1525322033512</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
       <option name="project" value="LOCAL" />
-      <updated>1520640345093</updated>
+      <updated>1525322033512</updated>
     </task>
-    <task id="LOCAL-00022" summary="Function change">
-      <created>1520646692128</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00106" summary="Direct user to one specific page in career guide.&#10;with team">
+      <created>1525324114289</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
       <option name="project" value="LOCAL" />
-      <updated>1520646692128</updated>
+      <updated>1525324114290</updated>
     </task>
-    <task id="LOCAL-00023" summary="Testing session work">
-      <created>1520663403376</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00107" summary="update url and direct to right page of career guide booklet">
+      <created>1525324716177</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
       <option name="project" value="LOCAL" />
-      <updated>1520663403376</updated>
+      <updated>1525324716177</updated>
     </task>
-    <task id="LOCAL-00024" summary="add new folder">
-      <created>1520833280165</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00108" summary="fix the relative path and delete the previous comments">
+      <created>1525348514706</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
       <option name="project" value="LOCAL" />
-      <updated>1520833280165</updated>
+      <updated>1525348514711</updated>
     </task>
-    <task id="LOCAL-00025" summary="add url in urls.py and some contert change">
-      <created>1520834546715</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
+    <task id="LOCAL-00109" summary="fix the relative path">
+      <created>1525348560082</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
       <option name="project" value="LOCAL" />
-      <updated>1520834546715</updated>
+      <updated>1525348560082</updated>
     </task>
-    <task id="LOCAL-00026" summary="add href in each button">
-      <created>1520834829717</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
+    <task id="LOCAL-00110" summary="move &lt;!DOCTYPE html&gt; to the first line for html file.">
+      <created>1525348686650</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
       <option name="project" value="LOCAL" />
-      <updated>1520834829717</updated>
+      <updated>1525348686650</updated>
     </task>
-    <task id="LOCAL-00027" summary="Modify comments">
-      <created>1520835767538</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
+    <task id="LOCAL-00111" summary="move &lt;!DOCTYPE html&gt; to the first line for html file.">
+      <created>1525348725382</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
       <option name="project" value="LOCAL" />
-      <updated>1520835767539</updated>
+      <updated>1525348725382</updated>
     </task>
-    <task id="LOCAL-00028" summary="write workshops pages add hyper link in text">
-      <created>1520836708188</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
+    <task id="LOCAL-00112" summary="fix the relative path">
+      <created>1525348746052</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
       <option name="project" value="LOCAL" />
-      <updated>1520836708188</updated>
+      <updated>1525348746052</updated>
     </task>
-    <task id="LOCAL-00029" summary="add a button">
-      <created>1520992668045</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
+    <task id="LOCAL-00113" summary="remove the GOOGLE ANALYTICS comment from template">
+      <created>1525348773148</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
       <option name="project" value="LOCAL" />
-      <updated>1520992668046</updated>
+      <updated>1525348773148</updated>
     </task>
-    <task id="LOCAL-00030" summary="add progress bar in portfolio page.">
-      <created>1521506797769</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
+    <task id="LOCAL-00114" summary="fix the relative path">
+      <created>1525348841408</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
       <option name="project" value="LOCAL" />
-      <updated>1521506797770</updated>
+      <updated>1525348841408</updated>
     </task>
-    <task id="LOCAL-00031" summary="update signin and logout logic for front end">
-      <created>1521509989821</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
+    <task id="LOCAL-00115" summary="remove the while space in the code (too many empty lines in html)">
+      <created>1525348941354</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
       <option name="project" value="LOCAL" />
-      <updated>1521509989821</updated>
+      <updated>1525348941355</updated>
     </task>
-    <task id="LOCAL-00032" summary="update login and register function on index page">
-      <created>1521519522397</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
+    <task id="LOCAL-00116" summary="fix the relative path">
+      <created>1525350988072</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
       <option name="project" value="LOCAL" />
-      <updated>1521519522397</updated>
+      <updated>1525350988072</updated>
     </task>
-    <task id="LOCAL-00033" summary="update login and register function on index page">
-      <created>1521519535834</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
+    <task id="LOCAL-00117" summary="move &lt;!DOCTYPE html&gt; to the first line for html file.">
+      <created>1525351013875</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
       <option name="project" value="LOCAL" />
-      <updated>1521519535834</updated>
+      <updated>1525351013875</updated>
     </task>
-    <task id="LOCAL-00034" summary="write function to check user login status, if user does not login, they only can view index page. user must login to use this web application.">
-      <created>1521522462134</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
+    <task id="LOCAL-00118" summary="remove the GOOGLE ANALYTICS comment from template">
+      <created>1525351047232</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
       <option name="project" value="LOCAL" />
-      <updated>1521522462134</updated>
+      <updated>1525351047232</updated>
     </task>
-    <task id="LOCAL-00035" summary="update database information">
-      <created>1521941834347</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
+    <task id="LOCAL-00119" summary="change the comment from template in workshops page">
+      <created>1525392762006</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
       <option name="project" value="LOCAL" />
-      <updated>1521941834347</updated>
+      <updated>1525392762007</updated>
     </task>
-    <task id="LOCAL-00036" summary="update database information">
-      <created>1521942238613</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
+    <task id="LOCAL-00120" summary="fix the relative path">
+      <created>1525496358450</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
       <option name="project" value="LOCAL" />
-      <updated>1521942238613</updated>
+      <updated>1525496358451</updated>
     </task>
-    <task id="LOCAL-00037" summary="build career goal function on career goal page">
-      <created>1521948518285</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
+    <task id="LOCAL-00121" summary="add comment for script">
+      <created>1525496461239</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
       <option name="project" value="LOCAL" />
-      <updated>1521948518285</updated>
+      <updated>1525496461239</updated>
     </task>
-    <task id="LOCAL-00038" summary="update PFFU database model's information based bug fix.">
-      <created>1524579860051</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
+    <task id="LOCAL-00122" summary="delete the unused the code in comments">
+      <created>1525496630692</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
       <option name="project" value="LOCAL" />
-      <updated>1524579860052</updated>
+      <updated>1525496630692</updated>
     </task>
-    <task id="LOCAL-00039" summary="bug fix based on user's feedback, modified PFFU's models.py file.">
-      <created>1524580347788</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
+    <task id="LOCAL-00123" summary="remove the previous code for home page picture">
+      <created>1525497093680</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
       <option name="project" value="LOCAL" />
-      <updated>1524580347788</updated>
+      <updated>1525497093680</updated>
     </task>
-    <task id="LOCAL-00040" summary="update title information for portfolio page.">
-      <created>1524723274893</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
+    <task id="LOCAL-00124" summary="remove the previous code for the start section in home page">
+      <created>1525497210761</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
       <option name="project" value="LOCAL" />
-      <updated>1524723274893</updated>
+      <updated>1525497210761</updated>
     </task>
-    <task id="LOCAL-00041" summary="modify and clean up the code for current_profile page">
-      <created>1525503655109</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
+    <task id="LOCAL-00125" summary="remove the blank lines in code&#10;Lei Huang, Mengyao Zhang, Jiangchuan Luo">
+      <created>1525498053188</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
       <option name="project" value="LOCAL" />
-      <updated>1525503655109</updated>
+      <updated>1525498053188</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00126" summary="Add image map for progress bar.">
+      <created>1525499948628</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1525499948628</updated>
+    </task>
+    <task id="LOCAL-00127" summary="add progress bar to sub pages">
+      <created>1525500384512</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1525500384512</updated>
+    </task>
+    <task id="LOCAL-00128" summary="add progress bar to sub pages">
+      <created>1525500503706</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1525500503707</updated>
+    </task>
+    <task id="LOCAL-00129" summary="update link to contact page in home page">
+      <created>1525518989964</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1525518989965</updated>
+    </task>
+    <task id="LOCAL-00130" summary="update link to contact page in profile page">
+      <created>1525519033834</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1525519033834</updated>
+    </task>
+    <task id="LOCAL-00131" summary="update link to contact page in contact page">
+      <created>1525519060697</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1525519060697</updated>
+    </task>
+    <task id="LOCAL-00132" summary="move &lt;!DOCTYPE html&gt; to the first line for html file.">
+      <created>1525519087772</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1525519087772</updated>
+    </task>
+    <task id="LOCAL-00133" summary="fix the relative path to static url in password reset page">
+      <created>1525519135180</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1525519135180</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70515000" />
+    <option name="totallyTimeSpent" value="105697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -721,42 +836,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="23" width="1857" height="1092" extended-state="6" />
+    <frame x="4" y="23" width="1276" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.49654576" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30983606" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20654397" sideWeight="0.48963732" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18813907" sideWeight="0.4871407" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17951483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990228" sideWeight="0.49654576" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21115538" />
+      <window_info anchor="bottom" id="TODO" order="4" sideWeight="0.49654576" weight="0.32899022" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.30983606" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.48963732" weight="0.27124184" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4871407" visible="true" weight="0.3267974" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49654576" weight="0.39869282" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="right" id="Properties" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32889965" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4969743" weight="0.3295082" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Data View" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -773,6 +888,14 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
               </option>
             </State>
           </value>
@@ -792,65 +915,38 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update footer for copyright" />
-    <MESSAGE value="try to show name on homepage" />
-    <MESSAGE value="Change UserId check" />
-    <MESSAGE value="Add session testing." />
-    <MESSAGE value="Function change" />
-    <MESSAGE value="Testing session work" />
-    <MESSAGE value="update session function and make profile page working" />
-    <MESSAGE value="add new folder" />
-    <MESSAGE value="add url in urls.py" />
-    <MESSAGE value="add url in urls.py and some contert change" />
-    <MESSAGE value="add href in each button" />
-    <MESSAGE value="Modify comments" />
-    <MESSAGE value="write workshops pages add hyper link in text" />
-    <MESSAGE value="add a button" />
-    <MESSAGE value="re-design and re-build database models based on new UI" />
-    <MESSAGE value="add progress bar in portfolio page." />
-    <MESSAGE value="update signin and logout logic for front end" />
-    <MESSAGE value="update login and register function on index page" />
-    <MESSAGE value="write function to check user login status, if user does not login, they only can view index page. user must login to use this web application." />
-    <MESSAGE value="update database information" />
-    <MESSAGE value="build career goal function on career goal page" />
-    <MESSAGE value="update PFFU database model's information based bug fix." />
-    <MESSAGE value="bug fix based on user's feedback, modified PFFU's models.py file." />
-    <MESSAGE value="update title information for portfolio page." />
-    <MESSAGE value="modify and clean up the code for current_profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify and clean up the code for current_profile page" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <MESSAGE value="crop the picture to fit the latest change for home page. Lei with Yunlong and Wei" />
+    <MESSAGE value="change the relative path" />
+    <MESSAGE value="move &lt;!DOCTYPE html&gt; to first line" />
+    <MESSAGE value="fix text with client&#10;Lei huang Wei wei jiangchuan luo mengyao zhang yunlong pi" />
+    <MESSAGE value="fix the text in client meeting&#10;with team" />
+    <MESSAGE value="add contact page, need fix all the contact link&#10;with team" />
+    <MESSAGE value="Direct user to one specific page in career guide.&#10;with team" />
+    <MESSAGE value="update url and direct to right page of career guide booklet" />
+    <MESSAGE value="fix the relative path and delete the previous comments" />
+    <MESSAGE value="remove the while space in the code (too many empty lines in html)" />
+    <MESSAGE value="remove the GOOGLE ANALYTICS comment from template" />
+    <MESSAGE value="change the comment from template in workshops page" />
+    <MESSAGE value="fix the relative path" />
+    <MESSAGE value="add comment for script" />
+    <MESSAGE value="delete the unused the code in comments" />
+    <MESSAGE value="remove the previous code for home page picture" />
+    <MESSAGE value="remove the previous code for the start section in home page" />
+    <MESSAGE value="remove the blank lines in code&#10;Lei Huang, Mengyao Zhang, Jiangchuan Luo" />
+    <MESSAGE value="Add image map for progress bar." />
+    <MESSAGE value="add progress bar to sub pages" />
+    <MESSAGE value="update link to contact page in home page" />
+    <MESSAGE value="update link to contact page in profile page" />
+    <MESSAGE value="update link to contact page in contact page" />
+    <MESSAGE value="move &lt;!DOCTYPE html&gt; to the first line for html file." />
+    <MESSAGE value="fix the relative path to static url in password reset page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the relative path to static url in password reset page" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/addProfileSuccess.html" />
     <entry file="file://$PROJECT_DIR$/WebSite/signup page/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -861,56 +957,21 @@
     <entry file="file://$PROJECT_DIR$/WebSite/portfolioForm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-893">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/register_success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/login_fail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2650">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-161">
-          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="42" />
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -918,230 +979,316 @@
     <entry file="file://$PROJECT_DIR$/../hom2/sum_of_squares.py" />
     <entry file="file://$PROJECT_DIR$/../hom2/testing.py" />
     <entry file="file://$PROJECT_DIR$/../hom2/test_hw2.py" />
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/interview_skill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/experience.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/medal2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/login.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/img/2x_anu_logo_small_over.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/understanding_yourself.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/workshops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/research_employer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/simpletextrotator.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LeiHuang.com/lei_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
-          <caret line="83" column="94" lean-forward="false" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
+          <caret line="83" column="94" selection-start-line="83" selection-start-column="94" selection-end-line="83" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="1184" lean-forward="false" selection-start-line="3" selection-start-column="1184" selection-end-line="3" selection-end-column="1184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="551" column="0" lean-forward="false" selection-start-line="551" selection-start-column="0" selection-end-line="551" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <caret line="3" column="1184" selection-start-line="3" selection-start-column="1184" selection-end-line="3" selection-end-column="1184" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <caret line="38" selection-start-line="38" selection-end-line="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/progressbar.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="4" />
+        <state>
+          <caret column="4" selection-start-column="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/drifolio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="12" />
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/js/progressbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state>
+          <caret selection-end-line="27" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/UserExist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="60" />
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state>
+          <caret selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/Needlogin.html">
+    <entry file="file://$PROJECT_DIR$/FutureYou/FutureYou/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="327" column="75" lean-forward="false" selection-start-line="327" selection-start-column="74" selection-end-line="327" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolioForm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="102" column="15" lean-forward="false" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="94" column="34" lean-forward="false" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="1500">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/register_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/static/PFFU/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="551" selection-start-line="551" selection-end-line="551" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolioForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/career_goaldone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="124" column="10" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/employability_skill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="111" column="3" lean-forward="true" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/future_skill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/interview_skill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/research_employer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/understanding_yourself.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_choice1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_choice2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/uy_yes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio_subpages/workshops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/PFFU/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="376" lean-forward="true" selection-start-line="376" selection-end-line="376" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="228" column="26" lean-forward="true" selection-start-line="228" selection-start-column="26" selection-end-line="228" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FutureYou/templates/current_profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="158">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/forgetpwd.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="118" column="59" lean-forward="true" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/login_fail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/Needlogin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/password_reset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/password_wrong.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FutureYou/templates/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="85" column="41" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
