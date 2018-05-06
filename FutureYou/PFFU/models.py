@@ -15,7 +15,7 @@ class Student(models.Model):
     graduation_year = models.CharField(max_length=30, null=True, blank=True)
     YearOfStudy =models.CharField(max_length=100, null=True, blank=True)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
-    highlighted = models.TextField()
+    commnets = models.TextField()
 
     class Meta:
         ordering = ('created',)
@@ -37,7 +37,6 @@ class Staff(models.Model):
     ModifyDate = models.DateTimeField()
     # Todo check on_delete
     StudentId =models.ForeignKey(Student,on_delete=models.CASCADE)
-
     Description = models.TextField()
     UserProfileYear =models.CharField(max_length=20)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
@@ -48,7 +47,6 @@ class Staff(models.Model):
 class UserProfile(models.Model):
     # Todo check on_delete
     StudentId = models.ForeignKey(Student, on_delete=models.CASCADE)
-    StudyYear = models.CharField(max_length=20, null=True, blank=True)
     FirstProgram = models.CharField(max_length=500, null=True, blank=True)
     SecondProgram = models.CharField(max_length=500, null=True, blank=True)
     FirstMajor = models.CharField(max_length=500, null=True, blank=True)
@@ -61,9 +59,7 @@ class UserProfile(models.Model):
     WorkStartDate = models.CharField(max_length=50, null=True, blank=True)
     Work_exp = models.CharField(max_length=100, null=True, blank=True)
     WorkEndDate = models.CharField(max_length=50, null=True, blank=True)
-    Volunteer_exp = models.CharField(max_length=100, null=True, blank=True
-
-                                     )
+    Volunteer_exp = models.CharField(max_length=100, null=True, blank=True)
     Detail_work = models.TextField()
     Detail_volunteer = models.TextField()
     # Network = models.TextField()
