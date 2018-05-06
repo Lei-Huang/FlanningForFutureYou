@@ -261,7 +261,6 @@ def register(request):
         context = {}
         context['userid'] = Uid
         try:
-            # Todo use uid to check whether user exist
             user = Student.objects.get(studentId=Uid)
             # do something with user
             #html = ("<H1>User already exsit!</H1> ")
