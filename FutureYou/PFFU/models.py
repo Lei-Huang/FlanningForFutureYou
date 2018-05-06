@@ -1,5 +1,6 @@
 from django.db import models
-
+from datetime import datetime,timedelta
+from django.utils import *
 
 
 class Student(models.Model):
@@ -97,9 +98,8 @@ class CareerGoal(models.Model):
     ThirdPlanFeedback = models.TextField(default="Waiting for feedback")
     pub_date = models.DateTimeField('date submit')
 
-
     def was_published_recently(self):
-        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+        return self.pub_date >= timezone.now() - timedelta(days=1)
         pass
 
     was_published_recently.admin_order_field = 'pub_date'
