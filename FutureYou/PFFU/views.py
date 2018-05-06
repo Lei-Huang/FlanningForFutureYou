@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from .models import *
 from django.core.exceptions import *
+from django.views import View
+from PFFU.form import *
+from django.core.mail import send_mail
+from datetime import *
 
 # use session to keep user loginin, distinguished by username
 def index(request):
@@ -20,50 +24,53 @@ def index(request):
 #         return render(request, 'portfolio.html')
 
 
-# class ForgetPwdView(View):
-#     def get(self, request):
-#         forget_form = ForgetPwdForm()
-#         return render(request, "forgetpwd.html", {"forget_form": forget_form})
-#
-#     def post(self, request):
-#         forget_form = ForgetPwdForm(request.POST)
-#         if forget_form.is_valid():
-#             email = request.POST.get("email", "")
-#             send_register_email(email, "forget")
-#             return render(request, "send_success.html")
-#         else:
-#             return render(request, "forgetpwd.html", {"forget_form": forget_form})
-#
-#
-# class ResetView(View):
-#         def get(self, request, active_code):
-#             all_records = EmailVerifyRecord.objects.filter(code=active_code)
-#             if all_records:
-#                 for record in all_records:
-#                     email = record.email
-#                     return render(request, "password_reset.html", {"email": email})
-#             else:
-#                 return render(request, "active_fail.html")
-#             return render(request, "login.html")
-#
-#
-# class ModifyPwdView(View):
-#     def post(self, request):
-#         modify_form = ModifyPwdForm(request.POST)
-#         if modify_form.is_valid():
-#             pwd1 = request.POST.get("password1", "")
-#             pwd2 = request.POST.get("password2", "")
-#             email = request.POST.get("email", "")
-#             if pwd1 != pwd2:
-#                 return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
-#             user = UserProfile.objects.get(email=email)
-#             user.password = make_password(pwd1)
-#             user.save()
-#             return render(request, "login.html")
-#         else:
-#             email = request.POST.get("email", "")
-#             return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
-# retrieve user profile detail from database
+
+class ForgetPwdView(View):
+      def get(self, request):
+          forget_form = ForgetPwdForm()
+          return render(request, "forget_pwd.html", {"forget_form": forget_form})
+
+      def post(self, request):
+          forget_form = ForgetPwdForm(request.POST)
+          if forget_form.is_valid():
+              email = request.POST.get("email", "")
+              send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
+                        fail_silently=False)
+              return render(request, "send_success.html")
+          else:
+              return render(request, "forget_pwd.html", {"forget_form": forget_form})
+
+
+class ResetView(View):
+          def get(self, request, active_code):
+              all_records = EmailVerifyRecord.objects.filter(code=active_code)
+              if all_records:
+                  for record in all_records:
+                      email = record.email
+                      return render(request, "password_reset.html", {"email": email})
+              else:
+                  return render(request, "active_fail.html")
+              return render(request, "login.html")
+
+
+class ModifyPwdView(View):
+      def post(self, request):
+          modify_form = ModifyPwdForm(request.POST)
+          if modify_form.is_valid():
+              pwd1 = request.POST.get("password1", "")
+              pwd2 = request.POST.get("password2", "")
+              email = request.POST.get("email", "")
+              if pwd1 != pwd2:
+                  return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
+              user = UserProfile.objects.get(email=email)
+              user.password = make_password(pwd1)
+              user.save()
+              return render(request, "login.html")
+          else:
+              email = request.POST.get("email", "")
+              return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
+
+
 def profile(request):
     if request.method == 'GET':
         context = {}
@@ -233,9 +240,17 @@ def career_goal(request):
             context['cg_goal1'] = userGoal.FirstRole
             context['cg_goal2']=userGoal.SecondRole
             context['cg_goal3']=userGoal.ThirdRole
-            context['cg_q1'] = userGoal.FirstPlan
-            context['cg_q2'] =  userGoal.SecondPlan
-            context['cg_q3']=userGoal.ThirdPlan
+            context['cg_q1'] = userGoal.FirstPlanSix
+            context['cg_q2'] =  userGoal.FirstPlanTwelve
+            context['cg_q3'] = userGoal.FirstPlanEighteen
+            context['cg_q4'] = userGoal.SecondPlan
+            context['cg_q5'] = userGoal.ThirdPlan
+            context['feed_q1'] = userGoal.FirstPlanSixFeedback
+            context['feed_q2'] = userGoal.FirstPlanTwelveFeedback
+            context['feed_q3'] = userGoal.FirstPlanEighteenFeedback
+            context['feed_q4'] = userGoal.SecondPlanFeedback
+            context['feed_q5'] = userGoal.ThirdPlanFeedback
+
                     # do something with user
                     #html = ("<H1>User already exsit!</H1> ")
             return render(request,'portfolio_subpages/career_goaldone.html',context)
@@ -246,9 +261,11 @@ def career_goal(request):
         firstRole = request.POST.get('firstgoal', None)
         secondRole = request.POST.get('secondgoal', None)
         thirdRole = request.POST.get('thirdgoal', None)
-        FirstPlan= request.POST.get('cg_q1',None)
-        SecondPlan = request.POST.get('cg_q2', None)
-        ThirdPlan =request.POST.get('cg_q3', None)
+        FirstPlanSix= request.POST.get('cg_q1',None)
+        FirstPlanTwelve = request.POST.get('cg_q2', None)
+        FirstPlanEighteen =request.POST.get('cg_q3', None)
+        SecondPlan = request.POST.get('cg_q4', None)
+        ThirdPlan = request.POST.get('cg_q5', None)
         check_box_list2 = request.POST.getlist('cg_industry', None)
         l = ""
         for i in range(len(check_box_list2)):
@@ -269,7 +286,7 @@ def career_goal(request):
             progress2.save(update_fields=['CurrentProgress'])
             #if Volunteer==None:
              #   Volunteer="no"
-            test2 = CareerGoal(StudentId=user,Sector=l,FirstRole=firstRole, SecondRole=secondRole,ThirdRole=thirdRole,FirstPlan=FirstPlan,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan)
+            test2 = CareerGoal(StudentId=user,Sector=l,FirstRole=firstRole, SecondRole=secondRole,ThirdRole=thirdRole,FirstPlanSix=FirstPlanSix,FirstPlanTwelve=FirstPlanTwelve,FirstPlanEighteen=FirstPlanEighteen,SecondPlan=SecondPlan,ThirdPlan=ThirdPlan,pub_date=datetime.now())
             test2.save()
             context['progressInt']=progress2.CurrentProgress
             # do something with user
