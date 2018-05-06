@@ -822,6 +822,28 @@ CareerGoal css begin
 /* Most used button end */
 
 
+/* understainding youself page what kind of person  button  */
+
+.btn7{
+    background: #ea9312;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 80px;
+}
+
+
+.btn7:hover{
+    background: none;
+    color: #ea9312;
+}
+
+.btn7icon, .brandicon{
+    margin-right: 10px;
+}
+/* End */
+
 .btn6{
     background: #c48ea8;
     border: none;
