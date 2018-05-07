@@ -119,7 +119,7 @@ def workshops(request):
             if progression.CurrentProgress == 4:
                 progression.CurrentProgress = 5
                 progression.save(update_fields=['CurrentProgress'])
-            context1['progressInt'] = int(progression.CurrentProgress)
+            context1['progressInt'] = int(progression.CurrentProgress)-1
             return render(request, 'portfolio_subpages/workshops.html', context1)
 
         except Login.DoesNotExist:
@@ -142,7 +142,10 @@ def understanding_yourself(request):
             user = Login.objects.get(StudentId=request.session.get('userName', None))
             user2 = Student.objects.get(studentId=request.session['userName'])
             progression = ProgressionBar.objects.get(StudentId=user2)
-            context1['progressInt'] = int(progression.CurrentProgress)
+            if progression.CurrentProgress == 1:
+                progression.CurrentProgress = 2
+                progression.save(update_fields=['CurrentProgress'])
+            context1['progressInt'] = int(progression.CurrentProgress)-1
 
             return render(request, 'portfolio_subpages/understanding_yourself.html', context1)
 
@@ -189,7 +192,7 @@ def research_employer(request):
             if progression.CurrentProgress == 3:
                 progression.CurrentProgress = 4
                 progression.save(update_fields=['CurrentProgress'])
-            context1['progressInt'] = int(progression.CurrentProgress)
+            context1['progressInt'] = int(progression.CurrentProgress)-1
             return render(request, 'portfolio_subpages/research_employer.html', context1)
 
         except Login.DoesNotExist:
