@@ -1,5 +1,6 @@
 from django.db import models
-
+from datetime import datetime,timedelta
+from django.utils import *
 
 
 class Student(models.Model):
@@ -16,7 +17,8 @@ class Student(models.Model):
     YearOfStudy =models.CharField(max_length=100, null=True, blank=True)
     #owner = models.ForeignKey('auth.User', related_name='student', on_delete=models.CASCADE)
     comments = models.TextField()
-
+    def __str__(self):
+        return self.studentId
     class Meta:
         ordering = ('created',)
 
@@ -84,9 +86,25 @@ class CareerGoal(models.Model):
     FirstRole = models.CharField(max_length=100)
     SecondRole = models.CharField(max_length=100)
     ThirdRole = models.CharField(max_length=100)
-    FirstPlan = models.TextField()
-    SecondPlan = models.TextField()
-    ThirdPlan = models.TextField()
+    FirstPlanSix = models.TextField(verbose_name="Six month plan")
+    FirstPlanSixFeedback=models.TextField(default="Waiting for feedback")
+    FirstPlanTwelve = models.TextField(verbose_name="Twelve month plan")
+    FirstPlanTwelveFeedback = models.TextField(default="Waiting for feedback")
+    FirstPlanEighteen = models.TextField(verbose_name="Eighteen month plan")
+    FirstPlanEighteenFeedback = models.TextField(default="Waiting for feedback")
+    SecondPlan = models.TextField(verbose_name="Gain ability")
+    SecondPlanFeedback = models.TextField(default="Waiting for feedback")
+    ThirdPlan = models.TextField(verbose_name="Expend network")
+    ThirdPlanFeedback = models.TextField(default="Waiting for feedback")
+    pub_date = models.DateTimeField('date submit')
+
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - timedelta(days=1)
+        pass
+
+    was_published_recently.admin_order_field = 'pub_date'
+    was_published_recently.boolean = True
+    was_published_recently.short_description = 'Published recently?'
 
 
 class CareerValue(models.Model):
