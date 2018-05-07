@@ -51,7 +51,7 @@ h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
-h6 {font-size: 18px; line-height: 1.4em; color: #ea9312;}/*for some answers*/
+h6 {font-size: 20px; line-height: 1.4em; color: #ea9312;font-weight: bold;}/*for some answers*/
 h7 {font-size: 18px;
     color: #2c3e50;
     display: block;
