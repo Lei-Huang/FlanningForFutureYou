@@ -31,14 +31,19 @@ class ForgetPwdView(View):
           return render(request, "forget_pwd.html", {"forget_form": forget_form})
 
       def post(self, request):
-          forget_form = ForgetPwdForm(request.POST)
-          if forget_form.is_valid():
-              email = request.POST.get("email", "")
-              send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
-                        fail_silently=False)
-              return render(request, "send_success.html")
-          else:
-              return render(request, "forget_pwd.html", {"forget_form": forget_form})
+          try:
+              user = Login.objects.get(StudentId=userName)
+              email = request.POST.get("email",None)
+              forget_form = ForgetPwdForm(request.POST)
+              if forget_form.is_valid():
+                  send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
+                            fail_silently=False)
+                  return render(request, "send_success.html")
+              else:
+                  return render(request, "forget_pwd.html", {"forget_form": forget_form})
+          except  Login.DoesNotExist:
+                return render(request, 'login_fail.html')
+
 
 
 class ResetView(View):
