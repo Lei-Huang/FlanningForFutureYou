@@ -128,9 +128,7 @@ class InterviewSkills(models.Model):
     Status = models.BooleanField(default=True)
 
 
-# class UserEvent(models.Model):
-#     StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
-#     UserEventId = models.CharField(max_length=20)
-#     UserEventType = models.CharField(max_length=20)
-#     UserEventDate = models.DateTimeField()
-#     UserEventContent = models.TextField()
+class EmailVerify(models.Model):
+     StudentId = models.ForeignKey(Student,on_delete=models.CASCADE)
+     code = models.CharField(max_length=200)
+     email = models.CharField(max_length=200)
