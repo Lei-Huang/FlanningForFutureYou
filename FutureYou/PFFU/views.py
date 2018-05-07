@@ -15,9 +15,11 @@ def index(request):
     context = {}
     if request.method == 'GET':
         try:
+
             context['userName'] = request.session['userName']
             return render(request, 'index.html',context)
         except:
+            # if the session has been cleared, back to home page and request login for further actions
             return render(request, 'index.html')
 
     else:
@@ -508,10 +510,8 @@ def current_profile(request):
             test2 = UserProfile(StudentId=user, Work_exp=k,FirstProgram=program,SecondProgram=program2,WorkStartDate=start,WorkEndDate=end, FirstMajor=major,SecondMajor=major2,Volunteer_exp="no",Detail_work=Detail_work,Detail_volunteer=Detail_vol)
             test2.save()
 
-            # do something with user
-            #html = ("<H1>User already exsit!</H1> ")
+            # back to portfolio page
             return render(request, 'portfolio.html')
-            #return render(request, 'login.html')
     else:
         return render(request, 'current_profile.html')
 
