@@ -25,50 +25,50 @@ def index(request):
 
 
 
-# class ForgetPwdView(View):
-#       def get(self, request):
-#           forget_form = ForgetPwdForm()
-#           return render(request, "forget_pwd.html", {"forget_form": forget_form})
-#
-#       def post(self, request):
-#           forget_form = ForgetPwdForm(request.POST)
-#           if forget_form.is_valid():
-#               email = request.POST.get("email", "")
-#               send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
-#                         fail_silently=False)
-#               return render(request, "send_success.html")
-#           else:
-#               return render(request, "forget_pwd.html", {"forget_form": forget_form})
-#
-#
-# class ResetView(View):
-#           def get(self, request, active_code):
-#               all_records = EmailVerifyRecord.objects.filter(code=active_code)
-#               if all_records:
-#                   for record in all_records:
-#                       email = record.email
-#                       return render(request, "password_reset.html", {"email": email})
-#               else:
-#                   return render(request, "active_fail.html")
-#               return render(request, "login.html")
-#
-#
-# class ModifyPwdView(View):
-#       def post(self, request):
-#           modify_form = ModifyPwdForm(request.POST)
-#           if modify_form.is_valid():
-#               pwd1 = request.POST.get("password1", "")
-#               pwd2 = request.POST.get("password2", "")
-#               email = request.POST.get("email", "")
-#               if pwd1 != pwd2:
-#                   return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
-#               user = UserProfile.objects.get(email=email)
-#               user.password = make_password(pwd1)
-#               user.save()
-#               return render(request, "login.html")
-#           else:
-#               email = request.POST.get("email", "")
-#               return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
+class ForgetPwdView(View):
+      def get(self, request):
+          forget_form = ForgetPwdForm()
+          return render(request, "forget_pwd.html", {"forget_form": forget_form})
+
+      def post(self, request):
+          forget_form = ForgetPwdForm(request.POST)
+          if forget_form.is_valid():
+              email = request.POST.get("email", "")
+              send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
+                        fail_silently=False)
+              return render(request, "send_success.html")
+          else:
+              return render(request, "forget_pwd.html", {"forget_form": forget_form})
+
+
+class ResetView(View):
+          def get(self, request, active_code):
+              all_records = EmailVerifyRecord.objects.filter(code=active_code)
+              if all_records:
+                  for record in all_records:
+                      email = record.email
+                      return render(request, "password_reset.html", {"email": email})
+              else:
+                  return render(request, "active_fail.html")
+              return render(request, "login.html")
+
+
+class ModifyPwdView(View):
+      def post(self, request):
+          modify_form = ModifyPwdForm(request.POST)
+          if modify_form.is_valid():
+              pwd1 = request.POST.get("password1", "")
+              pwd2 = request.POST.get("password2", "")
+              email = request.POST.get("email", "")
+              if pwd1 != pwd2:
+                  return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
+              user = UserProfile.objects.get(email=email)
+              user.password = make_password(pwd1)
+              user.save()
+              return render(request, "login.html")
+          else:
+              email = request.POST.get("email", "")
+              return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
 
 
 def profile(request):
@@ -116,8 +116,10 @@ def workshops(request):
             user = Login.objects.get(StudentId=request.session.get('userName', None))
             user2 = Student.objects.get(studentId=request.session['userName'])
             progression = ProgressionBar.objects.get(StudentId=user2)
+            if progression.CurrentProgress == 4:
+                progression.CurrentProgress = 5
+                progression.save(update_fields=['CurrentProgress'])
             context1['progressInt'] = int(progression.CurrentProgress)
-
             return render(request, 'portfolio_subpages/workshops.html', context1)
 
         except Login.DoesNotExist:
@@ -184,12 +186,13 @@ def research_employer(request):
             user = Login.objects.get(StudentId=request.session.get('userName', None))
             user2 = Student.objects.get(studentId=request.session['userName'])
             progression = ProgressionBar.objects.get(StudentId=user2)
+            if progression.CurrentProgress == 3:
+                progression.CurrentProgress = 4
+                progression.save(update_fields=['CurrentProgress'])
             context1['progressInt'] = int(progression.CurrentProgress)
-
             return render(request, 'portfolio_subpages/research_employer.html', context1)
 
         except Login.DoesNotExist:
-
             return render(request, 'Needlogin.html')
     else:
 
