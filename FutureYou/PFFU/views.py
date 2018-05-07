@@ -6,6 +6,9 @@ from django.views import View
 from PFFU.form import *
 from django.core.mail import send_mail
 from datetime import *
+import random
+import smtplib
+
 
 # use session to keep user loginin, distinguished by username
 def index(request):
@@ -24,23 +27,37 @@ def index(request):
 #         return render(request, 'portfolio.html')
 
 
-
 class ForgetPwdView(View):
       def get(self, request):
           forget_form = ForgetPwdForm()
           return render(request, "forget_pwd.html", {"forget_form": forget_form})
 
       def post(self, request):
+          email = request.POST.get("email", None)
+          account = request.POST.get("uid", None)
           try:
-              user = Login.objects.get(StudentId=userName)
-              email = request.POST.get("email",None)
+              user = Student.objects.get(studentId=account)
+              email_record = EmailVerify()
+              code = random_str()
+              email_record.StudentId=user
+              email_record.code=code
+              email_record.email=email
+              email_record.save()
               forget_form = ForgetPwdForm(request.POST)
-              if forget_form.is_valid():
-                  send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
-                            fail_silently=False)
-                  return render(request, "send_success.html")
-              else:
-                  return render(request, "forget_pwd.html", {"forget_form": forget_form})
+              email_title="Get Password Online for FutureYou"
+              email_body = "Please click the url below to reset your password:  http://127.0.0.1:8000/reset/{0}".format(code)
+              fromaddr = 'zxuuex@gmail.com'
+              toaddrs = email
+              msg = email_body
+              username = 'zxuuex@gmail.com'
+              password = 'from1399'
+              server = smtplib.SMTP('smtp.gmail.com:587')
+              server.ehlo()
+              server.starttls()
+              server.login(username, password)
+              server.sendmail(fromaddr, toaddrs, msg)
+              server.quit()
+              return render(request, "send_success.html")
           except  Login.DoesNotExist:
                 return render(request, 'login_fail.html')
 
@@ -48,13 +65,13 @@ class ForgetPwdView(View):
 
 class ResetView(View):
           def get(self, request, active_code):
-              all_records = EmailVerifyRecord.objects.filter(code=active_code)
+              all_records = EmailVerify.objects.filter(code=active_code)
               if all_records:
                   for record in all_records:
                       email = record.email
                       return render(request, "password_reset.html", {"email": email})
               else:
-                  return render(request, "active_fail.html")
+                  return render(request, "login_fail.html")
               return render(request, "login.html")
 
 
@@ -499,3 +516,12 @@ def current_profile(request):
             #return render(request, 'login.html')
     else:
         return render(request, 'current_profile.html')
+
+
+def random_str(length=8):
+    code = ''
+    choice_str = 'abcdefghijklmnopqrstuvwxyz0123456789'
+    for _ in range(length):
+        random_str = random.choice(choice_str)
+        code += random_str
+    return code
