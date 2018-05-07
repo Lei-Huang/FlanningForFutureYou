@@ -45,7 +45,7 @@ class ForgetPwdView(View):
               email_record.save()
               forget_form = ForgetPwdForm(request.POST)
               email_title="Get Password Online for FutureYou"
-              email_body = "Please click the url below to reset your password:  http://127.0.0.1:8000/reset/{0}".format(code)
+              email_body = email_title+"/n"+"Please click the url below to reset your password:  http://127.0.0.1:8000/reset/{0}".format(code)
               fromaddr = 'zxuuex@gmail.com'
               toaddrs = email
               msg = email_body
@@ -69,28 +69,26 @@ class ResetView(View):
               if all_records:
                   for record in all_records:
                       email = record.email
-                      return render(request, "password_reset.html", {"email": email})
+                      return render(request, "password_reset.html")
               else:
-                  return render(request, "login_fail.html")
+                  return render(request, "ogin_fail.html")
               return render(request, "login.html")
 
-
-class ModifyPwdView(View):
-      def post(self, request):
-          modify_form = ModifyPwdForm(request.POST)
-          if modify_form.is_valid():
-              pwd1 = request.POST.get("password1", "")
-              pwd2 = request.POST.get("password2", "")
-              email = request.POST.get("email", "")
-              if pwd1 != pwd2:
-                  return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
-              user = UserProfile.objects.get(email=email)
-              user.password = make_password(pwd1)
-              user.save()
-              return render(request, "login.html")
-          else:
-              email = request.POST.get("email", "")
-              return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
+          def post(self, request,active_code):
+              try:
+                  pwd1 = request.POST.get("password1", None)
+                  pwd2 = request.POST.get("password2", None)
+                  uid = request.POST.get("uid", None)
+                  if pwd1 != pwd2:
+                      return HttpResponse("Password Not Match")
+                  user = Student.objects.get(studentId=uid)
+                  login = Login.objects.get(StudentId=user)
+                  login.password = pwd1
+                  login.save(update_fields=['password'])
+                  return render(request, "login.html")
+              except Student.DoesNotExist:
+                  uid = request.POST.get("uid", "")
+                  return render(request, "password_reset.html", {"uid": uid, "modify_form": modify_form})
 
 
 def profile(request):

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="forget_pwd" method="post" action="forget_pwd.html" autocomplete="off">
+    <div class="form-group marb20 {% if forget_form.errors.email %}errorput{% endif %}">
+        <label>Account</label>
+        <input type="text" id="account" name="uid" value="" placeholder="Student Id"/>
+        <label>Email</label>
+        <input type="text" id="uid" name="email" value="" placeholder="Your Email"/>
+    </div>
+    <div class="form-group captcha1 marb38">
+        <label>Validate&nbsp;&nbsp;Code</label>
+        {{ forget_form.captcha }}
+    </div>
+    <div class="error btns" id="jsForgetTips">{% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}</div>
+    <input type="hidden" name="sms_type" value="1">
+    <input class="btn btn-green" id="jsFindPwdBtn" type="submit" value="submit" />
+    <p class="form-p" style="bottom:40px;">You can still<a href="/login.html"> [login directly]</a></p>
+{% csrf_token %}
+</form>
+
+</body>
+</html>
