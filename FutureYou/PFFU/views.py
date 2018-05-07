@@ -214,8 +214,10 @@ def interview_skill(request):
             user = Login.objects.get(StudentId=request.session.get('userName', None))
             user2 = Student.objects.get(studentId=request.session['userName'])
             progression = ProgressionBar.objects.get(StudentId=user2)
-            context1['progressInt'] = int(progression.CurrentProgress)
-
+            if progression.CurrentProgress == 5:
+                progression.CurrentProgress = 6
+                progression.save(update_fields=['CurrentProgress'])
+            context1['progressInt'] = int(progression.CurrentProgress)-1
             return render(request, 'portfolio_subpages/interview_skill.html', context1)
 
         except Login.DoesNotExist:
