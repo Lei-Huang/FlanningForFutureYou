@@ -60,7 +60,7 @@ class ForgetPwdView(View):
               server.sendmail(fromaddr, toaddrs, msg)
               server.quit()
               return render(request, "send_success.html")
-          except  Login.DoesNotExist:
+          except  Student.DoesNotExist:
                 return render(request, 'login_fail.html')
 
 
