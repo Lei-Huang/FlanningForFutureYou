@@ -1,16 +1,21 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Forget password</title>
+    <link rel="stylesheet" href="{% static 'PFFU/css/login.css' %}" type="text/css"/>
 </head>
 <body>
-<form id="forget_pwd" method="post" action="forget_pwd.html" autocomplete="off">
+
+
+<form id="loginform" method="post" action="forget_pwd.html" autocomplete="off">
+    {% csrf_token %}
+    <h2 class="login-title">Forget password</h2>
+
     <div class="form-group marb20 {% if forget_form.errors.email %}errorput{% endif %}">
-        <label>Account</label>
-        <input type="text" id="account" name="uid" value="" placeholder="Student Id"/>
-        <label>Email</label>
-        <input type="text" id="uid" name="email" value="" placeholder="Your Email"/>
+        <input type="text" id="account" name="uid" value="" placeholder="Account"/>
+        <input type="text" id="uid" name="email" value="" placeholder="Email"/>
     </div>
     <div class="form-group captcha1 marb38">
         <label>Validate&nbsp;&nbsp;Code</label>
@@ -18,8 +23,9 @@
     </div>
     <div class="error btns" id="jsForgetTips">{% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}</div>
     <input type="hidden" name="sms_type" value="1">
-    <input class="btn btn-green" id="jsFindPwdBtn" type="submit" value="submit" />
-    <p class="form-p" style="bottom:40px;">You can still<a href="/login.html"> [login directly]</a></p>
+    <input class="btn action-button" id="jsFindPwdBtn" type="submit" value="submit" />
+    <input type="button" name="login" class="btn action-button" value="Login"  onclick="{location.href='/login.html'}"/>
+    <!--<p class="form-p" style="bottom:40px;">You can still<a href="/login.html"> [login directly]</a></p>-->
 {% csrf_token %}
 </form>
 
