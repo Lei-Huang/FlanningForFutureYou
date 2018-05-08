@@ -141,7 +141,10 @@ def workshops(request):
             if progression.CurrentProgress == 4:
                 progression.CurrentProgress = 5
                 progression.save(update_fields=['CurrentProgress'])
-            context1['progressInt'] = int(progression.CurrentProgress)-1
+            if int(progression.CurrentProgress) == 6:
+                context1['progressInt'] = 6
+            else:
+                context1['progressInt'] = int(progression.CurrentProgress)-1
             return render(request, 'portfolio_subpages/workshops.html', context1)
 
         except Login.DoesNotExist:
@@ -167,7 +170,10 @@ def understanding_yourself(request):
             if progression.CurrentProgress == 1:
                 progression.CurrentProgress = 2
                 progression.save(update_fields=['CurrentProgress'])
-            context1['progressInt'] = int(progression.CurrentProgress)-1
+            if int(progression.CurrentProgress) == 6:
+                context1['progressInt'] = 6
+            else:
+                context1['progressInt'] = int(progression.CurrentProgress)-1
 
             return render(request, 'portfolio_subpages/understanding_yourself.html', context1)
 
@@ -214,7 +220,10 @@ def research_employer(request):
             if progression.CurrentProgress == 3:
                 progression.CurrentProgress = 4
                 progression.save(update_fields=['CurrentProgress'])
-            context1['progressInt'] = int(progression.CurrentProgress)-1
+            if int(progression.CurrentProgress) == 6:
+                context1['progressInt'] = 6
+            else:
+                context1['progressInt'] = int(progression.CurrentProgress)-1
             return render(request, 'portfolio_subpages/research_employer.html', context1)
 
         except Login.DoesNotExist:
@@ -253,7 +262,17 @@ def interview_skill(request):
 
 
 def career_goaldone(request):
-    return render(request, 'portfolio_subpages/career_goaldone.html')
+    context = {}
+    try:
+        user = Login.objects.get(StudentId=request.session.get('userName', None))
+        user2 = Student.objects.get(studentId=request.session['userName'])
+        progression = ProgressionBar.objects.get(StudentId=user2)
+        context['progressInt'] = int(progression.CurrentProgress)-1
+        return render(request, 'portfolio_subpages/career_goaldone.html', context)
+    except Login.DoesNotExist:
+        return render(request, 'career_goaldone.html')
+
+    return render(request, 'portfolio_subpages/career_goaldone.html',context)
 
 
 def log(request):
@@ -280,12 +299,13 @@ def career_goal(request):
             context['feed_q3'] = userGoal.FirstPlanEighteenFeedback
             context['feed_q4'] = userGoal.SecondPlanFeedback
             context['feed_q5'] = userGoal.ThirdPlanFeedback
-
-                    # do something with user
-                    #html = ("<H1>User already exsit!</H1> ")
+            user2 = Student.objects.get(studentId=request.session['userName'])
+            progression = ProgressionBar.objects.get(StudentId=user2)
+            context['progressInt'] = int(progression.CurrentProgress)
             return render(request,'portfolio_subpages/career_goaldone.html',context)
         except CareerGoal.DoesNotExist:
-            return render(request,'portfolio_subpages/career_goal.html')
+            context['progressInt'] = 2
+            return render(request,'portfolio_subpages/career_goal.html',context)
     if request.method == 'POST':
         sector = request.POST.get('cg_industry',None)
         firstRole = request.POST.get('firstgoal', None)
