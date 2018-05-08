@@ -73,7 +73,7 @@ class ResetView(View):
                       email = record.email
                       return render(request, "password_reset.html")
               else:
-                  return render(request, "ogin_fail.html")
+                  return render(request, "login_fail.html")
               return render(request, "login.html")
 
           def post(self, request,active_code):
