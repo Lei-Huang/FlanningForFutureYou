@@ -6,15 +6,20 @@ from django.views import View
 from PFFU.form import *
 from django.core.mail import send_mail
 from datetime import *
+import random
+import smtplib
+
 
 # use session to keep user loginin, distinguished by username
 def index(request):
     context = {}
     if request.method == 'GET':
         try:
+
             context['userName'] = request.session['userName']
             return render(request, 'index.html',context)
         except:
+            # if the session has been cleared, back to home page and request login for further actions
             return render(request, 'index.html')
 
     else:
@@ -24,23 +29,37 @@ def index(request):
 #         return render(request, 'portfolio.html')
 
 
-
 class ForgetPwdView(View):
       def get(self, request):
           forget_form = ForgetPwdForm()
           return render(request, "forget_pwd.html", {"forget_form": forget_form})
 
       def post(self, request):
+          email = request.POST.get("email", None)
+          account = request.POST.get("uid", None)
           try:
-              user = Login.objects.get(StudentId=userName)
-              email = request.POST.get("email",None)
+              user = Student.objects.get(studentId=account)
+              email_record = EmailVerify()
+              code = random_str()
+              email_record.StudentId=user
+              email_record.code=code
+              email_record.email=email
+              email_record.save()
               forget_form = ForgetPwdForm(request.POST)
-              if forget_form.is_valid():
-                  send_mail("testing", "Did this work?", "no-reply@abc.net", ["email where you want to send ", ],
-                            fail_silently=False)
-                  return render(request, "send_success.html")
-              else:
-                  return render(request, "forget_pwd.html", {"forget_form": forget_form})
+              email_title="Get Password Online for FutureYou"
+              email_body = email_title+"/n"+"Please click the url below to reset your password:  http://127.0.0.1:8000/reset/{0}".format(code)
+              fromaddr = 'zxuuex@gmail.com'
+              toaddrs = email
+              msg = email_body
+              username = 'zxuuex@gmail.com'
+              password = 'from1399'
+              server = smtplib.SMTP('smtp.gmail.com:587')
+              server.ehlo()
+              server.starttls()
+              server.login(username, password)
+              server.sendmail(fromaddr, toaddrs, msg)
+              server.quit()
+              return render(request, "send_success.html")
           except  Login.DoesNotExist:
                 return render(request, 'login_fail.html')
 
@@ -48,32 +67,30 @@ class ForgetPwdView(View):
 
 class ResetView(View):
           def get(self, request, active_code):
-              all_records = EmailVerifyRecord.objects.filter(code=active_code)
+              all_records = EmailVerify.objects.filter(code=active_code)
               if all_records:
                   for record in all_records:
                       email = record.email
-                      return render(request, "password_reset.html", {"email": email})
+                      return render(request, "password_reset.html")
               else:
-                  return render(request, "active_fail.html")
+                  return render(request, "ogin_fail.html")
               return render(request, "login.html")
 
-
-class ModifyPwdView(View):
-      def post(self, request):
-          modify_form = ModifyPwdForm(request.POST)
-          if modify_form.is_valid():
-              pwd1 = request.POST.get("password1", "")
-              pwd2 = request.POST.get("password2", "")
-              email = request.POST.get("email", "")
-              if pwd1 != pwd2:
-                  return render(request, "password_reset.html", {"email": email, "msg": u"password do not match"})
-              user = UserProfile.objects.get(email=email)
-              user.password = make_password(pwd1)
-              user.save()
-              return render(request, "login.html")
-          else:
-              email = request.POST.get("email", "")
-              return render(request, "password_reset.html", {"email": email, "modify_form": modify_form})
+          def post(self, request,active_code):
+              try:
+                  pwd1 = request.POST.get("password1", None)
+                  pwd2 = request.POST.get("password2", None)
+                  uid = request.POST.get("uid", None)
+                  if pwd1 != pwd2:
+                      return HttpResponse("Password Not Match")
+                  user = Student.objects.get(studentId=uid)
+                  login = Login.objects.get(StudentId=user)
+                  login.password = pwd1
+                  login.save(update_fields=['password'])
+                  return render(request, "login.html")
+              except Student.DoesNotExist:
+                  uid = request.POST.get("uid", "")
+                  return render(request, "password_reset.html", {"uid": uid, "modify_form": modify_form})
 
 
 def profile(request):
@@ -493,9 +510,16 @@ def current_profile(request):
             test2 = UserProfile(StudentId=user, Work_exp=k,FirstProgram=program,SecondProgram=program2,WorkStartDate=start,WorkEndDate=end, FirstMajor=major,SecondMajor=major2,Volunteer_exp="no",Detail_work=Detail_work,Detail_volunteer=Detail_vol)
             test2.save()
 
-            # do something with user
-            #html = ("<H1>User already exsit!</H1> ")
+            # back to portfolio page
             return render(request, 'portfolio.html')
-            #return render(request, 'login.html')
     else:
         return render(request, 'current_profile.html')
+
+
+def random_str(length=8):
+    code = ''
+    choice_str = 'abcdefghijklmnopqrstuvwxyz0123456789'
+    for _ in range(length):
+        random_str = random.choice(choice_str)
+        code += random_str
+    return code

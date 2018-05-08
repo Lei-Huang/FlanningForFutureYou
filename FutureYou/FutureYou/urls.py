@@ -25,3 +25,6 @@ urlpatterns = [
     url(r'^admin', admin.site.urls),
     url(r'^', include('PFFU.urls')),
 ]
+urlpatterns += [
+    url(r'^captcha/', include('captcha.urls')),
+]
