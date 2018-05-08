@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    /*background color*/
+    background:
+            linear-gradient(rgba(97, 132, 196, 0.6), rgba(76, 105, 182, 0.6));
+}
+
+body{
+    font-size:30px;
+    color: #f0eef9;
+}
+
+img{
+    margin-top: 12%;
+    margin-left: 45%;
+
+}
+
+.content{
+    margin-top: 1px;
+    margin-left: 35%;
+}
+
+
