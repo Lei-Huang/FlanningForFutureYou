@@ -64,7 +64,7 @@ class EmailAdmin(admin.ModelAdmin):
         (None,{'fields': ('StudentId','email','code')}
          )
     ]
-    list_display = ('StudentId', '', 'email')
+    list_display = ('StudentId', 'email')
     search_fields = ['StudentId']
 
 
@@ -72,4 +72,4 @@ admin.site.register(Student,StudentAdmin)
 admin.site.register(UserProfile,UserprofileAdmin)
 admin.site.register(ProgressionBar,ProgressionBarAdmin)
 admin.site.register(CareerGoal,CareerGoalAdmin)
-admin.site.register(EmailVerify)
+admin.site.register(EmailVerify,EmailAdmin)
