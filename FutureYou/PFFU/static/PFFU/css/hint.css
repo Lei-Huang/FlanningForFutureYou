@@ -11,17 +11,15 @@ html {
 body{
     font-size:24px;
     color: #f0eef9;
+    text-align: center;
 }
 
 img{
     margin-top: 12%;
-    margin-left: 45%;
-
 }
 
 .content{
     margin-top: 1px;
-    margin-left: 20%;
 }
 
 
