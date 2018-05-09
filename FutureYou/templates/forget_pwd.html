@@ -23,9 +23,9 @@
     </div>
     <div class="error btns" id="jsForgetTips">{% for key,error in forget_form.errors.items %}{{ error }}{% endfor %}</div>
     <input type="hidden" name="sms_type" value="1">
+    <input type="button" name="login" class="btn action-button" value="Return Login"  onclick="{location.href='/login.html'}"/>
     <input class="btn action-button" id="jsFindPwdBtn" type="submit" value="submit" />
-    <input type="button" name="login" class="btn action-button" value="Login"  onclick="{location.href='/login.html'}"/>
-    <!--<p class="form-p" style="bottom:40px;">You can still<a href="/login.html"> [login directly]</a></p>-->
+   <!--<p class="form-p" style="bottom:40px;">You can still<a href="/login.html"> [login directly]</a></p>-->
 {% csrf_token %}
 </form>
 
