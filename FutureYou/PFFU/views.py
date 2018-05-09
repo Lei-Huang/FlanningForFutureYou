@@ -2,8 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from .models import *
 from django.core.exceptions import *
-from django.views import View
+#from django.views import View
 from PFFU.form import *
+from django.views.generic.base import View
 from django.core.mail import send_mail
 from datetime import *
 import random
