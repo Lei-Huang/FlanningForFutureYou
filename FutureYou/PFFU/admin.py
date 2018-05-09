@@ -4,6 +4,8 @@ from .models import UserProfile
 from .models import Staff
 from .models import ProgressionBar
 from .models import CareerGoal
+from .models import EmailVerify
+from .models import Login
 
 # Register your models here.
 
@@ -55,6 +57,7 @@ class CareerGoalAdmin(admin.ModelAdmin):
     list_display = ('StudentId', 'Sector', 'FirstRole', 'pub_date','was_published_recently')
     list_filter = ['pub_date']
     search_fields = ['StudentId']
+
 
 
 admin.site.register(Student,StudentAdmin)
