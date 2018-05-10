@@ -59,8 +59,17 @@ class CareerGoalAdmin(admin.ModelAdmin):
     search_fields = ['StudentId']
 
 
+class EmailAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,{'fields': ('StudentId','email','code')}
+         )
+    ]
+    list_display = ('StudentId', 'email')
+    search_fields = ['StudentId']
+
 
 admin.site.register(Student,StudentAdmin)
 admin.site.register(UserProfile,UserprofileAdmin)
 admin.site.register(ProgressionBar,ProgressionBarAdmin)
 admin.site.register(CareerGoal,CareerGoalAdmin)
+admin.site.register(EmailVerify,EmailAdmin)
