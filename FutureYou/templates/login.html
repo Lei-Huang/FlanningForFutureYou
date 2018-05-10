@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="{% static 'PFFU/css/login.css' %}" type="text/css"/>
 </head>
 <body>
+
+<br>
+<br>
+<br>
+<!--The hint for our website-->
+<div class="hint" style="margin: auto; width: 40%;">
+    <table style="border:3px #7e7e7e solid;">
+        <tr>
+            <td align="left" border="1" >
+                <h5>It's never too early to start planning your career.
+                    You may have a clear idea of your career
+                    direction or you may not be sure what you want to do after university. <br/>
+                    A successful career is more than just gaining academic knowledge and employability skills.
+                    This site will help to understand your strength and your career interests and increase your knowledge of the
+                    employment market. Engaging with Careers Consultants and with this career planning process outlined in this site
+                    will help ensure that you are employable and competitive for jobs during university and following graduation.
+                    <br/>
+                </h5>
+            </td>
+        </tr>
+    </table>
+</div>
+
 <form id="loginform" method="POST" action="login">
     {% csrf_token %}
     <textfield>
