@@ -18,7 +18,7 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 400px;
+	width: 650px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -42,6 +42,12 @@ body {
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
+/*for radio button*/
+#msform label{
+	color:greenyellow;
+}
+
 /*inputs*/
 #msform input, #msform textarea {
 	padding: 15px;
@@ -54,6 +60,7 @@ body {
 	color: #2C3E50;
 	font-size: 13px;
 }
+
 /*buttons*/
 #msform .action-button {
 	width: 100px;
@@ -73,7 +80,7 @@ body {
 .copyright {
 	clear: both;
 	display: block;
-	position: fixed;
+	position: relative;
 	left: 0px;
 	bottom: 0px;
 	color: #5e5e5e;

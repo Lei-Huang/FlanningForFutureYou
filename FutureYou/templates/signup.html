@@ -14,7 +14,8 @@
 			<!-- progressbar -->
 			<ul id="progressbar">
 				<li class="active">Account Setup</li>
-				<li>Education Background</li>
+				<li class="active">Education Background</li>
+				<li class="active">Select Your Status</li>
 			</ul>
 			<!--fieldsets -->
 			<fieldset>
@@ -34,6 +35,42 @@
 				<input type="text" name="Degree" placeholder="Degree" />
 				<input type="text" name="Discipline" placeholder="Discipline" />
 				<input type="text" name="Graduation Date" placeholder="Graduation Date" />
+				<input type="text" name="Graduation Date" placeholder="Graduation Date" />
+
+				<input type="button" name="previous" class="previous action-button" value="Previous" />
+				<input type="button" name="next" class="next action-button" value="Next" />
+			</fieldset>
+
+			<!--add button to select current status-->
+			<!--Sign-off; Lei Huang u6041747@anu.edu.au 2018.05..13-->
+			<fieldset>
+				<h2 class="fs-title">Select your status</h2>
+				<h3 class="fs-subtitle">This is step 3</h3>
+				<input type="radio" name="status" id="Getting started" value="Getting started"checked>
+				<label for="Getting started">Getting started</label>
+				<p>little or no relative experience
+					<!--(relevant to career goals)-->
+					<br>
+					little or no casual work
+					<!--(volunteer leadership etc.)-->
+					<br>
+					little or no long term career planing</p>
+				<br>
+				<input type="radio" name="status" id="On the way" value="On the way">
+				<label for="On the way">On the way</label>
+				<p>relative experience
+					<!--(relevant to career goals)-->
+					<br>
+					have a rough idea of no long term career planing<br>
+				</p>
+				<br>
+				<input type="radio" name="status" id="Skilled" value="Skilled">
+				<label for="Skilled">Skilled</label>
+				<p>
+					strong relevant experience <br>
+					have a firm idea of long term career planing
+				</p>
+				<br>
 				<input type="button" name="previous" class="previous action-button" value="Previous" />
 				<input type="submit" name="submit" class="submit action-button" value="Submit" />
 			</fieldset>
