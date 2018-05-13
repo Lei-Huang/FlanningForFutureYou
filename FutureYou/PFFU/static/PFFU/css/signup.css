@@ -44,8 +44,11 @@ body {
 }
 
 /*for radio button*/
-#msform label{
-	color:greenyellow;
+#msform input[type="radio"]+ label{
+	color:darkgreen;
+}
+#msform input[type="radio"]:checked+ label{
+	color:darkred;
 }
 
 /*inputs*/
@@ -111,7 +114,7 @@ body {
 	color: white;
 	text-transform: uppercase;
 	font-size: 9px;
-	width: 50%;
+	width: 30%;
 	float: left;
 	position: relative;
 }
