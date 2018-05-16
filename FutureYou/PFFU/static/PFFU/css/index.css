@@ -679,7 +679,6 @@ CareerGoal css begin
     font-family: 'Helvetica Neue', cursive;
 
     background-color: rgba(196, 116, 168, 0.6);
-    transition: all 0.4s ease-in-out;
     font-size:1.15em;
 
     /* Setting the border-radius property for all Browsers */
