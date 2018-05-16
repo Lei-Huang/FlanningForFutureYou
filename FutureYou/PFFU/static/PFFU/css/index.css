@@ -51,7 +51,7 @@ h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
-h6 {font-size: 20px; line-height: 1.4em; color: #ea9312;font-weight: bold;}/*for some answers*/
+h6 {font-size: 20px; line-height: 1.4em; color: #ea713a ;font-weight: bold;}/*for some answers*/
 h7 {font-size: 18px;
     color: #2c3e50;
     display: block;
@@ -61,7 +61,7 @@ h7 {font-size: 18px;
     margin-right: 0;
     font-weight: bold;}/*for Description*/
 h8 {font-size: 28px;
-    color: #ea9312;
+    color: #ea713a;
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -90,7 +90,7 @@ h13{font-size: 18px;/*for hyperlink content*/
 
 p{ font-size: 18px;
     letter-spacing: 1px;
-    color: #a7a7a7;
+    color: #6B6B6B;
 
 }
 p1{ font-size: 14px;
@@ -777,7 +777,7 @@ CareerGoal css begin
 
 .btn3:hover{
     background: none;
-    color: #ea9312;
+    color: #ea723a;
 }
 
 .btn3icon, .brandicon{
@@ -788,7 +788,7 @@ CareerGoal css begin
 /* Most used button  */
 
 .btn5{
-    background: #ea9312;
+    background: #ea713a;
     border: none;
     text-transform: uppercase;
     margin: 50px 0;
