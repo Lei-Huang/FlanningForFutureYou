@@ -126,7 +126,18 @@ def profile(request):
 
 
 def contact(request):
-    return render(request, 'contact.html')
+    context = {}
+    if request.method == 'GET':
+        try:
+
+            context['userName'] = request.session['userName']
+            return render(request, 'contact.html', context)
+        except:
+            # if the session has been cleared, back to home page and request login for further actions
+            return render(request, 'contact.html')
+
+    else:
+        return render(request, 'contact.html')
 
 
 def workshops(request):
