@@ -122,7 +122,7 @@ DEFAULT STYLE & FORMATING
 }
 
 ul{padding: 0;}
-a{color: #ea9312
+a{color: #E56815
 }
 a:hover{color: #c3c3c3; text-decoration: none;}
 
@@ -303,7 +303,7 @@ footer{
     background: #363942;
 }
 
-footer p, footer .bigicon {color: #7e7e7e;}
+footer p, footer .bigicon {color: #E8E8E8;}
 
 .footerlinks{margin: 30px 0;}
 .footerlinks li{
@@ -633,13 +633,12 @@ FOLLOW BUTTON
 
 
 /*================================
-Portfolio Image & Hint Display
+Portfolio Image  Display
 ================================*/
 #ban {
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
 }
 .ban{ width: 580px; height:300px; position:relative; overflow:hidden; margin:40px auto 0 auto;}
 .ban2{ width:580px; height:300px; position:relative; overflow:hidden;}
