@@ -1,45 +1,45 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="{% static 'PFFU/css/login.css' %}" type="text/css"/>
-</head>
-<body>
+    <!DOCTYPE html>
+    {% load staticfiles %}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="{% static 'PFFU/css/login.css' %}" type="text/css"/>
+    </head>
+    <body>
 
-<br>
-<br>
-<br>
-<!--The hint for our website-->
-<div class="hint" style="margin: auto; width: 40%;">
-    <table style="border:3px #7e7e7e solid;">
-        <tr>
-            <td align="left" border="1" >
-                <h5>It's never too early to start planning your career.
-                    You may have a clear idea of your career
-                    direction or you may not be sure what you want to do after university. <br/>
-                    A successful career is more than just gaining academic knowledge and employability skills.
-                    This site will help to understand your strength and your career interests and increase your knowledge of the
-                    employment market. Engaging with Careers Consultants and with this career planning process outlined in this site
-                    will help ensure that you are employable and competitive for jobs during university and following graduation.
-                    <br/>
-                </h5>
-            </td>
-        </tr>
-    </table>
-</div>
+    <br>
+    <br>
+    <br>
+    <!--The hint for our website-->
+    <div class="hint" style="margin: auto; width: 40%;">
+        <table style="border:3px #7e7e7e solid;">
+            <tr>
+                <td align="left" border="1" >
+                    <h5>It's never too early to start planning your career.
+                        You may have a clear idea of your career
+                        direction or you may not be sure what you want to do after university. <br/>
+                        A successful career is more than just gaining academic knowledge and employability skills.
+                        This site will help to understand your strength and your career interests and increase your knowledge of the
+                        employment market. Engaging with Careers Consultants and with this career planning process outlined in this site
+                        will help ensure that you are employable and competitive for jobs during university and following graduation.
+                        <br/>
+                    </h5>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-<form id="loginform" method="POST" action="login">
-    {% csrf_token %}
-    <textfield>
-        <h2 class="login-title">Login</h2>
-        <input type="text" name="user" placeholder="StudentID" autofocus required />
-        <input type="password" name="password" placeholder="Password" required />
-        <input type="submit" name="submit" class="submit action-button" value="Login" />
-        <input type="button" name="Register" class="btn action-button" value="Register"  onclick="{location.href='/signup.html'}"/>
-        <input type="button" name="Forget" class="btn action-button" value="Forget"  onclick="{location.href='/forget.html'}"/>
-    </textfield>
-</form>
-</body>
-</html>
+    <form id="loginform" method="POST" action="login">
+        {% csrf_token %}
+        <textfield>
+            <h2 class="login-title">Login</h2>
+            <input type="text" name="user" placeholder="StudentID" autofocus required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="submit" name="submit" class="submit action-button" value="Login" />
+            <input type="button" name="Register" class="btn action-button" value="Register"  onclick="{location.href='/signup.html'}"/>
+            <input type="button" name="Forget" class="btn action-button" value="Forget"  onclick="{location.href='/forget.html'}"/>
+        </textfield>
+    </form>
+    </body>
+    </html>
