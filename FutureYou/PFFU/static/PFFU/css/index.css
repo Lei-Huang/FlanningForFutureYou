@@ -51,7 +51,7 @@ h2{font-size: 42px;}
 h3{font-size: 28px;}
 h4{font-size: 18px; line-height: 1.4em;}
 h5 {font-size: 14px; line-height: 1.4em; color: #9894aa;}/*for questions*/
-h6 {font-size: 20px; line-height: 1.4em; color: #ea9312;font-weight: bold;}/*for some answers*/
+h6 {font-size: 20px; line-height: 1.4em; color: #ea713a ;font-weight: bold;}/*for some answers*/
 h7 {font-size: 18px;
     color: #2c3e50;
     display: block;
@@ -61,7 +61,7 @@ h7 {font-size: 18px;
     margin-right: 0;
     font-weight: bold;}/*for Description*/
 h8 {font-size: 28px;
-    color: #ea9312;
+    color: #ea713a;
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -88,9 +88,15 @@ h13{font-size: 18px;/*for hyperlink content*/
     color: #ea723a;
     font-weight: bold}
 
+h14{font-size: 20px;/*for the people content*/
+    color: #050101;
+    line-height: 3em;
+    font-weight: bold}
+
+
 p{ font-size: 18px;
     letter-spacing: 1px;
-    color: #a7a7a7;
+    color: #6B6B6B;
 
 }
 p1{ font-size: 14px;
@@ -122,9 +128,9 @@ DEFAULT STYLE & FORMATING
 }
 
 ul{padding: 0;}
-a{color: #ea9312
+a{color: #e56815
 }
-a:hover{color: #c3c3c3; text-decoration: none;}
+a:hover{color: #6B6B6B; text-decoration: none;}
 
 
 #services{text-align: center;}
@@ -303,7 +309,7 @@ footer{
     background: #363942;
 }
 
-footer p, footer .bigicon {color: #7e7e7e;}
+footer p, footer .bigicon {color:#E8E8E8 ;}
 
 .footerlinks{margin: 30px 0;}
 .footerlinks li{
@@ -594,8 +600,8 @@ FOLLOW BUTTON
     color: #f0eef9;
     font-family: 'Helvetica Neue', cursive;
 
-    background-color: rgba(196, 116, 168, 0.6);
-    transition: all 0.4s ease-in-out;
+    background-color: #ea713a;
+
     font-size:1.15em;
 
     /* Setting the border-radius property for all Browsers */
@@ -777,7 +783,7 @@ CareerGoal css begin
 
 .btn3:hover{
     background: none;
-    color: #ea9312;
+    color: #ea723a;
 }
 
 .btn3icon, .brandicon{
@@ -788,7 +794,7 @@ CareerGoal css begin
 /* Most used button  */
 
 .btn5{
-    background: #ea9312;
+    background: #ea713a;
     border: none;
     text-transform: uppercase;
     margin: 50px 0;
@@ -799,7 +805,7 @@ CareerGoal css begin
 
 .btn5:hover{
     background: none;
-    color: #ea9312;
+    color: #ea713a;
 }
 
 .btn5icon, .brandicon{
@@ -831,18 +837,18 @@ CareerGoal css begin
 /* End */
 
 .btn6{
-    background: #c48ea8;
+    background: #ea713a;
     border: none;
     text-transform: uppercase;
     float:right;
     margin: 50px 0;
-    color: #f0eef9;
+    color: #ffffff;
     letter-spacing: 2px;
 }
 
 .btn6:hover{
     background: none;
-    color: #ea9312;
+    color: #ea713a;
 }
 
 .btn6icon, .brandicon{
